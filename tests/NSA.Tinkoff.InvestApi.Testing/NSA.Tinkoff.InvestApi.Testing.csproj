@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\NSA.Tinkoff.InvestApi.Contracts\NSA.Tinkoff.InvestApi.Contracts.csproj" />
+      <ProjectReference Include="..\..\src\NSA.Tinkoff.InvestApi\NSA.Tinkoff.InvestApi.csproj" />
+    </ItemGroup>
+
+</Project>

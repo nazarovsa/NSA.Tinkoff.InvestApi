@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="NSwag.MSBuild" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+    <Target Name="NSwag" AfterTargets="Build">
+        <Exec Command="$(NSwagExe_Net60) openapi2csclient /input:https://tinkoff.github.io/investAPI/swagger-ui/openapi.yaml /output:Generated/TinkoffApi.g.cs /classname:TinkoffApiClient /usebaseurl:true /injecthttpclient:true /clientclassaccessmodifier:internal /OperationGenerationMode:SingleClientFromOperationId /GenerateClientInterfaces:true /namespace:NSA.Tinkoff.InvestApi.Contracts" />
+    </Target>
+
+    <ItemGroup>
+      <Folder Include="Generated" />
+    </ItemGroup>
+
+</Project>
