@@ -25,4 +25,37 @@ public class UsersServiceTest
         // Assert
         Assert.NotNull(response);
     }
+    
+    [Fact]
+    public async Task Should_get_accounts()
+    {
+        // Act
+        var response = await _userService.GetAccountsAsync(CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(response);
+        Assert.NotEmpty(response.Accounts);
+    }
+    
+    [Fact]
+    public async Task Should_get_tariff()
+    {
+        // Act
+        var response = await _userService.GetUserTariffAsync(CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(response);
+    }
+    
+    [Fact(Skip = "Need account with enabled margin trading.")]
+    public async Task Should_get_marginAttributes()
+    {
+        var accountId = "INSERT_ACCOUNT_ID_HERE";
+        
+        // Act
+        var response = await _userService.GetMarginAttributesAsync(accountId, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(response);
+    }
 }

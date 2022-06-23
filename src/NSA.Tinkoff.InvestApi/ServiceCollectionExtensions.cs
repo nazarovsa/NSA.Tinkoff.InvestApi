@@ -4,8 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NSA.Tinkoff.InvestApi.Contracts;
 using NSA.Tinkoff.InvestApi.Options;
-using NSA.Tinkoff.InvestApi.Services;
-using UsersService = Tinkoff.InvestApi.V1.UsersService;
 
 namespace NSA.Tinkoff.InvestApi;
 
