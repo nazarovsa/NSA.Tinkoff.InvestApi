@@ -3,8 +3,11 @@
         <GrpcVersion>2.46.3</GrpcVersion>
         <GrpcNetVersion>2.46.0</GrpcNetVersion>
         <GoogleProtobuffVersion>3.21.1</GoogleProtobuffVersion>
+        <MicrosoftVersion>6.0.0</MicrosoftVersion>
     </PropertyGroup>
-    <ItemGroup Label="Packages">
+    <ItemGroup Label="Microsoft">
+    </ItemGroup>
+    <ItemGroup Label="Grpc">
         <PackageVersion Include="Grpc" Version="$(GrpcVersion)"/>
         <PackageVersion Include="Grpc.Tools" Version="$(GrpcVersion)"/>
         <PackageVersion Include="Grpc.Net.Client" Version="$(GrpcNetVersion)"/>

@@ -7,7 +7,7 @@ namespace NSA.Tinkoff.InvestApi.Testing;
 public static class TinkoffApiClientProvider
 {
     // TODO: Understand how handle client creation without extension method and refactor that.
-    public static IInvestApiClient GetInstance()
+    public static IInvestApiClient GetInstance(Action<IServiceCollection>? serviceCollectionConfigurator = null)
     {
         var options = new InvestApiOptions
         {
@@ -16,7 +16,8 @@ public static class TinkoffApiClientProvider
 
         var services = new ServiceCollection();
         services.AddInvestApiClient("Testing", options);
-
+        serviceCollectionConfigurator?.Invoke(services);
+        
         var sp = services.BuildServiceProvider();
         
         return sp.GetRequiredService<IInvestApiClient>();

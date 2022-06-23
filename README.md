@@ -12,6 +12,8 @@ In progress...
 
 ## Services 
 - **IUsersService** - Information about user (accounts).
+- **IInstrumentsService** - Information about instruments.
+- **IMarketDataStreamService** - Information about market in real time.
 
 ## Remarks
 ### Reason of services' methods async

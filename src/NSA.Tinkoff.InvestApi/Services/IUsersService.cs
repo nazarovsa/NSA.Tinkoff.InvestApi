@@ -33,6 +33,4 @@ public interface IUsersService
     /// <returns><see cref="GetMarginAttributesResponse"/>.</returns>
     Task<GetMarginAttributesResponse> GetMarginAttributesAsync(string accountId,
         CancellationToken cancellationToken = default);
-
-
 }
