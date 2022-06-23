@@ -1,4 +1,5 @@
 using Grpc.Core;
+using Grpc.Net.Client;
 using Grpc.Net.Client.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,18 +13,9 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInvestApiClient(this IServiceCollection services,
         string name,
-        IConfiguration configuration)
+        IConfiguration configuration,
+        Action<GrpcChannelOptions>? grpcChannelConfigurator = null)
     {
-        if (services == null)
-        {
-            throw new ArgumentNullException(nameof(services));
-        }
-
-        if (string.IsNullOrWhiteSpace(name))
-        {
-            throw new ArgumentNullException(nameof(name));
-        }
-
         if (configuration == null)
         {
             throw new ArgumentNullException(nameof(configuration));
@@ -32,12 +24,13 @@ public static class ServiceCollectionExtensions
         var options = configuration.GetSection(nameof(InvestApiOptions))
             .Get<InvestApiOptions>();
 
-        return services.AddInvestApiClient(name, options);
+        return services.AddInvestApiClient(name, options, grpcChannelConfigurator);
     }
 
     public static IServiceCollection AddInvestApiClient(this IServiceCollection services,
         string name,
-        InvestApiOptions investApiOptions)
+        InvestApiOptions investApiOptions,
+        Action<GrpcChannelOptions>? grpcChannelConfigurator = null)
     {
         if (services == null)
         {
@@ -58,40 +51,8 @@ public static class ServiceCollectionExtensions
                 o => o.Address = new Uri("https://invest-public-api.tinkoff.ru:443"))
             .ConfigureChannel((_, options) =>
             {
-                if (string.IsNullOrWhiteSpace(investApiOptions.AccessToken))
-                {
-                    throw new ArgumentException("AccessToken should be specified.",
-                        nameof(InvestApiOptions.AccessToken));
-                }
-
-                var applicationName = string.IsNullOrWhiteSpace(investApiOptions.ApplicationName)
-                    ? "NSA.Tinkoff.InvestApi"
-                    : investApiOptions.ApplicationName;
-
-                var credentials = CallCredentials.FromInterceptor((_, metadata) =>
-                {
-                    metadata.Add("Authorization", $"Bearer {investApiOptions.AccessToken}");
-                    metadata.Add("x-app-name", applicationName);
-
-                    return Task.CompletedTask;
-                });
-
-                options.Credentials = ChannelCredentials.Create(new SslCredentials(), credentials);
-
-                var defaultMethodConfig = new MethodConfig
-                {
-                    Names = { MethodName.Default },
-                    RetryPolicy = new RetryPolicy
-                    {
-                        MaxAttempts = 5,
-                        InitialBackoff = TimeSpan.FromSeconds(1),
-                        MaxBackoff = TimeSpan.FromSeconds(5),
-                        BackoffMultiplier = 1.5,
-                        RetryableStatusCodes = { StatusCode.Unavailable }
-                    }
-                };
-
-                options.ServiceConfig = new ServiceConfig { MethodConfigs = { defaultMethodConfig } };
+                ConfigureGrpcChannel(options, investApiOptions);
+                grpcChannelConfigurator?.Invoke(options);
             });
 
         services.AddScoped<IInvestApiClient, InvestApiClient>(ctx => ctx.GetRequiredService<InvestApiClient>());
@@ -115,5 +76,48 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IUsersService, UsersService>();
 
         return services;
+    }
+
+    /// <summary>
+    /// Method that configures GrpcChannelOptions by default.
+    /// </summary>
+    /// <param name="options"><see cref="GrpcChannelOptions"/>.</param>
+    /// <param name="investApiOptions"><see cref="InvestApiOptions"/>.</param>
+    /// <exception cref="ArgumentException"><see cref="InvestApiOptions.AccessToken"/> is empty.</exception>
+    private static void ConfigureGrpcChannel(GrpcChannelOptions options, InvestApiOptions investApiOptions)
+    {
+        if (string.IsNullOrWhiteSpace(investApiOptions.AccessToken))
+        {
+            throw new ArgumentException("AccessToken should be specified.",
+                nameof(InvestApiOptions.AccessToken));
+        }
+
+        var applicationName = string.IsNullOrWhiteSpace(investApiOptions.ApplicationName)
+            ? "NSA.Tinkoff.InvestApi"
+            : investApiOptions.ApplicationName;
+
+        var credentials = CallCredentials.FromInterceptor((_, metadata) =>
+        {
+            metadata.Add("Authorization", $"Bearer {investApiOptions.AccessToken}");
+            metadata.Add("x-app-name", applicationName);
+
+            return Task.CompletedTask;
+        });
+
+        options.Credentials = ChannelCredentials.Create(new SslCredentials(), credentials);
+        var defaultMethodConfig = new MethodConfig
+        {
+            Names = { MethodName.Default },
+            RetryPolicy = new RetryPolicy
+            {
+                MaxAttempts = 5,
+                InitialBackoff = TimeSpan.FromSeconds(1),
+                MaxBackoff = TimeSpan.FromSeconds(5),
+                BackoffMultiplier = 1.5,
+                RetryableStatusCodes = { StatusCode.Unavailable }
+            }
+        };
+
+        options.ServiceConfig = new ServiceConfig { MethodConfigs = { defaultMethodConfig } };
     }
 }
