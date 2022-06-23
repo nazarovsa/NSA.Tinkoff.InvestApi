@@ -7,6 +7,9 @@ This is .Net API for interact with [Tinkoff Invest OpenApi](https://github.com/T
 
 Library uses GRPC to interact with Tinkoff API.
 
+## Usage
+In progress...
+
 ## Services 
 - **IUsersService** - Information about user (accounts).
 

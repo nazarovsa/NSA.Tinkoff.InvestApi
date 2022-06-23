@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NSA.Tinkoff.InvestApi.Contracts;
 using NSA.Tinkoff.InvestApi.Options;
+using NSA.Tinkoff.InvestApi.Services;
 
 namespace NSA.Tinkoff.InvestApi;
 
@@ -94,6 +95,24 @@ public static class ServiceCollectionExtensions
             });
 
         services.AddScoped<IInvestApiClient, InvestApiClient>(ctx => ctx.GetRequiredService<InvestApiClient>());
+
+        return services;
+    }
+
+    /// <summary>
+    /// Register <see cref="UsersService"/> as <see cref="IUsersService"/>.
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/>.</param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
+    public static IServiceCollection AddUsersService(this IServiceCollection services)
+    {
+        if (services == null)
+        {
+            throw new ArgumentNullException(nameof(services));
+        }
+
+        services.AddTransient<IUsersService, UsersService>();
 
         return services;
     }
