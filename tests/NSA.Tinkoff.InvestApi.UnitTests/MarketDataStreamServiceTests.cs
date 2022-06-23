@@ -18,7 +18,7 @@ public class MarketDataStreamServiceTests
         _marketDataStreamService = new MarketDataStreamService(client);
     }
 
-    [Fact()]
+    [Fact(Skip = "Non-repeatable.")]
     public async Task Should_subscribe_to_lastPrice_and_get_response()
     {
         var request = new[]
