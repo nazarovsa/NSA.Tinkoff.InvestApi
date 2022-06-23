@@ -19,6 +19,6 @@ public static class TinkoffApiClientProvider
 
         var sp = services.BuildServiceProvider();
         
-        return sp.GetRequiredService<InvestApiClient>();
+        return sp.GetRequiredService<IInvestApiClient>();
     }
 }

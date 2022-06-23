@@ -11,12 +11,10 @@ namespace NSA.Tinkoff.InvestApi;
 
 public static class ServiceCollectionExtensions
 {
-
-    public static IServiceCollection AddInvestApiClient(this IServiceCollection services, 
+    public static IServiceCollection AddInvestApiClient(this IServiceCollection services,
         string name,
         IConfiguration configuration)
     {
-        
         if (services == null)
         {
             throw new ArgumentNullException(nameof(services));
@@ -37,7 +35,7 @@ public static class ServiceCollectionExtensions
 
         return services.AddInvestApiClient(name, options);
     }
-    
+
     public static IServiceCollection AddInvestApiClient(this IServiceCollection services,
         string name,
         InvestApiOptions investApiOptions)
@@ -56,16 +54,17 @@ public static class ServiceCollectionExtensions
         {
             throw new ArgumentNullException(nameof(investApiOptions));
         }
-        
+
         services.AddGrpcClient<InvestApiClient>(name,
                 o => o.Address = new Uri("https://invest-public-api.tinkoff.ru:443"))
             .ConfigureChannel((_, options) =>
             {
                 if (string.IsNullOrWhiteSpace(investApiOptions.AccessToken))
                 {
-                    throw new ArgumentException("AccessToken should be specified.", nameof(InvestApiOptions.AccessToken));
+                    throw new ArgumentException("AccessToken should be specified.",
+                        nameof(InvestApiOptions.AccessToken));
                 }
-        
+
                 var applicationName = string.IsNullOrWhiteSpace(investApiOptions.ApplicationName)
                     ? "NSA.Tinkoff.InvestApi"
                     : investApiOptions.ApplicationName;
@@ -74,7 +73,7 @@ public static class ServiceCollectionExtensions
                 {
                     metadata.Add("Authorization", $"Bearer {investApiOptions.AccessToken}");
                     metadata.Add("x-app-name", applicationName);
-                    
+
                     return Task.CompletedTask;
                 });
 
@@ -96,7 +95,7 @@ public static class ServiceCollectionExtensions
                 options.ServiceConfig = new ServiceConfig { MethodConfigs = { defaultMethodConfig } };
             });
 
-        services.AddScoped<IInvestApiClient, InvestApiClient>();
+        services.AddScoped<IInvestApiClient, InvestApiClient>(ctx => ctx.GetRequiredService<InvestApiClient>());
 
         return services;
     }
