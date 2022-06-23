@@ -1,4 +1,4 @@
-using System.Net.Http.Headers;
+using Microsoft.Extensions.DependencyInjection;
 using NSA.Tinkoff.InvestApi.Contracts;
 using NSA.Tinkoff.InvestApi.Options;
 
@@ -6,18 +6,19 @@ namespace NSA.Tinkoff.InvestApi.Testing;
 
 public static class TinkoffApiClientProvider
 {
-    public static ITinkoffApiClient GetInstance()
+    // TODO: Understand how handle client creation without extension method and refactor that.
+    public static IInvestApiClient GetInstance()
     {
         var options = new InvestApiOptions
         {
             AccessToken = AccessTokenAccessor.GetFromEnv(),
         };
 
-        var httpClient = new HttpClient
-        {
-            DefaultRequestHeaders = { Authorization = new AuthenticationHeaderValue("Bearer", options.AccessToken) }
-        };
+        var services = new ServiceCollection();
+        services.AddInvestApiClient("Testing", options);
 
-        return new TinkoffApiClient(httpClient);
+        var sp = services.BuildServiceProvider();
+        
+        return sp.GetRequiredService<InvestApiClient>();
     }
 }

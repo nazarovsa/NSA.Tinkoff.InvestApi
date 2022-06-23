@@ -1,4 +1,4 @@
-using NSA.Tinkoff.InvestApi.Contracts;
+using Tinkoff.InvestApi.V1;
 
 namespace NSA.Tinkoff.InvestApi.Services;
 
@@ -8,6 +8,6 @@ public interface IUsersService
     /// Get user's info.
     /// </summary>
     /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
-    /// <returns><see cref="V1GetInfoResponse"/>.</returns>
-    Task<V1GetInfoResponse> GetInfoAsync(CancellationToken cancellationToken = default);
+    /// <returns><see cref="GetInfoResponse"/>.</returns>
+    Task<GetInfoResponse> GetInfoAsync(CancellationToken cancellationToken = default);
 }

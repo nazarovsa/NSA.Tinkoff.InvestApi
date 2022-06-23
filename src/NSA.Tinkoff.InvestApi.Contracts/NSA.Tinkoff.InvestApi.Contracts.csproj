@@ -7,18 +7,27 @@
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
     </PropertyGroup>
-    
+
     <ItemGroup>
-        <PackageReference Include="NSwag.MSBuild" />
-        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="Google.Protobuf" />
+        <PackageReference Include="Grpc" />
+        <PackageReference Include="Grpc.Tools">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
-    <Target Name="NSwag" AfterTargets="Build">
-        <Exec Command="$(NSwagExe_Net60) openapi2csclient /input:https://tinkoff.github.io/investAPI/swagger-ui/openapi.yaml /output:Generated/TinkoffApi.g.cs /classname:TinkoffApiClient /usebaseurl:true /injecthttpclient:true /clientclassaccessmodifier:internal /OperationGenerationMode:SingleClientFromOperationId /GenerateClientInterfaces:true /namespace:NSA.Tinkoff.InvestApi.Contracts" />
-    </Target>
+    <ItemGroup>
+        <Folder Include="Generated" />
+    </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Generated" />
+        <Protobuf Include="Protos\*.proto" GrpcServices="Client" ProtoRoot="Protos">
+            <Access>Public</Access>
+            <CompileOutputs>False</CompileOutputs>
+            <ProtoCompile>True</ProtoCompile>
+            <OutputDir>Generated</OutputDir>
+        </Protobuf>
     </ItemGroup>
 
 </Project>

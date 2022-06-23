@@ -19,11 +19,11 @@ public class ServiceCollectionExtensionsTests
             AccessToken = AccessTokenAccessor.GetFromEnv(),
         };
         
-        services.AddTinkoffApiClient(options);
+        services.AddInvestApiClient("Testing", options);
         var sp = services.BuildServiceProvider();
         
         // Act
-        var apiClient = sp.GetService<ITinkoffApiClient>();
+        var apiClient = sp.GetService<IInvestApiClient>();
 
         // Assert
         Assert.NotNull(apiClient);
