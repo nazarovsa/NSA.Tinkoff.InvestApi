@@ -17,7 +17,7 @@ public class InstrumentsServiceTests
         var client = TinkoffApiClientProvider.GetInstance();
         _instrumentsService = new InstrumentsService(client);
     }
-    
+
     [Fact]
     public async Task Should_get_instrumentByFigi()
     {
@@ -28,9 +28,9 @@ public class InstrumentsServiceTests
         Assert.NotNull(instrument);
         Assert.Equal("T", instrument!.Ticker);
     }
-    
+
     [Fact]
-    public async Task Should_get_instrumentByTiker()
+    public async Task Should_get_instrumentByTicker()
     {
         // Act
         var instrument = await _instrumentsService.GetInstrumentById("T", InstrumentIdType.Ticker, "SPBXM", CancellationToken.None);
@@ -38,5 +38,49 @@ public class InstrumentsServiceTests
         // Assert
         Assert.NotNull(instrument);
         Assert.Equal("T", instrument!.Ticker);
+    }
+
+    [Fact]
+    public async Task Should_get_bonds()
+    {
+        // Act
+        var bonds = await _instrumentsService.GetBondsAsync(InstrumentStatus.All, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(bonds);
+        Assert.NotEmpty(bonds);
+    }
+
+    [Fact]
+    public async Task Should_get_shares()
+    {
+        // Act
+        var shares = await _instrumentsService.GetSharesAsync(InstrumentStatus.All, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(shares);
+        Assert.NotEmpty(shares);
+    }
+
+    [Fact]
+    public async Task Should_get_etfs()
+    {
+        // Act
+        var etfs = await _instrumentsService.GetEtfsAsync(InstrumentStatus.All, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(etfs);
+        Assert.NotEmpty(etfs);
+    }
+
+    [Fact]
+    public async Task Should_get_currencies()
+    {
+        // Act
+        var currencies = await _instrumentsService.GetCurrenciesAsync(InstrumentStatus.All, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(currencies);
+        Assert.NotEmpty(currencies);
     }
 }

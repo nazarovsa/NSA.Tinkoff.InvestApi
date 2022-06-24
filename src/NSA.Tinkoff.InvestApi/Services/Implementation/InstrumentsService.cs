@@ -26,7 +26,7 @@ public sealed class InstrumentsService : IInstrumentsService
                 throw new ArgumentNullException(nameof(id));
             }
 
-            var request = new InstrumentRequest()
+            var request = new InstrumentRequest
             {
                 Id = id,
                 IdType = idType,
@@ -41,14 +41,110 @@ public sealed class InstrumentsService : IInstrumentsService
             if (result == null)
                 throw new InvalidOperationException("Response is null.");
 
-            var response =  await result.ResponseAsync;
+            var response = await result.ResponseAsync;
             return response.Instrument;
         }
         catch (RpcException ex)
         {
             if (ex.StatusCode == StatusCode.NotFound)
                 return null;
-            
+
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<IReadOnlyCollection<Bond>> GetBondsAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var request = new InstrumentsRequest()
+            {
+                InstrumentStatus = instrumentStatus,
+            };
+
+            var result = _client.InstrumentsServiceClient.BondsAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response
+                .Instruments
+                .ToArray();
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<IReadOnlyCollection<Etf>> GetEtfsAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var request = new InstrumentsRequest
+            {
+                InstrumentStatus = instrumentStatus,
+            };
+
+            var result = _client.InstrumentsServiceClient.EtfsAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response
+                .Instruments
+                .ToArray();
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<IReadOnlyCollection<Share>> GetSharesAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var request = new InstrumentsRequest
+            {
+                InstrumentStatus = instrumentStatus,
+            };
+
+            var result = _client.InstrumentsServiceClient.SharesAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response
+                .Instruments
+                .ToArray();
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<IReadOnlyCollection<Currency>> GetCurrenciesAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var request = new InstrumentsRequest
+            {
+                InstrumentStatus = instrumentStatus,
+            };
+
+            var result = _client.InstrumentsServiceClient.CurrenciesAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response
+                .Instruments
+                .ToArray();
+        }
+        catch (RpcException ex)
+        {
             throw new ApiException(ex);
         }
     }
