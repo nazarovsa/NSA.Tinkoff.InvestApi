@@ -6,7 +6,11 @@ public interface IInvestApiClient
 {
     UsersService.UsersServiceClient UsersServiceClient { get; }
 
+    InstrumentsService.InstrumentsServiceClient InstrumentsServiceClient { get; }
+
+    OrdersService.OrdersServiceClient OrdersServiceClient { get; }
+    
     MarketDataStreamService.MarketDataStreamServiceClient MarketDataStreamServiceClient { get; }
     
-    InstrumentsService.InstrumentsServiceClient InstrumentsServiceClient { get; }
+    public OrdersStreamService.OrdersStreamServiceClient OrdersStreamServiceClient { get; }
 }

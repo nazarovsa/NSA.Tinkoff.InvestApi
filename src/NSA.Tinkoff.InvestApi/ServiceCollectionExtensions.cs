@@ -77,6 +77,24 @@ public static class ServiceCollectionExtensions
 
         return services;
     }
+    
+    /// <summary>
+    /// Register <see cref="UsersService"/> as <see cref="IUsersService"/>.
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/>.</param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
+    public static IServiceCollection AddOrdersService(this IServiceCollection services)
+    {
+        if (services == null)
+        {
+            throw new ArgumentNullException(nameof(services));
+        }
+
+        services.AddTransient<IOrdersService, OrdersService>();
+
+        return services;
+    }
 
     /// <summary>
     /// Method that configures GrpcChannelOptions by default.

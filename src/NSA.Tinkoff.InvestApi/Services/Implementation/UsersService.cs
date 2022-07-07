@@ -75,10 +75,10 @@ public sealed class UsersService : IUsersService
         try
         {
             var request = new GetMarginAttributesRequest
-                {
-                    AccountId = accountId
-                };
-            
+            {
+                AccountId = accountId
+            };
+
             var result =
                 _client.UsersServiceClient.GetMarginAttributesAsync(request, null, null,
                     cancellationToken);

@@ -47,7 +47,7 @@ public class UsersServiceTest
         Assert.NotNull(response);
     }
     
-    [Fact(Skip = "Need account with enabled margin trading.")]
+    [Fact(Skip = "Requires account with enabled margin trading.")]
     public async Task Should_get_marginAttributes()
     {
         var accountId = "INSERT_ACCOUNT_ID_HERE";
