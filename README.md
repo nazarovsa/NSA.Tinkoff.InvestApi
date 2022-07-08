@@ -13,6 +13,7 @@ In progress...
 ## Services 
 - **IUsersService** - Information about user (accounts).
 - **IInstrumentsService** - Information about instruments.
+- **IOrdersService** - Post/Cancel/Get information about order.
 - **IMarketDataStreamService** - Information about market in real time.
 
 ## Remarks
