@@ -16,6 +16,9 @@ In progress...
 - **IOrdersService** - Post/Cancel/Get information about order.
 - **IMarketDataStreamService** - Information about market in real time.
 
+## Contributing
+In progress...
+
 ## Remarks
 ### Reason of services' methods async
 If we return a task with GRPC result from a method, we may have RpcException at awaiting code.  
