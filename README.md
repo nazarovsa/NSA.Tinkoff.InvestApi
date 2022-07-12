@@ -1,7 +1,8 @@
 # NSA.Tinkoff.InvestApi
 
 [![Build & test](https://github.com/nazarovsa/NSA.Tinkoff.InvestApi/actions/workflows/dotnet-build-and-test.yml/badge.svg)](https://github.com/nazarovsa/NSA.Tinkoff.InvestApi/actions/workflows/dotnet-build-and-test.yml)
-
+[![nuget version](https://img.shields.io/nuget/v/NSA.Tinkoff.InvestApi)](https://www.nuget.org/packages/NSA.Tinkoff.InvestApi/)
+[![Nuget](https://img.shields.io/nuget/dt/NSA.Tinkoff.InvestApi?color=%2300000)](https://www.nuget.org/packages/NSA.Tinkoff.InvestApi/)
 ## About
 This is .Net API for interact with [Tinkoff Invest OpenApi](https://github.com/Tinkoff/investAPI). Please, write your questions and suggestions to issues.
 
