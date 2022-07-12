@@ -6,8 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment:
-      name: nuget_publish
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
