@@ -21,7 +21,8 @@ public static class ServiceCollectionExtensions
             throw new ArgumentNullException(nameof(configuration));
         }
 
-        var options = configuration.GetSection(nameof(InvestApiOptions))
+        var options = configuration
+            .GetSection(nameof(InvestApiOptions))
             .Get<InvestApiOptions>();
 
         return services.AddInvestApiClient(name, options, grpcChannelConfigurator);
@@ -47,7 +48,8 @@ public static class ServiceCollectionExtensions
             throw new ArgumentNullException(nameof(investApiOptions));
         }
 
-        services.AddGrpcClient<InvestApiClient>(name,
+        services.AddGrpcClient<InvestApiClient>(
+                name,
                 o => o.Address = new Uri("https://invest-public-api.tinkoff.ru:443"))
             .ConfigureChannel((_, options) =>
             {
@@ -79,6 +81,42 @@ public static class ServiceCollectionExtensions
     }
     
     /// <summary>
+    /// Register <see cref="OperationsService"/> as <see cref="IOperationsService"/>.
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/>.</param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
+    public static IServiceCollection AddOperationsService(this IServiceCollection services)
+    {
+        if (services == null)
+        {
+            throw new ArgumentNullException(nameof(services));
+        }
+
+        services.AddTransient<IOperationsService, OperationsService>();
+
+        return services;
+    }
+    
+    /// <summary>
+    /// Register <see cref="InstrumentsService"/> as <see cref="IInstrumentsService"/>.
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/>.</param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
+    public static IServiceCollection AddInstrumentsServiceService(this IServiceCollection services)
+    {
+        if (services == null)
+        {
+            throw new ArgumentNullException(nameof(services));
+        }
+
+        services.AddTransient<IInstrumentsService, InstrumentsService>();
+
+        return services;
+    }
+    
+    /// <summary>
     /// Register <see cref="UsersService"/> as <see cref="IUsersService"/>.
     /// </summary>
     /// <param name="services"><see cref="IServiceCollection"/>.</param>
@@ -92,6 +130,24 @@ public static class ServiceCollectionExtensions
         }
 
         services.AddTransient<IOrdersService, OrdersService>();
+
+        return services;
+    }
+
+    /// <summary>
+    /// Register <see cref="MarketDataStreamService"/> as <see cref="IMarketDataStreamService"/>.
+    /// </summary>
+    /// <param name="services"><see cref="IServiceCollection"/>.</param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
+    public static IServiceCollection AddMarketDataStreamService(this IServiceCollection services)
+    {
+        if (services == null)
+        {
+            throw new ArgumentNullException(nameof(services));
+        }
+
+        services.AddSingleton<IMarketDataStreamService, MarketDataStreamService>();
 
         return services;
     }

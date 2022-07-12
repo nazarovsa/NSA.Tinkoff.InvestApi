@@ -19,7 +19,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_instrumentByFigi()
+    public async Task GetInstrumentById_Figi_ReturnsInstrument()
     {
         // Act
         var instrument = await _instrumentsService.GetInstrumentById("BBG000BSJK37", InstrumentIdType.Figi, null, CancellationToken.None);
@@ -30,7 +30,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_instrumentByTicker()
+    public async Task GetInstrumentById_Ticker_ReturnsInstrument()
     {
         // Act
         var instrument = await _instrumentsService.GetInstrumentById("T", InstrumentIdType.Ticker, "SPBXM", CancellationToken.None);
@@ -41,7 +41,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_bonds()
+    public async Task GetBondsAsync_ReturnsBonds()
     {
         // Act
         var bonds = await _instrumentsService.GetBondsAsync(InstrumentStatus.All, CancellationToken.None);
@@ -52,7 +52,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_shares()
+    public async Task GetSharesAsync_ReturnsShares()
     {
         // Act
         var shares = await _instrumentsService.GetSharesAsync(InstrumentStatus.All, CancellationToken.None);
@@ -63,7 +63,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_etfs()
+    public async Task GetEtfsAsync_ReturnsEtfs()
     {
         // Act
         var etfs = await _instrumentsService.GetEtfsAsync(InstrumentStatus.All, CancellationToken.None);
@@ -74,7 +74,7 @@ public class InstrumentsServiceTests
     }
 
     [Fact]
-    public async Task Should_get_currencies()
+    public async Task GetCurrenciesAsync_ReturnsCurrencies()
     {
         // Act
         var currencies = await _instrumentsService.GetCurrenciesAsync(InstrumentStatus.All, CancellationToken.None);

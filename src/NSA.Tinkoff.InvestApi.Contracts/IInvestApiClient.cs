@@ -10,6 +10,8 @@ public interface IInvestApiClient
 
     OrdersService.OrdersServiceClient OrdersServiceClient { get; }
     
+    OperationsService.OperationsServiceClient OperationsServiceClient { get; }
+    
     MarketDataStreamService.MarketDataStreamServiceClient MarketDataStreamServiceClient { get; }
     
     public OrdersStreamService.OrdersStreamServiceClient OrdersStreamServiceClient { get; }

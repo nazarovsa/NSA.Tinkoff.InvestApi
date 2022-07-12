@@ -11,7 +11,7 @@ public static class TinkoffApiClientProvider
     {
         var options = new InvestApiOptions
         {
-            AccessToken = AccessTokenAccessor.GetFromEnv(),
+            AccessToken = TinkoffApiTestingEnvAccessor.GetToken(),
         };
 
         var services = new ServiceCollection();

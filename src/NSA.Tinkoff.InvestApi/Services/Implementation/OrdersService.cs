@@ -120,7 +120,8 @@ public sealed class OrdersService : IOrdersService
         }
     }
 
-    public async Task<OrderState?> GetOrderStateAsync(string orderId, string? accountId = null,
+    public async Task<OrderState?> GetOrderStateAsync(string orderId,
+        string? accountId = null,
         CancellationToken cancellationToken = default)
     {
         try

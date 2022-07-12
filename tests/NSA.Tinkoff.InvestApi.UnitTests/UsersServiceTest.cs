@@ -17,7 +17,7 @@ public class UsersServiceTest
     }
     
     [Fact]
-    public async Task Should_get_userInfo()
+    public async Task GetInfoAsync_ReturnsUserInfo()
     {
         // Act
         var response = await _userService.GetInfoAsync(CancellationToken.None);
@@ -27,7 +27,7 @@ public class UsersServiceTest
     }
     
     [Fact]
-    public async Task Should_get_accounts()
+    public async Task GetAccountsAsync_ReturnsAccounts()
     {
         // Act
         var response = await _userService.GetAccountsAsync(CancellationToken.None);
@@ -38,7 +38,7 @@ public class UsersServiceTest
     }
     
     [Fact]
-    public async Task Should_get_tariff()
+    public async Task GetUserTariffAsync_ReturnsTariff()
     {
         // Act
         var response = await _userService.GetUserTariffAsync(CancellationToken.None);
@@ -48,7 +48,7 @@ public class UsersServiceTest
     }
     
     [Fact(Skip = "Requires account with enabled margin trading.")]
-    public async Task Should_get_marginAttributes()
+    public async Task GetMarginAttributesAsync_ReturnsAttributes()
     {
         var accountId = "INSERT_ACCOUNT_ID_HERE";
         

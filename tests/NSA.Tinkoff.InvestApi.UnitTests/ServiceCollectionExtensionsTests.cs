@@ -16,7 +16,7 @@ public class ServiceCollectionExtensionsTests
         
         var options = new InvestApiOptions
         {
-            AccessToken = AccessTokenAccessor.GetFromEnv(),
+            AccessToken = TinkoffApiTestingEnvAccessor.GetToken(),
         };
         
         services.AddInvestApiClient("Testing", options);

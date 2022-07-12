@@ -10,6 +10,8 @@ public sealed class InvestApiClient : IInvestApiClient
     public InstrumentsService.InstrumentsServiceClient InstrumentsServiceClient { get; }
 
     public OrdersService.OrdersServiceClient OrdersServiceClient { get; }
+    
+    public OperationsService.OperationsServiceClient OperationsServiceClient { get; }
 
     public MarketDataStreamService.MarketDataStreamServiceClient MarketDataStreamServiceClient { get; }
     
@@ -25,6 +27,7 @@ public sealed class InvestApiClient : IInvestApiClient
         UsersServiceClient = new UsersService.UsersServiceClient(callInvoker);
         InstrumentsServiceClient = new InstrumentsService.InstrumentsServiceClient(callInvoker);
         OrdersServiceClient = new OrdersService.OrdersServiceClient(callInvoker);
+        OperationsServiceClient = new OperationsService.OperationsServiceClient(callInvoker);
         MarketDataStreamServiceClient = new MarketDataStreamService.MarketDataStreamServiceClient(callInvoker);
         OrdersStreamServiceClient = new OrdersStreamService.OrdersStreamServiceClient(callInvoker);
     }
