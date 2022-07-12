@@ -22,4 +22,5 @@ jobs:
       - name: Test
         env:
           NSA_INVESTAPI_ACCESSTOKEN: ${{ secrets.NSA_INVESTAPI_ACCESSTOKEN }}
+          NSA_INVESTAPI_ACCOUNTID: ${{ secrets.NSA_INVESTAPI_ACCOUNTID }}
         run: dotnet test --no-restore --verbosity normal

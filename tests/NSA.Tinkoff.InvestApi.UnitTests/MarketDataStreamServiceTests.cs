@@ -19,7 +19,7 @@ public class MarketDataStreamServiceTests
     }
 
     [Fact(Skip = "Non-repeatable.")]
-    public async Task Should_subscribe_to_lastPrice_and_get_response()
+    public async Task SubscribeAsync_ToLastPrice_Then_ReadAsync_ReturnsLastPrice()
     {
         var request = new[]
         {
