@@ -104,7 +104,7 @@ public static class ServiceCollectionExtensions
     /// <param name="services"><see cref="IServiceCollection"/>.</param>
     /// <returns></returns>
     /// <exception cref="ArgumentNullException"><param name="services"/> is null.</exception>
-    public static IServiceCollection AddInstrumentsServiceService(this IServiceCollection services)
+    public static IServiceCollection AddInstrumentsService(this IServiceCollection services)
     {
         if (services == null)
         {

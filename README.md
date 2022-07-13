@@ -9,7 +9,28 @@ This is .Net API for interact with [Tinkoff Invest OpenApi](https://github.com/T
 Library uses GRPC to interact with Tinkoff API.
 
 ## Usage
-In progress...
+At first, register grpc client in ServiceProvider, you can use overloads of `AddInvestApiClient`:
+```csharp
+services.AddInvestApiClient(configuration, )
+```
+
+If you are using method that with `IConfiguration` add `InvestApiOptions` section to configuration file:
+```json
+"InvestApiOptions":
+{
+  "AccessToken": "_TOKEN_",
+  "ApplicationName": "_YOUR_APP_NAME_"
+}
+```
+
+Then register required services, using one or many methods (All registered here): 
+```csharp
+services.AddUsersService()
+    .AddOperationsService()
+    .AddInstrumentsService()
+    .AddOrdersService()
+    .AddMarketDataStreamService();
+```
 
 ## Services 
 - **IUsersService** - Information about user (accounts).
