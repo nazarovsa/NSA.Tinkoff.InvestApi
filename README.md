@@ -11,7 +11,7 @@ Library uses GRPC to interact with Tinkoff API.
 ## Usage
 At first, register grpc client in ServiceProvider, you can use overloads of `AddInvestApiClient`:
 ```csharp
-services.AddInvestApiClient(configuration, )
+services.AddInvestApiClient(configuration);
 ```
 
 If you are using method that with `IConfiguration` add `InvestApiOptions` section to configuration file:
