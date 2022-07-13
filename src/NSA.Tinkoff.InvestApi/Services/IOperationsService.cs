@@ -43,13 +43,36 @@ public interface IOperationsService
     Task<WithdrawLimitsResponse?> GetWithdrawLimitsAsync(string accountId, CancellationToken cancellationToken = default);
 
     /// <summary>
+    /// Generate broker report.
+    /// </summary>
+    /// <param name="from">Date from.</param>
+    /// <param name="to">Date to.</param>
+    /// <param name="accountId">Id of an account.</param>
+    /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
+    Task<GenerateBrokerReportResponse?> GenerateBrokerReportAsync(
+        DateTimeOffset from,
+        DateTimeOffset to,
+        string accountId,
+        CancellationToken cancellationToken = default);
+
+    /// <summary>
+    /// Get report with dividends of foreign issuers.
+    /// </summary>
+    /// <param name="taskId">Id of a report from <see cref="GenerateBrokerReportAsync"/>.</param>
+    /// <param name="page">Page number.</param>
+    /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
+    Task<GetBrokerReportResponse?> GetBrokerReportAsync(
+        string taskId,
+        int page = 0,
+        CancellationToken cancellationToken = default);
+
+    /// <summary>
     /// Generate report with dividends of foreign issuers. 
     /// </summary>
     /// <param name="from">Date from.</param>
     /// <param name="to">Date to.</param>
     /// <param name="accountId">Id of an account.</param>
     /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
-    /// <returns></returns>
     Task<GenerateDividendsForeignIssuerReportResponse?> GenerateDividendsForeignIssuerReportAsync(
         DateTimeOffset from,
         DateTimeOffset to,
@@ -62,5 +85,5 @@ public interface IOperationsService
     /// <param name="taskId">Id of a report from <see cref="GenerateDividendsForeignIssuerReportAsync"/>.</param>
     /// <param name="page">Page number.</param>
     /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
-    Task<GetDividendsForeignIssuerReportResponse?> Get(string taskId, int page = 0, CancellationToken cancellationToken = default);
+    Task<GetDividendsForeignIssuerReportResponse?> GetDividendsForeignIssuerReportAsync(string taskId, int page = 0, CancellationToken cancellationToken = default);
 }

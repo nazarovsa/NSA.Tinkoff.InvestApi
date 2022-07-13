@@ -127,9 +127,74 @@ public sealed class OperationsService : IOperationsService
         }
     }
 
+    public async Task<GenerateBrokerReportResponse?> GenerateBrokerReportAsync(
+        DateTimeOffset from,
+        DateTimeOffset to,
+        string accountId,
+        CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(accountId))
+            {
+                throw new ArgumentNullException(nameof(accountId));
+            }
+
+            var request = new BrokerReportRequest()
+            {
+                GenerateBrokerReportRequest = new GenerateBrokerReportRequest()
+                {
+                    From = Timestamp.FromDateTimeOffset(from),
+                    To = Timestamp.FromDateTimeOffset(to),
+                    AccountId = accountId
+                }
+            };
+
+            var result = _client.OperationsServiceClient.GetBrokerReportAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response.GenerateBrokerReportResponse;
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<GetBrokerReportResponse?> GetBrokerReportAsync(
+        string taskId,
+        int page = 0,
+        CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var request = new BrokerReportRequest()
+            {
+                GetBrokerReportRequest = new GetBrokerReportRequest
+                {
+                    TaskId = taskId,
+                    Page = page
+                }
+            };
+
+            var result = _client.OperationsServiceClient.GetBrokerReportAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response.GetBrokerReportResponse;
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
     public async Task<GenerateDividendsForeignIssuerReportResponse?> GenerateDividendsForeignIssuerReportAsync(
         DateTimeOffset from,
-        DateTimeOffset to, 
+        DateTimeOffset to,
         string accountId,
         CancellationToken cancellationToken = default)
     {
@@ -162,8 +227,8 @@ public sealed class OperationsService : IOperationsService
             throw new ApiException(ex);
         }
     }
-    
-    public async Task<GetDividendsForeignIssuerReportResponse?> Get(string taskId, int page = 0, CancellationToken cancellationToken = default)
+
+    public async Task<GetDividendsForeignIssuerReportResponse?> GetDividendsForeignIssuerReportAsync(string taskId, int page = 0, CancellationToken cancellationToken = default)
     {
         try
         {
