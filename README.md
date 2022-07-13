@@ -14,7 +14,7 @@ At first, register grpc client in ServiceProvider, you can use overloads of `Add
 services.AddInvestApiClient(configuration);
 ```
 
-If you are using method that with `IConfiguration` add `InvestApiOptions` section to configuration file:
+If you are using method with `IConfiguration` add `InvestApiOptions` section to configuration file:
 ```json
 "InvestApiOptions":
 {
@@ -40,7 +40,7 @@ services.AddUsersService()
 - **IMarketDataStreamService** - Information about market in real time.
 
 ## Contributing
-In progress...
+Check [CONTRIBUTING.md](https://github.com/nazarovsa/NSA.Tinkoff.InvestApi/blob/main/CONTRIBUTING.md).
 
 ## Remarks
 ### Reason of services' methods async
