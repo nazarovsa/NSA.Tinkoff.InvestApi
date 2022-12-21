@@ -79,6 +79,10 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.FuturesResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_FuturesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.FuturesResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.OptionResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_OptionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.OptionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.OptionsResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_OptionsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.OptionsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.ShareResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_ShareResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.ShareResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.SharesResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_SharesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.SharesResponse.Parser));
@@ -208,6 +212,22 @@ namespace Tinkoff.InvestApi.V1 {
         "Futures",
         __Marshaller_tinkoff_public_invest_api_contract_v1_InstrumentsRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_FuturesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentRequest, global::Tinkoff.InvestApi.V1.OptionResponse> __Method_OptionBy = new grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentRequest, global::Tinkoff.InvestApi.V1.OptionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "OptionBy",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_InstrumentRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_OptionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentsRequest, global::Tinkoff.InvestApi.V1.OptionsResponse> __Method_Options = new grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentsRequest, global::Tinkoff.InvestApi.V1.OptionsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Options",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_InstrumentsRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_OptionsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentRequest, global::Tinkoff.InvestApi.V1.ShareResponse> __Method_ShareBy = new grpc::Method<global::Tinkoff.InvestApi.V1.InstrumentRequest, global::Tinkoff.InvestApi.V1.ShareResponse>(
@@ -499,7 +519,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_Bonds, null, options, request);
       }
       /// <summary>
-      ///Метод получения графика выплат купонов по облигации
+      ///Метод получения графика выплат купонов по облигации.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -512,7 +532,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetBondCoupons(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения графика выплат купонов по облигации
+      ///Метод получения графика выплат купонов по облигации.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -523,7 +543,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetBondCoupons, null, options, request);
       }
       /// <summary>
-      ///Метод получения графика выплат купонов по облигации
+      ///Метод получения графика выплат купонов по облигации.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -536,7 +556,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetBondCouponsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения графика выплат купонов по облигации
+      ///Метод получения графика выплат купонов по облигации.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -833,6 +853,102 @@ namespace Tinkoff.InvestApi.V1 {
       public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.FuturesResponse> FuturesAsync(global::Tinkoff.InvestApi.V1.InstrumentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Futures, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения опциона по его идентификатору.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.OptionResponse OptionBy(global::Tinkoff.InvestApi.V1.InstrumentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return OptionBy(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения опциона по его идентификатору.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.OptionResponse OptionBy(global::Tinkoff.InvestApi.V1.InstrumentRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_OptionBy, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения опциона по его идентификатору.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.OptionResponse> OptionByAsync(global::Tinkoff.InvestApi.V1.InstrumentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return OptionByAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения опциона по его идентификатору.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.OptionResponse> OptionByAsync(global::Tinkoff.InvestApi.V1.InstrumentRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_OptionBy, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения списка опционов.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.OptionsResponse Options(global::Tinkoff.InvestApi.V1.InstrumentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Options(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения списка опционов.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.OptionsResponse Options(global::Tinkoff.InvestApi.V1.InstrumentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Options, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения списка опционов.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.OptionsResponse> OptionsAsync(global::Tinkoff.InvestApi.V1.InstrumentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return OptionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения списка опционов.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.OptionsResponse> OptionsAsync(global::Tinkoff.InvestApi.V1.InstrumentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Options, null, options, request);
       }
       /// <summary>
       ///Метод получения акции по её идентификатору.
@@ -1219,7 +1335,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetAssets, null, options, request);
       }
       /// <summary>
-      ///Метод получения избранных инструментов.
+      ///Метод получения списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1232,7 +1348,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetFavorites(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения избранных инструментов.
+      ///Метод получения списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1243,7 +1359,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetFavorites, null, options, request);
       }
       /// <summary>
-      ///Метод получения избранных инструментов.
+      ///Метод получения списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1256,7 +1372,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetFavoritesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения избранных инструментов.
+      ///Метод получения списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1267,7 +1383,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetFavorites, null, options, request);
       }
       /// <summary>
-      ///Метод редактирования избранных инструментов.
+      ///Метод редактирования списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1280,7 +1396,7 @@ namespace Tinkoff.InvestApi.V1 {
         return EditFavorites(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод редактирования избранных инструментов.
+      ///Метод редактирования списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1291,7 +1407,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_EditFavorites, null, options, request);
       }
       /// <summary>
-      ///Метод редактирования избранных инструментов.
+      ///Метод редактирования списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1304,7 +1420,7 @@ namespace Tinkoff.InvestApi.V1 {
         return EditFavoritesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод редактирования избранных инструментов.
+      ///Метод редактирования списка избранных инструментов.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

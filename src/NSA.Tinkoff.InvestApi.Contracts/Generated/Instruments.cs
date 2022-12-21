@@ -83,472 +83,577 @@ namespace Tinkoff.InvestApi.V1 {
             "MS5FdGYiUwoORnV0dXJlUmVzcG9uc2USQQoKaW5zdHJ1bWVudBgBIAEoCzIt",
             "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRnV0dXJl",
             "IlUKD0Z1dHVyZXNSZXNwb25zZRJCCgtpbnN0cnVtZW50cxgBIAMoCzItLnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRnV0dXJlIlEK",
-            "DVNoYXJlUmVzcG9uc2USQAoKaW5zdHJ1bWVudBgBIAEoCzIsLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU2hhcmUiUwoOU2hhcmVz",
-            "UmVzcG9uc2USQQoLaW5zdHJ1bWVudHMYASADKAsyLC50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlNoYXJlIokMCgRCb25kEgwKBGZp",
-            "Z2kYASABKAkSDgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyABKAkS",
-            "DAoEaXNpbhgEIAEoCRILCgNsb3QYBSABKAUSEAoIY3VycmVuY3kYBiABKAkS",
-            "PwoFa2xvbmcYByABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLlF1b3RhdGlvbhJACgZrc2hvcnQYCCABKAsyMC50aW5rb2Zm",
-            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhI/CgVk",
-            "bG9uZxgJIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuUXVvdGF0aW9uEkAKBmRzaG9ydBgKIAEoCzIwLnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkMKCWRsb25n",
-            "X21pbhgLIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuUXVvdGF0aW9uEkQKCmRzaG9ydF9taW4YDCABKAsyMC50aW5rb2Zm",
-            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIaChJz",
-            "aG9ydF9lbmFibGVkX2ZsYWcYDSABKAgSDAoEbmFtZRgPIAEoCRIQCghleGNo",
-            "YW5nZRgQIAEoCRIgChhjb3Vwb25fcXVhbnRpdHlfcGVyX3llYXIYESABKAUS",
-            "MQoNbWF0dXJpdHlfZGF0ZRgSIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASQgoHbm9taW5hbBgTIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRIyCg5zdGF0ZV9yZWdfZGF0",
-            "ZRgVIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMgoOcGxhY2Vt",
-            "ZW50X2RhdGUYFiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEkoK",
-            "D3BsYWNlbWVudF9wcmljZRgXIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJECglhY2lfdmFsdWUYGCAB",
-            "KAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk1v",
-            "bmV5VmFsdWUSFwoPY291bnRyeV9vZl9yaXNrGBkgASgJEhwKFGNvdW50cnlf",
-            "b2Zfcmlza19uYW1lGBogASgJEg4KBnNlY3RvchgbIAEoCRISCgppc3N1ZV9r",
-            "aW5kGBwgASgJEhIKCmlzc3VlX3NpemUYHSABKAMSFwoPaXNzdWVfc2l6ZV9w",
-            "bGFuGB4gASgDElQKDnRyYWRpbmdfc3RhdHVzGB8gASgOMjwudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdT",
-            "dGF0dXMSEAoIb3RjX2ZsYWcYICABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFn",
-            "GCEgASgIEhsKE3NlbGxfYXZhaWxhYmxlX2ZsYWcYIiABKAgSHAoUZmxvYXRp",
-            "bmdfY291cG9uX2ZsYWcYIyABKAgSFgoOcGVycGV0dWFsX2ZsYWcYJCABKAgS",
-            "GQoRYW1vcnRpemF0aW9uX2ZsYWcYJSABKAgSTQoTbWluX3ByaWNlX2luY3Jl",
-            "bWVudBgmIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgn",
-            "IAEoCBILCgN1aWQYKCABKAkSSgoNcmVhbF9leGNoYW5nZRgpIAEoDjIzLnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hh",
-            "bmdlIrcICghDdXJyZW5jeRIMCgRmaWdpGAEgASgJEg4KBnRpY2tlchgCIAEo",
-            "CRISCgpjbGFzc19jb2RlGAMgASgJEgwKBGlzaW4YBCABKAkSCwoDbG90GAUg",
-            "ASgFEhAKCGN1cnJlbmN5GAYgASgJEj8KBWtsb25nGAcgASgLMjAudGlua29m",
-            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQAoG",
-            "a3Nob3J0GAggASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5RdW90YXRpb24SPwoFZGxvbmcYCSABKAsyMC50aW5rb2ZmLnB1",
-            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJACgZkc2hv",
-            "cnQYCiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLlF1b3RhdGlvbhJDCglkbG9uZ19taW4YCyABKAsyMC50aW5rb2ZmLnB1",
-            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJECgpkc2hv",
-            "cnRfbWluGAwgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5RdW90YXRpb24SGgoSc2hvcnRfZW5hYmxlZF9mbGFnGA0gASgI",
-            "EgwKBG5hbWUYDyABKAkSEAoIZXhjaGFuZ2UYECABKAkSQgoHbm9taW5hbBgR",
-            "IAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "TW9uZXlWYWx1ZRIXCg9jb3VudHJ5X29mX3Jpc2sYEiABKAkSHAoUY291bnRy",
-            "eV9vZl9yaXNrX25hbWUYEyABKAkSVAoOdHJhZGluZ19zdGF0dXMYFCABKA4y",
-            "PC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlNlY3Vy",
-            "aXR5VHJhZGluZ1N0YXR1cxIQCghvdGNfZmxhZxgVIAEoCBIaChJidXlfYXZh",
-            "aWxhYmxlX2ZsYWcYFiABKAgSGwoTc2VsbF9hdmFpbGFibGVfZmxhZxgXIAEo",
-            "CBIZChFpc29fY3VycmVuY3lfbmFtZRgYIAEoCRJNChNtaW5fcHJpY2VfaW5j",
-            "cmVtZW50GBkgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5RdW90YXRpb24SIAoYYXBpX3RyYWRlX2F2YWlsYWJsZV9mbGFn",
-            "GBogASgIEgsKA3VpZBgbIAEoCRJKCg1yZWFsX2V4Y2hhbmdlGBwgASgOMjMu",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5SZWFsRXhj",
-            "aGFuZ2Ui1gkKA0V0ZhIMCgRmaWdpGAEgASgJEg4KBnRpY2tlchgCIAEoCRIS",
-            "CgpjbGFzc19jb2RlGAMgASgJEgwKBGlzaW4YBCABKAkSCwoDbG90GAUgASgF",
-            "EhAKCGN1cnJlbmN5GAYgASgJEj8KBWtsb25nGAcgASgLMjAudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQAoGa3No",
-            "b3J0GAggASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5RdW90YXRpb24SPwoFZGxvbmcYCSABKAsyMC50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJACgZkc2hvcnQY",
-            "CiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
-            "LlF1b3RhdGlvbhJDCglkbG9uZ19taW4YCyABKAsyMC50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJECgpkc2hvcnRf",
-            "bWluGAwgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5RdW90YXRpb24SGgoSc2hvcnRfZW5hYmxlZF9mbGFnGA0gASgIEgwK",
-            "BG5hbWUYDyABKAkSEAoIZXhjaGFuZ2UYECABKAkSSgoQZml4ZWRfY29tbWlz",
-            "c2lvbhgRIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuUXVvdGF0aW9uEhIKCmZvY3VzX3R5cGUYEiABKAkSMQoNcmVsZWFz",
-            "ZWRfZGF0ZRgTIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRAoK",
-            "bnVtX3NoYXJlcxgUIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuUXVvdGF0aW9uEhcKD2NvdW50cnlfb2ZfcmlzaxgVIAEo",
-            "CRIcChRjb3VudHJ5X29mX3Jpc2tfbmFtZRgWIAEoCRIOCgZzZWN0b3IYFyAB",
-            "KAkSGAoQcmViYWxhbmNpbmdfZnJlcRgYIAEoCRJUCg50cmFkaW5nX3N0YXR1",
-            "cxgZIAEoDjI8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuU2VjdXJpdHlUcmFkaW5nU3RhdHVzEhAKCG90Y19mbGFnGBogASgIEhoK",
-            "EmJ1eV9hdmFpbGFibGVfZmxhZxgbIAEoCBIbChNzZWxsX2F2YWlsYWJsZV9m",
-            "bGFnGBwgASgIEk0KE21pbl9wcmljZV9pbmNyZW1lbnQYHSABKAsyMC50aW5r",
-            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIg",
-            "ChhhcGlfdHJhZGVfYXZhaWxhYmxlX2ZsYWcYHiABKAgSCwoDdWlkGB8gASgJ",
-            "EkoKDXJlYWxfZXhjaGFuZ2UYICABKA4yMy50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLlJlYWxFeGNoYW5nZSKDCgoGRnV0dXJlEgwK",
-            "BGZpZ2kYASABKAkSDgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyAB",
-            "KAkSCwoDbG90GAQgASgFEhAKCGN1cnJlbmN5GAUgASgJEj8KBWtsb25nGAYg",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRnV0dXJlIlMK",
+            "Dk9wdGlvblJlc3BvbnNlEkEKCmluc3RydW1lbnQYASABKAsyLS50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9wdGlvbiJVCg9PcHRp",
+            "b25zUmVzcG9uc2USQgoLaW5zdHJ1bWVudHMYASADKAsyLS50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9wdGlvbiKKDwoGT3B0aW9u",
+            "EgsKA3VpZBgBIAEoCRIUCgxwb3NpdGlvbl91aWQYAiABKAkSDgoGdGlja2Vy",
+            "GAMgASgJEhIKCmNsYXNzX2NvZGUYBCABKAkSIAoYYmFzaWNfYXNzZXRfcG9z",
+            "aXRpb25fdWlkGAUgASgJElQKDnRyYWRpbmdfc3RhdHVzGBUgASgOMjwudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRy",
+            "YWRpbmdTdGF0dXMSSgoNcmVhbF9leGNoYW5nZRgfIAEoDjIzLnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hhbmdlEkkK",
+            "CWRpcmVjdGlvbhgpIAEoDjI2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuT3B0aW9uRGlyZWN0aW9uEk4KDHBheW1lbnRfdHlwZRgq",
+            "IAEoDjI4LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "T3B0aW9uUGF5bWVudFR5cGUSQQoFc3R5bGUYKyABKA4yMi50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9wdGlvblN0eWxlElQKD3Nl",
+            "dHRsZW1lbnRfdHlwZRgsIAEoDjI7LnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuT3B0aW9uU2V0dGxlbWVudFR5cGUSDAoEbmFtZRhl",
+            "IAEoCRIQCghjdXJyZW5jeRhvIAEoCRIbChNzZXR0bGVtZW50X2N1cnJlbmN5",
+            "GHAgASgJEhMKCmFzc2V0X3R5cGUYgwEgASgJEhQKC2Jhc2ljX2Fzc2V0GIQB",
+            "IAEoCRIRCghleGNoYW5nZRiNASABKAkSGAoPY291bnRyeV9vZl9yaXNrGJcB",
+            "IAEoCRIdChRjb3VudHJ5X29mX3Jpc2tfbmFtZRiYASABKAkSDwoGc2VjdG9y",
+            "GKEBIAEoCRIMCgNsb3QYyQEgASgFEksKEGJhc2ljX2Fzc2V0X3NpemUY0wEg",
             "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5R",
-            "dW90YXRpb24SQAoGa3Nob3J0GAcgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SPwoFZGxvbmcYCCABKAsy",
+            "dW90YXRpb24SQAoFa2xvbmcY3QEgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQQoGa3Nob3J0GN4BIAEo",
+            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
+            "dGF0aW9uEkAKBWRsb25nGN8BIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkEKBmRzaG9ydBjgASABKAsy",
             "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
-            "dGlvbhJACgZkc2hvcnQYCSABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3Qu",
-            "YXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJDCglkbG9uZ19taW4YCiABKAsy",
-            "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
-            "dGlvbhJECgpkc2hvcnRfbWluGAsgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SGgoSc2hvcnRfZW5hYmxl",
-            "ZF9mbGFnGAwgASgIEgwKBG5hbWUYDSABKAkSEAoIZXhjaGFuZ2UYDiABKAkS",
-            "NAoQZmlyc3RfdHJhZGVfZGF0ZRgPIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXASMwoPbGFzdF90cmFkZV9kYXRlGBAgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIUCgxmdXR1cmVzX3R5cGUYESABKAkSEgoKYXNz",
-            "ZXRfdHlwZRgSIAEoCRITCgtiYXNpY19hc3NldBgTIAEoCRJKChBiYXNpY19h",
-            "c3NldF9zaXplGBQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5RdW90YXRpb24SFwoPY291bnRyeV9vZl9yaXNrGBUgASgJ",
-            "EhwKFGNvdW50cnlfb2Zfcmlza19uYW1lGBYgASgJEg4KBnNlY3RvchgXIAEo",
-            "CRIzCg9leHBpcmF0aW9uX2RhdGUYGCABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wElQKDnRyYWRpbmdfc3RhdHVzGBkgASgOMjwudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdT",
-            "dGF0dXMSEAoIb3RjX2ZsYWcYGiABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFn",
-            "GBsgASgIEhsKE3NlbGxfYXZhaWxhYmxlX2ZsYWcYHCABKAgSTQoTbWluX3By",
-            "aWNlX2luY3JlbWVudBgdIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFi",
-            "bGVfZmxhZxgeIAEoCBILCgN1aWQYHyABKAkSSgoNcmVhbF9leGNoYW5nZRgg",
-            "IAEoDjIzLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "UmVhbEV4Y2hhbmdlIuIJCgVTaGFyZRIMCgRmaWdpGAEgASgJEg4KBnRpY2tl",
-            "chgCIAEoCRISCgpjbGFzc19jb2RlGAMgASgJEgwKBGlzaW4YBCABKAkSCwoD",
-            "bG90GAUgASgFEhAKCGN1cnJlbmN5GAYgASgJEj8KBWtsb25nGAcgASgLMjAu",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRp",
-            "b24SQAoGa3Nob3J0GAggASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5RdW90YXRpb24SPwoFZGxvbmcYCSABKAsyMC50aW5r",
-            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJA",
-            "CgZkc2hvcnQYCiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLlF1b3RhdGlvbhJDCglkbG9uZ19taW4YCyABKAsyMC50aW5r",
-            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJE",
-            "Cgpkc2hvcnRfbWluGAwgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5RdW90YXRpb24SGgoSc2hvcnRfZW5hYmxlZF9mbGFn",
-            "GA0gASgIEgwKBG5hbWUYDyABKAkSEAoIZXhjaGFuZ2UYECABKAkSLAoIaXBv",
-            "X2RhdGUYESABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhIKCmlz",
-            "c3VlX3NpemUYEiABKAMSFwoPY291bnRyeV9vZl9yaXNrGBMgASgJEhwKFGNv",
-            "dW50cnlfb2Zfcmlza19uYW1lGBQgASgJEg4KBnNlY3RvchgVIAEoCRIXCg9p",
-            "c3N1ZV9zaXplX3BsYW4YFiABKAMSQgoHbm9taW5hbBgXIAEoCzIxLnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJU",
-            "Cg50cmFkaW5nX3N0YXR1cxgZIAEoDjI8LnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuU2VjdXJpdHlUcmFkaW5nU3RhdHVzEhAKCG90",
-            "Y19mbGFnGBogASgIEhoKEmJ1eV9hdmFpbGFibGVfZmxhZxgbIAEoCBIbChNz",
-            "ZWxsX2F2YWlsYWJsZV9mbGFnGBwgASgIEhYKDmRpdl95aWVsZF9mbGFnGB0g",
-            "ASgIEkQKCnNoYXJlX3R5cGUYHiABKA4yMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLlNoYXJlVHlwZRJNChNtaW5fcHJpY2VfaW5j",
-            "cmVtZW50GB8gASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5RdW90YXRpb24SIAoYYXBpX3RyYWRlX2F2YWlsYWJsZV9mbGFn",
-            "GCAgASgIEgsKA3VpZBghIAEoCRJKCg1yZWFsX2V4Y2hhbmdlGCIgASgOMjMu",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5SZWFsRXhj",
-            "aGFuZ2UifAoaR2V0QWNjcnVlZEludGVyZXN0c1JlcXVlc3QSDAoEZmlnaRgB",
-            "IAEoCRIoCgRmcm9tGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBImCgJ0bxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAicAob",
-            "R2V0QWNjcnVlZEludGVyZXN0c1Jlc3BvbnNlElEKEWFjY3J1ZWRfaW50ZXJl",
-            "c3RzGAEgAygLMjYudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5BY2NydWVkSW50ZXJlc3QiiAIKD0FjY3J1ZWRJbnRlcmVzdBIoCgRk",
-            "YXRlGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI/CgV2YWx1",
-            "ZRgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuUXVvdGF0aW9uEkcKDXZhbHVlX3BlcmNlbnQYAyABKAsyMC50aW5rb2Zm",
-            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJBCgdu",
-            "b21pbmFsGAQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5RdW90YXRpb24iJwoXR2V0RnV0dXJlc01hcmdpblJlcXVlc3QS",
-            "DAoEZmlnaRgBIAEoCSLkAgoYR2V0RnV0dXJlc01hcmdpblJlc3BvbnNlElAK",
-            "FWluaXRpYWxfbWFyZ2luX29uX2J1eRgBIAEoCzIxLnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJRChZpbml0aWFs",
-            "X21hcmdpbl9vbl9zZWxsGAIgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0",
-            "LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlEk0KE21pbl9wcmljZV9pbmNy",
-            "ZW1lbnQYAyABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlF1b3RhdGlvbhJUChptaW5fcHJpY2VfaW5jcmVtZW50X2Ftb3Vu",
-            "dBgEIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuUXVvdGF0aW9uIlsKEkluc3RydW1lbnRSZXNwb25zZRJFCgppbnN0cnVt",
-            "ZW50GAEgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5JbnN0cnVtZW50IvMHCgpJbnN0cnVtZW50EgwKBGZpZ2kYASABKAkS",
-            "DgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyABKAkSDAoEaXNpbhgE",
-            "IAEoCRILCgNsb3QYBSABKAUSEAoIY3VycmVuY3kYBiABKAkSPwoFa2xvbmcY",
-            "ByABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
-            "LlF1b3RhdGlvbhJACgZrc2hvcnQYCCABKAsyMC50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhI/CgVkbG9uZxgJIAEo",
-            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
-            "dGF0aW9uEkAKBmRzaG9ydBgKIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkMKCWRsb25nX21pbhgLIAEo",
-            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
-            "dGF0aW9uEkQKCmRzaG9ydF9taW4YDCABKAsyMC50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIaChJzaG9ydF9lbmFi",
-            "bGVkX2ZsYWcYDSABKAgSDAoEbmFtZRgOIAEoCRIQCghleGNoYW5nZRgPIAEo",
-            "CRIXCg9jb3VudHJ5X29mX3Jpc2sYECABKAkSHAoUY291bnRyeV9vZl9yaXNr",
-            "X25hbWUYESABKAkSFwoPaW5zdHJ1bWVudF90eXBlGBIgASgJElQKDnRyYWRp",
-            "bmdfc3RhdHVzGBMgASgOMjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdTdGF0dXMSEAoIb3RjX2ZsYWcY",
-            "FCABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFnGBUgASgIEhsKE3NlbGxfYXZh",
-            "aWxhYmxlX2ZsYWcYFiABKAgSTQoTbWluX3ByaWNlX2luY3JlbWVudBgXIAEo",
-            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
-            "dGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgYIAEoCBILCgN1",
-            "aWQYGSABKAkSSgoNcmVhbF9leGNoYW5nZRgaIAEoDjIzLnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hhbmdlInUKE0dl",
-            "dERpdmlkZW5kc1JlcXVlc3QSDAoEZmlnaRgBIAEoCRIoCgRmcm9tGAIgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBImCgJ0bxgDIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiWgoUR2V0RGl2aWRlbmRzUmVzcG9u",
-            "c2USQgoJZGl2aWRlbmRzGAEgAygLMi8udGlua29mZi5wdWJsaWMuaW52ZXN0",
-            "LmFwaS5jb250cmFjdC52MS5EaXZpZGVuZCKGBAoIRGl2aWRlbmQSRwoMZGl2",
-            "aWRlbmRfbmV0GAEgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5Nb25leVZhbHVlEjAKDHBheW1lbnRfZGF0ZRgCIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMQoNZGVjbGFyZWRfZGF0ZRgD",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMQoNbGFzdF9idXlf",
-            "ZGF0ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFQoNZGl2",
-            "aWRlbmRfdHlwZRgFIAEoCRIvCgtyZWNvcmRfZGF0ZRgGIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASEgoKcmVndWxhcml0eRgHIAEoCRJGCgtj",
-            "bG9zZV9wcmljZRgIIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuTW9uZXlWYWx1ZRJFCgt5aWVsZF92YWx1ZRgJIAEoCzIw",
-            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0",
-            "aW9uEi4KCmNyZWF0ZWRfYXQYCiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
-            "ZXN0YW1wIhoKDEFzc2V0UmVxdWVzdBIKCgJpZBgBIAEoCSJQCg1Bc3NldFJl",
-            "c3BvbnNlEj8KBWFzc2V0GAEgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0",
-            "LmFwaS5jb250cmFjdC52MS5Bc3NldEZ1bGwiDwoNQXNzZXRzUmVxdWVzdCJO",
-            "Cg5Bc3NldHNSZXNwb25zZRI8CgZhc3NldHMYASADKAsyLC50aW5rb2ZmLnB1",
-            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0IpgFCglBc3NldEZ1",
-            "bGwSCwoDdWlkGAEgASgJEj4KBHR5cGUYAiABKA4yMC50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0VHlwZRIMCgRuYW1lGAMg",
-            "ASgJEhIKCm5hbWVfYnJpZWYYBCABKAkSEwoLZGVzY3JpcHRpb24YBSABKAkS",
-            "LgoKZGVsZXRlZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASFgoOcmVxdWlyZWRfdGVzdHMYByADKAkSSAoIY3VycmVuY3kYCCABKAsy",
-            "NC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0",
-            "Q3VycmVuY3lIABJICghzZWN1cml0eRgJIAEoCzI0LnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuQXNzZXRTZWN1cml0eUgAEhQKDGdv",
-            "c19yZWdfY29kZRgKIAEoCRILCgNjZmkYCyABKAkSEAoIY29kZV9uc2QYDCAB",
-            "KAkSDgoGc3RhdHVzGA0gASgJEjsKBWJyYW5kGA4gASgLMiwudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5CcmFuZBIuCgp1cGRhdGVk",
-            "X2F0GA8gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIPCgdicl9j",
-            "b2RlGBAgASgJEhQKDGJyX2NvZGVfbmFtZRgRIAEoCRJLCgtpbnN0cnVtZW50",
-            "cxgSIAMoCzI2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuQXNzZXRJbnN0cnVtZW50QgUKA2V4dCKvAQoFQXNzZXQSCwoDdWlkGAEg",
-            "ASgJEj4KBHR5cGUYAiABKA4yMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLkFzc2V0VHlwZRIMCgRuYW1lGAMgASgJEksKC2luc3Ry",
-            "dW1lbnRzGAQgAygLMjYudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5Bc3NldEluc3RydW1lbnQiJgoNQXNzZXRDdXJyZW5jeRIVCg1i",
-            "YXNlX2N1cnJlbmN5GAEgASgJIqYDCg1Bc3NldFNlY3VyaXR5EgwKBGlzaW4Y",
-            "ASABKAkSDAoEdHlwZRgCIAEoCRJCCgVzaGFyZRgDIAEoCzIxLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQXNzZXRTaGFyZUgAEkAK",
-            "BGJvbmQYBCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkFzc2V0Qm9uZEgAEksKAnNwGAUgASgLMj0udGlua29mZi5wdWJs",
-            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Bc3NldFN0cnVjdHVyZWRQcm9k",
-            "dWN0SAASPgoDZXRmGAYgASgLMi8udGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5Bc3NldEV0ZkgAEl8KFGNsZWFyaW5nX2NlcnRpZmlj",
-            "YXRlGAcgASgLMj8udGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5Bc3NldENsZWFyaW5nQ2VydGlmaWNhdGVIAEIFCgNleHQi1QUKCkFz",
-            "c2V0U2hhcmUSPgoEdHlwZRgBIAEoDjIwLnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuU2hhcmVUeXBlEkQKCmlzc3VlX3NpemUYAiAB",
-            "KAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1",
-            "b3RhdGlvbhJBCgdub21pbmFsGAMgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SGAoQbm9taW5hbF9jdXJy",
-            "ZW5jeRgEIAEoCRIVCg1wcmltYXJ5X2luZGV4GAUgASgJEkcKDWRpdmlkZW5k",
-            "X3JhdGUYBiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlF1b3RhdGlvbhIcChRwcmVmZXJyZWRfc2hhcmVfdHlwZRgHIAEo",
-            "CRIsCghpcG9fZGF0ZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASMQoNcmVnaXN0cnlfZGF0ZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXASFgoOZGl2X3lpZWxkX2ZsYWcYCiABKAgSEgoKaXNzdWVfa2lu",
-            "ZBgLIAEoCRIyCg5wbGFjZW1lbnRfZGF0ZRgMIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASEwoLcmVwcmVzX2lzaW4YDSABKAkSSQoPaXNzdWVf",
-            "c2l6ZV9wbGFuGA4gASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5RdW90YXRpb24SRQoLdG90YWxfZmxvYXQYDyABKAsyMC50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
-            "biLgBgoJQXNzZXRCb25kEkkKD2N1cnJlbnRfbm9taW5hbBgBIAEoCzIwLnRp",
+            "dGlvbhJECglkbG9uZ19taW4Y4QEgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SRQoKZHNob3J0X21pbhji",
+            "ASABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "LlF1b3RhdGlvbhJOChNtaW5fcHJpY2VfaW5jcmVtZW50GOcBIAEoCzIwLnRp",
             "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9u",
-            "EhMKC2JvcnJvd19uYW1lGAIgASgJEkQKCmlzc3VlX3NpemUYAyABKAsyMC50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
-            "bhJBCgdub21pbmFsGAQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5RdW90YXRpb24SGAoQbm9taW5hbF9jdXJyZW5jeRgF",
-            "IAEoCRISCgppc3N1ZV9raW5kGAYgASgJEhUKDWludGVyZXN0X2tpbmQYByAB",
-            "KAkSIAoYY291cG9uX3F1YW50aXR5X3Blcl95ZWFyGAggASgFEhwKFGluZGV4",
-            "ZWRfbm9taW5hbF9mbGFnGAkgASgIEhkKEXN1Ym9yZGluYXRlZF9mbGFnGAog",
-            "ASgIEhcKD2NvbGxhdGVyYWxfZmxhZxgLIAEoCBIVCg10YXhfZnJlZV9mbGFn",
-            "GAwgASgIEhkKEWFtb3J0aXphdGlvbl9mbGFnGA0gASgIEhwKFGZsb2F0aW5n",
-            "X2NvdXBvbl9mbGFnGA4gASgIEhYKDnBlcnBldHVhbF9mbGFnGA8gASgIEjEK",
-            "DW1hdHVyaXR5X2RhdGUYECABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEhgKEHJldHVybl9jb25kaXRpb24YESABKAkSMgoOc3RhdGVfcmVnX2Rh",
-            "dGUYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjIKDnBsYWNl",
-            "bWVudF9kYXRlGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBJJ",
-            "Cg9wbGFjZW1lbnRfcHJpY2UYFCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJJCg9pc3N1ZV9zaXplX3Bs",
-            "YW4YFSABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLlF1b3RhdGlvbiKgBQoWQXNzZXRTdHJ1Y3R1cmVkUHJvZHVjdBITCgti",
-            "b3Jyb3dfbmFtZRgBIAEoCRJBCgdub21pbmFsGAIgASgLMjAudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SGAoQbm9t",
-            "aW5hbF9jdXJyZW5jeRgDIAEoCRJKCgR0eXBlGAQgASgOMjwudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdHJ1Y3R1cmVkUHJvZHVj",
-            "dFR5cGUSFwoPbG9naWNfcG9ydGZvbGlvGAUgASgJEkQKCmFzc2V0X3R5cGUY",
-            "BiABKA4yMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
-            "LkFzc2V0VHlwZRITCgtiYXNpY19hc3NldBgHIAEoCRJICg5zYWZldHlfYmFy",
-            "cmllchgIIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuUXVvdGF0aW9uEjEKDW1hdHVyaXR5X2RhdGUYCSABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wEkkKD2lzc3VlX3NpemVfcGxhbhgKIAEo",
-            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
-            "dGF0aW9uEkQKCmlzc3VlX3NpemUYCyABKAsyMC50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIyCg5wbGFjZW1lbnRf",
-            "ZGF0ZRgMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEgoKaXNz",
-            "dWVfa2luZBgNIAEoCSLYCgoIQXNzZXRFdGYSRwoNdG90YWxfZXhwZW5zZRgB",
+            "EkgKDHN0cmlrZV9wcmljZRjxASABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSNAoPZXhwaXJhdGlvbl9k",
+            "YXRlGK0CIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNQoQZmly",
+            "c3RfdHJhZGVfZGF0ZRi3AiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEjQKD2xhc3RfdHJhZGVfZGF0ZRi4AiABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wEjsKFmZpcnN0XzFtaW5fY2FuZGxlX2RhdGUYwQIgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI7ChZmaXJzdF8xZGF5X2Nh",
+            "bmRsZV9kYXRlGMICIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "GwoSc2hvcnRfZW5hYmxlZF9mbGFnGJEDIAEoCBIVCgxmb3JfaWlzX2ZsYWcY",
+            "kgMgASgIEhEKCG90Y19mbGFnGJMDIAEoCBIbChJidXlfYXZhaWxhYmxlX2Zs",
+            "YWcYlAMgASgIEhwKE3NlbGxfYXZhaWxhYmxlX2ZsYWcYlQMgASgIEh8KFmZv",
+            "cl9xdWFsX2ludmVzdG9yX2ZsYWcYlgMgASgIEhUKDHdlZWtlbmRfZmxhZxiX",
+            "AyABKAgSGQoQYmxvY2tlZF90Y2FfZmxhZxiYAyABKAgiUQoNU2hhcmVSZXNw",
+            "b25zZRJACgppbnN0cnVtZW50GAEgASgLMiwudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5TaGFyZSJTCg5TaGFyZXNSZXNwb25zZRJB",
+            "CgtpbnN0cnVtZW50cxgBIAMoCzIsLnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuU2hhcmUiyQ4KBEJvbmQSDAoEZmlnaRgBIAEoCRIO",
+            "CgZ0aWNrZXIYAiABKAkSEgoKY2xhc3NfY29kZRgDIAEoCRIMCgRpc2luGAQg",
+            "ASgJEgsKA2xvdBgFIAEoBRIQCghjdXJyZW5jeRgGIAEoCRI/CgVrbG9uZxgH",
             "IAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "UXVvdGF0aW9uEkUKC2h1cmRsZV9yYXRlGAIgASgLMjAudGlua29mZi5wdWJs",
-            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SSQoPcGVyZm9y",
-            "bWFuY2VfZmVlGAMgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5RdW90YXRpb24SSgoQZml4ZWRfY29tbWlzc2lvbhgEIAEo",
-            "CzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVv",
-            "dGF0aW9uEhQKDHBheW1lbnRfdHlwZRgFIAEoCRIWCg53YXRlcm1hcmtfZmxh",
-            "ZxgGIAEoCBJFCgtidXlfcHJlbWl1bRgHIAEoCzIwLnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkcKDXNlbGxfZGlz",
-            "Y291bnQYCCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlF1b3RhdGlvbhIYChByZWJhbGFuY2luZ19mbGFnGAkgASgIEhgK",
-            "EHJlYmFsYW5jaW5nX2ZyZXEYCiABKAkSFwoPbWFuYWdlbWVudF90eXBlGAsg",
-            "ASgJEhUKDXByaW1hcnlfaW5kZXgYDCABKAkSEgoKZm9jdXNfdHlwZRgNIAEo",
-            "CRIWCg5sZXZlcmFnZWRfZmxhZxgOIAEoCBJDCgludW1fc2hhcmUYDyABKAsy",
-            "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
-            "dGlvbhISCgp1Y2l0c19mbGFnGBAgASgIEjEKDXJlbGVhc2VkX2RhdGUYESAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhMKC2Rlc2NyaXB0aW9u",
-            "GBIgASgJEiEKGXByaW1hcnlfaW5kZXhfZGVzY3JpcHRpb24YEyABKAkSHQoV",
-            "cHJpbWFyeV9pbmRleF9jb21wYW55GBQgASgJEk8KFWluZGV4X3JlY292ZXJ5",
-            "X3BlcmlvZBgVIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
-            "dHJhY3QudjEuUXVvdGF0aW9uEhEKCWluYXZfY29kZRgWIAEoCRIWCg5kaXZf",
-            "eWllbGRfZmxhZxgXIAEoCBJMChJleHBlbnNlX2NvbW1pc3Npb24YGCABKAsy",
-            "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
-            "dGlvbhJWChxwcmltYXJ5X2luZGV4X3RyYWNraW5nX2Vycm9yGBkgASgLMjAu",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRp",
-            "b24SGAoQcmViYWxhbmNpbmdfcGxhbhgaIAEoCRIQCgh0YXhfcmF0ZRgbIAEo",
-            "CRI1ChFyZWJhbGFuY2luZ19kYXRlcxgcIAMoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASEgoKaXNzdWVfa2luZBgdIAEoCRJBCgdub21pbmFsGB4g",
+            "UXVvdGF0aW9uEkAKBmtzaG9ydBgIIAEoCzIwLnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEj8KBWRsb25nGAkgASgL",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90",
+            "YXRpb24SQAoGZHNob3J0GAogASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQwoJZGxvbmdfbWluGAsgASgL",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90",
+            "YXRpb24SRAoKZHNob3J0X21pbhgMIAEoCzIwLnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEhoKEnNob3J0X2VuYWJs",
+            "ZWRfZmxhZxgNIAEoCBIMCgRuYW1lGA8gASgJEhAKCGV4Y2hhbmdlGBAgASgJ",
+            "EiAKGGNvdXBvbl9xdWFudGl0eV9wZXJfeWVhchgRIAEoBRIxCg1tYXR1cml0",
+            "eV9kYXRlGBIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBJCCgdu",
+            "b21pbmFsGBMgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5Nb25leVZhbHVlEkoKD2luaXRpYWxfbm9taW5hbBgUIAEoCzIx",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlW",
+            "YWx1ZRIyCg5zdGF0ZV9yZWdfZGF0ZRgVIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASMgoOcGxhY2VtZW50X2RhdGUYFiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEkoKD3BsYWNlbWVudF9wcmljZRgXIAEoCzIx",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlW",
+            "YWx1ZRJECglhY2lfdmFsdWUYGCABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSFwoPY291bnRyeV9vZl9y",
+            "aXNrGBkgASgJEhwKFGNvdW50cnlfb2Zfcmlza19uYW1lGBogASgJEg4KBnNl",
+            "Y3RvchgbIAEoCRISCgppc3N1ZV9raW5kGBwgASgJEhIKCmlzc3VlX3NpemUY",
+            "HSABKAMSFwoPaXNzdWVfc2l6ZV9wbGFuGB4gASgDElQKDnRyYWRpbmdfc3Rh",
+            "dHVzGB8gASgOMjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5TZWN1cml0eVRyYWRpbmdTdGF0dXMSEAoIb3RjX2ZsYWcYICABKAgS",
+            "GgoSYnV5X2F2YWlsYWJsZV9mbGFnGCEgASgIEhsKE3NlbGxfYXZhaWxhYmxl",
+            "X2ZsYWcYIiABKAgSHAoUZmxvYXRpbmdfY291cG9uX2ZsYWcYIyABKAgSFgoO",
+            "cGVycGV0dWFsX2ZsYWcYJCABKAgSGQoRYW1vcnRpemF0aW9uX2ZsYWcYJSAB",
+            "KAgSTQoTbWluX3ByaWNlX2luY3JlbWVudBgmIAEoCzIwLnRpbmtvZmYucHVi",
+            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEiAKGGFwaV90",
+            "cmFkZV9hdmFpbGFibGVfZmxhZxgnIAEoCBILCgN1aWQYKCABKAkSSgoNcmVh",
+            "bF9leGNoYW5nZRgpIAEoDjIzLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuUmVhbEV4Y2hhbmdlEhQKDHBvc2l0aW9uX3VpZBgqIAEo",
+            "CRIUCgxmb3JfaWlzX2ZsYWcYMyABKAgSHgoWZm9yX3F1YWxfaW52ZXN0b3Jf",
+            "ZmxhZxg0IAEoCBIUCgx3ZWVrZW5kX2ZsYWcYNSABKAgSGAoQYmxvY2tlZF90",
+            "Y2FfZmxhZxg2IAEoCBI6ChZmaXJzdF8xbWluX2NhbmRsZV9kYXRlGD0gASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI6ChZmaXJzdF8xZGF5X2Nh",
+            "bmRsZV9kYXRlGD4gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCKr",
+            "CgoIQ3VycmVuY3kSDAoEZmlnaRgBIAEoCRIOCgZ0aWNrZXIYAiABKAkSEgoK",
+            "Y2xhc3NfY29kZRgDIAEoCRIMCgRpc2luGAQgASgJEgsKA2xvdBgFIAEoBRIQ",
+            "CghjdXJyZW5jeRgGIAEoCRI/CgVrbG9uZxgHIAEoCzIwLnRpbmtvZmYucHVi",
+            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkAKBmtzaG9y",
+            "dBgIIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEj8KBWRsb25nGAkgASgLMjAudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQAoGZHNob3J0GAog",
             "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5R",
-            "dW90YXRpb24SGAoQbm9taW5hbF9jdXJyZW5jeRgfIAEoCSJ3ChhBc3NldENs",
-            "ZWFyaW5nQ2VydGlmaWNhdGUSQQoHbm9taW5hbBgBIAEoCzIwLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEhgKEG5v",
-            "bWluYWxfY3VycmVuY3kYAiABKAkinQEKBUJyYW5kEgsKA3VpZBgBIAEoCRIM",
-            "CgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEgwKBGluZm8YBCAB",
-            "KAkSDwoHY29tcGFueRgFIAEoCRIOCgZzZWN0b3IYBiABKAkSFwoPY291bnRy",
-            "eV9vZl9yaXNrGAcgASgJEhwKFGNvdW50cnlfb2Zfcmlza19uYW1lGAggASgJ",
-            "Iq8BCg9Bc3NldEluc3RydW1lbnQSCwoDdWlkGAEgASgJEgwKBGZpZ2kYAiAB",
-            "KAkSFwoPaW5zdHJ1bWVudF90eXBlGAMgASgJEg4KBnRpY2tlchgEIAEoCRIS",
-            "CgpjbGFzc19jb2RlGAUgASgJEkQKBWxpbmtzGAYgAygLMjUudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50TGluayI2",
-            "Cg5JbnN0cnVtZW50TGluaxIMCgR0eXBlGAEgASgJEhYKDmluc3RydW1lbnRf",
-            "dWlkGAIgASgJIhUKE0dldEZhdm9yaXRlc1JlcXVlc3QibwoUR2V0RmF2b3Jp",
-            "dGVzUmVzcG9uc2USVwoUZmF2b3JpdGVfaW5zdHJ1bWVudHMYASADKAsyOS50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkZhdm9yaXRl",
-            "SW5zdHJ1bWVudCKhAQoSRmF2b3JpdGVJbnN0cnVtZW50EgwKBGZpZ2kYASAB",
-            "KAkSDgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyABKAkSDAoEaXNp",
-            "bhgEIAEoCRIXCg9pbnN0cnVtZW50X3R5cGUYCyABKAkSEAoIb3RjX2ZsYWcY",
-            "ECABKAgSIAoYYXBpX3RyYWRlX2F2YWlsYWJsZV9mbGFnGBEgASgIIscBChRF",
-            "ZGl0RmF2b3JpdGVzUmVxdWVzdBJaCgtpbnN0cnVtZW50cxgBIAMoCzJFLnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRWRpdEZhdm9y",
-            "aXRlc1JlcXVlc3RJbnN0cnVtZW50ElMKC2FjdGlvbl90eXBlGAYgASgOMj4u",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5FZGl0RmF2",
-            "b3JpdGVzQWN0aW9uVHlwZSIuCh5FZGl0RmF2b3JpdGVzUmVxdWVzdEluc3Ry",
-            "dW1lbnQSDAoEZmlnaRgBIAEoCSJwChVFZGl0RmF2b3JpdGVzUmVzcG9uc2US",
-            "VwoUZmF2b3JpdGVfaW5zdHJ1bWVudHMYASADKAsyOS50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkZhdm9yaXRlSW5zdHJ1bWVudCIV",
-            "ChNHZXRDb3VudHJpZXNSZXF1ZXN0ImEKFEdldENvdW50cmllc1Jlc3BvbnNl",
-            "EkkKCWNvdW50cmllcxgBIAMoCzI2LnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuQ291bnRyeVJlc3BvbnNlIlkKD0NvdW50cnlSZXNw",
-            "b25zZRIQCghhbGZhX3R3bxgBIAEoCRISCgphbGZhX3RocmVlGAIgASgJEgwK",
-            "BG5hbWUYAyABKAkSEgoKbmFtZV9icmllZhgEIAEoCSImChVGaW5kSW5zdHJ1",
-            "bWVudFJlcXVlc3QSDQoFcXVlcnkYASABKAkiZQoWRmluZEluc3RydW1lbnRS",
-            "ZXNwb25zZRJLCgtpbnN0cnVtZW50cxgBIAMoCzI2LnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuSW5zdHJ1bWVudFNob3J0IoUBCg9J",
-            "bnN0cnVtZW50U2hvcnQSDAoEaXNpbhgBIAEoCRIMCgRmaWdpGAIgASgJEg4K",
-            "BnRpY2tlchgDIAEoCRISCgpjbGFzc19jb2RlGAQgASgJEhcKD2luc3RydW1l",
-            "bnRfdHlwZRgFIAEoCRIMCgRuYW1lGAYgASgJEgsKA3VpZBgHIAEoCSISChBH",
-            "ZXRCcmFuZHNSZXF1ZXN0Ih0KD0dldEJyYW5kUmVxdWVzdBIKCgJpZBgBIAEo",
-            "CSJRChFHZXRCcmFuZHNSZXNwb25zZRI8CgZicmFuZHMYASADKAsyLC50aW5r",
-            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkJyYW5kKtcBCgpD",
-            "b3Vwb25UeXBlEhsKF0NPVVBPTl9UWVBFX1VOU1BFQ0lGSUVEEAASGAoUQ09V",
-            "UE9OX1RZUEVfQ09OU1RBTlQQARIYChRDT1VQT05fVFlQRV9GTE9BVElORxAC",
-            "EhgKFENPVVBPTl9UWVBFX0RJU0NPVU5UEAMSGAoUQ09VUE9OX1RZUEVfTU9S",
-            "VEdBR0UQBBITCg9DT1VQT05fVFlQRV9GSVgQBRIYChRDT1VQT05fVFlQRV9W",
-            "QVJJQUJMRRAGEhUKEUNPVVBPTl9UWVBFX09USEVSEAcqiQEKEEluc3RydW1l",
-            "bnRJZFR5cGUSHQoZSU5TVFJVTUVOVF9JRF9VTlNQRUNJRklFRBAAEhsKF0lO",
-            "U1RSVU1FTlRfSURfVFlQRV9GSUdJEAESHQoZSU5TVFJVTUVOVF9JRF9UWVBF",
-            "X1RJQ0tFUhACEhoKFklOU1RSVU1FTlRfSURfVFlQRV9VSUQQAypsChBJbnN0",
-            "cnVtZW50U3RhdHVzEiEKHUlOU1RSVU1FTlRfU1RBVFVTX1VOU1BFQ0lGSUVE",
-            "EAASGgoWSU5TVFJVTUVOVF9TVEFUVVNfQkFTRRABEhkKFUlOU1RSVU1FTlRf",
-            "U1RBVFVTX0FMTBACKuUBCglTaGFyZVR5cGUSGgoWU0hBUkVfVFlQRV9VTlNQ",
-            "RUNJRklFRBAAEhUKEVNIQVJFX1RZUEVfQ09NTU9OEAESGAoUU0hBUkVfVFlQ",
-            "RV9QUkVGRVJSRUQQAhISCg5TSEFSRV9UWVBFX0FEUhADEhIKDlNIQVJFX1RZ",
-            "UEVfR0RSEAQSEgoOU0hBUkVfVFlQRV9NTFAQBRIaChZTSEFSRV9UWVBFX05Z",
-            "X1JFR19TSFJTEAYSHgoaU0hBUkVfVFlQRV9DTE9TRURfRU5EX0ZVTkQQBxIT",
-            "Cg9TSEFSRV9UWVBFX1JFSVQQCCqJAQoJQXNzZXRUeXBlEhoKFkFTU0VUX1RZ",
-            "UEVfVU5TUEVDSUZJRUQQABIXChNBU1NFVF9UWVBFX0NVUlJFTkNZEAESGAoU",
-            "QVNTRVRfVFlQRV9DT01NT0RJVFkQAhIUChBBU1NFVF9UWVBFX0lOREVYEAMS",
-            "FwoTQVNTRVRfVFlQRV9TRUNVUklUWRAEKmYKFVN0cnVjdHVyZWRQcm9kdWN0",
-            "VHlwZRIXChNTUF9UWVBFX1VOU1BFQ0lGSUVEEAASFwoTU1BfVFlQRV9ERUxJ",
-            "VkVSQUJMRRABEhsKF1NQX1RZUEVfTk9OX0RFTElWRVJBQkxFEAIqjQEKF0Vk",
-            "aXRGYXZvcml0ZXNBY3Rpb25UeXBlEioKJkVESVRfRkFWT1JJVEVTX0FDVElP",
-            "Tl9UWVBFX1VOU1BFQ0lGSUVEEAASIgoeRURJVF9GQVZPUklURVNfQUNUSU9O",
-            "X1RZUEVfQUREEAESIgoeRURJVF9GQVZPUklURVNfQUNUSU9OX1RZUEVfREVM",
-            "EAIqcwoMUmVhbEV4Y2hhbmdlEh0KGVJFQUxfRVhDSEFOR0VfVU5TUEVDSUZJ",
-            "RUQQABIWChJSRUFMX0VYQ0hBTkdFX01PRVgQARIVChFSRUFMX0VYQ0hBTkdF",
-            "X1JUUxACEhUKEVJFQUxfRVhDSEFOR0VfT1RDEAMy9BgKEkluc3RydW1lbnRz",
-            "U2VydmljZRKTAQoQVHJhZGluZ1NjaGVkdWxlcxI+LnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuVHJhZGluZ1NjaGVkdWxlc1JlcXVl",
-            "c3QaPy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRy",
-            "YWRpbmdTY2hlZHVsZXNSZXNwb25zZRJ3CgZCb25kQnkSOC50aW5rb2ZmLnB1",
-            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRSZXF1ZXN0",
-            "GjMudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Cb25k",
-            "UmVzcG9uc2USeAoFQm9uZHMSOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLkluc3RydW1lbnRzUmVxdWVzdBo0LnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQm9uZHNSZXNwb25zZRKNAQoO",
-            "R2V0Qm9uZENvdXBvbnMSPC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLkdldEJvbmRDb3Vwb25zUmVxdWVzdBo9LnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0Qm9uZENvdXBvbnNSZXNw",
-            "b25zZRJ/CgpDdXJyZW5jeUJ5EjgudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5JbnN0cnVtZW50UmVxdWVzdBo3LnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQ3VycmVuY3lSZXNwb25zZRKC",
-            "AQoKQ3VycmVuY2llcxI5LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
-            "dHJhY3QudjEuSW5zdHJ1bWVudHNSZXF1ZXN0GjkudGlua29mZi5wdWJsaWMu",
-            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5DdXJyZW5jaWVzUmVzcG9uc2USdQoF",
-            "RXRmQnkSOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
-            "Lkluc3RydW1lbnRSZXF1ZXN0GjIudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5FdGZSZXNwb25zZRJ2CgRFdGZzEjkudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50c1JlcXVl",
-            "c3QaMy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkV0",
-            "ZnNSZXNwb25zZRJ7CghGdXR1cmVCeRI4LnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuSW5zdHJ1bWVudFJlcXVlc3QaNS50aW5rb2Zm",
-            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkZ1dHVyZVJlc3BvbnNl",
-            "EnwKB0Z1dHVyZXMSOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkluc3RydW1lbnRzUmVxdWVzdBo2LnRpbmtvZmYucHVibGljLmlu",
-            "dmVzdC5hcGkuY29udHJhY3QudjEuRnV0dXJlc1Jlc3BvbnNlEnkKB1NoYXJl",
-            "QnkSOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLklu",
-            "c3RydW1lbnRSZXF1ZXN0GjQudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5TaGFyZVJlc3BvbnNlEnoKBlNoYXJlcxI5LnRpbmtvZmYu",
+            "dW90YXRpb24SQwoJZGxvbmdfbWluGAsgASgLMjAudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SRAoKZHNob3J0X21p",
+            "bhgMIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEhoKEnNob3J0X2VuYWJsZWRfZmxhZxgNIAEoCBIMCgRu",
+            "YW1lGA8gASgJEhAKCGV4Y2hhbmdlGBAgASgJEkIKB25vbWluYWwYESABKAsy",
+            "MS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5",
+            "VmFsdWUSFwoPY291bnRyeV9vZl9yaXNrGBIgASgJEhwKFGNvdW50cnlfb2Zf",
+            "cmlza19uYW1lGBMgASgJElQKDnRyYWRpbmdfc3RhdHVzGBQgASgOMjwudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRy",
+            "YWRpbmdTdGF0dXMSEAoIb3RjX2ZsYWcYFSABKAgSGgoSYnV5X2F2YWlsYWJs",
+            "ZV9mbGFnGBYgASgIEhsKE3NlbGxfYXZhaWxhYmxlX2ZsYWcYFyABKAgSGQoR",
+            "aXNvX2N1cnJlbmN5X25hbWUYGCABKAkSTQoTbWluX3ByaWNlX2luY3JlbWVu",
+            "dBgZIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgaIAEo",
+            "CBILCgN1aWQYGyABKAkSSgoNcmVhbF9leGNoYW5nZRgcIAEoDjIzLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hhbmdl",
+            "EhQKDHBvc2l0aW9uX3VpZBgdIAEoCRIUCgxmb3JfaWlzX2ZsYWcYKSABKAgS",
+            "HgoWZm9yX3F1YWxfaW52ZXN0b3JfZmxhZxg0IAEoCBIUCgx3ZWVrZW5kX2Zs",
+            "YWcYNSABKAgSGAoQYmxvY2tlZF90Y2FfZmxhZxg2IAEoCBI6ChZmaXJzdF8x",
+            "bWluX2NhbmRsZV9kYXRlGDggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBI6ChZmaXJzdF8xZGF5X2NhbmRsZV9kYXRlGDkgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcCLKCwoDRXRmEgwKBGZpZ2kYASABKAkSDgoG",
+            "dGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyABKAkSDAoEaXNpbhgEIAEo",
+            "CRILCgNsb3QYBSABKAUSEAoIY3VycmVuY3kYBiABKAkSPwoFa2xvbmcYByAB",
+            "KAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1",
+            "b3RhdGlvbhJACgZrc2hvcnQYCCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhI/CgVkbG9uZxgJIAEoCzIw",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0",
+            "aW9uEkAKBmRzaG9ydBgKIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkMKCWRsb25nX21pbhgLIAEoCzIw",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0",
+            "aW9uEkQKCmRzaG9ydF9taW4YDCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIaChJzaG9ydF9lbmFibGVk",
+            "X2ZsYWcYDSABKAgSDAoEbmFtZRgPIAEoCRIQCghleGNoYW5nZRgQIAEoCRJK",
+            "ChBmaXhlZF9jb21taXNzaW9uGBEgASgLMjAudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SEgoKZm9jdXNfdHlwZRgS",
+            "IAEoCRIxCg1yZWxlYXNlZF9kYXRlGBMgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBJECgpudW1fc2hhcmVzGBQgASgLMjAudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SFwoPY291bnRy",
+            "eV9vZl9yaXNrGBUgASgJEhwKFGNvdW50cnlfb2Zfcmlza19uYW1lGBYgASgJ",
+            "Eg4KBnNlY3RvchgXIAEoCRIYChByZWJhbGFuY2luZ19mcmVxGBggASgJElQK",
+            "DnRyYWRpbmdfc3RhdHVzGBkgASgOMjwudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdTdGF0dXMSEAoIb3Rj",
+            "X2ZsYWcYGiABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFnGBsgASgIEhsKE3Nl",
+            "bGxfYXZhaWxhYmxlX2ZsYWcYHCABKAgSTQoTbWluX3ByaWNlX2luY3JlbWVu",
+            "dBgdIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgeIAEo",
+            "CBILCgN1aWQYHyABKAkSSgoNcmVhbF9leGNoYW5nZRggIAEoDjIzLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hhbmdl",
+            "EhQKDHBvc2l0aW9uX3VpZBghIAEoCRIUCgxmb3JfaWlzX2ZsYWcYKSABKAgS",
+            "HgoWZm9yX3F1YWxfaW52ZXN0b3JfZmxhZxgqIAEoCBIUCgx3ZWVrZW5kX2Zs",
+            "YWcYKyABKAgSGAoQYmxvY2tlZF90Y2FfZmxhZxgsIAEoCBI6ChZmaXJzdF8x",
+            "bWluX2NhbmRsZV9kYXRlGDggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBI6ChZmaXJzdF8xZGF5X2NhbmRsZV9kYXRlGDkgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcCKZDAoGRnV0dXJlEgwKBGZpZ2kYASABKAkS",
+            "DgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUYAyABKAkSCwoDbG90GAQg",
+            "ASgFEhAKCGN1cnJlbmN5GAUgASgJEj8KBWtsb25nGAYgASgLMjAudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQAoG",
+            "a3Nob3J0GAcgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5RdW90YXRpb24SPwoFZGxvbmcYCCABKAsyMC50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJACgZkc2hv",
+            "cnQYCSABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLlF1b3RhdGlvbhJDCglkbG9uZ19taW4YCiABKAsyMC50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJECgpkc2hv",
+            "cnRfbWluGAsgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5RdW90YXRpb24SGgoSc2hvcnRfZW5hYmxlZF9mbGFnGAwgASgI",
+            "EgwKBG5hbWUYDSABKAkSEAoIZXhjaGFuZ2UYDiABKAkSNAoQZmlyc3RfdHJh",
+            "ZGVfZGF0ZRgPIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMwoP",
+            "bGFzdF90cmFkZV9kYXRlGBAgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBIUCgxmdXR1cmVzX3R5cGUYESABKAkSEgoKYXNzZXRfdHlwZRgSIAEo",
+            "CRITCgtiYXNpY19hc3NldBgTIAEoCRJKChBiYXNpY19hc3NldF9zaXplGBQg",
+            "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5R",
+            "dW90YXRpb24SFwoPY291bnRyeV9vZl9yaXNrGBUgASgJEhwKFGNvdW50cnlf",
+            "b2Zfcmlza19uYW1lGBYgASgJEg4KBnNlY3RvchgXIAEoCRIzCg9leHBpcmF0",
+            "aW9uX2RhdGUYGCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wElQK",
+            "DnRyYWRpbmdfc3RhdHVzGBkgASgOMjwudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdTdGF0dXMSEAoIb3Rj",
+            "X2ZsYWcYGiABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFnGBsgASgIEhsKE3Nl",
+            "bGxfYXZhaWxhYmxlX2ZsYWcYHCABKAgSTQoTbWluX3ByaWNlX2luY3JlbWVu",
+            "dBgdIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgeIAEo",
+            "CBILCgN1aWQYHyABKAkSSgoNcmVhbF9leGNoYW5nZRggIAEoDjIzLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVhbEV4Y2hhbmdl",
+            "EhQKDHBvc2l0aW9uX3VpZBghIAEoCRIgChhiYXNpY19hc3NldF9wb3NpdGlv",
+            "bl91aWQYIiABKAkSFAoMZm9yX2lpc19mbGFnGCkgASgIEh4KFmZvcl9xdWFs",
+            "X2ludmVzdG9yX2ZsYWcYKiABKAgSFAoMd2Vla2VuZF9mbGFnGCsgASgIEhgK",
+            "EGJsb2NrZWRfdGNhX2ZsYWcYLCABKAgSOgoWZmlyc3RfMW1pbl9jYW5kbGVf",
+            "ZGF0ZRg4IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASOgoWZmly",
+            "c3RfMWRheV9jYW5kbGVfZGF0ZRg5IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+            "aW1lc3RhbXAi1gsKBVNoYXJlEgwKBGZpZ2kYASABKAkSDgoGdGlja2VyGAIg",
+            "ASgJEhIKCmNsYXNzX2NvZGUYAyABKAkSDAoEaXNpbhgEIAEoCRILCgNsb3QY",
+            "BSABKAUSEAoIY3VycmVuY3kYBiABKAkSPwoFa2xvbmcYByABKAsyMC50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJA",
+            "CgZrc2hvcnQYCCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
+            "bnRyYWN0LnYxLlF1b3RhdGlvbhI/CgVkbG9uZxgJIAEoCzIwLnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkAKBmRz",
+            "aG9ydBgKIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuUXVvdGF0aW9uEkMKCWRsb25nX21pbhgLIAEoCzIwLnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkQKCmRz",
+            "aG9ydF9taW4YDCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
+            "bnRyYWN0LnYxLlF1b3RhdGlvbhIaChJzaG9ydF9lbmFibGVkX2ZsYWcYDSAB",
+            "KAgSDAoEbmFtZRgPIAEoCRIQCghleGNoYW5nZRgQIAEoCRIsCghpcG9fZGF0",
+            "ZRgRIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEgoKaXNzdWVf",
+            "c2l6ZRgSIAEoAxIXCg9jb3VudHJ5X29mX3Jpc2sYEyABKAkSHAoUY291bnRy",
+            "eV9vZl9yaXNrX25hbWUYFCABKAkSDgoGc2VjdG9yGBUgASgJEhcKD2lzc3Vl",
+            "X3NpemVfcGxhbhgWIAEoAxJCCgdub21pbmFsGBcgASgLMjEudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlElQKDnRy",
+            "YWRpbmdfc3RhdHVzGBkgASgOMjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdTdGF0dXMSEAoIb3RjX2Zs",
+            "YWcYGiABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFnGBsgASgIEhsKE3NlbGxf",
+            "YXZhaWxhYmxlX2ZsYWcYHCABKAgSFgoOZGl2X3lpZWxkX2ZsYWcYHSABKAgS",
+            "RAoKc2hhcmVfdHlwZRgeIAEoDjIwLnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuU2hhcmVUeXBlEk0KE21pbl9wcmljZV9pbmNyZW1l",
+            "bnQYHyABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLlF1b3RhdGlvbhIgChhhcGlfdHJhZGVfYXZhaWxhYmxlX2ZsYWcYICAB",
+            "KAgSCwoDdWlkGCEgASgJEkoKDXJlYWxfZXhjaGFuZ2UYIiABKA4yMy50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlJlYWxFeGNoYW5n",
+            "ZRIUCgxwb3NpdGlvbl91aWQYIyABKAkSFAoMZm9yX2lpc19mbGFnGC4gASgI",
+            "Eh4KFmZvcl9xdWFsX2ludmVzdG9yX2ZsYWcYLyABKAgSFAoMd2Vla2VuZF9m",
+            "bGFnGDAgASgIEhgKEGJsb2NrZWRfdGNhX2ZsYWcYMSABKAgSOgoWZmlyc3Rf",
+            "MW1pbl9jYW5kbGVfZGF0ZRg4IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASOgoWZmlyc3RfMWRheV9jYW5kbGVfZGF0ZRg5IAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXAifAoaR2V0QWNjcnVlZEludGVyZXN0c1Jl",
+            "cXVlc3QSDAoEZmlnaRgBIAEoCRIoCgRmcm9tGAIgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBImCgJ0bxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXAicAobR2V0QWNjcnVlZEludGVyZXN0c1Jlc3BvbnNlElEK",
+            "EWFjY3J1ZWRfaW50ZXJlc3RzGAEgAygLMjYudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5BY2NydWVkSW50ZXJlc3QiiAIKD0FjY3J1",
+            "ZWRJbnRlcmVzdBIoCgRkYXRlGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcBI/CgV2YWx1ZRgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkcKDXZhbHVlX3BlcmNlbnQY",
+            "AyABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "LlF1b3RhdGlvbhJBCgdub21pbmFsGAQgASgLMjAudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24iJwoXR2V0RnV0dXJl",
+            "c01hcmdpblJlcXVlc3QSDAoEZmlnaRgBIAEoCSLkAgoYR2V0RnV0dXJlc01h",
+            "cmdpblJlc3BvbnNlElAKFWluaXRpYWxfbWFyZ2luX29uX2J1eRgBIAEoCzIx",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlW",
+            "YWx1ZRJRChZpbml0aWFsX21hcmdpbl9vbl9zZWxsGAIgASgLMjEudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlEk0K",
+            "E21pbl9wcmljZV9pbmNyZW1lbnQYAyABKAsyMC50aW5rb2ZmLnB1YmxpYy5p",
+            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJUChptaW5fcHJpY2Vf",
+            "aW5jcmVtZW50X2Ftb3VudBgEIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uIlsKEkluc3RydW1lbnRSZXNw",
+            "b25zZRJFCgppbnN0cnVtZW50GAEgASgLMjEudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50IucJCgpJbnN0cnVtZW50",
+            "EgwKBGZpZ2kYASABKAkSDgoGdGlja2VyGAIgASgJEhIKCmNsYXNzX2NvZGUY",
+            "AyABKAkSDAoEaXNpbhgEIAEoCRILCgNsb3QYBSABKAUSEAoIY3VycmVuY3kY",
+            "BiABKAkSPwoFa2xvbmcYByABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3Qu",
+            "YXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJACgZrc2hvcnQYCCABKAsyMC50",
+            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
+            "bhI/CgVkbG9uZxgJIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuUXVvdGF0aW9uEkAKBmRzaG9ydBgKIAEoCzIwLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkMK",
+            "CWRsb25nX21pbhgLIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuUXVvdGF0aW9uEkQKCmRzaG9ydF9taW4YDCABKAsyMC50",
+            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
+            "bhIaChJzaG9ydF9lbmFibGVkX2ZsYWcYDSABKAgSDAoEbmFtZRgOIAEoCRIQ",
+            "CghleGNoYW5nZRgPIAEoCRIXCg9jb3VudHJ5X29mX3Jpc2sYECABKAkSHAoU",
+            "Y291bnRyeV9vZl9yaXNrX25hbWUYESABKAkSFwoPaW5zdHJ1bWVudF90eXBl",
+            "GBIgASgJElQKDnRyYWRpbmdfc3RhdHVzGBMgASgOMjwudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRpbmdTdGF0",
+            "dXMSEAoIb3RjX2ZsYWcYFCABKAgSGgoSYnV5X2F2YWlsYWJsZV9mbGFnGBUg",
+            "ASgIEhsKE3NlbGxfYXZhaWxhYmxlX2ZsYWcYFiABKAgSTQoTbWluX3ByaWNl",
+            "X2luY3JlbWVudBgXIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuUXVvdGF0aW9uEiAKGGFwaV90cmFkZV9hdmFpbGFibGVf",
+            "ZmxhZxgYIAEoCBILCgN1aWQYGSABKAkSSgoNcmVhbF9leGNoYW5nZRgaIAEo",
+            "DjIzLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUmVh",
+            "bEV4Y2hhbmdlEhQKDHBvc2l0aW9uX3VpZBgbIAEoCRIUCgxmb3JfaWlzX2Zs",
+            "YWcYJCABKAgSHgoWZm9yX3F1YWxfaW52ZXN0b3JfZmxhZxglIAEoCBIUCgx3",
+            "ZWVrZW5kX2ZsYWcYJiABKAgSGAoQYmxvY2tlZF90Y2FfZmxhZxgnIAEoCBI6",
+            "ChZmaXJzdF8xbWluX2NhbmRsZV9kYXRlGDggASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcBI6ChZmaXJzdF8xZGF5X2NhbmRsZV9kYXRlGDkgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJ1ChNHZXREaXZpZGVuZHNS",
+            "ZXF1ZXN0EgwKBGZpZ2kYASABKAkSKAoEZnJvbRgCIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASJgoCdG8YAyABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wIloKFEdldERpdmlkZW5kc1Jlc3BvbnNlEkIKCWRpdmlk",
+            "ZW5kcxgBIAMoCzIvLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuRGl2aWRlbmQihgQKCERpdmlkZW5kEkcKDGRpdmlkZW5kX25ldBgB",
+            "IAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "TW9uZXlWYWx1ZRIwCgxwYXltZW50X2RhdGUYAiABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEjEKDWRlY2xhcmVkX2RhdGUYAyABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEjEKDWxhc3RfYnV5X2RhdGUYBCABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhUKDWRpdmlkZW5kX3R5cGUY",
+            "BSABKAkSLwoLcmVjb3JkX2RhdGUYBiABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wEhIKCnJlZ3VsYXJpdHkYByABKAkSRgoLY2xvc2VfcHJpY2UY",
+            "CCABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "Lk1vbmV5VmFsdWUSRQoLeWllbGRfdmFsdWUYCSABKAsyMC50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIuCgpjcmVh",
+            "dGVkX2F0GAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCIaCgxB",
+            "c3NldFJlcXVlc3QSCgoCaWQYASABKAkiUAoNQXNzZXRSZXNwb25zZRI/CgVh",
+            "c3NldBgBIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuQXNzZXRGdWxsIg8KDUFzc2V0c1JlcXVlc3QiTgoOQXNzZXRzUmVz",
+            "cG9uc2USPAoGYXNzZXRzGAEgAygLMiwudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5Bc3NldCKYBQoJQXNzZXRGdWxsEgsKA3VpZBgB",
+            "IAEoCRI+CgR0eXBlGAIgASgOMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5Bc3NldFR5cGUSDAoEbmFtZRgDIAEoCRISCgpuYW1l",
+            "X2JyaWVmGAQgASgJEhMKC2Rlc2NyaXB0aW9uGAUgASgJEi4KCmRlbGV0ZWRf",
+            "YXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhYKDnJlcXVp",
+            "cmVkX3Rlc3RzGAcgAygJEkgKCGN1cnJlbmN5GAggASgLMjQudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Bc3NldEN1cnJlbmN5SAAS",
+            "SAoIc2VjdXJpdHkYCSABKAsyNC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
+            "LmNvbnRyYWN0LnYxLkFzc2V0U2VjdXJpdHlIABIUCgxnb3NfcmVnX2NvZGUY",
+            "CiABKAkSCwoDY2ZpGAsgASgJEhAKCGNvZGVfbnNkGAwgASgJEg4KBnN0YXR1",
+            "cxgNIAEoCRI7CgVicmFuZBgOIAEoCzIsLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuQnJhbmQSLgoKdXBkYXRlZF9hdBgPIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASDwoHYnJfY29kZRgQIAEoCRIU",
+            "Cgxicl9jb2RlX25hbWUYESABKAkSSwoLaW5zdHJ1bWVudHMYEiADKAsyNi50",
+            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0SW5z",
+            "dHJ1bWVudEIFCgNleHQirwEKBUFzc2V0EgsKA3VpZBgBIAEoCRI+CgR0eXBl",
+            "GAIgASgOMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
+            "MS5Bc3NldFR5cGUSDAoEbmFtZRgDIAEoCRJLCgtpbnN0cnVtZW50cxgEIAMo",
+            "CzI2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQXNz",
+            "ZXRJbnN0cnVtZW50IiYKDUFzc2V0Q3VycmVuY3kSFQoNYmFzZV9jdXJyZW5j",
+            "eRgBIAEoCSKmAwoNQXNzZXRTZWN1cml0eRIMCgRpc2luGAEgASgJEgwKBHR5",
+            "cGUYAiABKAkSQgoFc2hhcmUYAyABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0U2hhcmVIABJACgRib25kGAQgASgL",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Bc3Nl",
+            "dEJvbmRIABJLCgJzcBgFIAEoCzI9LnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuQXNzZXRTdHJ1Y3R1cmVkUHJvZHVjdEgAEj4KA2V0",
+            "ZhgGIAEoCzIvLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuQXNzZXRFdGZIABJfChRjbGVhcmluZ19jZXJ0aWZpY2F0ZRgHIAEoCzI/",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQXNzZXRD",
+            "bGVhcmluZ0NlcnRpZmljYXRlSABCBQoDZXh0ItUFCgpBc3NldFNoYXJlEj4K",
+            "BHR5cGUYASABKA4yMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLlNoYXJlVHlwZRJECgppc3N1ZV9zaXplGAIgASgLMjAudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQQoH",
+            "bm9taW5hbBgDIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuUXVvdGF0aW9uEhgKEG5vbWluYWxfY3VycmVuY3kYBCABKAkS",
+            "FQoNcHJpbWFyeV9pbmRleBgFIAEoCRJHCg1kaXZpZGVuZF9yYXRlGAYgASgL",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90",
+            "YXRpb24SHAoUcHJlZmVycmVkX3NoYXJlX3R5cGUYByABKAkSLAoIaXBvX2Rh",
+            "dGUYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjEKDXJlZ2lz",
+            "dHJ5X2RhdGUYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhYK",
+            "DmRpdl95aWVsZF9mbGFnGAogASgIEhIKCmlzc3VlX2tpbmQYCyABKAkSMgoO",
+            "cGxhY2VtZW50X2RhdGUYDCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEhMKC3JlcHJlc19pc2luGA0gASgJEkkKD2lzc3VlX3NpemVfcGxhbhgO",
+            "IAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "UXVvdGF0aW9uEkUKC3RvdGFsX2Zsb2F0GA8gASgLMjAudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24i4AYKCUFzc2V0",
+            "Qm9uZBJJCg9jdXJyZW50X25vbWluYWwYASABKAsyMC50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhITCgtib3Jyb3df",
+            "bmFtZRgCIAEoCRJECgppc3N1ZV9zaXplGAMgASgLMjAudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SQQoHbm9taW5h",
+            "bBgEIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuUXVvdGF0aW9uEhgKEG5vbWluYWxfY3VycmVuY3kYBSABKAkSEgoKaXNz",
+            "dWVfa2luZBgGIAEoCRIVCg1pbnRlcmVzdF9raW5kGAcgASgJEiAKGGNvdXBv",
+            "bl9xdWFudGl0eV9wZXJfeWVhchgIIAEoBRIcChRpbmRleGVkX25vbWluYWxf",
+            "ZmxhZxgJIAEoCBIZChFzdWJvcmRpbmF0ZWRfZmxhZxgKIAEoCBIXCg9jb2xs",
+            "YXRlcmFsX2ZsYWcYCyABKAgSFQoNdGF4X2ZyZWVfZmxhZxgMIAEoCBIZChFh",
+            "bW9ydGl6YXRpb25fZmxhZxgNIAEoCBIcChRmbG9hdGluZ19jb3Vwb25fZmxh",
+            "ZxgOIAEoCBIWCg5wZXJwZXR1YWxfZmxhZxgPIAEoCBIxCg1tYXR1cml0eV9k",
+            "YXRlGBAgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIYChByZXR1",
+            "cm5fY29uZGl0aW9uGBEgASgJEjIKDnN0YXRlX3JlZ19kYXRlGBIgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIyCg5wbGFjZW1lbnRfZGF0ZRgT",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASSQoPcGxhY2VtZW50",
+            "X3ByaWNlGBQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5RdW90YXRpb24SSQoPaXNzdWVfc2l6ZV9wbGFuGBUgASgLMjAu",
+            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRp",
+            "b24ioAUKFkFzc2V0U3RydWN0dXJlZFByb2R1Y3QSEwoLYm9ycm93X25hbWUY",
+            "ASABKAkSQQoHbm9taW5hbBgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEhgKEG5vbWluYWxfY3VycmVu",
+            "Y3kYAyABKAkSSgoEdHlwZRgEIAEoDjI8LnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuU3RydWN0dXJlZFByb2R1Y3RUeXBlEhcKD2xv",
+            "Z2ljX3BvcnRmb2xpbxgFIAEoCRJECgphc3NldF90eXBlGAYgASgOMjAudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Bc3NldFR5cGUS",
+            "EwoLYmFzaWNfYXNzZXQYByABKAkSSAoOc2FmZXR5X2JhcnJpZXIYCCABKAsy",
+            "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
+            "dGlvbhIxCg1tYXR1cml0eV9kYXRlGAkgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBJJCg9pc3N1ZV9zaXplX3BsYW4YCiABKAsyMC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJECgpp",
+            "c3N1ZV9zaXplGAsgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5RdW90YXRpb24SMgoOcGxhY2VtZW50X2RhdGUYDCABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhIKCmlzc3VlX2tpbmQYDSAB",
+            "KAki2AoKCEFzc2V0RXRmEkcKDXRvdGFsX2V4cGVuc2UYASABKAsyMC50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJF",
+            "CgtodXJkbGVfcmF0ZRgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkkKD3BlcmZvcm1hbmNlX2ZlZRgD",
+            "IAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "UXVvdGF0aW9uEkoKEGZpeGVkX2NvbW1pc3Npb24YBCABKAsyMC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIUCgxw",
+            "YXltZW50X3R5cGUYBSABKAkSFgoOd2F0ZXJtYXJrX2ZsYWcYBiABKAgSRQoL",
+            "YnV5X3ByZW1pdW0YByABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
+            "LmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJHCg1zZWxsX2Rpc2NvdW50GAggASgL",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90",
+            "YXRpb24SGAoQcmViYWxhbmNpbmdfZmxhZxgJIAEoCBIYChByZWJhbGFuY2lu",
+            "Z19mcmVxGAogASgJEhcKD21hbmFnZW1lbnRfdHlwZRgLIAEoCRIVCg1wcmlt",
+            "YXJ5X2luZGV4GAwgASgJEhIKCmZvY3VzX3R5cGUYDSABKAkSFgoObGV2ZXJh",
+            "Z2VkX2ZsYWcYDiABKAgSQwoJbnVtX3NoYXJlGA8gASgLMjAudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SEgoKdWNp",
+            "dHNfZmxhZxgQIAEoCBIxCg1yZWxlYXNlZF9kYXRlGBEgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcBITCgtkZXNjcmlwdGlvbhgSIAEoCRIhChlw",
+            "cmltYXJ5X2luZGV4X2Rlc2NyaXB0aW9uGBMgASgJEh0KFXByaW1hcnlfaW5k",
+            "ZXhfY29tcGFueRgUIAEoCRJPChVpbmRleF9yZWNvdmVyeV9wZXJpb2QYFSAB",
+            "KAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1",
+            "b3RhdGlvbhIRCglpbmF2X2NvZGUYFiABKAkSFgoOZGl2X3lpZWxkX2ZsYWcY",
+            "FyABKAgSTAoSZXhwZW5zZV9jb21taXNzaW9uGBggASgLMjAudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SVgoccHJp",
+            "bWFyeV9pbmRleF90cmFja2luZ19lcnJvchgZIAEoCzIwLnRpbmtvZmYucHVi",
+            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEhgKEHJlYmFs",
+            "YW5jaW5nX3BsYW4YGiABKAkSEAoIdGF4X3JhdGUYGyABKAkSNQoRcmViYWxh",
+            "bmNpbmdfZGF0ZXMYHCADKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "EhIKCmlzc3VlX2tpbmQYHSABKAkSQQoHbm9taW5hbBgeIAEoCzIwLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEhgK",
+            "EG5vbWluYWxfY3VycmVuY3kYHyABKAkidwoYQXNzZXRDbGVhcmluZ0NlcnRp",
+            "ZmljYXRlEkEKB25vbWluYWwYASABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIYChBub21pbmFsX2N1cnJl",
+            "bmN5GAIgASgJIp0BCgVCcmFuZBILCgN1aWQYASABKAkSDAoEbmFtZRgCIAEo",
+            "CRITCgtkZXNjcmlwdGlvbhgDIAEoCRIMCgRpbmZvGAQgASgJEg8KB2NvbXBh",
+            "bnkYBSABKAkSDgoGc2VjdG9yGAYgASgJEhcKD2NvdW50cnlfb2ZfcmlzaxgH",
+            "IAEoCRIcChRjb3VudHJ5X29mX3Jpc2tfbmFtZRgIIAEoCSKvAQoPQXNzZXRJ",
+            "bnN0cnVtZW50EgsKA3VpZBgBIAEoCRIMCgRmaWdpGAIgASgJEhcKD2luc3Ry",
+            "dW1lbnRfdHlwZRgDIAEoCRIOCgZ0aWNrZXIYBCABKAkSEgoKY2xhc3NfY29k",
+            "ZRgFIAEoCRJECgVsaW5rcxgGIAMoCzI1LnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuSW5zdHJ1bWVudExpbmsiNgoOSW5zdHJ1bWVu",
+            "dExpbmsSDAoEdHlwZRgBIAEoCRIWCg5pbnN0cnVtZW50X3VpZBgCIAEoCSIV",
+            "ChNHZXRGYXZvcml0ZXNSZXF1ZXN0Im8KFEdldEZhdm9yaXRlc1Jlc3BvbnNl",
+            "ElcKFGZhdm9yaXRlX2luc3RydW1lbnRzGAEgAygLMjkudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5GYXZvcml0ZUluc3RydW1lbnQi",
+            "oQEKEkZhdm9yaXRlSW5zdHJ1bWVudBIMCgRmaWdpGAEgASgJEg4KBnRpY2tl",
+            "chgCIAEoCRISCgpjbGFzc19jb2RlGAMgASgJEgwKBGlzaW4YBCABKAkSFwoP",
+            "aW5zdHJ1bWVudF90eXBlGAsgASgJEhAKCG90Y19mbGFnGBAgASgIEiAKGGFw",
+            "aV90cmFkZV9hdmFpbGFibGVfZmxhZxgRIAEoCCLHAQoURWRpdEZhdm9yaXRl",
+            "c1JlcXVlc3QSWgoLaW5zdHJ1bWVudHMYASADKAsyRS50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkVkaXRGYXZvcml0ZXNSZXF1ZXN0",
+            "SW5zdHJ1bWVudBJTCgthY3Rpb25fdHlwZRgGIAEoDjI+LnRpbmtvZmYucHVi",
+            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRWRpdEZhdm9yaXRlc0FjdGlv",
+            "blR5cGUiLgoeRWRpdEZhdm9yaXRlc1JlcXVlc3RJbnN0cnVtZW50EgwKBGZp",
+            "Z2kYASABKAkicAoVRWRpdEZhdm9yaXRlc1Jlc3BvbnNlElcKFGZhdm9yaXRl",
+            "X2luc3RydW1lbnRzGAEgAygLMjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5GYXZvcml0ZUluc3RydW1lbnQiFQoTR2V0Q291bnRy",
+            "aWVzUmVxdWVzdCJhChRHZXRDb3VudHJpZXNSZXNwb25zZRJJCgljb3VudHJp",
+            "ZXMYASADKAsyNi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLkNvdW50cnlSZXNwb25zZSJZCg9Db3VudHJ5UmVzcG9uc2USEAoIYWxm",
+            "YV90d28YASABKAkSEgoKYWxmYV90aHJlZRgCIAEoCRIMCgRuYW1lGAMgASgJ",
+            "EhIKCm5hbWVfYnJpZWYYBCABKAkiJgoVRmluZEluc3RydW1lbnRSZXF1ZXN0",
+            "Eg0KBXF1ZXJ5GAEgASgJImUKFkZpbmRJbnN0cnVtZW50UmVzcG9uc2USSwoL",
+            "aW5zdHJ1bWVudHMYASADKAsyNi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
+            "LmNvbnRyYWN0LnYxLkluc3RydW1lbnRTaG9ydCKbAwoPSW5zdHJ1bWVudFNo",
+            "b3J0EgwKBGlzaW4YASABKAkSDAoEZmlnaRgCIAEoCRIOCgZ0aWNrZXIYAyAB",
+            "KAkSEgoKY2xhc3NfY29kZRgEIAEoCRIXCg9pbnN0cnVtZW50X3R5cGUYBSAB",
+            "KAkSDAoEbmFtZRgGIAEoCRILCgN1aWQYByABKAkSFAoMcG9zaXRpb25fdWlk",
+            "GAggASgJEiAKGGFwaV90cmFkZV9hdmFpbGFibGVfZmxhZxgLIAEoCBIUCgxm",
+            "b3JfaWlzX2ZsYWcYDCABKAgSOgoWZmlyc3RfMW1pbl9jYW5kbGVfZGF0ZRga",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASOgoWZmlyc3RfMWRh",
+            "eV9jYW5kbGVfZGF0ZRgbIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASHgoWZm9yX3F1YWxfaW52ZXN0b3JfZmxhZxgcIAEoCBIUCgx3ZWVrZW5k",
+            "X2ZsYWcYHSABKAgSGAoQYmxvY2tlZF90Y2FfZmxhZxgeIAEoCCISChBHZXRC",
+            "cmFuZHNSZXF1ZXN0Ih0KD0dldEJyYW5kUmVxdWVzdBIKCgJpZBgBIAEoCSJR",
+            "ChFHZXRCcmFuZHNSZXNwb25zZRI8CgZicmFuZHMYASADKAsyLC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkJyYW5kKtcBCgpDb3Vw",
+            "b25UeXBlEhsKF0NPVVBPTl9UWVBFX1VOU1BFQ0lGSUVEEAASGAoUQ09VUE9O",
+            "X1RZUEVfQ09OU1RBTlQQARIYChRDT1VQT05fVFlQRV9GTE9BVElORxACEhgK",
+            "FENPVVBPTl9UWVBFX0RJU0NPVU5UEAMSGAoUQ09VUE9OX1RZUEVfTU9SVEdB",
+            "R0UQBBITCg9DT1VQT05fVFlQRV9GSVgQBRIYChRDT1VQT05fVFlQRV9WQVJJ",
+            "QUJMRRAGEhUKEUNPVVBPTl9UWVBFX09USEVSEAcqaAoPT3B0aW9uRGlyZWN0",
+            "aW9uEiAKHE9QVElPTl9ESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIYChRPUFRJ",
+            "T05fRElSRUNUSU9OX1BVVBABEhkKFU9QVElPTl9ESVJFQ1RJT05fQ0FMTBAC",
+            "KnsKEU9wdGlvblBheW1lbnRUeXBlEiMKH09QVElPTl9QQVlNRU5UX1RZUEVf",
+            "VU5TUEVDSUZJRUQQABIfChtPUFRJT05fUEFZTUVOVF9UWVBFX1BSRU1JVU0Q",
+            "ARIgChxPUFRJT05fUEFZTUVOVF9UWVBFX01BUkdJTkFMEAIqYQoLT3B0aW9u",
+            "U3R5bGUSHAoYT1BUSU9OX1NUWUxFX1VOU1BFQ0lGSUVEEAASGQoVT1BUSU9O",
+            "X1NUWUxFX0FNRVJJQ0FOEAESGQoVT1BUSU9OX1NUWUxFX0VVUk9QRUFOEAIq",
+            "lQEKFE9wdGlvblNldHRsZW1lbnRUeXBlEiUKIU9QVElPTl9FWEVDVVRJT05f",
+            "VFlQRV9VTlNQRUNJRklFRBAAEisKJ09QVElPTl9FWEVDVVRJT05fVFlQRV9Q",
+            "SFlTSUNBTF9ERUxJVkVSWRABEikKJU9QVElPTl9FWEVDVVRJT05fVFlQRV9D",
+            "QVNIX1NFVFRMRU1FTlQQAiquAQoQSW5zdHJ1bWVudElkVHlwZRIdChlJTlNU",
+            "UlVNRU5UX0lEX1VOU1BFQ0lGSUVEEAASGwoXSU5TVFJVTUVOVF9JRF9UWVBF",
+            "X0ZJR0kQARIdChlJTlNUUlVNRU5UX0lEX1RZUEVfVElDS0VSEAISGgoWSU5T",
+            "VFJVTUVOVF9JRF9UWVBFX1VJRBADEiMKH0lOU1RSVU1FTlRfSURfVFlQRV9Q",
+            "T1NJVElPTl9VSUQQBCpsChBJbnN0cnVtZW50U3RhdHVzEiEKHUlOU1RSVU1F",
+            "TlRfU1RBVFVTX1VOU1BFQ0lGSUVEEAASGgoWSU5TVFJVTUVOVF9TVEFUVVNf",
+            "QkFTRRABEhkKFUlOU1RSVU1FTlRfU1RBVFVTX0FMTBACKuUBCglTaGFyZVR5",
+            "cGUSGgoWU0hBUkVfVFlQRV9VTlNQRUNJRklFRBAAEhUKEVNIQVJFX1RZUEVf",
+            "Q09NTU9OEAESGAoUU0hBUkVfVFlQRV9QUkVGRVJSRUQQAhISCg5TSEFSRV9U",
+            "WVBFX0FEUhADEhIKDlNIQVJFX1RZUEVfR0RSEAQSEgoOU0hBUkVfVFlQRV9N",
+            "TFAQBRIaChZTSEFSRV9UWVBFX05ZX1JFR19TSFJTEAYSHgoaU0hBUkVfVFlQ",
+            "RV9DTE9TRURfRU5EX0ZVTkQQBxITCg9TSEFSRV9UWVBFX1JFSVQQCCqJAQoJ",
+            "QXNzZXRUeXBlEhoKFkFTU0VUX1RZUEVfVU5TUEVDSUZJRUQQABIXChNBU1NF",
+            "VF9UWVBFX0NVUlJFTkNZEAESGAoUQVNTRVRfVFlQRV9DT01NT0RJVFkQAhIU",
+            "ChBBU1NFVF9UWVBFX0lOREVYEAMSFwoTQVNTRVRfVFlQRV9TRUNVUklUWRAE",
+            "KmYKFVN0cnVjdHVyZWRQcm9kdWN0VHlwZRIXChNTUF9UWVBFX1VOU1BFQ0lG",
+            "SUVEEAASFwoTU1BfVFlQRV9ERUxJVkVSQUJMRRABEhsKF1NQX1RZUEVfTk9O",
+            "X0RFTElWRVJBQkxFEAIqjQEKF0VkaXRGYXZvcml0ZXNBY3Rpb25UeXBlEioK",
+            "JkVESVRfRkFWT1JJVEVTX0FDVElPTl9UWVBFX1VOU1BFQ0lGSUVEEAASIgoe",
+            "RURJVF9GQVZPUklURVNfQUNUSU9OX1RZUEVfQUREEAESIgoeRURJVF9GQVZP",
+            "UklURVNfQUNUSU9OX1RZUEVfREVMEAIqcwoMUmVhbEV4Y2hhbmdlEh0KGVJF",
+            "QUxfRVhDSEFOR0VfVU5TUEVDSUZJRUQQABIWChJSRUFMX0VYQ0hBTkdFX01P",
+            "RVgQARIVChFSRUFMX0VYQ0hBTkdFX1JUUxACEhUKEVJFQUxfRVhDSEFOR0Vf",
+            "T1RDEAMy7xoKEkluc3RydW1lbnRzU2VydmljZRKTAQoQVHJhZGluZ1NjaGVk",
+            "dWxlcxI+LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "VHJhZGluZ1NjaGVkdWxlc1JlcXVlc3QaPy50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRpbmdTY2hlZHVsZXNSZXNwb25zZRJ3",
+            "CgZCb25kQnkSOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLkluc3RydW1lbnRSZXF1ZXN0GjMudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5Cb25kUmVzcG9uc2USeAoFQm9uZHMSOS50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRz",
+            "UmVxdWVzdBo0LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuQm9uZHNSZXNwb25zZRKNAQoOR2V0Qm9uZENvdXBvbnMSPC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldEJvbmRDb3Vwb25z",
+            "UmVxdWVzdBo9LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuR2V0Qm9uZENvdXBvbnNSZXNwb25zZRJ/CgpDdXJyZW5jeUJ5EjgudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50",
+            "UmVxdWVzdBo3LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuQ3VycmVuY3lSZXNwb25zZRKCAQoKQ3VycmVuY2llcxI5LnRpbmtvZmYu",
             "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuSW5zdHJ1bWVudHNSZXF1",
-            "ZXN0GjUudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5T",
-            "aGFyZXNSZXNwb25zZRKcAQoTR2V0QWNjcnVlZEludGVyZXN0cxJBLnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0QWNjcnVlZElu",
-            "dGVyZXN0c1JlcXVlc3QaQi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLkdldEFjY3J1ZWRJbnRlcmVzdHNSZXNwb25zZRKTAQoQR2V0",
-            "RnV0dXJlc01hcmdpbhI+LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
-            "dHJhY3QudjEuR2V0RnV0dXJlc01hcmdpblJlcXVlc3QaPy50aW5rb2ZmLnB1",
-            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldEZ1dHVyZXNNYXJnaW5S",
-            "ZXNwb25zZRKGAQoPR2V0SW5zdHJ1bWVudEJ5EjgudGlua29mZi5wdWJsaWMu",
-            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50UmVxdWVzdBo5LnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuSW5zdHJ1bWVu",
-            "dFJlc3BvbnNlEocBCgxHZXREaXZpZGVuZHMSOi50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldERpdmlkZW5kc1JlcXVlc3QaOy50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldERpdmlk",
-            "ZW5kc1Jlc3BvbnNlEncKCkdldEFzc2V0QnkSMy50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkFzc2V0UmVxdWVzdBo0LnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuQXNzZXRSZXNwb25zZRJ4",
-            "CglHZXRBc3NldHMSNC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkFzc2V0c1JlcXVlc3QaNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3Qu",
-            "YXBpLmNvbnRyYWN0LnYxLkFzc2V0c1Jlc3BvbnNlEocBCgxHZXRGYXZvcml0",
-            "ZXMSOi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdl",
-            "dEZhdm9yaXRlc1JlcXVlc3QaOy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLkdldEZhdm9yaXRlc1Jlc3BvbnNlEooBCg1FZGl0RmF2",
-            "b3JpdGVzEjsudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
-            "MS5FZGl0RmF2b3JpdGVzUmVxdWVzdBo8LnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuRWRpdEZhdm9yaXRlc1Jlc3BvbnNlEocBCgxH",
-            "ZXRDb3VudHJpZXMSOi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkdldENvdW50cmllc1JlcXVlc3QaOy50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldENvdW50cmllc1Jlc3BvbnNlEo0B",
-            "Cg5GaW5kSW5zdHJ1bWVudBI8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuRmluZEluc3RydW1lbnRSZXF1ZXN0Gj0udGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5GaW5kSW5zdHJ1bWVudFJl",
-            "c3BvbnNlEn4KCUdldEJyYW5kcxI3LnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuR2V0QnJhbmRzUmVxdWVzdBo4LnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0QnJhbmRzUmVzcG9uc2US",
-            "cgoKR2V0QnJhbmRCeRI2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
-            "dHJhY3QudjEuR2V0QnJhbmRSZXF1ZXN0GiwudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5CcmFuZEJhChxydS50aW5rb2ZmLnBpYXBp",
-            "LmNvbnRyYWN0LnYxUAFaDC4vO2ludmVzdGFwaaICBVRJQVBJqgIUVGlua29m",
-            "Zi5JbnZlc3RBcGkuVjHKAhFUaW5rb2ZmXEludmVzdFxWMWIGcHJvdG8z"));
+            "ZXN0GjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5D",
+            "dXJyZW5jaWVzUmVzcG9uc2USdQoFRXRmQnkSOC50aW5rb2ZmLnB1YmxpYy5p",
+            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRSZXF1ZXN0GjIudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5FdGZSZXNwb25z",
+            "ZRJ2CgRFdGZzEjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5JbnN0cnVtZW50c1JlcXVlc3QaMy50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLkV0ZnNSZXNwb25zZRJ7CghGdXR1cmVCeRI4",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuSW5zdHJ1",
+            "bWVudFJlcXVlc3QaNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLkZ1dHVyZVJlc3BvbnNlEnwKB0Z1dHVyZXMSOS50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRzUmVxdWVz",
+            "dBo2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuRnV0",
+            "dXJlc1Jlc3BvbnNlEnsKCE9wdGlvbkJ5EjgudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50UmVxdWVzdBo1LnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3B0aW9uUmVzcG9u",
+            "c2USfAoHT3B0aW9ucxI5LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuSW5zdHJ1bWVudHNSZXF1ZXN0GjYudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5PcHRpb25zUmVzcG9uc2USeQoHU2hh",
+            "cmVCeRI4LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "SW5zdHJ1bWVudFJlcXVlc3QaNC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
+            "LmNvbnRyYWN0LnYxLlNoYXJlUmVzcG9uc2USegoGU2hhcmVzEjkudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50c1Jl",
+            "cXVlc3QaNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "LlNoYXJlc1Jlc3BvbnNlEpwBChNHZXRBY2NydWVkSW50ZXJlc3RzEkEudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRBY2NydWVk",
+            "SW50ZXJlc3RzUmVxdWVzdBpCLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuR2V0QWNjcnVlZEludGVyZXN0c1Jlc3BvbnNlEpMBChBH",
+            "ZXRGdXR1cmVzTWFyZ2luEj4udGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5HZXRGdXR1cmVzTWFyZ2luUmVxdWVzdBo/LnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0RnV0dXJlc01hcmdp",
+            "blJlc3BvbnNlEoYBCg9HZXRJbnN0cnVtZW50QnkSOC50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRSZXF1ZXN0Gjku",
+            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVt",
+            "ZW50UmVzcG9uc2UShwEKDEdldERpdmlkZW5kcxI6LnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0RGl2aWRlbmRzUmVxdWVzdBo7",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0RGl2",
+            "aWRlbmRzUmVzcG9uc2USdwoKR2V0QXNzZXRCeRIzLnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuQXNzZXRSZXF1ZXN0GjQudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Bc3NldFJlc3BvbnNl",
+            "EngKCUdldEFzc2V0cxI0LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuQXNzZXRzUmVxdWVzdBo1LnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuQXNzZXRzUmVzcG9uc2UShwEKDEdldEZhdm9y",
+            "aXRlcxI6LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
+            "R2V0RmF2b3JpdGVzUmVxdWVzdBo7LnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuR2V0RmF2b3JpdGVzUmVzcG9uc2USigEKDUVkaXRG",
+            "YXZvcml0ZXMSOy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLkVkaXRGYXZvcml0ZXNSZXF1ZXN0GjwudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5FZGl0RmF2b3JpdGVzUmVzcG9uc2UShwEK",
+            "DEdldENvdW50cmllcxI6LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuR2V0Q291bnRyaWVzUmVxdWVzdBo7LnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0Q291bnRyaWVzUmVzcG9uc2US",
+            "jQEKDkZpbmRJbnN0cnVtZW50EjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5GaW5kSW5zdHJ1bWVudFJlcXVlc3QaPS50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkZpbmRJbnN0cnVtZW50",
+            "UmVzcG9uc2USfgoJR2V0QnJhbmRzEjcudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5HZXRCcmFuZHNSZXF1ZXN0GjgudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRCcmFuZHNSZXNwb25z",
+            "ZRJyCgpHZXRCcmFuZEJ5EjYudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5HZXRCcmFuZFJlcXVlc3QaLC50aW5rb2ZmLnB1YmxpYy5p",
+            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkJyYW5kQmEKHHJ1LnRpbmtvZmYucGlh",
+            "cGkuY29udHJhY3QudjFQAVoMLi87aW52ZXN0YXBpogIFVElBUEmqAhRUaW5r",
+            "b2ZmLkludmVzdEFwaS5WMcoCEVRpbmtvZmZcSW52ZXN0XFYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Tinkoff.InvestApi.V1.CommonReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.CouponType), typeof(global::Tinkoff.InvestApi.V1.InstrumentIdType), typeof(global::Tinkoff.InvestApi.V1.InstrumentStatus), typeof(global::Tinkoff.InvestApi.V1.ShareType), typeof(global::Tinkoff.InvestApi.V1.AssetType), typeof(global::Tinkoff.InvestApi.V1.StructuredProductType), typeof(global::Tinkoff.InvestApi.V1.EditFavoritesActionType), typeof(global::Tinkoff.InvestApi.V1.RealExchange), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.CouponType), typeof(global::Tinkoff.InvestApi.V1.OptionDirection), typeof(global::Tinkoff.InvestApi.V1.OptionPaymentType), typeof(global::Tinkoff.InvestApi.V1.OptionStyle), typeof(global::Tinkoff.InvestApi.V1.OptionSettlementType), typeof(global::Tinkoff.InvestApi.V1.InstrumentIdType), typeof(global::Tinkoff.InvestApi.V1.InstrumentStatus), typeof(global::Tinkoff.InvestApi.V1.ShareType), typeof(global::Tinkoff.InvestApi.V1.AssetType), typeof(global::Tinkoff.InvestApi.V1.StructuredProductType), typeof(global::Tinkoff.InvestApi.V1.EditFavoritesActionType), typeof(global::Tinkoff.InvestApi.V1.RealExchange), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradingSchedulesRequest), global::Tinkoff.InvestApi.V1.TradingSchedulesRequest.Parser, new[]{ "Exchange", "From", "To" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradingSchedulesResponse), global::Tinkoff.InvestApi.V1.TradingSchedulesResponse.Parser, new[]{ "Exchanges" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradingSchedule), global::Tinkoff.InvestApi.V1.TradingSchedule.Parser, new[]{ "Exchange", "Days" }, null, null, null, null),
@@ -566,20 +671,23 @@ namespace Tinkoff.InvestApi.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.EtfsResponse), global::Tinkoff.InvestApi.V1.EtfsResponse.Parser, new[]{ "Instruments" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.FutureResponse), global::Tinkoff.InvestApi.V1.FutureResponse.Parser, new[]{ "Instrument" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.FuturesResponse), global::Tinkoff.InvestApi.V1.FuturesResponse.Parser, new[]{ "Instruments" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OptionResponse), global::Tinkoff.InvestApi.V1.OptionResponse.Parser, new[]{ "Instrument" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OptionsResponse), global::Tinkoff.InvestApi.V1.OptionsResponse.Parser, new[]{ "Instruments" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Option), global::Tinkoff.InvestApi.V1.Option.Parser, new[]{ "Uid", "PositionUid", "Ticker", "ClassCode", "BasicAssetPositionUid", "TradingStatus", "RealExchange", "Direction", "PaymentType", "Style", "SettlementType", "Name", "Currency", "SettlementCurrency", "AssetType", "BasicAsset", "Exchange", "CountryOfRisk", "CountryOfRiskName", "Sector", "Lot", "BasicAssetSize", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "MinPriceIncrement", "StrikePrice", "ExpirationDate", "FirstTradeDate", "LastTradeDate", "First1MinCandleDate", "First1DayCandleDate", "ShortEnabledFlag", "ForIisFlag", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.ShareResponse), global::Tinkoff.InvestApi.V1.ShareResponse.Parser, new[]{ "Instrument" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SharesResponse), global::Tinkoff.InvestApi.V1.SharesResponse.Parser, new[]{ "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Bond), global::Tinkoff.InvestApi.V1.Bond.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "CouponQuantityPerYear", "MaturityDate", "Nominal", "StateRegDate", "PlacementDate", "PlacementPrice", "AciValue", "CountryOfRisk", "CountryOfRiskName", "Sector", "IssueKind", "IssueSize", "IssueSizePlan", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "FloatingCouponFlag", "PerpetualFlag", "AmortizationFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Currency), global::Tinkoff.InvestApi.V1.Currency.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency_", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "Nominal", "CountryOfRisk", "CountryOfRiskName", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "IsoCurrencyName", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Etf), global::Tinkoff.InvestApi.V1.Etf.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "FixedCommission", "FocusType", "ReleasedDate", "NumShares", "CountryOfRisk", "CountryOfRiskName", "Sector", "RebalancingFreq", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Future), global::Tinkoff.InvestApi.V1.Future.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "FirstTradeDate", "LastTradeDate", "FuturesType", "AssetType", "BasicAsset", "BasicAssetSize", "CountryOfRisk", "CountryOfRiskName", "Sector", "ExpirationDate", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Share), global::Tinkoff.InvestApi.V1.Share.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "IpoDate", "IssueSize", "CountryOfRisk", "CountryOfRiskName", "Sector", "IssueSizePlan", "Nominal", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "DivYieldFlag", "ShareType", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Bond), global::Tinkoff.InvestApi.V1.Bond.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "CouponQuantityPerYear", "MaturityDate", "Nominal", "InitialNominal", "StateRegDate", "PlacementDate", "PlacementPrice", "AciValue", "CountryOfRisk", "CountryOfRiskName", "Sector", "IssueKind", "IssueSize", "IssueSizePlan", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "FloatingCouponFlag", "PerpetualFlag", "AmortizationFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Currency), global::Tinkoff.InvestApi.V1.Currency.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency_", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "Nominal", "CountryOfRisk", "CountryOfRiskName", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "IsoCurrencyName", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Etf), global::Tinkoff.InvestApi.V1.Etf.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "FixedCommission", "FocusType", "ReleasedDate", "NumShares", "CountryOfRisk", "CountryOfRiskName", "Sector", "RebalancingFreq", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Future), global::Tinkoff.InvestApi.V1.Future.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "FirstTradeDate", "LastTradeDate", "FuturesType", "AssetType", "BasicAsset", "BasicAssetSize", "CountryOfRisk", "CountryOfRiskName", "Sector", "ExpirationDate", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "BasicAssetPositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Share), global::Tinkoff.InvestApi.V1.Share.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "IpoDate", "IssueSize", "CountryOfRisk", "CountryOfRiskName", "Sector", "IssueSizePlan", "Nominal", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "DivYieldFlag", "ShareType", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetAccruedInterestsRequest), global::Tinkoff.InvestApi.V1.GetAccruedInterestsRequest.Parser, new[]{ "Figi", "From", "To" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetAccruedInterestsResponse), global::Tinkoff.InvestApi.V1.GetAccruedInterestsResponse.Parser, new[]{ "AccruedInterests" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.AccruedInterest), global::Tinkoff.InvestApi.V1.AccruedInterest.Parser, new[]{ "Date", "Value", "ValuePercent", "Nominal" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetFuturesMarginRequest), global::Tinkoff.InvestApi.V1.GetFuturesMarginRequest.Parser, new[]{ "Figi" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetFuturesMarginResponse), global::Tinkoff.InvestApi.V1.GetFuturesMarginResponse.Parser, new[]{ "InitialMarginOnBuy", "InitialMarginOnSell", "MinPriceIncrement", "MinPriceIncrementAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InstrumentResponse), global::Tinkoff.InvestApi.V1.InstrumentResponse.Parser, new[]{ "Instrument" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Instrument), global::Tinkoff.InvestApi.V1.Instrument.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "CountryOfRisk", "CountryOfRiskName", "InstrumentType", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Instrument), global::Tinkoff.InvestApi.V1.Instrument.Parser, new[]{ "Figi", "Ticker", "ClassCode", "Isin", "Lot", "Currency", "Klong", "Kshort", "Dlong", "Dshort", "DlongMin", "DshortMin", "ShortEnabledFlag", "Name", "Exchange", "CountryOfRisk", "CountryOfRiskName", "InstrumentType", "TradingStatus", "OtcFlag", "BuyAvailableFlag", "SellAvailableFlag", "MinPriceIncrement", "ApiTradeAvailableFlag", "Uid", "RealExchange", "PositionUid", "ForIisFlag", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag", "First1MinCandleDate", "First1DayCandleDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetDividendsRequest), global::Tinkoff.InvestApi.V1.GetDividendsRequest.Parser, new[]{ "Figi", "From", "To" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetDividendsResponse), global::Tinkoff.InvestApi.V1.GetDividendsResponse.Parser, new[]{ "Dividends" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Dividend), global::Tinkoff.InvestApi.V1.Dividend.Parser, new[]{ "DividendNet", "PaymentDate", "DeclaredDate", "LastBuyDate", "DividendType", "RecordDate", "Regularity", "ClosePrice", "YieldValue", "CreatedAt" }, null, null, null, null),
@@ -610,7 +718,7 @@ namespace Tinkoff.InvestApi.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CountryResponse), global::Tinkoff.InvestApi.V1.CountryResponse.Parser, new[]{ "AlfaTwo", "AlfaThree", "Name", "NameBrief" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.FindInstrumentRequest), global::Tinkoff.InvestApi.V1.FindInstrumentRequest.Parser, new[]{ "Query" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.FindInstrumentResponse), global::Tinkoff.InvestApi.V1.FindInstrumentResponse.Parser, new[]{ "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InstrumentShort), global::Tinkoff.InvestApi.V1.InstrumentShort.Parser, new[]{ "Isin", "Figi", "Ticker", "ClassCode", "InstrumentType", "Name", "Uid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InstrumentShort), global::Tinkoff.InvestApi.V1.InstrumentShort.Parser, new[]{ "Isin", "Figi", "Ticker", "ClassCode", "InstrumentType", "Name", "Uid", "PositionUid", "ApiTradeAvailableFlag", "ForIisFlag", "First1MinCandleDate", "First1DayCandleDate", "ForQualInvestorFlag", "WeekendFlag", "BlockedTcaFlag" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetBrandsRequest), global::Tinkoff.InvestApi.V1.GetBrandsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetBrandRequest), global::Tinkoff.InvestApi.V1.GetBrandRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetBrandsResponse), global::Tinkoff.InvestApi.V1.GetBrandsResponse.Parser, new[]{ "Brands" }, null, null, null, null)
@@ -659,6 +767,78 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
+  ///Тип опциона по направлению сделки.
+  /// </summary>
+  public enum OptionDirection {
+    /// <summary>
+    ///Тип не определен.
+    /// </summary>
+    [pbr::OriginalName("OPTION_DIRECTION_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    ///Опцион на продажу.
+    /// </summary>
+    [pbr::OriginalName("OPTION_DIRECTION_PUT")] Put = 1,
+    /// <summary>
+    ///Опцион на покупку.
+    /// </summary>
+    [pbr::OriginalName("OPTION_DIRECTION_CALL")] Call = 2,
+  }
+
+  /// <summary>
+  ///Тип расчетов по опциону.
+  /// </summary>
+  public enum OptionPaymentType {
+    /// <summary>
+    ///Тип не определен.
+    /// </summary>
+    [pbr::OriginalName("OPTION_PAYMENT_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    ///Опционы с использованием премии в расчетах.
+    /// </summary>
+    [pbr::OriginalName("OPTION_PAYMENT_TYPE_PREMIUM")] Premium = 1,
+    /// <summary>
+    ///Маржируемые опционы.
+    /// </summary>
+    [pbr::OriginalName("OPTION_PAYMENT_TYPE_MARGINAL")] Marginal = 2,
+  }
+
+  /// <summary>
+  ///Тип опциона по стилю.
+  /// </summary>
+  public enum OptionStyle {
+    /// <summary>
+    ///Тип не определен.
+    /// </summary>
+    [pbr::OriginalName("OPTION_STYLE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    ///Американский опцион.
+    /// </summary>
+    [pbr::OriginalName("OPTION_STYLE_AMERICAN")] American = 1,
+    /// <summary>
+    ///Европейский опцион.
+    /// </summary>
+    [pbr::OriginalName("OPTION_STYLE_EUROPEAN")] European = 2,
+  }
+
+  /// <summary>
+  ///Тип опциона по способу исполнения.
+  /// </summary>
+  public enum OptionSettlementType {
+    /// <summary>
+    ///Тип не определен.
+    /// </summary>
+    [pbr::OriginalName("OPTION_EXECUTION_TYPE_UNSPECIFIED")] OptionExecutionTypeUnspecified = 0,
+    /// <summary>
+    /// Поставочный тип опциона.
+    /// </summary>
+    [pbr::OriginalName("OPTION_EXECUTION_TYPE_PHYSICAL_DELIVERY")] OptionExecutionTypePhysicalDelivery = 1,
+    /// <summary>
+    ///Расчетный тип опциона.
+    /// </summary>
+    [pbr::OriginalName("OPTION_EXECUTION_TYPE_CASH_SETTLEMENT")] OptionExecutionTypeCashSettlement = 2,
+  }
+
+  /// <summary>
   ///Тип идентификатора инструмента. Подробнее об идентификации инструментов: [Идентификация инструментов](https://tinkoff.github.io/investAPI/faq_identification/)
   /// </summary>
   public enum InstrumentIdType {
@@ -678,6 +858,10 @@ namespace Tinkoff.InvestApi.V1 {
     ///Уникальный идентификатор.
     /// </summary>
     [pbr::OriginalName("INSTRUMENT_ID_TYPE_UID")] Uid = 3,
+    /// <summary>
+    ///Идентификатор позиции.
+    /// </summary>
+    [pbr::OriginalName("INSTRUMENT_ID_TYPE_POSITION_UID")] PositionUid = 4,
   }
 
   /// <summary>
@@ -828,7 +1012,7 @@ namespace Tinkoff.InvestApi.V1 {
 
   #region Messages
   /// <summary>
-  ///Запрос расписания торгов
+  ///Запрос расписания торгов.
   /// </summary>
   public sealed partial class TradingSchedulesRequest : pb::IMessage<TradingSchedulesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1121,7 +1305,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Список торговых площадок
+  ///Список торговых площадок.
   /// </summary>
   public sealed partial class TradingSchedulesResponse : pb::IMessage<TradingSchedulesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3717,7 +3901,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int CouponDateFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp couponDate_;
     /// <summary>
-    ///Дата выплаты купона
+    ///Дата выплаты купона.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3732,7 +3916,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int CouponNumberFieldNumber = 3;
     private long couponNumber_;
     /// <summary>
-    ///Номер купона
+    ///Номер купона.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3747,7 +3931,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int FixDateFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp fixDate_;
     /// <summary>
-    ///(Опционально) Дата фиксации реестра для выплаты купона
+    ///(Опционально) Дата фиксации реестра для выплаты купона.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3762,7 +3946,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PayOneBondFieldNumber = 5;
     private global::Tinkoff.InvestApi.V1.MoneyValue payOneBond_;
     /// <summary>
-    ///Выплата на одну облигацию
+    ///Выплата на одну облигацию.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3777,7 +3961,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int CouponTypeFieldNumber = 6;
     private global::Tinkoff.InvestApi.V1.CouponType couponType_ = global::Tinkoff.InvestApi.V1.CouponType.Unspecified;
     /// <summary>
-    ///Тип купона
+    ///Тип купона.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5368,6 +5552,2395 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
+  ///Данные по опциону.
+  /// </summary>
+  public sealed partial class OptionResponse : pb::IMessage<OptionResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<OptionResponse> _parser = new pb::MessageParser<OptionResponse>(() => new OptionResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<OptionResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionResponse(OptionResponse other) : this() {
+      instrument_ = other.instrument_ != null ? other.instrument_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionResponse Clone() {
+      return new OptionResponse(this);
+    }
+
+    /// <summary>Field number for the "instrument" field.</summary>
+    public const int InstrumentFieldNumber = 1;
+    private global::Tinkoff.InvestApi.V1.Option instrument_;
+    /// <summary>
+    /// Информация по опциону.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Option Instrument {
+      get { return instrument_; }
+      set {
+        instrument_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as OptionResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OptionResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Instrument, other.Instrument)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (instrument_ != null) hash ^= Instrument.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (instrument_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Instrument);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (instrument_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Instrument);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (instrument_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Instrument);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(OptionResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.instrument_ != null) {
+        if (instrument_ == null) {
+          Instrument = new global::Tinkoff.InvestApi.V1.Option();
+        }
+        Instrument.MergeFrom(other.Instrument);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (instrument_ == null) {
+              Instrument = new global::Tinkoff.InvestApi.V1.Option();
+            }
+            input.ReadMessage(Instrument);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (instrument_ == null) {
+              Instrument = new global::Tinkoff.InvestApi.V1.Option();
+            }
+            input.ReadMessage(Instrument);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Данные по опционам.
+  /// </summary>
+  public sealed partial class OptionsResponse : pb::IMessage<OptionsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<OptionsResponse> _parser = new pb::MessageParser<OptionsResponse>(() => new OptionsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<OptionsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionsResponse(OptionsResponse other) : this() {
+      instruments_ = other.instruments_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionsResponse Clone() {
+      return new OptionsResponse(this);
+    }
+
+    /// <summary>Field number for the "instruments" field.</summary>
+    public const int InstrumentsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Tinkoff.InvestApi.V1.Option> _repeated_instruments_codec
+        = pb::FieldCodec.ForMessage(10, global::Tinkoff.InvestApi.V1.Option.Parser);
+    private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.Option> instruments_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.Option>();
+    /// <summary>
+    ///Массив данных по опциону.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Tinkoff.InvestApi.V1.Option> Instruments {
+      get { return instruments_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as OptionsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OptionsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!instruments_.Equals(other.instruments_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= instruments_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      instruments_.WriteTo(output, _repeated_instruments_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      instruments_.WriteTo(ref output, _repeated_instruments_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += instruments_.CalculateSize(_repeated_instruments_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(OptionsResponse other) {
+      if (other == null) {
+        return;
+      }
+      instruments_.Add(other.instruments_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            instruments_.AddEntriesFrom(input, _repeated_instruments_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            instruments_.AddEntriesFrom(ref input, _repeated_instruments_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Опцион.
+  /// </summary>
+  public sealed partial class Option : pb::IMessage<Option>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Option> _parser = new pb::MessageParser<Option>(() => new Option());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Option> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Option() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Option(Option other) : this() {
+      uid_ = other.uid_;
+      positionUid_ = other.positionUid_;
+      ticker_ = other.ticker_;
+      classCode_ = other.classCode_;
+      basicAssetPositionUid_ = other.basicAssetPositionUid_;
+      tradingStatus_ = other.tradingStatus_;
+      realExchange_ = other.realExchange_;
+      direction_ = other.direction_;
+      paymentType_ = other.paymentType_;
+      style_ = other.style_;
+      settlementType_ = other.settlementType_;
+      name_ = other.name_;
+      currency_ = other.currency_;
+      settlementCurrency_ = other.settlementCurrency_;
+      assetType_ = other.assetType_;
+      basicAsset_ = other.basicAsset_;
+      exchange_ = other.exchange_;
+      countryOfRisk_ = other.countryOfRisk_;
+      countryOfRiskName_ = other.countryOfRiskName_;
+      sector_ = other.sector_;
+      lot_ = other.lot_;
+      basicAssetSize_ = other.basicAssetSize_ != null ? other.basicAssetSize_.Clone() : null;
+      klong_ = other.klong_ != null ? other.klong_.Clone() : null;
+      kshort_ = other.kshort_ != null ? other.kshort_.Clone() : null;
+      dlong_ = other.dlong_ != null ? other.dlong_.Clone() : null;
+      dshort_ = other.dshort_ != null ? other.dshort_.Clone() : null;
+      dlongMin_ = other.dlongMin_ != null ? other.dlongMin_.Clone() : null;
+      dshortMin_ = other.dshortMin_ != null ? other.dshortMin_.Clone() : null;
+      minPriceIncrement_ = other.minPriceIncrement_ != null ? other.minPriceIncrement_.Clone() : null;
+      strikePrice_ = other.strikePrice_ != null ? other.strikePrice_.Clone() : null;
+      expirationDate_ = other.expirationDate_ != null ? other.expirationDate_.Clone() : null;
+      firstTradeDate_ = other.firstTradeDate_ != null ? other.firstTradeDate_.Clone() : null;
+      lastTradeDate_ = other.lastTradeDate_ != null ? other.lastTradeDate_.Clone() : null;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
+      shortEnabledFlag_ = other.shortEnabledFlag_;
+      forIisFlag_ = other.forIisFlag_;
+      otcFlag_ = other.otcFlag_;
+      buyAvailableFlag_ = other.buyAvailableFlag_;
+      sellAvailableFlag_ = other.sellAvailableFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Option Clone() {
+      return new Option(this);
+    }
+
+    /// <summary>Field number for the "uid" field.</summary>
+    public const int UidFieldNumber = 1;
+    private string uid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Uid {
+      get { return uid_; }
+      set {
+        uid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 2;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ticker" field.</summary>
+    public const int TickerFieldNumber = 3;
+    private string ticker_ = "";
+    /// <summary>
+    ///Тикер инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Ticker {
+      get { return ticker_; }
+      set {
+        ticker_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "class_code" field.</summary>
+    public const int ClassCodeFieldNumber = 4;
+    private string classCode_ = "";
+    /// <summary>
+    ///Класс-код.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClassCode {
+      get { return classCode_; }
+      set {
+        classCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "basic_asset_position_uid" field.</summary>
+    public const int BasicAssetPositionUidFieldNumber = 5;
+    private string basicAssetPositionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции основного инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BasicAssetPositionUid {
+      get { return basicAssetPositionUid_; }
+      set {
+        basicAssetPositionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "trading_status" field.</summary>
+    public const int TradingStatusFieldNumber = 21;
+    private global::Tinkoff.InvestApi.V1.SecurityTradingStatus tradingStatus_ = global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified;
+    /// <summary>
+    ///Текущий режим торгов инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.SecurityTradingStatus TradingStatus {
+      get { return tradingStatus_; }
+      set {
+        tradingStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "real_exchange" field.</summary>
+    public const int RealExchangeFieldNumber = 31;
+    private global::Tinkoff.InvestApi.V1.RealExchange realExchange_ = global::Tinkoff.InvestApi.V1.RealExchange.Unspecified;
+    /// <summary>
+    ///Реальная площадка исполнения расчётов. Допустимые значения: [REAL_EXCHANGE_MOEX, REAL_EXCHANGE_RTS]
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.RealExchange RealExchange {
+      get { return realExchange_; }
+      set {
+        realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 41;
+    private global::Tinkoff.InvestApi.V1.OptionDirection direction_ = global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified;
+    /// <summary>
+    ///Направление опциона.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.OptionDirection Direction {
+      get { return direction_; }
+      set {
+        direction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "payment_type" field.</summary>
+    public const int PaymentTypeFieldNumber = 42;
+    private global::Tinkoff.InvestApi.V1.OptionPaymentType paymentType_ = global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified;
+    /// <summary>
+    ///Тип расчетов по опциону.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.OptionPaymentType PaymentType {
+      get { return paymentType_; }
+      set {
+        paymentType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "style" field.</summary>
+    public const int StyleFieldNumber = 43;
+    private global::Tinkoff.InvestApi.V1.OptionStyle style_ = global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified;
+    /// <summary>
+    ///Стиль опциона.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.OptionStyle Style {
+      get { return style_; }
+      set {
+        style_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "settlement_type" field.</summary>
+    public const int SettlementTypeFieldNumber = 44;
+    private global::Tinkoff.InvestApi.V1.OptionSettlementType settlementType_ = global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified;
+    /// <summary>
+    ///Способ исполнения опциона.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.OptionSettlementType SettlementType {
+      get { return settlementType_; }
+      set {
+        settlementType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 101;
+    private string name_ = "";
+    /// <summary>
+    ///Название инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "currency" field.</summary>
+    public const int CurrencyFieldNumber = 111;
+    private string currency_ = "";
+    /// <summary>
+    ///Валюта.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Currency {
+      get { return currency_; }
+      set {
+        currency_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "settlement_currency" field.</summary>
+    public const int SettlementCurrencyFieldNumber = 112;
+    private string settlementCurrency_ = "";
+    /// <summary>
+    ///Валюта, в которой оценивается контракт.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SettlementCurrency {
+      get { return settlementCurrency_; }
+      set {
+        settlementCurrency_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "asset_type" field.</summary>
+    public const int AssetTypeFieldNumber = 131;
+    private string assetType_ = "";
+    /// <summary>
+    ///Тип актива.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AssetType {
+      get { return assetType_; }
+      set {
+        assetType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "basic_asset" field.</summary>
+    public const int BasicAssetFieldNumber = 132;
+    private string basicAsset_ = "";
+    /// <summary>
+    ///Основной актив.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BasicAsset {
+      get { return basicAsset_; }
+      set {
+        basicAsset_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "exchange" field.</summary>
+    public const int ExchangeFieldNumber = 141;
+    private string exchange_ = "";
+    /// <summary>
+    ///Биржа.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Exchange {
+      get { return exchange_; }
+      set {
+        exchange_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "country_of_risk" field.</summary>
+    public const int CountryOfRiskFieldNumber = 151;
+    private string countryOfRisk_ = "";
+    /// <summary>
+    ///Код страны рисков.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryOfRisk {
+      get { return countryOfRisk_; }
+      set {
+        countryOfRisk_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "country_of_risk_name" field.</summary>
+    public const int CountryOfRiskNameFieldNumber = 152;
+    private string countryOfRiskName_ = "";
+    /// <summary>
+    ///Наименование страны рисков.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryOfRiskName {
+      get { return countryOfRiskName_; }
+      set {
+        countryOfRiskName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sector" field.</summary>
+    public const int SectorFieldNumber = 161;
+    private string sector_ = "";
+    /// <summary>
+    ///Сектор экономики.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Sector {
+      get { return sector_; }
+      set {
+        sector_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "lot" field.</summary>
+    public const int LotFieldNumber = 201;
+    private int lot_;
+    /// <summary>
+    ///Количество бумаг в лоте.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Lot {
+      get { return lot_; }
+      set {
+        lot_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "basic_asset_size" field.</summary>
+    public const int BasicAssetSizeFieldNumber = 211;
+    private global::Tinkoff.InvestApi.V1.Quotation basicAssetSize_;
+    /// <summary>
+    ///Размер основного актива.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation BasicAssetSize {
+      get { return basicAssetSize_; }
+      set {
+        basicAssetSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "klong" field.</summary>
+    public const int KlongFieldNumber = 221;
+    private global::Tinkoff.InvestApi.V1.Quotation klong_;
+    /// <summary>
+    ///Коэффициент ставки риска длинной позиции по клиенту.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Klong {
+      get { return klong_; }
+      set {
+        klong_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "kshort" field.</summary>
+    public const int KshortFieldNumber = 222;
+    private global::Tinkoff.InvestApi.V1.Quotation kshort_;
+    /// <summary>
+    ///Коэффициент ставки риска короткой позиции по клиенту.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Kshort {
+      get { return kshort_; }
+      set {
+        kshort_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dlong" field.</summary>
+    public const int DlongFieldNumber = 223;
+    private global::Tinkoff.InvestApi.V1.Quotation dlong_;
+    /// <summary>
+    ///Ставка риска минимальной маржи лонг.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Dlong {
+      get { return dlong_; }
+      set {
+        dlong_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dshort" field.</summary>
+    public const int DshortFieldNumber = 224;
+    private global::Tinkoff.InvestApi.V1.Quotation dshort_;
+    /// <summary>
+    ///Ставка риска минимальной маржи шорт.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Dshort {
+      get { return dshort_; }
+      set {
+        dshort_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dlong_min" field.</summary>
+    public const int DlongMinFieldNumber = 225;
+    private global::Tinkoff.InvestApi.V1.Quotation dlongMin_;
+    /// <summary>
+    ///Ставка риска начальной маржи лонг.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation DlongMin {
+      get { return dlongMin_; }
+      set {
+        dlongMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dshort_min" field.</summary>
+    public const int DshortMinFieldNumber = 226;
+    private global::Tinkoff.InvestApi.V1.Quotation dshortMin_;
+    /// <summary>
+    ///Ставка риска начальной маржи шорт.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation DshortMin {
+      get { return dshortMin_; }
+      set {
+        dshortMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "min_price_increment" field.</summary>
+    public const int MinPriceIncrementFieldNumber = 231;
+    private global::Tinkoff.InvestApi.V1.Quotation minPriceIncrement_;
+    /// <summary>
+    ///Минимальный шаг цены.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation MinPriceIncrement {
+      get { return minPriceIncrement_; }
+      set {
+        minPriceIncrement_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "strike_price" field.</summary>
+    public const int StrikePriceFieldNumber = 241;
+    private global::Tinkoff.InvestApi.V1.MoneyValue strikePrice_;
+    /// <summary>
+    ///Цена страйка.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.MoneyValue StrikePrice {
+      get { return strikePrice_; }
+      set {
+        strikePrice_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "expiration_date" field.</summary>
+    public const int ExpirationDateFieldNumber = 301;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp expirationDate_;
+    /// <summary>
+    ///Дата истечения срока в формате UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ExpirationDate {
+      get { return expirationDate_; }
+      set {
+        expirationDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_trade_date" field.</summary>
+    public const int FirstTradeDateFieldNumber = 311;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp firstTradeDate_;
+    /// <summary>
+    ///Дата начала обращения контракта в формате UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp FirstTradeDate {
+      get { return firstTradeDate_; }
+      set {
+        firstTradeDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last_trade_date" field.</summary>
+    public const int LastTradeDateFieldNumber = 312;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp lastTradeDate_;
+    /// <summary>
+    ///Дата исполнения в формате UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp LastTradeDate {
+      get { return lastTradeDate_; }
+      set {
+        lastTradeDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 321;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи в формате UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 322;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи в формате UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "short_enabled_flag" field.</summary>
+    public const int ShortEnabledFlagFieldNumber = 401;
+    private bool shortEnabledFlag_;
+    /// <summary>
+    ///Признак доступности для операций шорт.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ShortEnabledFlag {
+      get { return shortEnabledFlag_; }
+      set {
+        shortEnabledFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 402;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Возможность покупки/продажи на ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "otc_flag" field.</summary>
+    public const int OtcFlagFieldNumber = 403;
+    private bool otcFlag_;
+    /// <summary>
+    ///Признак внебиржевой ценной бумаги.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OtcFlag {
+      get { return otcFlag_; }
+      set {
+        otcFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "buy_available_flag" field.</summary>
+    public const int BuyAvailableFlagFieldNumber = 404;
+    private bool buyAvailableFlag_;
+    /// <summary>
+    ///Признак доступности для покупки.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BuyAvailableFlag {
+      get { return buyAvailableFlag_; }
+      set {
+        buyAvailableFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sell_available_flag" field.</summary>
+    public const int SellAvailableFlagFieldNumber = 405;
+    private bool sellAvailableFlag_;
+    /// <summary>
+    ///Признак доступности для продажи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SellAvailableFlag {
+      get { return sellAvailableFlag_; }
+      set {
+        sellAvailableFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 406;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 407;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 408;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Option);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Option other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Uid != other.Uid) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (Ticker != other.Ticker) return false;
+      if (ClassCode != other.ClassCode) return false;
+      if (BasicAssetPositionUid != other.BasicAssetPositionUid) return false;
+      if (TradingStatus != other.TradingStatus) return false;
+      if (RealExchange != other.RealExchange) return false;
+      if (Direction != other.Direction) return false;
+      if (PaymentType != other.PaymentType) return false;
+      if (Style != other.Style) return false;
+      if (SettlementType != other.SettlementType) return false;
+      if (Name != other.Name) return false;
+      if (Currency != other.Currency) return false;
+      if (SettlementCurrency != other.SettlementCurrency) return false;
+      if (AssetType != other.AssetType) return false;
+      if (BasicAsset != other.BasicAsset) return false;
+      if (Exchange != other.Exchange) return false;
+      if (CountryOfRisk != other.CountryOfRisk) return false;
+      if (CountryOfRiskName != other.CountryOfRiskName) return false;
+      if (Sector != other.Sector) return false;
+      if (Lot != other.Lot) return false;
+      if (!object.Equals(BasicAssetSize, other.BasicAssetSize)) return false;
+      if (!object.Equals(Klong, other.Klong)) return false;
+      if (!object.Equals(Kshort, other.Kshort)) return false;
+      if (!object.Equals(Dlong, other.Dlong)) return false;
+      if (!object.Equals(Dshort, other.Dshort)) return false;
+      if (!object.Equals(DlongMin, other.DlongMin)) return false;
+      if (!object.Equals(DshortMin, other.DshortMin)) return false;
+      if (!object.Equals(MinPriceIncrement, other.MinPriceIncrement)) return false;
+      if (!object.Equals(StrikePrice, other.StrikePrice)) return false;
+      if (!object.Equals(ExpirationDate, other.ExpirationDate)) return false;
+      if (!object.Equals(FirstTradeDate, other.FirstTradeDate)) return false;
+      if (!object.Equals(LastTradeDate, other.LastTradeDate)) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
+      if (ShortEnabledFlag != other.ShortEnabledFlag) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (OtcFlag != other.OtcFlag) return false;
+      if (BuyAvailableFlag != other.BuyAvailableFlag) return false;
+      if (SellAvailableFlag != other.SellAvailableFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Uid.Length != 0) hash ^= Uid.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (Ticker.Length != 0) hash ^= Ticker.GetHashCode();
+      if (ClassCode.Length != 0) hash ^= ClassCode.GetHashCode();
+      if (BasicAssetPositionUid.Length != 0) hash ^= BasicAssetPositionUid.GetHashCode();
+      if (TradingStatus != global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified) hash ^= TradingStatus.GetHashCode();
+      if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (Direction != global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified) hash ^= Direction.GetHashCode();
+      if (PaymentType != global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified) hash ^= PaymentType.GetHashCode();
+      if (Style != global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified) hash ^= Style.GetHashCode();
+      if (SettlementType != global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified) hash ^= SettlementType.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Currency.Length != 0) hash ^= Currency.GetHashCode();
+      if (SettlementCurrency.Length != 0) hash ^= SettlementCurrency.GetHashCode();
+      if (AssetType.Length != 0) hash ^= AssetType.GetHashCode();
+      if (BasicAsset.Length != 0) hash ^= BasicAsset.GetHashCode();
+      if (Exchange.Length != 0) hash ^= Exchange.GetHashCode();
+      if (CountryOfRisk.Length != 0) hash ^= CountryOfRisk.GetHashCode();
+      if (CountryOfRiskName.Length != 0) hash ^= CountryOfRiskName.GetHashCode();
+      if (Sector.Length != 0) hash ^= Sector.GetHashCode();
+      if (Lot != 0) hash ^= Lot.GetHashCode();
+      if (basicAssetSize_ != null) hash ^= BasicAssetSize.GetHashCode();
+      if (klong_ != null) hash ^= Klong.GetHashCode();
+      if (kshort_ != null) hash ^= Kshort.GetHashCode();
+      if (dlong_ != null) hash ^= Dlong.GetHashCode();
+      if (dshort_ != null) hash ^= Dshort.GetHashCode();
+      if (dlongMin_ != null) hash ^= DlongMin.GetHashCode();
+      if (dshortMin_ != null) hash ^= DshortMin.GetHashCode();
+      if (minPriceIncrement_ != null) hash ^= MinPriceIncrement.GetHashCode();
+      if (strikePrice_ != null) hash ^= StrikePrice.GetHashCode();
+      if (expirationDate_ != null) hash ^= ExpirationDate.GetHashCode();
+      if (firstTradeDate_ != null) hash ^= FirstTradeDate.GetHashCode();
+      if (lastTradeDate_ != null) hash ^= LastTradeDate.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
+      if (ShortEnabledFlag != false) hash ^= ShortEnabledFlag.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (OtcFlag != false) hash ^= OtcFlag.GetHashCode();
+      if (BuyAvailableFlag != false) hash ^= BuyAvailableFlag.GetHashCode();
+      if (SellAvailableFlag != false) hash ^= SellAvailableFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Uid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uid);
+      }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PositionUid);
+      }
+      if (Ticker.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Ticker);
+      }
+      if (ClassCode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ClassCode);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(BasicAssetPositionUid);
+      }
+      if (TradingStatus != global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified) {
+        output.WriteRawTag(168, 1);
+        output.WriteEnum((int) TradingStatus);
+      }
+      if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
+        output.WriteRawTag(248, 1);
+        output.WriteEnum((int) RealExchange);
+      }
+      if (Direction != global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified) {
+        output.WriteRawTag(200, 2);
+        output.WriteEnum((int) Direction);
+      }
+      if (PaymentType != global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified) {
+        output.WriteRawTag(208, 2);
+        output.WriteEnum((int) PaymentType);
+      }
+      if (Style != global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified) {
+        output.WriteRawTag(216, 2);
+        output.WriteEnum((int) Style);
+      }
+      if (SettlementType != global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified) {
+        output.WriteRawTag(224, 2);
+        output.WriteEnum((int) SettlementType);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(170, 6);
+        output.WriteString(Name);
+      }
+      if (Currency.Length != 0) {
+        output.WriteRawTag(250, 6);
+        output.WriteString(Currency);
+      }
+      if (SettlementCurrency.Length != 0) {
+        output.WriteRawTag(130, 7);
+        output.WriteString(SettlementCurrency);
+      }
+      if (AssetType.Length != 0) {
+        output.WriteRawTag(154, 8);
+        output.WriteString(AssetType);
+      }
+      if (BasicAsset.Length != 0) {
+        output.WriteRawTag(162, 8);
+        output.WriteString(BasicAsset);
+      }
+      if (Exchange.Length != 0) {
+        output.WriteRawTag(234, 8);
+        output.WriteString(Exchange);
+      }
+      if (CountryOfRisk.Length != 0) {
+        output.WriteRawTag(186, 9);
+        output.WriteString(CountryOfRisk);
+      }
+      if (CountryOfRiskName.Length != 0) {
+        output.WriteRawTag(194, 9);
+        output.WriteString(CountryOfRiskName);
+      }
+      if (Sector.Length != 0) {
+        output.WriteRawTag(138, 10);
+        output.WriteString(Sector);
+      }
+      if (Lot != 0) {
+        output.WriteRawTag(200, 12);
+        output.WriteInt32(Lot);
+      }
+      if (basicAssetSize_ != null) {
+        output.WriteRawTag(154, 13);
+        output.WriteMessage(BasicAssetSize);
+      }
+      if (klong_ != null) {
+        output.WriteRawTag(234, 13);
+        output.WriteMessage(Klong);
+      }
+      if (kshort_ != null) {
+        output.WriteRawTag(242, 13);
+        output.WriteMessage(Kshort);
+      }
+      if (dlong_ != null) {
+        output.WriteRawTag(250, 13);
+        output.WriteMessage(Dlong);
+      }
+      if (dshort_ != null) {
+        output.WriteRawTag(130, 14);
+        output.WriteMessage(Dshort);
+      }
+      if (dlongMin_ != null) {
+        output.WriteRawTag(138, 14);
+        output.WriteMessage(DlongMin);
+      }
+      if (dshortMin_ != null) {
+        output.WriteRawTag(146, 14);
+        output.WriteMessage(DshortMin);
+      }
+      if (minPriceIncrement_ != null) {
+        output.WriteRawTag(186, 14);
+        output.WriteMessage(MinPriceIncrement);
+      }
+      if (strikePrice_ != null) {
+        output.WriteRawTag(138, 15);
+        output.WriteMessage(StrikePrice);
+      }
+      if (expirationDate_ != null) {
+        output.WriteRawTag(234, 18);
+        output.WriteMessage(ExpirationDate);
+      }
+      if (firstTradeDate_ != null) {
+        output.WriteRawTag(186, 19);
+        output.WriteMessage(FirstTradeDate);
+      }
+      if (lastTradeDate_ != null) {
+        output.WriteRawTag(194, 19);
+        output.WriteMessage(LastTradeDate);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(138, 20);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(146, 20);
+        output.WriteMessage(First1DayCandleDate);
+      }
+      if (ShortEnabledFlag != false) {
+        output.WriteRawTag(136, 25);
+        output.WriteBool(ShortEnabledFlag);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(144, 25);
+        output.WriteBool(ForIisFlag);
+      }
+      if (OtcFlag != false) {
+        output.WriteRawTag(152, 25);
+        output.WriteBool(OtcFlag);
+      }
+      if (BuyAvailableFlag != false) {
+        output.WriteRawTag(160, 25);
+        output.WriteBool(BuyAvailableFlag);
+      }
+      if (SellAvailableFlag != false) {
+        output.WriteRawTag(168, 25);
+        output.WriteBool(SellAvailableFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(176, 25);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(184, 25);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(192, 25);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Uid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uid);
+      }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PositionUid);
+      }
+      if (Ticker.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Ticker);
+      }
+      if (ClassCode.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ClassCode);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(BasicAssetPositionUid);
+      }
+      if (TradingStatus != global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified) {
+        output.WriteRawTag(168, 1);
+        output.WriteEnum((int) TradingStatus);
+      }
+      if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
+        output.WriteRawTag(248, 1);
+        output.WriteEnum((int) RealExchange);
+      }
+      if (Direction != global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified) {
+        output.WriteRawTag(200, 2);
+        output.WriteEnum((int) Direction);
+      }
+      if (PaymentType != global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified) {
+        output.WriteRawTag(208, 2);
+        output.WriteEnum((int) PaymentType);
+      }
+      if (Style != global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified) {
+        output.WriteRawTag(216, 2);
+        output.WriteEnum((int) Style);
+      }
+      if (SettlementType != global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified) {
+        output.WriteRawTag(224, 2);
+        output.WriteEnum((int) SettlementType);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(170, 6);
+        output.WriteString(Name);
+      }
+      if (Currency.Length != 0) {
+        output.WriteRawTag(250, 6);
+        output.WriteString(Currency);
+      }
+      if (SettlementCurrency.Length != 0) {
+        output.WriteRawTag(130, 7);
+        output.WriteString(SettlementCurrency);
+      }
+      if (AssetType.Length != 0) {
+        output.WriteRawTag(154, 8);
+        output.WriteString(AssetType);
+      }
+      if (BasicAsset.Length != 0) {
+        output.WriteRawTag(162, 8);
+        output.WriteString(BasicAsset);
+      }
+      if (Exchange.Length != 0) {
+        output.WriteRawTag(234, 8);
+        output.WriteString(Exchange);
+      }
+      if (CountryOfRisk.Length != 0) {
+        output.WriteRawTag(186, 9);
+        output.WriteString(CountryOfRisk);
+      }
+      if (CountryOfRiskName.Length != 0) {
+        output.WriteRawTag(194, 9);
+        output.WriteString(CountryOfRiskName);
+      }
+      if (Sector.Length != 0) {
+        output.WriteRawTag(138, 10);
+        output.WriteString(Sector);
+      }
+      if (Lot != 0) {
+        output.WriteRawTag(200, 12);
+        output.WriteInt32(Lot);
+      }
+      if (basicAssetSize_ != null) {
+        output.WriteRawTag(154, 13);
+        output.WriteMessage(BasicAssetSize);
+      }
+      if (klong_ != null) {
+        output.WriteRawTag(234, 13);
+        output.WriteMessage(Klong);
+      }
+      if (kshort_ != null) {
+        output.WriteRawTag(242, 13);
+        output.WriteMessage(Kshort);
+      }
+      if (dlong_ != null) {
+        output.WriteRawTag(250, 13);
+        output.WriteMessage(Dlong);
+      }
+      if (dshort_ != null) {
+        output.WriteRawTag(130, 14);
+        output.WriteMessage(Dshort);
+      }
+      if (dlongMin_ != null) {
+        output.WriteRawTag(138, 14);
+        output.WriteMessage(DlongMin);
+      }
+      if (dshortMin_ != null) {
+        output.WriteRawTag(146, 14);
+        output.WriteMessage(DshortMin);
+      }
+      if (minPriceIncrement_ != null) {
+        output.WriteRawTag(186, 14);
+        output.WriteMessage(MinPriceIncrement);
+      }
+      if (strikePrice_ != null) {
+        output.WriteRawTag(138, 15);
+        output.WriteMessage(StrikePrice);
+      }
+      if (expirationDate_ != null) {
+        output.WriteRawTag(234, 18);
+        output.WriteMessage(ExpirationDate);
+      }
+      if (firstTradeDate_ != null) {
+        output.WriteRawTag(186, 19);
+        output.WriteMessage(FirstTradeDate);
+      }
+      if (lastTradeDate_ != null) {
+        output.WriteRawTag(194, 19);
+        output.WriteMessage(LastTradeDate);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(138, 20);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(146, 20);
+        output.WriteMessage(First1DayCandleDate);
+      }
+      if (ShortEnabledFlag != false) {
+        output.WriteRawTag(136, 25);
+        output.WriteBool(ShortEnabledFlag);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(144, 25);
+        output.WriteBool(ForIisFlag);
+      }
+      if (OtcFlag != false) {
+        output.WriteRawTag(152, 25);
+        output.WriteBool(OtcFlag);
+      }
+      if (BuyAvailableFlag != false) {
+        output.WriteRawTag(160, 25);
+        output.WriteBool(BuyAvailableFlag);
+      }
+      if (SellAvailableFlag != false) {
+        output.WriteRawTag(168, 25);
+        output.WriteBool(SellAvailableFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(176, 25);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(184, 25);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(192, 25);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Uid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Uid);
+      }
+      if (PositionUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (Ticker.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Ticker);
+      }
+      if (ClassCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassCode);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BasicAssetPositionUid);
+      }
+      if (TradingStatus != global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) TradingStatus);
+      }
+      if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (Direction != global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Direction);
+      }
+      if (PaymentType != global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) PaymentType);
+      }
+      if (Style != global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Style);
+      }
+      if (SettlementType != global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SettlementType);
+      }
+      if (Name.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Currency.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Currency);
+      }
+      if (SettlementCurrency.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SettlementCurrency);
+      }
+      if (AssetType.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(AssetType);
+      }
+      if (BasicAsset.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(BasicAsset);
+      }
+      if (Exchange.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Exchange);
+      }
+      if (CountryOfRisk.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryOfRisk);
+      }
+      if (CountryOfRiskName.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryOfRiskName);
+      }
+      if (Sector.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Sector);
+      }
+      if (Lot != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(Lot);
+      }
+      if (basicAssetSize_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BasicAssetSize);
+      }
+      if (klong_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Klong);
+      }
+      if (kshort_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Kshort);
+      }
+      if (dlong_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Dlong);
+      }
+      if (dshort_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Dshort);
+      }
+      if (dlongMin_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(DlongMin);
+      }
+      if (dshortMin_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(DshortMin);
+      }
+      if (minPriceIncrement_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(MinPriceIncrement);
+      }
+      if (strikePrice_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StrikePrice);
+      }
+      if (expirationDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ExpirationDate);
+      }
+      if (firstTradeDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FirstTradeDate);
+      }
+      if (lastTradeDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LastTradeDate);
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
+      }
+      if (ShortEnabledFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (OtcFlag != false) {
+        size += 2 + 1;
+      }
+      if (BuyAvailableFlag != false) {
+        size += 2 + 1;
+      }
+      if (SellAvailableFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Option other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Uid.Length != 0) {
+        Uid = other.Uid;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.Ticker.Length != 0) {
+        Ticker = other.Ticker;
+      }
+      if (other.ClassCode.Length != 0) {
+        ClassCode = other.ClassCode;
+      }
+      if (other.BasicAssetPositionUid.Length != 0) {
+        BasicAssetPositionUid = other.BasicAssetPositionUid;
+      }
+      if (other.TradingStatus != global::Tinkoff.InvestApi.V1.SecurityTradingStatus.Unspecified) {
+        TradingStatus = other.TradingStatus;
+      }
+      if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
+        RealExchange = other.RealExchange;
+      }
+      if (other.Direction != global::Tinkoff.InvestApi.V1.OptionDirection.Unspecified) {
+        Direction = other.Direction;
+      }
+      if (other.PaymentType != global::Tinkoff.InvestApi.V1.OptionPaymentType.Unspecified) {
+        PaymentType = other.PaymentType;
+      }
+      if (other.Style != global::Tinkoff.InvestApi.V1.OptionStyle.Unspecified) {
+        Style = other.Style;
+      }
+      if (other.SettlementType != global::Tinkoff.InvestApi.V1.OptionSettlementType.OptionExecutionTypeUnspecified) {
+        SettlementType = other.SettlementType;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Currency.Length != 0) {
+        Currency = other.Currency;
+      }
+      if (other.SettlementCurrency.Length != 0) {
+        SettlementCurrency = other.SettlementCurrency;
+      }
+      if (other.AssetType.Length != 0) {
+        AssetType = other.AssetType;
+      }
+      if (other.BasicAsset.Length != 0) {
+        BasicAsset = other.BasicAsset;
+      }
+      if (other.Exchange.Length != 0) {
+        Exchange = other.Exchange;
+      }
+      if (other.CountryOfRisk.Length != 0) {
+        CountryOfRisk = other.CountryOfRisk;
+      }
+      if (other.CountryOfRiskName.Length != 0) {
+        CountryOfRiskName = other.CountryOfRiskName;
+      }
+      if (other.Sector.Length != 0) {
+        Sector = other.Sector;
+      }
+      if (other.Lot != 0) {
+        Lot = other.Lot;
+      }
+      if (other.basicAssetSize_ != null) {
+        if (basicAssetSize_ == null) {
+          BasicAssetSize = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        BasicAssetSize.MergeFrom(other.BasicAssetSize);
+      }
+      if (other.klong_ != null) {
+        if (klong_ == null) {
+          Klong = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Klong.MergeFrom(other.Klong);
+      }
+      if (other.kshort_ != null) {
+        if (kshort_ == null) {
+          Kshort = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Kshort.MergeFrom(other.Kshort);
+      }
+      if (other.dlong_ != null) {
+        if (dlong_ == null) {
+          Dlong = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Dlong.MergeFrom(other.Dlong);
+      }
+      if (other.dshort_ != null) {
+        if (dshort_ == null) {
+          Dshort = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Dshort.MergeFrom(other.Dshort);
+      }
+      if (other.dlongMin_ != null) {
+        if (dlongMin_ == null) {
+          DlongMin = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        DlongMin.MergeFrom(other.DlongMin);
+      }
+      if (other.dshortMin_ != null) {
+        if (dshortMin_ == null) {
+          DshortMin = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        DshortMin.MergeFrom(other.DshortMin);
+      }
+      if (other.minPriceIncrement_ != null) {
+        if (minPriceIncrement_ == null) {
+          MinPriceIncrement = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        MinPriceIncrement.MergeFrom(other.MinPriceIncrement);
+      }
+      if (other.strikePrice_ != null) {
+        if (strikePrice_ == null) {
+          StrikePrice = new global::Tinkoff.InvestApi.V1.MoneyValue();
+        }
+        StrikePrice.MergeFrom(other.StrikePrice);
+      }
+      if (other.expirationDate_ != null) {
+        if (expirationDate_ == null) {
+          ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ExpirationDate.MergeFrom(other.ExpirationDate);
+      }
+      if (other.firstTradeDate_ != null) {
+        if (firstTradeDate_ == null) {
+          FirstTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        FirstTradeDate.MergeFrom(other.FirstTradeDate);
+      }
+      if (other.lastTradeDate_ != null) {
+        if (lastTradeDate_ == null) {
+          LastTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        LastTradeDate.MergeFrom(other.LastTradeDate);
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
+      }
+      if (other.ShortEnabledFlag != false) {
+        ShortEnabledFlag = other.ShortEnabledFlag;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.OtcFlag != false) {
+        OtcFlag = other.OtcFlag;
+      }
+      if (other.BuyAvailableFlag != false) {
+        BuyAvailableFlag = other.BuyAvailableFlag;
+      }
+      if (other.SellAvailableFlag != false) {
+        SellAvailableFlag = other.SellAvailableFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Uid = input.ReadString();
+            break;
+          }
+          case 18: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 26: {
+            Ticker = input.ReadString();
+            break;
+          }
+          case 34: {
+            ClassCode = input.ReadString();
+            break;
+          }
+          case 42: {
+            BasicAssetPositionUid = input.ReadString();
+            break;
+          }
+          case 168: {
+            TradingStatus = (global::Tinkoff.InvestApi.V1.SecurityTradingStatus) input.ReadEnum();
+            break;
+          }
+          case 248: {
+            RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 328: {
+            Direction = (global::Tinkoff.InvestApi.V1.OptionDirection) input.ReadEnum();
+            break;
+          }
+          case 336: {
+            PaymentType = (global::Tinkoff.InvestApi.V1.OptionPaymentType) input.ReadEnum();
+            break;
+          }
+          case 344: {
+            Style = (global::Tinkoff.InvestApi.V1.OptionStyle) input.ReadEnum();
+            break;
+          }
+          case 352: {
+            SettlementType = (global::Tinkoff.InvestApi.V1.OptionSettlementType) input.ReadEnum();
+            break;
+          }
+          case 810: {
+            Name = input.ReadString();
+            break;
+          }
+          case 890: {
+            Currency = input.ReadString();
+            break;
+          }
+          case 898: {
+            SettlementCurrency = input.ReadString();
+            break;
+          }
+          case 1050: {
+            AssetType = input.ReadString();
+            break;
+          }
+          case 1058: {
+            BasicAsset = input.ReadString();
+            break;
+          }
+          case 1130: {
+            Exchange = input.ReadString();
+            break;
+          }
+          case 1210: {
+            CountryOfRisk = input.ReadString();
+            break;
+          }
+          case 1218: {
+            CountryOfRiskName = input.ReadString();
+            break;
+          }
+          case 1290: {
+            Sector = input.ReadString();
+            break;
+          }
+          case 1608: {
+            Lot = input.ReadInt32();
+            break;
+          }
+          case 1690: {
+            if (basicAssetSize_ == null) {
+              BasicAssetSize = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(BasicAssetSize);
+            break;
+          }
+          case 1770: {
+            if (klong_ == null) {
+              Klong = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Klong);
+            break;
+          }
+          case 1778: {
+            if (kshort_ == null) {
+              Kshort = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Kshort);
+            break;
+          }
+          case 1786: {
+            if (dlong_ == null) {
+              Dlong = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Dlong);
+            break;
+          }
+          case 1794: {
+            if (dshort_ == null) {
+              Dshort = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Dshort);
+            break;
+          }
+          case 1802: {
+            if (dlongMin_ == null) {
+              DlongMin = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(DlongMin);
+            break;
+          }
+          case 1810: {
+            if (dshortMin_ == null) {
+              DshortMin = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(DshortMin);
+            break;
+          }
+          case 1850: {
+            if (minPriceIncrement_ == null) {
+              MinPriceIncrement = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(MinPriceIncrement);
+            break;
+          }
+          case 1930: {
+            if (strikePrice_ == null) {
+              StrikePrice = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(StrikePrice);
+            break;
+          }
+          case 2410: {
+            if (expirationDate_ == null) {
+              ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpirationDate);
+            break;
+          }
+          case 2490: {
+            if (firstTradeDate_ == null) {
+              FirstTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(FirstTradeDate);
+            break;
+          }
+          case 2498: {
+            if (lastTradeDate_ == null) {
+              LastTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastTradeDate);
+            break;
+          }
+          case 2570: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 2578: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
+          case 3208: {
+            ShortEnabledFlag = input.ReadBool();
+            break;
+          }
+          case 3216: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 3224: {
+            OtcFlag = input.ReadBool();
+            break;
+          }
+          case 3232: {
+            BuyAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 3240: {
+            SellAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 3248: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 3256: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 3264: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Uid = input.ReadString();
+            break;
+          }
+          case 18: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 26: {
+            Ticker = input.ReadString();
+            break;
+          }
+          case 34: {
+            ClassCode = input.ReadString();
+            break;
+          }
+          case 42: {
+            BasicAssetPositionUid = input.ReadString();
+            break;
+          }
+          case 168: {
+            TradingStatus = (global::Tinkoff.InvestApi.V1.SecurityTradingStatus) input.ReadEnum();
+            break;
+          }
+          case 248: {
+            RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 328: {
+            Direction = (global::Tinkoff.InvestApi.V1.OptionDirection) input.ReadEnum();
+            break;
+          }
+          case 336: {
+            PaymentType = (global::Tinkoff.InvestApi.V1.OptionPaymentType) input.ReadEnum();
+            break;
+          }
+          case 344: {
+            Style = (global::Tinkoff.InvestApi.V1.OptionStyle) input.ReadEnum();
+            break;
+          }
+          case 352: {
+            SettlementType = (global::Tinkoff.InvestApi.V1.OptionSettlementType) input.ReadEnum();
+            break;
+          }
+          case 810: {
+            Name = input.ReadString();
+            break;
+          }
+          case 890: {
+            Currency = input.ReadString();
+            break;
+          }
+          case 898: {
+            SettlementCurrency = input.ReadString();
+            break;
+          }
+          case 1050: {
+            AssetType = input.ReadString();
+            break;
+          }
+          case 1058: {
+            BasicAsset = input.ReadString();
+            break;
+          }
+          case 1130: {
+            Exchange = input.ReadString();
+            break;
+          }
+          case 1210: {
+            CountryOfRisk = input.ReadString();
+            break;
+          }
+          case 1218: {
+            CountryOfRiskName = input.ReadString();
+            break;
+          }
+          case 1290: {
+            Sector = input.ReadString();
+            break;
+          }
+          case 1608: {
+            Lot = input.ReadInt32();
+            break;
+          }
+          case 1690: {
+            if (basicAssetSize_ == null) {
+              BasicAssetSize = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(BasicAssetSize);
+            break;
+          }
+          case 1770: {
+            if (klong_ == null) {
+              Klong = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Klong);
+            break;
+          }
+          case 1778: {
+            if (kshort_ == null) {
+              Kshort = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Kshort);
+            break;
+          }
+          case 1786: {
+            if (dlong_ == null) {
+              Dlong = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Dlong);
+            break;
+          }
+          case 1794: {
+            if (dshort_ == null) {
+              Dshort = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Dshort);
+            break;
+          }
+          case 1802: {
+            if (dlongMin_ == null) {
+              DlongMin = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(DlongMin);
+            break;
+          }
+          case 1810: {
+            if (dshortMin_ == null) {
+              DshortMin = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(DshortMin);
+            break;
+          }
+          case 1850: {
+            if (minPriceIncrement_ == null) {
+              MinPriceIncrement = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(MinPriceIncrement);
+            break;
+          }
+          case 1930: {
+            if (strikePrice_ == null) {
+              StrikePrice = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(StrikePrice);
+            break;
+          }
+          case 2410: {
+            if (expirationDate_ == null) {
+              ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpirationDate);
+            break;
+          }
+          case 2490: {
+            if (firstTradeDate_ == null) {
+              FirstTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(FirstTradeDate);
+            break;
+          }
+          case 2498: {
+            if (lastTradeDate_ == null) {
+              LastTradeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastTradeDate);
+            break;
+          }
+          case 2570: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 2578: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
+          case 3208: {
+            ShortEnabledFlag = input.ReadBool();
+            break;
+          }
+          case 3216: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 3224: {
+            OtcFlag = input.ReadBool();
+            break;
+          }
+          case 3232: {
+            BuyAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 3240: {
+            SellAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 3248: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 3256: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 3264: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///Данные по акции.
   /// </summary>
   public sealed partial class ShareResponse : pb::IMessage<ShareResponse>
@@ -5384,7 +7957,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5588,7 +8161,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5772,7 +8345,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5810,6 +8383,7 @@ namespace Tinkoff.InvestApi.V1 {
       couponQuantityPerYear_ = other.couponQuantityPerYear_;
       maturityDate_ = other.maturityDate_ != null ? other.maturityDate_.Clone() : null;
       nominal_ = other.nominal_ != null ? other.nominal_.Clone() : null;
+      initialNominal_ = other.initialNominal_ != null ? other.initialNominal_.Clone() : null;
       stateRegDate_ = other.stateRegDate_ != null ? other.stateRegDate_.Clone() : null;
       placementDate_ = other.placementDate_ != null ? other.placementDate_.Clone() : null;
       placementPrice_ = other.placementPrice_ != null ? other.placementPrice_.Clone() : null;
@@ -5831,6 +8405,13 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6110,6 +8691,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "initial_nominal" field.</summary>
+    public const int InitialNominalFieldNumber = 20;
+    private global::Tinkoff.InvestApi.V1.MoneyValue initialNominal_;
+    /// <summary>
+    ///Первоначальный номинал облигации.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.MoneyValue InitialNominal {
+      get { return initialNominal_; }
+      set {
+        initialNominal_ = value;
+      }
+    }
+
     /// <summary>Field number for the "state_reg_date" field.</summary>
     public const int StateRegDateFieldNumber = 21;
     private global::Google.Protobuf.WellKnownTypes.Timestamp stateRegDate_;
@@ -6384,7 +8980,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 39;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6425,6 +9021,111 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 42;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 51;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 52;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 53;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 54;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 61;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 62;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -6458,6 +9159,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (CouponQuantityPerYear != other.CouponQuantityPerYear) return false;
       if (!object.Equals(MaturityDate, other.MaturityDate)) return false;
       if (!object.Equals(Nominal, other.Nominal)) return false;
+      if (!object.Equals(InitialNominal, other.InitialNominal)) return false;
       if (!object.Equals(StateRegDate, other.StateRegDate)) return false;
       if (!object.Equals(PlacementDate, other.PlacementDate)) return false;
       if (!object.Equals(PlacementPrice, other.PlacementPrice)) return false;
@@ -6479,6 +9181,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -6504,6 +9213,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (CouponQuantityPerYear != 0) hash ^= CouponQuantityPerYear.GetHashCode();
       if (maturityDate_ != null) hash ^= MaturityDate.GetHashCode();
       if (nominal_ != null) hash ^= Nominal.GetHashCode();
+      if (initialNominal_ != null) hash ^= InitialNominal.GetHashCode();
       if (stateRegDate_ != null) hash ^= StateRegDate.GetHashCode();
       if (placementDate_ != null) hash ^= PlacementDate.GetHashCode();
       if (placementPrice_ != null) hash ^= PlacementPrice.GetHashCode();
@@ -6525,6 +9235,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6615,6 +9332,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(154, 1);
         output.WriteMessage(Nominal);
       }
+      if (initialNominal_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(InitialNominal);
+      }
       if (stateRegDate_ != null) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(StateRegDate);
@@ -6698,6 +9419,34 @@ namespace Tinkoff.InvestApi.V1 {
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         output.WriteRawTag(200, 2);
         output.WriteEnum((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(210, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(152, 3);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(160, 3);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(168, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(176, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(234, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(242, 3);
+        output.WriteMessage(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -6781,6 +9530,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(154, 1);
         output.WriteMessage(Nominal);
       }
+      if (initialNominal_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(InitialNominal);
+      }
       if (stateRegDate_ != null) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(StateRegDate);
@@ -6865,6 +9618,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(200, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(210, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(152, 3);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(160, 3);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(168, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(176, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(234, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(242, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -6929,6 +9710,9 @@ namespace Tinkoff.InvestApi.V1 {
       if (nominal_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Nominal);
       }
+      if (initialNominal_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(InitialNominal);
+      }
       if (stateRegDate_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(StateRegDate);
       }
@@ -6991,6 +9775,27 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7082,6 +9887,12 @@ namespace Tinkoff.InvestApi.V1 {
         }
         Nominal.MergeFrom(other.Nominal);
       }
+      if (other.initialNominal_ != null) {
+        if (initialNominal_ == null) {
+          InitialNominal = new global::Tinkoff.InvestApi.V1.MoneyValue();
+        }
+        InitialNominal.MergeFrom(other.InitialNominal);
+      }
       if (other.stateRegDate_ != null) {
         if (stateRegDate_ == null) {
           StateRegDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -7159,6 +9970,33 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -7271,6 +10109,13 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(Nominal);
             break;
           }
+          case 162: {
+            if (initialNominal_ == null) {
+              InitialNominal = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(InitialNominal);
+            break;
+          }
           case 170: {
             if (stateRegDate_ == null) {
               StateRegDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -7368,6 +10213,40 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 328: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 338: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 408: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 416: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 424: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 432: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 490: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 498: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -7481,6 +10360,13 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(Nominal);
             break;
           }
+          case 162: {
+            if (initialNominal_ == null) {
+              InitialNominal = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(InitialNominal);
+            break;
+          }
           case 170: {
             if (stateRegDate_ == null) {
               StateRegDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -7580,6 +10466,40 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 338: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 408: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 416: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 424: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 432: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 490: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 498: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -7604,7 +10524,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7651,6 +10571,13 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8024,7 +10951,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 26;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8062,6 +10989,111 @@ namespace Tinkoff.InvestApi.V1 {
       get { return realExchange_; }
       set {
         realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 29;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 41;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 52;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 53;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 54;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 56;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 57;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
       }
     }
 
@@ -8107,6 +11139,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8141,6 +11180,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8267,6 +11313,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(224, 1);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(234, 1);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(160, 3);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(168, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(176, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8385,6 +11459,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(224, 1);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(234, 1);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(160, 3);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(168, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(176, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8475,6 +11577,27 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8592,6 +11715,33 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8738,6 +11888,40 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 224: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 234: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 416: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 424: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 432: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -8887,6 +12071,40 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 234: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 416: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 424: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 432: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -8911,7 +12129,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8962,6 +12180,13 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9395,7 +12620,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 30;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9433,6 +12658,111 @@ namespace Tinkoff.InvestApi.V1 {
       get { return realExchange_; }
       set {
         realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 33;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 41;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 42;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 43;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 44;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 56;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 57;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
       }
     }
 
@@ -9482,6 +12812,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -9520,6 +12857,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9662,6 +13006,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(138, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(208, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(216, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(224, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -9796,6 +13168,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(138, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(208, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(216, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(224, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -9898,6 +13298,27 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10033,6 +13454,33 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10201,6 +13649,40 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 256: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 266: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 336: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 344: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 352: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -10372,6 +13854,40 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 266: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 336: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 344: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 352: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -10396,7 +13912,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10448,6 +13964,14 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      basicAssetPositionUid_ = other.basicAssetPositionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10896,7 +14420,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 30;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10934,6 +14458,126 @@ namespace Tinkoff.InvestApi.V1 {
       get { return realExchange_; }
       set {
         realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 33;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "basic_asset_position_uid" field.</summary>
+    public const int BasicAssetPositionUidFieldNumber = 34;
+    private string basicAssetPositionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции основного инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BasicAssetPositionUid {
+      get { return basicAssetPositionUid_; }
+      set {
+        basicAssetPositionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 41;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 42;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 43;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 44;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 56;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 57;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
       }
     }
 
@@ -10984,6 +14628,14 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (BasicAssetPositionUid != other.BasicAssetPositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -11023,6 +14675,14 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (BasicAssetPositionUid.Length != 0) hash ^= BasicAssetPositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11169,6 +14829,38 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(138, 2);
+        output.WriteString(PositionUid);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        output.WriteRawTag(146, 2);
+        output.WriteString(BasicAssetPositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(208, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(216, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(224, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -11307,6 +14999,38 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(138, 2);
+        output.WriteString(PositionUid);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        output.WriteRawTag(146, 2);
+        output.WriteString(BasicAssetPositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(200, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(208, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(216, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(224, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -11412,6 +15136,30 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (BasicAssetPositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(BasicAssetPositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11553,6 +15301,36 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.BasicAssetPositionUid.Length != 0) {
+        BasicAssetPositionUid = other.BasicAssetPositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11728,6 +15506,44 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 256: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 266: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 274: {
+            BasicAssetPositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 336: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 344: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 352: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -11906,6 +15722,44 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 266: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 274: {
+            BasicAssetPositionUid = input.ReadString();
+            break;
+          }
+          case 328: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 336: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 344: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 352: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -11930,7 +15784,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11982,6 +15836,13 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -12430,7 +16291,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 32;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -12468,6 +16329,111 @@ namespace Tinkoff.InvestApi.V1 {
       get { return realExchange_; }
       set {
         realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 35;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 46;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 47;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 48;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 49;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 56;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 57;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
       }
     }
 
@@ -12518,6 +16484,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -12557,6 +16530,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -12703,6 +16683,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(144, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(154, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(240, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(248, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(128, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(136, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -12841,6 +16849,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(144, 2);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(154, 2);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(240, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(248, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(128, 3);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(136, 3);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -12946,6 +16982,27 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -13081,6 +17138,33 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -13250,6 +17334,40 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 272: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 282: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 368: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 376: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 384: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 392: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -13422,6 +17540,40 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 282: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 368: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 376: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 384: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 392: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -13446,7 +17598,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13739,7 +17891,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13923,7 +18075,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14274,7 +18426,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14469,7 +18621,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14820,7 +18972,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15024,7 +19176,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15070,6 +19222,13 @@ namespace Tinkoff.InvestApi.V1 {
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
       uid_ = other.uid_;
       realExchange_ = other.realExchange_;
+      positionUid_ = other.positionUid_;
+      forIisFlag_ = other.forIisFlag_;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -15428,7 +19587,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 24;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -15466,6 +19625,111 @@ namespace Tinkoff.InvestApi.V1 {
       get { return realExchange_; }
       set {
         realExchange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 27;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 36;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 37;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 38;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 39;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 56;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 57;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
       }
     }
 
@@ -15510,6 +19774,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
       if (Uid != other.Uid) return false;
       if (RealExchange != other.RealExchange) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -15543,6 +19814,13 @@ namespace Tinkoff.InvestApi.V1 {
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) hash ^= RealExchange.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -15665,6 +19943,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(208, 1);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(218, 1);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(160, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(168, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(176, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(184, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -15779,6 +20085,34 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(208, 1);
         output.WriteEnum((int) RealExchange);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(218, 1);
+        output.WriteString(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(160, 2);
+        output.WriteBool(ForIisFlag);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(168, 2);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(176, 2);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(184, 2);
+        output.WriteBool(BlockedTcaFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(194, 3);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(202, 3);
+        output.WriteMessage(First1DayCandleDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -15866,6 +20200,27 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RealExchange);
+      }
+      if (PositionUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ForIisFlag != false) {
+        size += 2 + 1;
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -15977,6 +20332,33 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.RealExchange != global::Tinkoff.InvestApi.V1.RealExchange.Unspecified) {
         RealExchange = other.RealExchange;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -16116,6 +20498,40 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 208: {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
+            break;
+          }
+          case 218: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 288: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 296: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 304: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 312: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
             break;
           }
         }
@@ -16258,6 +20674,40 @@ namespace Tinkoff.InvestApi.V1 {
             RealExchange = (global::Tinkoff.InvestApi.V1.RealExchange) input.ReadEnum();
             break;
           }
+          case 218: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 288: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 296: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 304: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 312: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
+          case 450: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 458: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
         }
       }
     }
@@ -16282,7 +20732,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16575,7 +21025,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16756,7 +21206,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17383,7 +21833,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17578,7 +22028,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17782,7 +22232,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[36]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17937,7 +22387,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[37]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18118,7 +22568,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[38]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19057,7 +23507,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19361,7 +23811,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19556,7 +24006,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20098,7 +24548,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[42]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20925,7 +25375,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[43]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21992,7 +26442,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[44]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22721,7 +27171,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[45]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24213,7 +28663,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[46]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24457,7 +28907,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[47]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24932,7 +29382,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[48]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25316,7 +29766,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[49]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25535,7 +29985,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Запрос избранных инструментов.
+  ///Запрос списка избранных инструментов, входные параметры не требуются.
   /// </summary>
   public sealed partial class GetFavoritesRequest : pb::IMessage<GetFavoritesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -25551,7 +30001,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[50]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[53]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25690,7 +30140,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Ответ избранных инструментов.
+  ///В ответ передаётся список избранных инструментов в качестве массива.
   /// </summary>
   public sealed partial class GetFavoritesResponse : pb::IMessage<GetFavoritesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -25706,7 +30156,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[51]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[54]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25874,7 +30324,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Избранный инструмент.
+  ///Массив избранных инструментов.
   /// </summary>
   public sealed partial class FavoriteInstrument : pb::IMessage<FavoriteInstrument>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -25890,7 +30340,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[52]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[55]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26020,7 +30470,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ApiTradeAvailableFlagFieldNumber = 17;
     private bool apiTradeAvailableFlag_;
     /// <summary>
-    ///Признак доступности торгов через API.
+    ///Параметр указывает на возможность торговать инструментом через API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -26309,7 +30759,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Запрос редактирования избранных инструментов.
+  ///Запрос редактирования списка избранных инструментов.
   /// </summary>
   public sealed partial class EditFavoritesRequest : pb::IMessage<EditFavoritesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -26325,7 +30775,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[53]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[56]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26533,7 +30983,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Избранный инструмент для редактирования.
+  ///Массив инструментов для редактирования списка избранных инструментов.
   /// </summary>
   public sealed partial class EditFavoritesRequestInstrument : pb::IMessage<EditFavoritesRequestInstrument>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -26549,7 +30999,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[54]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[57]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26728,7 +31178,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Результат редактирования избранных инструментов.
+  ///Результат редактирования списка избранных инструментов.
   /// </summary>
   public sealed partial class EditFavoritesResponse : pb::IMessage<EditFavoritesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -26744,7 +31194,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[55]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[58]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26928,7 +31378,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[56]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[59]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27083,7 +31533,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[57]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[60]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27267,7 +31717,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[58]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27582,7 +32032,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[59]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27777,7 +32227,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[60]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27961,7 +32411,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[61]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27988,6 +32438,14 @@ namespace Tinkoff.InvestApi.V1 {
       instrumentType_ = other.instrumentType_;
       name_ = other.name_;
       uid_ = other.uid_;
+      positionUid_ = other.positionUid_;
+      apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
+      forIisFlag_ = other.forIisFlag_;
+      first1MinCandleDate_ = other.first1MinCandleDate_ != null ? other.first1MinCandleDate_.Clone() : null;
+      first1DayCandleDate_ = other.first1DayCandleDate_ != null ? other.first1DayCandleDate_.Clone() : null;
+      forQualInvestorFlag_ = other.forQualInvestorFlag_;
+      weekendFlag_ = other.weekendFlag_;
+      blockedTcaFlag_ = other.blockedTcaFlag_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -28102,6 +32560,126 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "position_uid" field.</summary>
+    public const int PositionUidFieldNumber = 8;
+    private string positionUid_ = "";
+    /// <summary>
+    ///Уникальный идентификатор позиции инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PositionUid {
+      get { return positionUid_; }
+      set {
+        positionUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "api_trade_available_flag" field.</summary>
+    public const int ApiTradeAvailableFlagFieldNumber = 11;
+    private bool apiTradeAvailableFlag_;
+    /// <summary>
+    ///Параметр указывает на возможность торговать инструментом через API.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ApiTradeAvailableFlag {
+      get { return apiTradeAvailableFlag_; }
+      set {
+        apiTradeAvailableFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_iis_flag" field.</summary>
+    public const int ForIisFlagFieldNumber = 12;
+    private bool forIisFlag_;
+    /// <summary>
+    ///Признак доступности для ИИС.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForIisFlag {
+      get { return forIisFlag_; }
+      set {
+        forIisFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1min_candle_date" field.</summary>
+    public const int First1MinCandleDateFieldNumber = 26;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1MinCandleDate_;
+    /// <summary>
+    ///Дата первой минутной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1MinCandleDate {
+      get { return first1MinCandleDate_; }
+      set {
+        first1MinCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_1day_candle_date" field.</summary>
+    public const int First1DayCandleDateFieldNumber = 27;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp first1DayCandleDate_;
+    /// <summary>
+    ///Дата первой дневной свечи.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp First1DayCandleDate {
+      get { return first1DayCandleDate_; }
+      set {
+        first1DayCandleDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "for_qual_investor_flag" field.</summary>
+    public const int ForQualInvestorFlagFieldNumber = 28;
+    private bool forQualInvestorFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ForQualInvestorFlag {
+      get { return forQualInvestorFlag_; }
+      set {
+        forQualInvestorFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "weekend_flag" field.</summary>
+    public const int WeekendFlagFieldNumber = 29;
+    private bool weekendFlag_;
+    /// <summary>
+    ///Флаг отображающий доступность торговли инструментом по выходным
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WeekendFlag {
+      get { return weekendFlag_; }
+      set {
+        weekendFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocked_tca_flag" field.</summary>
+    public const int BlockedTcaFlagFieldNumber = 30;
+    private bool blockedTcaFlag_;
+    /// <summary>
+    ///Флаг заблокированного ТКС
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BlockedTcaFlag {
+      get { return blockedTcaFlag_; }
+      set {
+        blockedTcaFlag_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -28124,6 +32702,14 @@ namespace Tinkoff.InvestApi.V1 {
       if (InstrumentType != other.InstrumentType) return false;
       if (Name != other.Name) return false;
       if (Uid != other.Uid) return false;
+      if (PositionUid != other.PositionUid) return false;
+      if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
+      if (ForIisFlag != other.ForIisFlag) return false;
+      if (!object.Equals(First1MinCandleDate, other.First1MinCandleDate)) return false;
+      if (!object.Equals(First1DayCandleDate, other.First1DayCandleDate)) return false;
+      if (ForQualInvestorFlag != other.ForQualInvestorFlag) return false;
+      if (WeekendFlag != other.WeekendFlag) return false;
+      if (BlockedTcaFlag != other.BlockedTcaFlag) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -28138,6 +32724,14 @@ namespace Tinkoff.InvestApi.V1 {
       if (InstrumentType.Length != 0) hash ^= InstrumentType.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Uid.Length != 0) hash ^= Uid.GetHashCode();
+      if (PositionUid.Length != 0) hash ^= PositionUid.GetHashCode();
+      if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
+      if (ForIisFlag != false) hash ^= ForIisFlag.GetHashCode();
+      if (first1MinCandleDate_ != null) hash ^= First1MinCandleDate.GetHashCode();
+      if (first1DayCandleDate_ != null) hash ^= First1DayCandleDate.GetHashCode();
+      if (ForQualInvestorFlag != false) hash ^= ForQualInvestorFlag.GetHashCode();
+      if (WeekendFlag != false) hash ^= WeekendFlag.GetHashCode();
+      if (BlockedTcaFlag != false) hash ^= BlockedTcaFlag.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -28184,6 +32778,38 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(58);
         output.WriteString(Uid);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(PositionUid);
+      }
+      if (ApiTradeAvailableFlag != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(ApiTradeAvailableFlag);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(ForIisFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(First1DayCandleDate);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(224, 1);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(240, 1);
+        output.WriteBool(BlockedTcaFlag);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -28222,6 +32848,38 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(58);
         output.WriteString(Uid);
       }
+      if (PositionUid.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(PositionUid);
+      }
+      if (ApiTradeAvailableFlag != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(ApiTradeAvailableFlag);
+      }
+      if (ForIisFlag != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(ForIisFlag);
+      }
+      if (first1MinCandleDate_ != null) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(First1DayCandleDate);
+      }
+      if (ForQualInvestorFlag != false) {
+        output.WriteRawTag(224, 1);
+        output.WriteBool(ForQualInvestorFlag);
+      }
+      if (WeekendFlag != false) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(WeekendFlag);
+      }
+      if (BlockedTcaFlag != false) {
+        output.WriteRawTag(240, 1);
+        output.WriteBool(BlockedTcaFlag);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -28252,6 +32910,30 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Uid.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Uid);
+      }
+      if (PositionUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PositionUid);
+      }
+      if (ApiTradeAvailableFlag != false) {
+        size += 1 + 1;
+      }
+      if (ForIisFlag != false) {
+        size += 1 + 1;
+      }
+      if (first1MinCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1MinCandleDate);
+      }
+      if (first1DayCandleDate_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(First1DayCandleDate);
+      }
+      if (ForQualInvestorFlag != false) {
+        size += 2 + 1;
+      }
+      if (WeekendFlag != false) {
+        size += 2 + 1;
+      }
+      if (BlockedTcaFlag != false) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -28285,6 +32967,36 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Uid.Length != 0) {
         Uid = other.Uid;
+      }
+      if (other.PositionUid.Length != 0) {
+        PositionUid = other.PositionUid;
+      }
+      if (other.ApiTradeAvailableFlag != false) {
+        ApiTradeAvailableFlag = other.ApiTradeAvailableFlag;
+      }
+      if (other.ForIisFlag != false) {
+        ForIisFlag = other.ForIisFlag;
+      }
+      if (other.first1MinCandleDate_ != null) {
+        if (first1MinCandleDate_ == null) {
+          First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1MinCandleDate.MergeFrom(other.First1MinCandleDate);
+      }
+      if (other.first1DayCandleDate_ != null) {
+        if (first1DayCandleDate_ == null) {
+          First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        First1DayCandleDate.MergeFrom(other.First1DayCandleDate);
+      }
+      if (other.ForQualInvestorFlag != false) {
+        ForQualInvestorFlag = other.ForQualInvestorFlag;
+      }
+      if (other.WeekendFlag != false) {
+        WeekendFlag = other.WeekendFlag;
+      }
+      if (other.BlockedTcaFlag != false) {
+        BlockedTcaFlag = other.BlockedTcaFlag;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -28327,6 +33039,44 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 58: {
             Uid = input.ReadString();
+            break;
+          }
+          case 66: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 88: {
+            ApiTradeAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 96: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 210: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 218: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
+          case 224: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 232: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 240: {
+            BlockedTcaFlag = input.ReadBool();
             break;
           }
         }
@@ -28372,6 +33122,44 @@ namespace Tinkoff.InvestApi.V1 {
             Uid = input.ReadString();
             break;
           }
+          case 66: {
+            PositionUid = input.ReadString();
+            break;
+          }
+          case 88: {
+            ApiTradeAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 96: {
+            ForIisFlag = input.ReadBool();
+            break;
+          }
+          case 210: {
+            if (first1MinCandleDate_ == null) {
+              First1MinCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1MinCandleDate);
+            break;
+          }
+          case 218: {
+            if (first1DayCandleDate_ == null) {
+              First1DayCandleDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(First1DayCandleDate);
+            break;
+          }
+          case 224: {
+            ForQualInvestorFlag = input.ReadBool();
+            break;
+          }
+          case 232: {
+            WeekendFlag = input.ReadBool();
+            break;
+          }
+          case 240: {
+            BlockedTcaFlag = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -28396,7 +33184,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[62]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28551,7 +33339,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[63]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28746,7 +33534,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[64]; }
+      get { return global::Tinkoff.InvestApi.V1.InstrumentsReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

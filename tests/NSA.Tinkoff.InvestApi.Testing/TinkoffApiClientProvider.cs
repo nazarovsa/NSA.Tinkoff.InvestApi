@@ -12,6 +12,7 @@ public static class TinkoffApiClientProvider
         var options = new InvestApiOptions
         {
             AccessToken = TinkoffApiTestingEnvAccessor.GetToken(),
+            ApplicationName = "NSA.Tinkoff.InvestApi"
         };
 
         var services = new ServiceCollection();

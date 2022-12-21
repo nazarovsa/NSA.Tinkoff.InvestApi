@@ -31,122 +31,136 @@ namespace Tinkoff.InvestApi.V1 {
             "ZXMYASABKAsyMi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
             "LnYxLk9yZGVyVHJhZGVzSAASOwoEcGluZxgCIAEoCzIrLnRpbmtvZmYucHVi",
             "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUGluZ0gAQgkKB3BheWxvYWQi",
-            "/gEKC09yZGVyVHJhZGVzEhAKCG9yZGVyX2lkGAEgASgJEi4KCmNyZWF0ZWRf",
+            "lgIKC09yZGVyVHJhZGVzEhAKCG9yZGVyX2lkGAEgASgJEi4KCmNyZWF0ZWRf",
             "YXQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEkgKCWRpcmVj",
             "dGlvbhgDIAEoDjI1LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
             "Y3QudjEuT3JkZXJEaXJlY3Rpb24SDAoEZmlnaRgEIAEoCRJBCgZ0cmFkZXMY",
             "BSADKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
-            "Lk9yZGVyVHJhZGUSEgoKYWNjb3VudF9pZBgGIAEoCSKOAQoKT3JkZXJUcmFk",
-            "ZRItCglkYXRlX3RpbWUYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEj8KBXByaWNlGAIgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5RdW90YXRpb24SEAoIcXVhbnRpdHkYAyABKAMiqQIK",
-            "EFBvc3RPcmRlclJlcXVlc3QSDAoEZmlnaRgBIAEoCRIQCghxdWFudGl0eRgC",
-            "IAEoAxI/CgVwcmljZRgDIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkgKCWRpcmVjdGlvbhgEIAEoDjI1",
-            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJE",
-            "aXJlY3Rpb24SEgoKYWNjb3VudF9pZBgFIAEoCRJECgpvcmRlcl90eXBlGAYg",
-            "ASgOMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5P",
-            "cmRlclR5cGUSEAoIb3JkZXJfaWQYByABKAki4QcKEVBvc3RPcmRlclJlc3Bv",
-            "bnNlEhAKCG9yZGVyX2lkGAEgASgJEmIKF2V4ZWN1dGlvbl9yZXBvcnRfc3Rh",
-            "dHVzGAIgASgOMkEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5PcmRlckV4ZWN1dGlvblJlcG9ydFN0YXR1cxIWCg5sb3RzX3JlcXVl",
-            "c3RlZBgDIAEoAxIVCg1sb3RzX2V4ZWN1dGVkGAQgASgDEk4KE2luaXRpYWxf",
-            "b3JkZXJfcHJpY2UYBSABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSTwoUZXhlY3V0ZWRfb3JkZXJfcHJp",
-            "Y2UYBiABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLk1vbmV5VmFsdWUSTQoSdG90YWxfb3JkZXJfYW1vdW50GAcgASgLMjEu",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Nb25leVZh",
-            "bHVlEk0KEmluaXRpYWxfY29tbWlzc2lvbhgIIAEoCzIxLnRpbmtvZmYucHVi",
-            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJOChNleGVj",
-            "dXRlZF9jb21taXNzaW9uGAkgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0",
-            "LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlEkQKCWFjaV92YWx1ZRgKIAEo",
-            "CzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9u",
-            "ZXlWYWx1ZRIMCgRmaWdpGAsgASgJEkgKCWRpcmVjdGlvbhgMIAEoDjI1LnRp",
+            "Lk9yZGVyVHJhZGUSEgoKYWNjb3VudF9pZBgGIAEoCRIWCg5pbnN0cnVtZW50",
+            "X3VpZBgHIAEoCSKgAQoKT3JkZXJUcmFkZRItCglkYXRlX3RpbWUYASABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEj8KBXByaWNlGAIgASgLMjAu",
+            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRp",
+            "b24SEAoIcXVhbnRpdHkYAyABKAMSEAoIdHJhZGVfaWQYBCABKAkiwAIKEFBv",
+            "c3RPcmRlclJlcXVlc3QSDAoEZmlnaRgBIAEoCRIQCghxdWFudGl0eRgCIAEo",
+            "AxI/CgVwcmljZRgDIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuUXVvdGF0aW9uEkgKCWRpcmVjdGlvbhgEIAEoDjI1LnRp",
             "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJEaXJl",
-            "Y3Rpb24SUQoWaW5pdGlhbF9zZWN1cml0eV9wcmljZRgNIAEoCzIxLnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJE",
-            "CgpvcmRlcl90eXBlGA4gASgOMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5PcmRlclR5cGUSDwoHbWVzc2FnZRgPIAEoCRJQChZp",
-            "bml0aWFsX29yZGVyX3ByaWNlX3B0GBAgASgLMjAudGlua29mZi5wdWJsaWMu",
-            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24iOgoSQ2FuY2VsT3Jk",
-            "ZXJSZXF1ZXN0EhIKCmFjY291bnRfaWQYASABKAkSEAoIb3JkZXJfaWQYAiAB",
-            "KAkiPwoTQ2FuY2VsT3JkZXJSZXNwb25zZRIoCgR0aW1lGAEgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcCI8ChRHZXRPcmRlclN0YXRlUmVxdWVz",
-            "dBISCgphY2NvdW50X2lkGAEgASgJEhAKCG9yZGVyX2lkGAIgASgJIiYKEEdl",
-            "dE9yZGVyc1JlcXVlc3QSEgoKYWNjb3VudF9pZBgBIAEoCSJWChFHZXRPcmRl",
-            "cnNSZXNwb25zZRJBCgZvcmRlcnMYASADKAsyMS50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9yZGVyU3RhdGUi2AgKCk9yZGVyU3Rh",
-            "dGUSEAoIb3JkZXJfaWQYASABKAkSYgoXZXhlY3V0aW9uX3JlcG9ydF9zdGF0",
-            "dXMYAiABKA4yQS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLk9yZGVyRXhlY3V0aW9uUmVwb3J0U3RhdHVzEhYKDmxvdHNfcmVxdWVz",
-            "dGVkGAMgASgDEhUKDWxvdHNfZXhlY3V0ZWQYBCABKAMSTgoTaW5pdGlhbF9v",
-            "cmRlcl9wcmljZRgFIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuTW9uZXlWYWx1ZRJPChRleGVjdXRlZF9vcmRlcl9wcmlj",
-            "ZRgGIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuTW9uZXlWYWx1ZRJNChJ0b3RhbF9vcmRlcl9hbW91bnQYByABKAsyMS50",
+            "Y3Rpb24SEgoKYWNjb3VudF9pZBgFIAEoCRJECgpvcmRlcl90eXBlGAYgASgO",
+            "MjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5PcmRl",
+            "clR5cGUSEAoIb3JkZXJfaWQYByABKAkSFQoNaW5zdHJ1bWVudF9pZBgIIAEo",
+            "CSL5BwoRUG9zdE9yZGVyUmVzcG9uc2USEAoIb3JkZXJfaWQYASABKAkSYgoX",
+            "ZXhlY3V0aW9uX3JlcG9ydF9zdGF0dXMYAiABKA4yQS50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9yZGVyRXhlY3V0aW9uUmVwb3J0",
+            "U3RhdHVzEhYKDmxvdHNfcmVxdWVzdGVkGAMgASgDEhUKDWxvdHNfZXhlY3V0",
+            "ZWQYBCABKAMSTgoTaW5pdGlhbF9vcmRlcl9wcmljZRgFIAEoCzIxLnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJP",
+            "ChRleGVjdXRlZF9vcmRlcl9wcmljZRgGIAEoCzIxLnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJNChJ0b3RhbF9v",
+            "cmRlcl9hbW91bnQYByABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
+            "LmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSTQoSaW5pdGlhbF9jb21taXNzaW9u",
+            "GAggASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
+            "MS5Nb25leVZhbHVlEk4KE2V4ZWN1dGVkX2NvbW1pc3Npb24YCSABKAsyMS50",
             "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5VmFs",
-            "dWUSUQoWYXZlcmFnZV9wb3NpdGlvbl9wcmljZRgIIAEoCzIxLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJNChJp",
-            "bml0aWFsX2NvbW1pc3Npb24YCSABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSTgoTZXhlY3V0ZWRfY29t",
-            "bWlzc2lvbhgKIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
-            "dHJhY3QudjEuTW9uZXlWYWx1ZRIMCgRmaWdpGAsgASgJEkgKCWRpcmVjdGlv",
-            "bhgMIAEoDjI1LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuT3JkZXJEaXJlY3Rpb24SUQoWaW5pdGlhbF9zZWN1cml0eV9wcmljZRgN",
-            "IAEoCzIxLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "TW9uZXlWYWx1ZRJBCgZzdGFnZXMYDiADKAsyMS50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9yZGVyU3RhZ2USTQoSc2VydmljZV9j",
-            "b21taXNzaW9uGA8gASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5Nb25leVZhbHVlEhAKCGN1cnJlbmN5GBAgASgJEkQKCm9y",
-            "ZGVyX3R5cGUYESABKA4yMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLk9yZGVyVHlwZRIuCgpvcmRlcl9kYXRlGBIgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcCJyCgpPcmRlclN0YWdlEkAKBXByaWNl",
-            "GAEgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
-            "MS5Nb25leVZhbHVlEhAKCHF1YW50aXR5GAIgASgDEhAKCHRyYWRlX2lkGAMg",
-            "ASgJKmQKDk9yZGVyRGlyZWN0aW9uEh8KG09SREVSX0RJUkVDVElPTl9VTlNQ",
-            "RUNJRklFRBAAEhcKE09SREVSX0RJUkVDVElPTl9CVVkQARIYChRPUkRFUl9E",
-            "SVJFQ1RJT05fU0VMTBACKlQKCU9yZGVyVHlwZRIaChZPUkRFUl9UWVBFX1VO",
-            "U1BFQ0lGSUVEEAASFAoQT1JERVJfVFlQRV9MSU1JVBABEhUKEU9SREVSX1RZ",
-            "UEVfTUFSS0VUEAIqgAIKGk9yZGVyRXhlY3V0aW9uUmVwb3J0U3RhdHVzEicK",
-            "I0VYRUNVVElPTl9SRVBPUlRfU1RBVFVTX1VOU1BFQ0lGSUVEEAASIAocRVhF",
-            "Q1VUSU9OX1JFUE9SVF9TVEFUVVNfRklMTBABEiQKIEVYRUNVVElPTl9SRVBP",
-            "UlRfU1RBVFVTX1JFSkVDVEVEEAISJQohRVhFQ1VUSU9OX1JFUE9SVF9TVEFU",
-            "VVNfQ0FOQ0VMTEVEEAMSHwobRVhFQ1VUSU9OX1JFUE9SVF9TVEFUVVNfTkVX",
-            "EAQSKQolRVhFQ1VUSU9OX1JFUE9SVF9TVEFUVVNfUEFSVElBTExZRklMTBAF",
-            "MqEBChNPcmRlcnNTdHJlYW1TZXJ2aWNlEokBCgxUcmFkZXNTdHJlYW0SOi50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlc1N0",
-            "cmVhbVJlcXVlc3QaOy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlRyYWRlc1N0cmVhbVJlc3BvbnNlMAEylwQKDU9yZGVyc1NlcnZp",
-            "Y2USfgoJUG9zdE9yZGVyEjcudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5Qb3N0T3JkZXJSZXF1ZXN0GjgudGlua29mZi5wdWJsaWMu",
-            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5Qb3N0T3JkZXJSZXNwb25zZRKEAQoL",
-            "Q2FuY2VsT3JkZXISOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkNhbmNlbE9yZGVyUmVxdWVzdBo6LnRpbmtvZmYucHVibGljLmlu",
-            "dmVzdC5hcGkuY29udHJhY3QudjEuQ2FuY2VsT3JkZXJSZXNwb25zZRJ/Cg1H",
-            "ZXRPcmRlclN0YXRlEjsudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5HZXRPcmRlclN0YXRlUmVxdWVzdBoxLnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJTdGF0ZRJ+CglHZXRPcmRl",
-            "cnMSNy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdl",
-            "dE9yZGVyc1JlcXVlc3QaOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLkdldE9yZGVyc1Jlc3BvbnNlQmEKHHJ1LnRpbmtvZmYucGlh",
-            "cGkuY29udHJhY3QudjFQAVoMLi87aW52ZXN0YXBpogIFVElBUEmqAhRUaW5r",
-            "b2ZmLkludmVzdEFwaS5WMcoCEVRpbmtvZmZcSW52ZXN0XFYxYgZwcm90bzM="));
+            "dWUSRAoJYWNpX3ZhbHVlGAogASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlEgwKBGZpZ2kYCyABKAkSSAoJ",
+            "ZGlyZWN0aW9uGAwgASgOMjUudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5PcmRlckRpcmVjdGlvbhJRChZpbml0aWFsX3NlY3VyaXR5",
+            "X3ByaWNlGA0gASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5Nb25leVZhbHVlEkQKCm9yZGVyX3R5cGUYDiABKA4yMC50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk9yZGVyVHlwZRIP",
+            "CgdtZXNzYWdlGA8gASgJElAKFmluaXRpYWxfb3JkZXJfcHJpY2VfcHQYECAB",
+            "KAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1",
+            "b3RhdGlvbhIWCg5pbnN0cnVtZW50X3VpZBgRIAEoCSI6ChJDYW5jZWxPcmRl",
+            "clJlcXVlc3QSEgoKYWNjb3VudF9pZBgBIAEoCRIQCghvcmRlcl9pZBgCIAEo",
+            "CSI/ChNDYW5jZWxPcmRlclJlc3BvbnNlEigKBHRpbWUYASABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wIjwKFEdldE9yZGVyU3RhdGVSZXF1ZXN0",
+            "EhIKCmFjY291bnRfaWQYASABKAkSEAoIb3JkZXJfaWQYAiABKAkiJgoQR2V0",
+            "T3JkZXJzUmVxdWVzdBISCgphY2NvdW50X2lkGAEgASgJIlYKEUdldE9yZGVy",
+            "c1Jlc3BvbnNlEkEKBm9yZGVycxgBIAMoCzIxLnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJTdGF0ZSLwCAoKT3JkZXJTdGF0",
+            "ZRIQCghvcmRlcl9pZBgBIAEoCRJiChdleGVjdXRpb25fcmVwb3J0X3N0YXR1",
+            "cxgCIAEoDjJBLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
+            "djEuT3JkZXJFeGVjdXRpb25SZXBvcnRTdGF0dXMSFgoObG90c19yZXF1ZXN0",
+            "ZWQYAyABKAMSFQoNbG90c19leGVjdXRlZBgEIAEoAxJOChNpbml0aWFsX29y",
+            "ZGVyX3ByaWNlGAUgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5Nb25leVZhbHVlEk8KFGV4ZWN1dGVkX29yZGVyX3ByaWNl",
+            "GAYgASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
+            "MS5Nb25leVZhbHVlEk0KEnRvdGFsX29yZGVyX2Ftb3VudBgHIAEoCzIxLnRp",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1",
+            "ZRJRChZhdmVyYWdlX3Bvc2l0aW9uX3ByaWNlGAggASgLMjEudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlEk0KEmlu",
+            "aXRpYWxfY29tbWlzc2lvbhgJIAEoCzIxLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJOChNleGVjdXRlZF9jb21t",
+            "aXNzaW9uGAogASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5Nb25leVZhbHVlEgwKBGZpZ2kYCyABKAkSSAoJZGlyZWN0aW9u",
+            "GAwgASgOMjUudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
+            "MS5PcmRlckRpcmVjdGlvbhJRChZpbml0aWFsX3NlY3VyaXR5X3ByaWNlGA0g",
+            "ASgLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5N",
+            "b25leVZhbHVlEkEKBnN0YWdlcxgOIAMoCzIxLnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJTdGFnZRJNChJzZXJ2aWNlX2Nv",
+            "bW1pc3Npb24YDyABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
+            "bnRyYWN0LnYxLk1vbmV5VmFsdWUSEAoIY3VycmVuY3kYECABKAkSRAoKb3Jk",
+            "ZXJfdHlwZRgRIAEoDjIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuT3JkZXJUeXBlEi4KCm9yZGVyX2RhdGUYEiABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEhYKDmluc3RydW1lbnRfdWlkGBMgASgJ",
+            "InIKCk9yZGVyU3RhZ2USQAoFcHJpY2UYASABKAsyMS50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk1vbmV5VmFsdWUSEAoIcXVhbnRp",
+            "dHkYAiABKAMSEAoIdHJhZGVfaWQYAyABKAki7QEKE1JlcGxhY2VPcmRlclJl",
+            "cXVlc3QSEgoKYWNjb3VudF9pZBgBIAEoCRIQCghvcmRlcl9pZBgGIAEoCRIX",
+            "Cg9pZGVtcG90ZW5jeV9rZXkYByABKAkSEAoIcXVhbnRpdHkYCyABKAMSPwoF",
+            "cHJpY2UYDCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLlF1b3RhdGlvbhJECgpwcmljZV90eXBlGA0gASgOMjAudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5QcmljZVR5cGUqZAoO",
+            "T3JkZXJEaXJlY3Rpb24SHwobT1JERVJfRElSRUNUSU9OX1VOU1BFQ0lGSUVE",
+            "EAASFwoTT1JERVJfRElSRUNUSU9OX0JVWRABEhgKFE9SREVSX0RJUkVDVElP",
+            "Tl9TRUxMEAIqVAoJT3JkZXJUeXBlEhoKFk9SREVSX1RZUEVfVU5TUEVDSUZJ",
+            "RUQQABIUChBPUkRFUl9UWVBFX0xJTUlUEAESFQoRT1JERVJfVFlQRV9NQVJL",
+            "RVQQAiqAAgoaT3JkZXJFeGVjdXRpb25SZXBvcnRTdGF0dXMSJwojRVhFQ1VU",
+            "SU9OX1JFUE9SVF9TVEFUVVNfVU5TUEVDSUZJRUQQABIgChxFWEVDVVRJT05f",
+            "UkVQT1JUX1NUQVRVU19GSUxMEAESJAogRVhFQ1VUSU9OX1JFUE9SVF9TVEFU",
+            "VVNfUkVKRUNURUQQAhIlCiFFWEVDVVRJT05fUkVQT1JUX1NUQVRVU19DQU5D",
+            "RUxMRUQQAxIfChtFWEVDVVRJT05fUkVQT1JUX1NUQVRVU19ORVcQBBIpCiVF",
+            "WEVDVVRJT05fUkVQT1JUX1NUQVRVU19QQVJUSUFMTFlGSUxMEAUqVgoJUHJp",
+            "Y2VUeXBlEhoKFlBSSUNFX1RZUEVfVU5TUEVDSUZJRUQQABIUChBQUklDRV9U",
+            "WVBFX1BPSU5UEAESFwoTUFJJQ0VfVFlQRV9DVVJSRU5DWRACMqEBChNPcmRl",
+            "cnNTdHJlYW1TZXJ2aWNlEokBCgxUcmFkZXNTdHJlYW0SOi50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlc1N0cmVhbVJlcXVl",
+            "c3QaOy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRy",
+            "YWRlc1N0cmVhbVJlc3BvbnNlMAEyngUKDU9yZGVyc1NlcnZpY2USfgoJUG9z",
+            "dE9yZGVyEjcudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
+            "MS5Qb3N0T3JkZXJSZXF1ZXN0GjgudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5Qb3N0T3JkZXJSZXNwb25zZRKEAQoLQ2FuY2VsT3Jk",
+            "ZXISOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkNh",
+            "bmNlbE9yZGVyUmVxdWVzdBo6LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuQ2FuY2VsT3JkZXJSZXNwb25zZRJ/Cg1HZXRPcmRlclN0",
+            "YXRlEjsudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5H",
+            "ZXRPcmRlclN0YXRlUmVxdWVzdBoxLnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuT3JkZXJTdGF0ZRJ+CglHZXRPcmRlcnMSNy50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldE9yZGVyc1Jl",
+            "cXVlc3QaOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "LkdldE9yZGVyc1Jlc3BvbnNlEoQBCgxSZXBsYWNlT3JkZXISOi50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlJlcGxhY2VPcmRlclJl",
+            "cXVlc3QaOC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "LlBvc3RPcmRlclJlc3BvbnNlQmEKHHJ1LnRpbmtvZmYucGlhcGkuY29udHJh",
+            "Y3QudjFQAVoMLi87aW52ZXN0YXBpogIFVElBUEmqAhRUaW5rb2ZmLkludmVz",
+            "dEFwaS5WMcoCEVRpbmtvZmZcSW52ZXN0XFYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Tinkoff.InvestApi.V1.CommonReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.OrderDirection), typeof(global::Tinkoff.InvestApi.V1.OrderType), typeof(global::Tinkoff.InvestApi.V1.OrderExecutionReportStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.OrderDirection), typeof(global::Tinkoff.InvestApi.V1.OrderType), typeof(global::Tinkoff.InvestApi.V1.OrderExecutionReportStatus), typeof(global::Tinkoff.InvestApi.V1.PriceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradesStreamRequest), global::Tinkoff.InvestApi.V1.TradesStreamRequest.Parser, new[]{ "Accounts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradesStreamResponse), global::Tinkoff.InvestApi.V1.TradesStreamResponse.Parser, new[]{ "OrderTrades", "Ping" }, new[]{ "Payload" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderTrades), global::Tinkoff.InvestApi.V1.OrderTrades.Parser, new[]{ "OrderId", "CreatedAt", "Direction", "Figi", "Trades", "AccountId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderTrade), global::Tinkoff.InvestApi.V1.OrderTrade.Parser, new[]{ "DateTime", "Price", "Quantity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.PostOrderRequest), global::Tinkoff.InvestApi.V1.PostOrderRequest.Parser, new[]{ "Figi", "Quantity", "Price", "Direction", "AccountId", "OrderType", "OrderId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.PostOrderResponse), global::Tinkoff.InvestApi.V1.PostOrderResponse.Parser, new[]{ "OrderId", "ExecutionReportStatus", "LotsRequested", "LotsExecuted", "InitialOrderPrice", "ExecutedOrderPrice", "TotalOrderAmount", "InitialCommission", "ExecutedCommission", "AciValue", "Figi", "Direction", "InitialSecurityPrice", "OrderType", "Message", "InitialOrderPricePt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderTrades), global::Tinkoff.InvestApi.V1.OrderTrades.Parser, new[]{ "OrderId", "CreatedAt", "Direction", "Figi", "Trades", "AccountId", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderTrade), global::Tinkoff.InvestApi.V1.OrderTrade.Parser, new[]{ "DateTime", "Price", "Quantity", "TradeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.PostOrderRequest), global::Tinkoff.InvestApi.V1.PostOrderRequest.Parser, new[]{ "Figi", "Quantity", "Price", "Direction", "AccountId", "OrderType", "OrderId", "InstrumentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.PostOrderResponse), global::Tinkoff.InvestApi.V1.PostOrderResponse.Parser, new[]{ "OrderId", "ExecutionReportStatus", "LotsRequested", "LotsExecuted", "InitialOrderPrice", "ExecutedOrderPrice", "TotalOrderAmount", "InitialCommission", "ExecutedCommission", "AciValue", "Figi", "Direction", "InitialSecurityPrice", "OrderType", "Message", "InitialOrderPricePt", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CancelOrderRequest), global::Tinkoff.InvestApi.V1.CancelOrderRequest.Parser, new[]{ "AccountId", "OrderId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CancelOrderResponse), global::Tinkoff.InvestApi.V1.CancelOrderResponse.Parser, new[]{ "Time" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrderStateRequest), global::Tinkoff.InvestApi.V1.GetOrderStateRequest.Parser, new[]{ "AccountId", "OrderId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrdersRequest), global::Tinkoff.InvestApi.V1.GetOrdersRequest.Parser, new[]{ "AccountId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrdersResponse), global::Tinkoff.InvestApi.V1.GetOrdersResponse.Parser, new[]{ "Orders" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderState), global::Tinkoff.InvestApi.V1.OrderState.Parser, new[]{ "OrderId", "ExecutionReportStatus", "LotsRequested", "LotsExecuted", "InitialOrderPrice", "ExecutedOrderPrice", "TotalOrderAmount", "AveragePositionPrice", "InitialCommission", "ExecutedCommission", "Figi", "Direction", "InitialSecurityPrice", "Stages", "ServiceCommission", "Currency", "OrderType", "OrderDate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderStage), global::Tinkoff.InvestApi.V1.OrderStage.Parser, new[]{ "Price", "Quantity", "TradeId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderState), global::Tinkoff.InvestApi.V1.OrderState.Parser, new[]{ "OrderId", "ExecutionReportStatus", "LotsRequested", "LotsExecuted", "InitialOrderPrice", "ExecutedOrderPrice", "TotalOrderAmount", "AveragePositionPrice", "InitialCommission", "ExecutedCommission", "Figi", "Direction", "InitialSecurityPrice", "Stages", "ServiceCommission", "Currency", "OrderType", "OrderDate", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderStage), global::Tinkoff.InvestApi.V1.OrderStage.Parser, new[]{ "Price", "Quantity", "TradeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest), global::Tinkoff.InvestApi.V1.ReplaceOrderRequest.Parser, new[]{ "AccountId", "OrderId", "IdempotencyKey", "Quantity", "Price", "PriceType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -154,7 +168,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
   #region Enums
   /// <summary>
-  ///Направление операции
+  ///Направление операции.
   /// </summary>
   public enum OrderDirection {
     /// <summary>
@@ -172,7 +186,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Тип заявки
+  ///Тип заявки.
   /// </summary>
   public enum OrderType {
     /// <summary>
@@ -214,6 +228,24 @@ namespace Tinkoff.InvestApi.V1 {
     ///Частично исполнена
     /// </summary>
     [pbr::OriginalName("EXECUTION_REPORT_STATUS_PARTIALLYFILL")] ExecutionReportStatusPartiallyfill = 5,
+  }
+
+  /// <summary>
+  ///Тип цены.
+  /// </summary>
+  public enum PriceType {
+    /// <summary>
+    ///Значение не определено.
+    /// </summary>
+    [pbr::OriginalName("PRICE_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    ///Цена в пунктах (только для фьючерсов и облигаций).
+    /// </summary>
+    [pbr::OriginalName("PRICE_TYPE_POINT")] Point = 1,
+    /// <summary>
+    ///Цена в валюте расчётов по инструменту.
+    /// </summary>
+    [pbr::OriginalName("PRICE_TYPE_CURRENCY")] Currency = 2,
   }
 
   #endregion
@@ -740,6 +772,7 @@ namespace Tinkoff.InvestApi.V1 {
       figi_ = other.figi_;
       trades_ = other.trades_.Clone();
       accountId_ = other.accountId_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -838,6 +871,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 7;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///UID идентификатор инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -859,6 +907,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi != other.Figi) return false;
       if(!trades_.Equals(other.trades_)) return false;
       if (AccountId != other.AccountId) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -872,6 +921,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       hash ^= trades_.GetHashCode();
       if (AccountId.Length != 0) hash ^= AccountId.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -911,6 +961,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(50);
         output.WriteString(AccountId);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -942,6 +996,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(50);
         output.WriteString(AccountId);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -967,6 +1025,9 @@ namespace Tinkoff.InvestApi.V1 {
       size += trades_.CalculateSize(_repeated_trades_codec);
       if (AccountId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AccountId);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -998,6 +1059,9 @@ namespace Tinkoff.InvestApi.V1 {
       trades_.Add(other.trades_);
       if (other.AccountId.Length != 0) {
         AccountId = other.AccountId;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1041,6 +1105,10 @@ namespace Tinkoff.InvestApi.V1 {
             AccountId = input.ReadString();
             break;
           }
+          case 58: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1081,6 +1149,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 50: {
             AccountId = input.ReadString();
+            break;
+          }
+          case 58: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -1130,6 +1202,7 @@ namespace Tinkoff.InvestApi.V1 {
       dateTime_ = other.dateTime_ != null ? other.dateTime_.Clone() : null;
       price_ = other.price_ != null ? other.price_.Clone() : null;
       quantity_ = other.quantity_;
+      tradeId_ = other.tradeId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1158,7 +1231,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PriceFieldNumber = 2;
     private global::Tinkoff.InvestApi.V1.Quotation price_;
     /// <summary>
-    ///Цена одного инструмента, по которой совершена сделка.
+    ///Цена за 1 инструмент, по которой совершена сделка.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1173,7 +1246,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int QuantityFieldNumber = 3;
     private long quantity_;
     /// <summary>
-    ///Количество лотов в сделке.
+    ///Количество штук в сделке.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1181,6 +1254,21 @@ namespace Tinkoff.InvestApi.V1 {
       get { return quantity_; }
       set {
         quantity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "trade_id" field.</summary>
+    public const int TradeIdFieldNumber = 4;
+    private string tradeId_ = "";
+    /// <summary>
+    ///Идентификатор сделки.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TradeId {
+      get { return tradeId_; }
+      set {
+        tradeId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1202,6 +1290,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(DateTime, other.DateTime)) return false;
       if (!object.Equals(Price, other.Price)) return false;
       if (Quantity != other.Quantity) return false;
+      if (TradeId != other.TradeId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1212,6 +1301,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (dateTime_ != null) hash ^= DateTime.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
       if (Quantity != 0L) hash ^= Quantity.GetHashCode();
+      if (TradeId.Length != 0) hash ^= TradeId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1242,6 +1332,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(Quantity);
       }
+      if (TradeId.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(TradeId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1264,6 +1358,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(Quantity);
       }
+      if (TradeId.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(TradeId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1282,6 +1380,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Quantity != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Quantity);
+      }
+      if (TradeId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TradeId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1309,6 +1410,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Quantity != 0L) {
         Quantity = other.Quantity;
+      }
+      if (other.TradeId.Length != 0) {
+        TradeId = other.TradeId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1343,6 +1447,10 @@ namespace Tinkoff.InvestApi.V1 {
             Quantity = input.ReadInt64();
             break;
           }
+          case 34: {
+            TradeId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1374,6 +1482,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 24: {
             Quantity = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            TradeId = input.ReadString();
             break;
           }
         }
@@ -1427,6 +1539,7 @@ namespace Tinkoff.InvestApi.V1 {
       accountId_ = other.accountId_;
       orderType_ = other.orderType_;
       orderId_ = other.orderId_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1470,7 +1583,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PriceFieldNumber = 3;
     private global::Tinkoff.InvestApi.V1.Quotation price_;
     /// <summary>
-    ///Цена одного инструмента. Для получения стоимости лота требуется умножить на лотность инструмента. Игнорируется для рыночных поручений.
+    ///Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Игнорируется для рыночных поручений.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1541,6 +1654,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 8;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значения Figi или Instrument_uid.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1563,6 +1691,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (AccountId != other.AccountId) return false;
       if (OrderType != other.OrderType) return false;
       if (OrderId != other.OrderId) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1577,6 +1706,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (AccountId.Length != 0) hash ^= AccountId.GetHashCode();
       if (OrderType != global::Tinkoff.InvestApi.V1.OrderType.Unspecified) hash ^= OrderType.GetHashCode();
       if (OrderId.Length != 0) hash ^= OrderId.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1623,6 +1753,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(58);
         output.WriteString(OrderId);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1661,6 +1795,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(58);
         output.WriteString(OrderId);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1691,6 +1829,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (OrderId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(OrderId);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1727,6 +1868,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.OrderId.Length != 0) {
         OrderId = other.OrderId;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1774,6 +1918,10 @@ namespace Tinkoff.InvestApi.V1 {
             OrderId = input.ReadString();
             break;
           }
+          case 66: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1818,6 +1966,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 58: {
             OrderId = input.ReadString();
+            break;
+          }
+          case 66: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -1880,6 +2032,7 @@ namespace Tinkoff.InvestApi.V1 {
       orderType_ = other.orderType_;
       message_ = other.message_;
       initialOrderPricePt_ = other.initialOrderPricePt_ != null ? other.initialOrderPricePt_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1968,7 +2121,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ExecutedOrderPriceFieldNumber = 6;
     private global::Tinkoff.InvestApi.V1.MoneyValue executedOrderPrice_;
     /// <summary>
-    ///Исполненная цена заявки. Произведение средней цены покупки на количество лотов.
+    ///Исполненная средняя цена 1 одного инструмента в заявки.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2129,6 +2282,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 17;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///UID идентификатор инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2160,6 +2328,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (OrderType != other.OrderType) return false;
       if (Message != other.Message) return false;
       if (!object.Equals(InitialOrderPricePt, other.InitialOrderPricePt)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2183,6 +2352,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (OrderType != global::Tinkoff.InvestApi.V1.OrderType.Unspecified) hash ^= OrderType.GetHashCode();
       if (Message.Length != 0) hash ^= Message.GetHashCode();
       if (initialOrderPricePt_ != null) hash ^= InitialOrderPricePt.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2265,6 +2435,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(130, 1);
         output.WriteMessage(InitialOrderPricePt);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2339,6 +2513,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(130, 1);
         output.WriteMessage(InitialOrderPricePt);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2396,6 +2574,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (initialOrderPricePt_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(InitialOrderPricePt);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2480,6 +2661,9 @@ namespace Tinkoff.InvestApi.V1 {
           InitialOrderPricePt = new global::Tinkoff.InvestApi.V1.Quotation();
         }
         InitialOrderPricePt.MergeFrom(other.InitialOrderPricePt);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2584,6 +2768,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(InitialOrderPricePt);
             break;
           }
+          case 138: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2685,6 +2873,10 @@ namespace Tinkoff.InvestApi.V1 {
               InitialOrderPricePt = new global::Tinkoff.InvestApi.V1.Quotation();
             }
             input.ReadMessage(InitialOrderPricePt);
+            break;
+          }
+          case 138: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -3802,6 +3994,7 @@ namespace Tinkoff.InvestApi.V1 {
       currency_ = other.currency_;
       orderType_ = other.orderType_;
       orderDate_ = other.orderDate_ != null ? other.orderDate_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4080,6 +4273,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 19;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///UID идентификатор инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4113,6 +4321,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Currency != other.Currency) return false;
       if (OrderType != other.OrderType) return false;
       if (!object.Equals(OrderDate, other.OrderDate)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4138,6 +4347,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Currency.Length != 0) hash ^= Currency.GetHashCode();
       if (OrderType != global::Tinkoff.InvestApi.V1.OrderType.Unspecified) hash ^= OrderType.GetHashCode();
       if (orderDate_ != null) hash ^= OrderDate.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4225,6 +4435,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(146, 1);
         output.WriteMessage(OrderDate);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(154, 1);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4304,6 +4518,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(146, 1);
         output.WriteMessage(OrderDate);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(154, 1);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4365,6 +4583,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (orderDate_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(OrderDate);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4456,6 +4677,9 @@ namespace Tinkoff.InvestApi.V1 {
           OrderDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         OrderDate.MergeFrom(other.OrderDate);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4569,6 +4793,10 @@ namespace Tinkoff.InvestApi.V1 {
               OrderDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(OrderDate);
+            break;
+          }
+          case 154: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -4685,6 +4913,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(OrderDate);
             break;
           }
+          case 154: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -4775,7 +5007,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int TradeIdFieldNumber = 3;
     private string tradeId_ = "";
     /// <summary>
-    ///Идентификатор торговой операции.
+    ///Идентификатор сделки.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4967,6 +5199,410 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 26: {
             TradeId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Запрос изменения выставленной заявки.
+  /// </summary>
+  public sealed partial class ReplaceOrderRequest : pb::IMessage<ReplaceOrderRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ReplaceOrderRequest> _parser = new pb::MessageParser<ReplaceOrderRequest>(() => new ReplaceOrderRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ReplaceOrderRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.OrdersReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReplaceOrderRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReplaceOrderRequest(ReplaceOrderRequest other) : this() {
+      accountId_ = other.accountId_;
+      orderId_ = other.orderId_;
+      idempotencyKey_ = other.idempotencyKey_;
+      quantity_ = other.quantity_;
+      price_ = other.price_ != null ? other.price_.Clone() : null;
+      priceType_ = other.priceType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReplaceOrderRequest Clone() {
+      return new ReplaceOrderRequest(this);
+    }
+
+    /// <summary>Field number for the "account_id" field.</summary>
+    public const int AccountIdFieldNumber = 1;
+    private string accountId_ = "";
+    /// <summary>
+    ///Номер счета.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AccountId {
+      get { return accountId_; }
+      set {
+        accountId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "order_id" field.</summary>
+    public const int OrderIdFieldNumber = 6;
+    private string orderId_ = "";
+    /// <summary>
+    ///Идентификатор заявки на бирже.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OrderId {
+      get { return orderId_; }
+      set {
+        orderId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "idempotency_key" field.</summary>
+    public const int IdempotencyKeyFieldNumber = 7;
+    private string idempotencyKey_ = "";
+    /// <summary>
+    ///Новый идентификатор запроса выставления поручения для целей идемпотентности. Максимальная длина 36 символов. Перезатирает старый ключ.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string IdempotencyKey {
+      get { return idempotencyKey_; }
+      set {
+        idempotencyKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "quantity" field.</summary>
+    public const int QuantityFieldNumber = 11;
+    private long quantity_;
+    /// <summary>
+    ///Количество лотов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Quantity {
+      get { return quantity_; }
+      set {
+        quantity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 12;
+    private global::Tinkoff.InvestApi.V1.Quotation price_;
+    /// <summary>
+    ///Цена за 1 инструмент.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "price_type" field.</summary>
+    public const int PriceTypeFieldNumber = 13;
+    private global::Tinkoff.InvestApi.V1.PriceType priceType_ = global::Tinkoff.InvestApi.V1.PriceType.Unspecified;
+    /// <summary>
+    ///Тип цены.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.PriceType PriceType {
+      get { return priceType_; }
+      set {
+        priceType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ReplaceOrderRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ReplaceOrderRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AccountId != other.AccountId) return false;
+      if (OrderId != other.OrderId) return false;
+      if (IdempotencyKey != other.IdempotencyKey) return false;
+      if (Quantity != other.Quantity) return false;
+      if (!object.Equals(Price, other.Price)) return false;
+      if (PriceType != other.PriceType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AccountId.Length != 0) hash ^= AccountId.GetHashCode();
+      if (OrderId.Length != 0) hash ^= OrderId.GetHashCode();
+      if (IdempotencyKey.Length != 0) hash ^= IdempotencyKey.GetHashCode();
+      if (Quantity != 0L) hash ^= Quantity.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      if (PriceType != global::Tinkoff.InvestApi.V1.PriceType.Unspecified) hash ^= PriceType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (AccountId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AccountId);
+      }
+      if (OrderId.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(OrderId);
+      }
+      if (IdempotencyKey.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(IdempotencyKey);
+      }
+      if (Quantity != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(Quantity);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(Price);
+      }
+      if (PriceType != global::Tinkoff.InvestApi.V1.PriceType.Unspecified) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) PriceType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AccountId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AccountId);
+      }
+      if (OrderId.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(OrderId);
+      }
+      if (IdempotencyKey.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(IdempotencyKey);
+      }
+      if (Quantity != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(Quantity);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(Price);
+      }
+      if (PriceType != global::Tinkoff.InvestApi.V1.PriceType.Unspecified) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) PriceType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (AccountId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AccountId);
+      }
+      if (OrderId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OrderId);
+      }
+      if (IdempotencyKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IdempotencyKey);
+      }
+      if (Quantity != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Quantity);
+      }
+      if (price_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
+      }
+      if (PriceType != global::Tinkoff.InvestApi.V1.PriceType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PriceType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ReplaceOrderRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AccountId.Length != 0) {
+        AccountId = other.AccountId;
+      }
+      if (other.OrderId.Length != 0) {
+        OrderId = other.OrderId;
+      }
+      if (other.IdempotencyKey.Length != 0) {
+        IdempotencyKey = other.IdempotencyKey;
+      }
+      if (other.Quantity != 0L) {
+        Quantity = other.Quantity;
+      }
+      if (other.price_ != null) {
+        if (price_ == null) {
+          Price = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Price.MergeFrom(other.Price);
+      }
+      if (other.PriceType != global::Tinkoff.InvestApi.V1.PriceType.Unspecified) {
+        PriceType = other.PriceType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AccountId = input.ReadString();
+            break;
+          }
+          case 50: {
+            OrderId = input.ReadString();
+            break;
+          }
+          case 58: {
+            IdempotencyKey = input.ReadString();
+            break;
+          }
+          case 88: {
+            Quantity = input.ReadInt64();
+            break;
+          }
+          case 98: {
+            if (price_ == null) {
+              Price = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 104: {
+            PriceType = (global::Tinkoff.InvestApi.V1.PriceType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            AccountId = input.ReadString();
+            break;
+          }
+          case 50: {
+            OrderId = input.ReadString();
+            break;
+          }
+          case 58: {
+            IdempotencyKey = input.ReadString();
+            break;
+          }
+          case 88: {
+            Quantity = input.ReadInt64();
+            break;
+          }
+          case 98: {
+            if (price_ == null) {
+              Price = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 104: {
+            PriceType = (global::Tinkoff.InvestApi.V1.PriceType) input.ReadEnum();
             break;
           }
         }

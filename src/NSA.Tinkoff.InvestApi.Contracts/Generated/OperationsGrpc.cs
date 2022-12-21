@@ -11,7 +11,7 @@ namespace Tinkoff.InvestApi.V1 {
   /// <summary>
   ///Сервис предназначен для получения:&lt;/br> **1**.  списка операций по счёту;&lt;/br> **2**.
   ///портфеля по счёту;&lt;/br> **3**. позиций ценных бумаг на счёте;&lt;/br> **4**.
-  ///доступного остатка для вывода средств;&lt;/br> **4**. получения различных отчётов.
+  ///доступного остатка для вывода средств;&lt;/br> **5**. получения различных отчётов.
   /// </summary>
   public static partial class OperationsService
   {
@@ -74,6 +74,10 @@ namespace Tinkoff.InvestApi.V1 {
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetDividendsForeignIssuerRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetDividendsForeignIssuerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetDividendsForeignIssuerRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetDividendsForeignIssuerResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetDividendsForeignIssuerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetDividendsForeignIssuerResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.OperationsRequest, global::Tinkoff.InvestApi.V1.OperationsResponse> __Method_GetOperations = new grpc::Method<global::Tinkoff.InvestApi.V1.OperationsRequest, global::Tinkoff.InvestApi.V1.OperationsResponse>(
@@ -123,6 +127,14 @@ namespace Tinkoff.InvestApi.V1 {
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetDividendsForeignIssuerRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetDividendsForeignIssuerResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> __Method_GetOperationsByCursor = new grpc::Method<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOperationsByCursor",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -157,7 +169,8 @@ namespace Tinkoff.InvestApi.V1 {
       }
 
       /// <summary>
-      ///Метод получения списка операций по счёту.
+      ///Метод получения списка операций по счёту.При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -170,7 +183,8 @@ namespace Tinkoff.InvestApi.V1 {
         return GetOperations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения списка операций по счёту.
+      ///Метод получения списка операций по счёту.При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -181,7 +195,8 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetOperations, null, options, request);
       }
       /// <summary>
-      ///Метод получения списка операций по счёту.
+      ///Метод получения списка операций по счёту.При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -194,7 +209,8 @@ namespace Tinkoff.InvestApi.V1 {
         return GetOperationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод получения списка операций по счёту.
+      ///Метод получения списка операций по счёту.При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -444,11 +460,215 @@ namespace Tinkoff.InvestApi.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetDividendsForeignIssuer, null, options, request);
       }
+      /// <summary>
+      ///Метод получения списка операций по счёту с пагинацией. При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse GetOperationsByCursor(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOperationsByCursor(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения списка операций по счёту с пагинацией. При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse GetOperationsByCursor(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOperationsByCursor, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения списка операций по счёту с пагинацией. При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> GetOperationsByCursorAsync(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOperationsByCursorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения списка операций по счёту с пагинацией. При работе с данным методом необходимо учитывать
+      /// [особенности взаимодействия](/investAPI/operations_problems) с данным методом.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> GetOperationsByCursorAsync(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOperationsByCursor, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override OperationsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new OperationsServiceClient(configuration);
+      }
+    }
+
+  }
+  public static partial class OperationsStreamService
+  {
+    static readonly string __ServiceName = "tinkoff.public.invest.api.contract.v1.OperationsStreamService";
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PortfolioStreamRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioStreamRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PortfolioStreamRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PortfolioStreamResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioStreamResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PortfolioStreamResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PositionsStreamRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_PositionsStreamRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PositionsStreamRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PositionsStreamResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_PositionsStreamResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PositionsStreamResponse.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.PortfolioStreamRequest, global::Tinkoff.InvestApi.V1.PortfolioStreamResponse> __Method_PortfolioStream = new grpc::Method<global::Tinkoff.InvestApi.V1.PortfolioStreamRequest, global::Tinkoff.InvestApi.V1.PortfolioStreamResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "PortfolioStream",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioStreamRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioStreamResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.PositionsStreamRequest, global::Tinkoff.InvestApi.V1.PositionsStreamResponse> __Method_PositionsStream = new grpc::Method<global::Tinkoff.InvestApi.V1.PositionsStreamRequest, global::Tinkoff.InvestApi.V1.PositionsStreamResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "PositionsStream",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PositionsStreamRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PositionsStreamResponse);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::Tinkoff.InvestApi.V1.OperationsReflection.Descriptor.Services[1]; }
+    }
+
+    /// <summary>Client for OperationsStreamService</summary>
+    public partial class OperationsStreamServiceClient : grpc::ClientBase<OperationsStreamServiceClient>
+    {
+      /// <summary>Creates a new client for OperationsStreamService</summary>
+      /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public OperationsStreamServiceClient(grpc::ChannelBase channel) : base(channel)
+      {
+      }
+      /// <summary>Creates a new client for OperationsStreamService that uses a custom <c>CallInvoker</c>.</summary>
+      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public OperationsStreamServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      {
+      }
+      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected OperationsStreamServiceClient() : base()
+      {
+      }
+      /// <summary>Protected constructor to allow creation of configured clients.</summary>
+      /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected OperationsStreamServiceClient(ClientBaseConfiguration configuration) : base(configuration)
+      {
+      }
+
+      /// <summary>
+      ///Server-side stream обновлений портфеля
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Tinkoff.InvestApi.V1.PortfolioStreamResponse> PortfolioStream(global::Tinkoff.InvestApi.V1.PortfolioStreamRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PortfolioStream(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Server-side stream обновлений портфеля
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Tinkoff.InvestApi.V1.PortfolioStreamResponse> PortfolioStream(global::Tinkoff.InvestApi.V1.PortfolioStreamRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_PortfolioStream, null, options, request);
+      }
+      /// <summary>
+      ///Server-side stream обновлений информации по изменению позиций портфеля
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Tinkoff.InvestApi.V1.PositionsStreamResponse> PositionsStream(global::Tinkoff.InvestApi.V1.PositionsStreamRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PositionsStream(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Server-side stream обновлений информации по изменению позиций портфеля
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Tinkoff.InvestApi.V1.PositionsStreamResponse> PositionsStream(global::Tinkoff.InvestApi.V1.PositionsStreamRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_PositionsStream, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected override OperationsStreamServiceClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new OperationsStreamServiceClient(configuration);
       }
     }
 

@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -21,13 +20,14 @@
         <Folder Include="Generated" />
     </ItemGroup>
 
+
     <ItemGroup>
-        <Protobuf Include="Protos\*.proto" GrpcServices="Client" ProtoRoot="Protos">
+        <Protobuf Include="..\..\investAPI\src\docs\contracts\*.proto" Link="Protos\*.proto" GrpcServices="Client">
             <Access>Public</Access>
             <CompileOutputs>False</CompileOutputs>
             <ProtoCompile>True</ProtoCompile>
             <OutputDir>Generated</OutputDir>
         </Protobuf>
     </ItemGroup>
-
+    
 </Project>

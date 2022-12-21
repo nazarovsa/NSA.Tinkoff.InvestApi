@@ -68,6 +68,10 @@ namespace Tinkoff.InvestApi.V1 {
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetLastTradesRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetLastTradesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetLastTradesResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetLastTradesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetClosePricesRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetClosePricesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetClosePricesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetClosePricesResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetClosePricesResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.GetCandlesRequest, global::Tinkoff.InvestApi.V1.GetCandlesResponse> __Method_GetCandles = new grpc::Method<global::Tinkoff.InvestApi.V1.GetCandlesRequest, global::Tinkoff.InvestApi.V1.GetCandlesResponse>(
@@ -108,6 +112,14 @@ namespace Tinkoff.InvestApi.V1 {
         "GetLastTrades",
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.GetClosePricesRequest, global::Tinkoff.InvestApi.V1.GetClosePricesResponse> __Method_GetClosePrices = new grpc::Method<global::Tinkoff.InvestApi.V1.GetClosePricesRequest, global::Tinkoff.InvestApi.V1.GetClosePricesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetClosePrices",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetClosePricesRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -191,7 +203,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetCandles, null, options, request);
       }
       /// <summary>
-      ///Метод запроса последних цен по инструментам.
+      ///Метод запроса цен последних сделок по инструментам.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -204,7 +216,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetLastPrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод запроса последних цен по инструментам.
+      ///Метод запроса цен последних сделок по инструментам.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -215,7 +227,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetLastPrices, null, options, request);
       }
       /// <summary>
-      ///Метод запроса последних цен по инструментам.
+      ///Метод запроса цен последних сделок по инструментам.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -228,7 +240,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetLastPricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод запроса последних цен по инструментам.
+      ///Метод запроса цен последних сделок по инструментам.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -335,7 +347,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetTradingStatus, null, options, request);
       }
       /// <summary>
-      ///Метод запроса последних обезличенных сделок по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+      ///Метод запроса обезличенных сделок за последний час.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -348,7 +360,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetLastTrades(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод запроса последних обезличенных сделок по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+      ///Метод запроса обезличенных сделок за последний час.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -359,7 +371,7 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetLastTrades, null, options, request);
       }
       /// <summary>
-      ///Метод запроса последних обезличенных сделок по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+      ///Метод запроса обезличенных сделок за последний час.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -372,7 +384,7 @@ namespace Tinkoff.InvestApi.V1 {
         return GetLastTradesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Метод запроса последних обезличенных сделок по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+      ///Метод запроса обезличенных сделок за последний час.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -381,6 +393,54 @@ namespace Tinkoff.InvestApi.V1 {
       public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetLastTradesResponse> GetLastTradesAsync(global::Tinkoff.InvestApi.V1.GetLastTradesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLastTrades, null, options, request);
+      }
+      /// <summary>
+      ///Метод запроса цен закрытия торговой сессии по инструментам.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetClosePricesResponse GetClosePrices(global::Tinkoff.InvestApi.V1.GetClosePricesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetClosePrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод запроса цен закрытия торговой сессии по инструментам.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetClosePricesResponse GetClosePrices(global::Tinkoff.InvestApi.V1.GetClosePricesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetClosePrices, null, options, request);
+      }
+      /// <summary>
+      ///Метод запроса цен закрытия торговой сессии по инструментам.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetClosePricesResponse> GetClosePricesAsync(global::Tinkoff.InvestApi.V1.GetClosePricesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetClosePricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод запроса цен закрытия торговой сессии по инструментам.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetClosePricesResponse> GetClosePricesAsync(global::Tinkoff.InvestApi.V1.GetClosePricesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetClosePrices, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

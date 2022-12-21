@@ -26,7 +26,7 @@ namespace Tinkoff.InvestApi.V1 {
           string.Concat(
             "ChBtYXJrZXRkYXRhLnByb3RvEiV0aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
             "LmNvbnRyYWN0LnYxGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3Rv",
-            "Ggxjb21tb24ucHJvdG8imQQKEU1hcmtldERhdGFSZXF1ZXN0EmMKGXN1YnNj",
+            "Ggxjb21tb24ucHJvdG8i9AQKEU1hcmtldERhdGFSZXF1ZXN0EmMKGXN1YnNj",
             "cmliZV9jYW5kbGVzX3JlcXVlc3QYASABKAsyPi50aW5rb2ZmLnB1YmxpYy5p",
             "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmliZUNhbmRsZXNSZXF1ZXN0",
             "SAASaAocc3Vic2NyaWJlX29yZGVyX2Jvb2tfcmVxdWVzdBgCIAEoCzJALnRp",
@@ -38,263 +38,299 @@ namespace Tinkoff.InvestApi.V1 {
             "bnRyYWN0LnYxLlN1YnNjcmliZUluZm9SZXF1ZXN0SAASaAocc3Vic2NyaWJl",
             "X2xhc3RfcHJpY2VfcmVxdWVzdBgFIAEoCzJALnRpbmtvZmYucHVibGljLmlu",
             "dmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaWJlTGFzdFByaWNlUmVxdWVz",
-            "dEgAQgkKB3BheWxvYWQilAQKIU1hcmtldERhdGFTZXJ2ZXJTaWRlU3RyZWFt",
-            "UmVxdWVzdBJhChlzdWJzY3JpYmVfY2FuZGxlc19yZXF1ZXN0GAEgASgLMj4u",
-            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3Jp",
-            "YmVDYW5kbGVzUmVxdWVzdBJmChxzdWJzY3JpYmVfb3JkZXJfYm9va19yZXF1",
-            "ZXN0GAIgASgLMkAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5TdWJzY3JpYmVPcmRlckJvb2tSZXF1ZXN0El8KGHN1YnNjcmliZV90",
-            "cmFkZXNfcmVxdWVzdBgDIAEoCzI9LnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuU3Vic2NyaWJlVHJhZGVzUmVxdWVzdBJbChZzdWJz",
-            "Y3JpYmVfaW5mb19yZXF1ZXN0GAQgASgLMjsudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpYmVJbmZvUmVxdWVzdBJmChxz",
-            "dWJzY3JpYmVfbGFzdF9wcmljZV9yZXF1ZXN0GAUgASgLMkAudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpYmVMYXN0UHJp",
-            "Y2VSZXF1ZXN0IsAHChJNYXJrZXREYXRhUmVzcG9uc2USZQoac3Vic2NyaWJl",
-            "X2NhbmRsZXNfcmVzcG9uc2UYASABKAsyPy50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmliZUNhbmRsZXNSZXNwb25zZUgA",
-            "EmoKHXN1YnNjcmliZV9vcmRlcl9ib29rX3Jlc3BvbnNlGAIgASgLMkEudGlu",
-            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpYmVP",
-            "cmRlckJvb2tSZXNwb25zZUgAEmMKGXN1YnNjcmliZV90cmFkZXNfcmVzcG9u",
-            "c2UYAyABKAsyPi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLlN1YnNjcmliZVRyYWRlc1Jlc3BvbnNlSAASXwoXc3Vic2NyaWJlX2lu",
-            "Zm9fcmVzcG9uc2UYBCABKAsyPC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLlN1YnNjcmliZUluZm9SZXNwb25zZUgAEj8KBmNhbmRs",
-            "ZRgFIAEoCzItLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuQ2FuZGxlSAASPQoFdHJhZGUYBiABKAsyLC50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlSAASRQoJb3JkZXJib29rGAcg",
-            "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5P",
-            "cmRlckJvb2tIABJOCg50cmFkaW5nX3N0YXR1cxgIIAEoCzI0LnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuVHJhZGluZ1N0YXR1c0gA",
-            "EjsKBHBpbmcYCSABKAsyKy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLlBpbmdIABJqCh1zdWJzY3JpYmVfbGFzdF9wcmljZV9yZXNw",
-            "b25zZRgKIAEoCzJBLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuU3Vic2NyaWJlTGFzdFByaWNlUmVzcG9uc2VIABJGCgpsYXN0X3By",
-            "aWNlGAsgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5MYXN0UHJpY2VIAEIJCgdwYXlsb2FkItYBChdTdWJzY3JpYmVDYW5k",
-            "bGVzUmVxdWVzdBJWChNzdWJzY3JpcHRpb25fYWN0aW9uGAEgASgOMjkudGlu",
-            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpcHRp",
-            "b25BY3Rpb24STAoLaW5zdHJ1bWVudHMYAiADKAsyNy50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkNhbmRsZUluc3RydW1lbnQSFQoN",
-            "d2FpdGluZ19jbG9zZRgDIAEoCCJvChBDYW5kbGVJbnN0cnVtZW50EgwKBGZp",
-            "Z2kYASABKAkSTQoIaW50ZXJ2YWwYAiABKA4yOy50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvbkludGVydmFsIokB",
-            "ChhTdWJzY3JpYmVDYW5kbGVzUmVzcG9uc2USEwoLdHJhY2tpbmdfaWQYASAB",
-            "KAkSWAoVY2FuZGxlc19zdWJzY3JpcHRpb25zGAIgAygLMjkudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5DYW5kbGVTdWJzY3JpcHRp",
-            "b24iyQEKEkNhbmRsZVN1YnNjcmlwdGlvbhIMCgRmaWdpGAEgASgJEk0KCGlu",
-            "dGVydmFsGAIgASgOMjsudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5TdWJzY3JpcHRpb25JbnRlcnZhbBJWChNzdWJzY3JpcHRpb25f",
-            "c3RhdHVzGAMgASgOMjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5TdWJzY3JpcHRpb25TdGF0dXMixAEKGVN1YnNjcmliZU9yZGVy",
-            "Qm9va1JlcXVlc3QSVgoTc3Vic2NyaXB0aW9uX2FjdGlvbhgBIAEoDjI5LnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0",
-            "aW9uQWN0aW9uEk8KC2luc3RydW1lbnRzGAIgAygLMjoudGlua29mZi5wdWJs",
-            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5PcmRlckJvb2tJbnN0cnVtZW50",
-            "IjIKE09yZGVyQm9va0luc3RydW1lbnQSDAoEZmlnaRgBIAEoCRINCgVkZXB0",
-            "aBgCIAEoBSKRAQoaU3Vic2NyaWJlT3JkZXJCb29rUmVzcG9uc2USEwoLdHJh",
-            "Y2tpbmdfaWQYASABKAkSXgoYb3JkZXJfYm9va19zdWJzY3JpcHRpb25zGAIg",
-            "AygLMjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5P",
-            "cmRlckJvb2tTdWJzY3JpcHRpb24ijAEKFU9yZGVyQm9va1N1YnNjcmlwdGlv",
-            "bhIMCgRmaWdpGAEgASgJEg0KBWRlcHRoGAIgASgFElYKE3N1YnNjcmlwdGlv",
-            "bl9zdGF0dXMYAyABKA4yOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLlN1YnNjcmlwdGlvblN0YXR1cyK9AQoWU3Vic2NyaWJlVHJh",
-            "ZGVzUmVxdWVzdBJWChNzdWJzY3JpcHRpb25fYWN0aW9uGAEgASgOMjkudGlu",
-            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpcHRp",
-            "b25BY3Rpb24SSwoLaW5zdHJ1bWVudHMYAiADKAsyNi50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlSW5zdHJ1bWVudCIfCg9U",
-            "cmFkZUluc3RydW1lbnQSDAoEZmlnaRgBIAEoCSKFAQoXU3Vic2NyaWJlVHJh",
-            "ZGVzUmVzcG9uc2USEwoLdHJhY2tpbmdfaWQYASABKAkSVQoTdHJhZGVfc3Vi",
-            "c2NyaXB0aW9ucxgCIAMoCzI4LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuVHJhZGVTdWJzY3JpcHRpb24ieQoRVHJhZGVTdWJzY3Jp",
-            "cHRpb24SDAoEZmlnaRgBIAEoCRJWChNzdWJzY3JpcHRpb25fc3RhdHVzGAIg",
-            "ASgOMjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5T",
-            "dWJzY3JpcHRpb25TdGF0dXMiugEKFFN1YnNjcmliZUluZm9SZXF1ZXN0ElYK",
-            "E3N1YnNjcmlwdGlvbl9hY3Rpb24YASABKA4yOS50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvbkFjdGlvbhJKCgtp",
-            "bnN0cnVtZW50cxgCIAMoCzI1LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuSW5mb0luc3RydW1lbnQiHgoOSW5mb0luc3RydW1lbnQS",
-            "DAoEZmlnaRgBIAEoCSKBAQoVU3Vic2NyaWJlSW5mb1Jlc3BvbnNlEhMKC3Ry",
-            "YWNraW5nX2lkGAEgASgJElMKEmluZm9fc3Vic2NyaXB0aW9ucxgCIAMoCzI3",
-            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuSW5mb1N1",
-            "YnNjcmlwdGlvbiJ4ChBJbmZvU3Vic2NyaXB0aW9uEgwKBGZpZ2kYASABKAkS",
-            "VgoTc3Vic2NyaXB0aW9uX3N0YXR1cxgCIAEoDjI5LnRpbmtvZmYucHVibGlj",
-            "LmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0aW9uU3RhdHVzIsQB",
-            "ChlTdWJzY3JpYmVMYXN0UHJpY2VSZXF1ZXN0ElYKE3N1YnNjcmlwdGlvbl9h",
-            "Y3Rpb24YASABKA4yOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlN1YnNjcmlwdGlvbkFjdGlvbhJPCgtpbnN0cnVtZW50cxgCIAMo",
-            "CzI6LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTGFz",
-            "dFByaWNlSW5zdHJ1bWVudCIjChNMYXN0UHJpY2VJbnN0cnVtZW50EgwKBGZp",
-            "Z2kYASABKAkikQEKGlN1YnNjcmliZUxhc3RQcmljZVJlc3BvbnNlEhMKC3Ry",
-            "YWNraW5nX2lkGAEgASgJEl4KGGxhc3RfcHJpY2Vfc3Vic2NyaXB0aW9ucxgC",
-            "IAMoCzI8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "TGFzdFByaWNlU3Vic2NyaXB0aW9uIn0KFUxhc3RQcmljZVN1YnNjcmlwdGlv",
-            "bhIMCgRmaWdpGAEgASgJElYKE3N1YnNjcmlwdGlvbl9zdGF0dXMYAiABKA4y",
-            "OS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNj",
-            "cmlwdGlvblN0YXR1cyLSAwoGQ2FuZGxlEgwKBGZpZ2kYASABKAkSTQoIaW50",
-            "ZXJ2YWwYAiABKA4yOy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlN1YnNjcmlwdGlvbkludGVydmFsEj4KBG9wZW4YAyABKAsyMC50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
-            "bhI+CgRoaWdoGAQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
-            "b250cmFjdC52MS5RdW90YXRpb24SPQoDbG93GAUgASgLMjAudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SPwoFY2xv",
-            "c2UYBiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLlF1b3RhdGlvbhIOCgZ2b2x1bWUYByABKAMSKAoEdGltZRgIIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMQoNbGFzdF90cmFkZV90cxgJ",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi6wIKCU9yZGVyQm9v",
-            "axIMCgRmaWdpGAEgASgJEg0KBWRlcHRoGAIgASgFEhUKDWlzX2NvbnNpc3Rl",
-            "bnQYAyABKAgSOgoEYmlkcxgEIAMoCzIsLnRpbmtvZmYucHVibGljLmludmVz",
-            "dC5hcGkuY29udHJhY3QudjEuT3JkZXISOgoEYXNrcxgFIAMoCzIsLnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXISKAoEdGlt",
-            "ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASQgoIbGltaXRf",
-            "dXAYByABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLlF1b3RhdGlvbhJECgpsaW1pdF9kb3duGAggASgLMjAudGlua29mZi5w",
-            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24iWgoFT3Jk",
-            "ZXISPwoFcHJpY2UYASABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBp",
-            "LmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIQCghxdWFudGl0eRgCIAEoAyLcAQoF",
-            "VHJhZGUSDAoEZmlnaRgBIAEoCRJICglkaXJlY3Rpb24YAiABKA4yNS50aW5r",
-            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlRGlyZWN0",
-            "aW9uEj8KBXByaWNlGAMgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
-            "aS5jb250cmFjdC52MS5RdW90YXRpb24SEAoIcXVhbnRpdHkYBCABKAMSKAoE",
-            "dGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi5gEKDVRy",
-            "YWRpbmdTdGF0dXMSDAoEZmlnaRgBIAEoCRJUCg50cmFkaW5nX3N0YXR1cxgC",
-            "IAEoDjI8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "U2VjdXJpdHlUcmFkaW5nU3RhdHVzEigKBHRpbWUYAyABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wEiIKGmxpbWl0X29yZGVyX2F2YWlsYWJsZV9m",
-            "bGFnGAQgASgIEiMKG21hcmtldF9vcmRlcl9hdmFpbGFibGVfZmxhZxgFIAEo",
-            "CCK8AQoRR2V0Q2FuZGxlc1JlcXVlc3QSDAoEZmlnaRgBIAEoCRIoCgRmcm9t",
-            "GAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBImCgJ0bxgDIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASRwoIaW50ZXJ2YWwYBCAB",
-            "KA4yNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkNh",
-            "bmRsZUludGVydmFsIlwKEkdldENhbmRsZXNSZXNwb25zZRJGCgdjYW5kbGVz",
-            "GAEgAygLMjUudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
-            "MS5IaXN0b3JpY0NhbmRsZSLfAgoOSGlzdG9yaWNDYW5kbGUSPgoEb3BlbhgB",
+            "dEgAElkKFGdldF9teV9zdWJzY3JpcHRpb25zGAYgASgLMjkudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRNeVN1YnNjcmlwdGlv",
+            "bnNIAEIJCgdwYXlsb2FkIpQECiFNYXJrZXREYXRhU2VydmVyU2lkZVN0cmVh",
+            "bVJlcXVlc3QSYQoZc3Vic2NyaWJlX2NhbmRsZXNfcmVxdWVzdBgBIAEoCzI+",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2Ny",
+            "aWJlQ2FuZGxlc1JlcXVlc3QSZgocc3Vic2NyaWJlX29yZGVyX2Jvb2tfcmVx",
+            "dWVzdBgCIAEoCzJALnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuU3Vic2NyaWJlT3JkZXJCb29rUmVxdWVzdBJfChhzdWJzY3JpYmVf",
+            "dHJhZGVzX3JlcXVlc3QYAyABKAsyPS50aW5rb2ZmLnB1YmxpYy5pbnZlc3Qu",
+            "YXBpLmNvbnRyYWN0LnYxLlN1YnNjcmliZVRyYWRlc1JlcXVlc3QSWwoWc3Vi",
+            "c2NyaWJlX2luZm9fcmVxdWVzdBgEIAEoCzI7LnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaWJlSW5mb1JlcXVlc3QSZgoc",
+            "c3Vic2NyaWJlX2xhc3RfcHJpY2VfcmVxdWVzdBgFIAEoCzJALnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaWJlTGFzdFBy",
+            "aWNlUmVxdWVzdCLABwoSTWFya2V0RGF0YVJlc3BvbnNlEmUKGnN1YnNjcmli",
+            "ZV9jYW5kbGVzX3Jlc3BvbnNlGAEgASgLMj8udGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpYmVDYW5kbGVzUmVzcG9uc2VI",
+            "ABJqCh1zdWJzY3JpYmVfb3JkZXJfYm9va19yZXNwb25zZRgCIAEoCzJBLnRp",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaWJl",
+            "T3JkZXJCb29rUmVzcG9uc2VIABJjChlzdWJzY3JpYmVfdHJhZGVzX3Jlc3Bv",
+            "bnNlGAMgASgLMj4udGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5TdWJzY3JpYmVUcmFkZXNSZXNwb25zZUgAEl8KF3N1YnNjcmliZV9p",
+            "bmZvX3Jlc3BvbnNlGAQgASgLMjwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5TdWJzY3JpYmVJbmZvUmVzcG9uc2VIABI/CgZjYW5k",
+            "bGUYBSABKAsyLS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
+            "LnYxLkNhbmRsZUgAEj0KBXRyYWRlGAYgASgLMiwudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5UcmFkZUgAEkUKCW9yZGVyYm9vaxgH",
             "IAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "UXVvdGF0aW9uEj4KBGhpZ2gYAiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhI9CgNsb3cYAyABKAsyMC50",
-            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlv",
-            "bhI/CgVjbG9zZRgEIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuUXVvdGF0aW9uEg4KBnZvbHVtZRgFIAEoAxIoCgR0aW1l",
-            "GAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBITCgtpc19jb21w",
-            "bGV0ZRgHIAEoCCIkChRHZXRMYXN0UHJpY2VzUmVxdWVzdBIMCgRmaWdpGAEg",
-            "AygJIl4KFUdldExhc3RQcmljZXNSZXNwb25zZRJFCgtsYXN0X3ByaWNlcxgB",
-            "IAMoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEu",
-            "TGFzdFByaWNlIoQBCglMYXN0UHJpY2USDAoEZmlnaRgBIAEoCRI/CgVwcmlj",
-            "ZRgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuUXVvdGF0aW9uEigKBHRpbWUYAyABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wIjIKE0dldE9yZGVyQm9va1JlcXVlc3QSDAoEZmlnaRgBIAEo",
-            "CRINCgVkZXB0aBgCIAEoBSLCAwoUR2V0T3JkZXJCb29rUmVzcG9uc2USDAoE",
-            "ZmlnaRgBIAEoCRINCgVkZXB0aBgCIAEoBRI6CgRiaWRzGAMgAygLMiwudGlu",
-            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5PcmRlchI6CgRh",
-            "c2tzGAQgAygLMiwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5PcmRlchJECgpsYXN0X3ByaWNlGAUgASgLMjAudGlua29mZi5wdWJs",
-            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SRQoLY2xvc2Vf",
-            "cHJpY2UYBiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLlF1b3RhdGlvbhJCCghsaW1pdF91cBgHIAEoCzIwLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEkQKCmxp",
-            "bWl0X2Rvd24YCCABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNv",
-            "bnRyYWN0LnYxLlF1b3RhdGlvbiInChdHZXRUcmFkaW5nU3RhdHVzUmVxdWVz",
-            "dBIMCgRmaWdpGAEgASgJIukBChhHZXRUcmFkaW5nU3RhdHVzUmVzcG9uc2US",
-            "DAoEZmlnaRgBIAEoCRJUCg50cmFkaW5nX3N0YXR1cxgCIAEoDjI8LnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU2VjdXJpdHlUcmFk",
-            "aW5nU3RhdHVzEiIKGmxpbWl0X29yZGVyX2F2YWlsYWJsZV9mbGFnGAMgASgI",
-            "EiMKG21hcmtldF9vcmRlcl9hdmFpbGFibGVfZmxhZxgEIAEoCBIgChhhcGlf",
-            "dHJhZGVfYXZhaWxhYmxlX2ZsYWcYBSABKAgidgoUR2V0TGFzdFRyYWRlc1Jl",
-            "cXVlc3QSDAoEZmlnaRgBIAEoCRIoCgRmcm9tGAIgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBImCgJ0bxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXAiVQoVR2V0TGFzdFRyYWRlc1Jlc3BvbnNlEjwKBnRyYWRl",
-            "cxgBIAMoCzIsLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuVHJhZGUqgQEKElN1YnNjcmlwdGlvbkFjdGlvbhIjCh9TVUJTQ1JJUFRJ",
-            "T05fQUNUSU9OX1VOU1BFQ0lGSUVEEAASIQodU1VCU0NSSVBUSU9OX0FDVElP",
-            "Tl9TVUJTQ1JJQkUQARIjCh9TVUJTQ1JJUFRJT05fQUNUSU9OX1VOU1VCU0NS",
-            "SUJFEAIqiwEKFFN1YnNjcmlwdGlvbkludGVydmFsEiUKIVNVQlNDUklQVElP",
-            "Tl9JTlRFUlZBTF9VTlNQRUNJRklFRBAAEiQKIFNVQlNDUklQVElPTl9JTlRF",
-            "UlZBTF9PTkVfTUlOVVRFEAESJgoiU1VCU0NSSVBUSU9OX0lOVEVSVkFMX0ZJ",
-            "VkVfTUlOVVRFUxACKpUDChJTdWJzY3JpcHRpb25TdGF0dXMSIwofU1VCU0NS",
-            "SVBUSU9OX1NUQVRVU19VTlNQRUNJRklFRBAAEh8KG1NVQlNDUklQVElPTl9T",
-            "VEFUVVNfU1VDQ0VTUxABEiwKKFNVQlNDUklQVElPTl9TVEFUVVNfSU5TVFJV",
-            "TUVOVF9OT1RfRk9VTkQQAhI2CjJTVUJTQ1JJUFRJT05fU1RBVFVTX1NVQlND",
-            "UklQVElPTl9BQ1RJT05fSVNfSU5WQUxJRBADEigKJFNVQlNDUklQVElPTl9T",
-            "VEFUVVNfREVQVEhfSVNfSU5WQUxJRBAEEisKJ1NVQlNDUklQVElPTl9TVEFU",
-            "VVNfSU5URVJWQUxfSVNfSU5WQUxJRBAFEikKJVNVQlNDUklQVElPTl9TVEFU",
-            "VVNfTElNSVRfSVNfRVhDRUVERUQQBhImCiJTVUJTQ1JJUFRJT05fU1RBVFVT",
-            "X0lOVEVSTkFMX0VSUk9SEAcSKQolU1VCU0NSSVBUSU9OX1NUQVRVU19UT09f",
-            "TUFOWV9SRVFVRVNUUxAIKmQKDlRyYWRlRGlyZWN0aW9uEh8KG1RSQURFX0RJ",
-            "UkVDVElPTl9VTlNQRUNJRklFRBAAEhcKE1RSQURFX0RJUkVDVElPTl9CVVkQ",
-            "ARIYChRUUkFERV9ESVJFQ1RJT05fU0VMTBACKrYBCg5DYW5kbGVJbnRlcnZh",
-            "bBIfChtDQU5ETEVfSU5URVJWQUxfVU5TUEVDSUZJRUQQABIZChVDQU5ETEVf",
-            "SU5URVJWQUxfMV9NSU4QARIZChVDQU5ETEVfSU5URVJWQUxfNV9NSU4QAhIa",
-            "ChZDQU5ETEVfSU5URVJWQUxfMTVfTUlOEAMSGAoUQ0FORExFX0lOVEVSVkFM",
-            "X0hPVVIQBBIXChNDQU5ETEVfSU5URVJWQUxfREFZEAUy0QUKEU1hcmtldERh",
-            "dGFTZXJ2aWNlEoEBCgpHZXRDYW5kbGVzEjgudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5HZXRDYW5kbGVzUmVxdWVzdBo5LnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0Q2FuZGxlc1Jl",
-            "c3BvbnNlEooBCg1HZXRMYXN0UHJpY2VzEjsudGlua29mZi5wdWJsaWMuaW52",
-            "ZXN0LmFwaS5jb250cmFjdC52MS5HZXRMYXN0UHJpY2VzUmVxdWVzdBo8LnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0TGFzdFBy",
-            "aWNlc1Jlc3BvbnNlEocBCgxHZXRPcmRlckJvb2sSOi50aW5rb2ZmLnB1Ymxp",
-            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldE9yZGVyQm9va1JlcXVlc3Qa",
-            "Oy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldE9y",
-            "ZGVyQm9va1Jlc3BvbnNlEpMBChBHZXRUcmFkaW5nU3RhdHVzEj4udGlua29m",
-            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRUcmFkaW5nU3Rh",
-            "dHVzUmVxdWVzdBo/LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
-            "Y3QudjEuR2V0VHJhZGluZ1N0YXR1c1Jlc3BvbnNlEooBCg1HZXRMYXN0VHJh",
-            "ZGVzEjsudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5H",
-            "ZXRMYXN0VHJhZGVzUmVxdWVzdBo8LnRpbmtvZmYucHVibGljLmludmVzdC5h",
-            "cGkuY29udHJhY3QudjEuR2V0TGFzdFRyYWRlc1Jlc3BvbnNlMs0CChdNYXJr",
-            "ZXREYXRhU3RyZWFtU2VydmljZRKLAQoQTWFya2V0RGF0YVN0cmVhbRI4LnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTWFya2V0RGF0",
-            "YVJlcXVlc3QaOS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0",
-            "LnYxLk1hcmtldERhdGFSZXNwb25zZSgBMAESowEKGk1hcmtldERhdGFTZXJ2",
-            "ZXJTaWRlU3RyZWFtEkgudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
-            "cmFjdC52MS5NYXJrZXREYXRhU2VydmVyU2lkZVN0cmVhbVJlcXVlc3QaOS50",
+            "T3JkZXJCb29rSAASTgoOdHJhZGluZ19zdGF0dXMYCCABKAsyNC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRpbmdTdGF0dXNI",
+            "ABI7CgRwaW5nGAkgASgLMisudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5QaW5nSAASagodc3Vic2NyaWJlX2xhc3RfcHJpY2VfcmVz",
+            "cG9uc2UYCiABKAsyQS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLlN1YnNjcmliZUxhc3RQcmljZVJlc3BvbnNlSAASRgoKbGFzdF9w",
+            "cmljZRgLIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuTGFzdFByaWNlSABCCQoHcGF5bG9hZCLWAQoXU3Vic2NyaWJlQ2Fu",
+            "ZGxlc1JlcXVlc3QSVgoTc3Vic2NyaXB0aW9uX2FjdGlvbhgBIAEoDjI5LnRp",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0",
+            "aW9uQWN0aW9uEkwKC2luc3RydW1lbnRzGAIgAygLMjcudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5DYW5kbGVJbnN0cnVtZW50EhUK",
+            "DXdhaXRpbmdfY2xvc2UYAyABKAgihgEKEENhbmRsZUluc3RydW1lbnQSDAoE",
+            "ZmlnaRgBIAEoCRJNCghpbnRlcnZhbBgCIAEoDjI7LnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0aW9uSW50ZXJ2YWwS",
+            "FQoNaW5zdHJ1bWVudF9pZBgDIAEoCSKJAQoYU3Vic2NyaWJlQ2FuZGxlc1Jl",
+            "c3BvbnNlEhMKC3RyYWNraW5nX2lkGAEgASgJElgKFWNhbmRsZXNfc3Vic2Ny",
+            "aXB0aW9ucxgCIAMoCzI5LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuQ2FuZGxlU3Vic2NyaXB0aW9uIuEBChJDYW5kbGVTdWJzY3Jp",
+            "cHRpb24SDAoEZmlnaRgBIAEoCRJNCghpbnRlcnZhbBgCIAEoDjI7LnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0aW9u",
+            "SW50ZXJ2YWwSVgoTc3Vic2NyaXB0aW9uX3N0YXR1cxgDIAEoDjI5LnRpbmtv",
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU3Vic2NyaXB0aW9u",
+            "U3RhdHVzEhYKDmluc3RydW1lbnRfdWlkGAQgASgJIsQBChlTdWJzY3JpYmVP",
+            "cmRlckJvb2tSZXF1ZXN0ElYKE3N1YnNjcmlwdGlvbl9hY3Rpb24YASABKA4y",
+            "OS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNj",
+            "cmlwdGlvbkFjdGlvbhJPCgtpbnN0cnVtZW50cxgCIAMoCzI6LnRpbmtvZmYu",
+            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXJCb29rSW5zdHJ1",
+            "bWVudCJJChNPcmRlckJvb2tJbnN0cnVtZW50EgwKBGZpZ2kYASABKAkSDQoF",
+            "ZGVwdGgYAiABKAUSFQoNaW5zdHJ1bWVudF9pZBgDIAEoCSKRAQoaU3Vic2Ny",
+            "aWJlT3JkZXJCb29rUmVzcG9uc2USEwoLdHJhY2tpbmdfaWQYASABKAkSXgoY",
+            "b3JkZXJfYm9va19zdWJzY3JpcHRpb25zGAIgAygLMjwudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5PcmRlckJvb2tTdWJzY3JpcHRp",
+            "b24ipAEKFU9yZGVyQm9va1N1YnNjcmlwdGlvbhIMCgRmaWdpGAEgASgJEg0K",
+            "BWRlcHRoGAIgASgFElYKE3N1YnNjcmlwdGlvbl9zdGF0dXMYAyABKA4yOS50",
+            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlw",
+            "dGlvblN0YXR1cxIWCg5pbnN0cnVtZW50X3VpZBgEIAEoCSK9AQoWU3Vic2Ny",
+            "aWJlVHJhZGVzUmVxdWVzdBJWChNzdWJzY3JpcHRpb25fYWN0aW9uGAEgASgO",
+            "MjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJz",
+            "Y3JpcHRpb25BY3Rpb24SSwoLaW5zdHJ1bWVudHMYAiADKAsyNi50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlRyYWRlSW5zdHJ1bWVu",
+            "dCI2Cg9UcmFkZUluc3RydW1lbnQSDAoEZmlnaRgBIAEoCRIVCg1pbnN0cnVt",
+            "ZW50X2lkGAIgASgJIoUBChdTdWJzY3JpYmVUcmFkZXNSZXNwb25zZRITCgt0",
+            "cmFja2luZ19pZBgBIAEoCRJVChN0cmFkZV9zdWJzY3JpcHRpb25zGAIgAygL",
+            "MjgudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5UcmFk",
+            "ZVN1YnNjcmlwdGlvbiKRAQoRVHJhZGVTdWJzY3JpcHRpb24SDAoEZmlnaRgB",
+            "IAEoCRJWChNzdWJzY3JpcHRpb25fc3RhdHVzGAIgASgOMjkudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TdWJzY3JpcHRpb25TdGF0",
+            "dXMSFgoOaW5zdHJ1bWVudF91aWQYAyABKAkiugEKFFN1YnNjcmliZUluZm9S",
+            "ZXF1ZXN0ElYKE3N1YnNjcmlwdGlvbl9hY3Rpb24YASABKA4yOS50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvbkFj",
+            "dGlvbhJKCgtpbnN0cnVtZW50cxgCIAMoCzI1LnRpbmtvZmYucHVibGljLmlu",
+            "dmVzdC5hcGkuY29udHJhY3QudjEuSW5mb0luc3RydW1lbnQiNQoOSW5mb0lu",
+            "c3RydW1lbnQSDAoEZmlnaRgBIAEoCRIVCg1pbnN0cnVtZW50X2lkGAIgASgJ",
+            "IoEBChVTdWJzY3JpYmVJbmZvUmVzcG9uc2USEwoLdHJhY2tpbmdfaWQYASAB",
+            "KAkSUwoSaW5mb19zdWJzY3JpcHRpb25zGAIgAygLMjcudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbmZvU3Vic2NyaXB0aW9uIpAB",
+            "ChBJbmZvU3Vic2NyaXB0aW9uEgwKBGZpZ2kYASABKAkSVgoTc3Vic2NyaXB0",
+            "aW9uX3N0YXR1cxgCIAEoDjI5LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuU3Vic2NyaXB0aW9uU3RhdHVzEhYKDmluc3RydW1lbnRf",
+            "dWlkGAMgASgJIsQBChlTdWJzY3JpYmVMYXN0UHJpY2VSZXF1ZXN0ElYKE3N1",
+            "YnNjcmlwdGlvbl9hY3Rpb24YASABKA4yOS50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvbkFjdGlvbhJPCgtpbnN0",
+            "cnVtZW50cxgCIAMoCzI6LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuTGFzdFByaWNlSW5zdHJ1bWVudCI6ChNMYXN0UHJpY2VJbnN0",
+            "cnVtZW50EgwKBGZpZ2kYASABKAkSFQoNaW5zdHJ1bWVudF9pZBgCIAEoCSKR",
+            "AQoaU3Vic2NyaWJlTGFzdFByaWNlUmVzcG9uc2USEwoLdHJhY2tpbmdfaWQY",
+            "ASABKAkSXgoYbGFzdF9wcmljZV9zdWJzY3JpcHRpb25zGAIgAygLMjwudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5MYXN0UHJpY2VT",
+            "dWJzY3JpcHRpb24ilQEKFUxhc3RQcmljZVN1YnNjcmlwdGlvbhIMCgRmaWdp",
+            "GAEgASgJElYKE3N1YnNjcmlwdGlvbl9zdGF0dXMYAiABKA4yOS50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvblN0",
+            "YXR1cxIWCg5pbnN0cnVtZW50X3VpZBgDIAEoCSLqAwoGQ2FuZGxlEgwKBGZp",
+            "Z2kYASABKAkSTQoIaW50ZXJ2YWwYAiABKA4yOy50aW5rb2ZmLnB1YmxpYy5p",
+            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN1YnNjcmlwdGlvbkludGVydmFsEj4K",
+            "BG9wZW4YAyABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLlF1b3RhdGlvbhI+CgRoaWdoGAQgASgLMjAudGlua29mZi5wdWJs",
+            "aWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SPQoDbG93GAUg",
+            "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5R",
+            "dW90YXRpb24SPwoFY2xvc2UYBiABKAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIOCgZ2b2x1bWUYByABKAMS",
+            "KAoEdGltZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMQoN",
+            "bGFzdF90cmFkZV90cxgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASFgoOaW5zdHJ1bWVudF91aWQYCiABKAkigwMKCU9yZGVyQm9vaxIMCgRm",
+            "aWdpGAEgASgJEg0KBWRlcHRoGAIgASgFEhUKDWlzX2NvbnNpc3RlbnQYAyAB",
+            "KAgSOgoEYmlkcxgEIAMoCzIsLnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuT3JkZXISOgoEYXNrcxgFIAMoCzIsLnRpbmtvZmYucHVi",
+            "bGljLmludmVzdC5hcGkuY29udHJhY3QudjEuT3JkZXISKAoEdGltZRgGIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASQgoIbGltaXRfdXAYByAB",
+            "KAsyMC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1",
+            "b3RhdGlvbhJECgpsaW1pdF9kb3duGAggASgLMjAudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SFgoOaW5zdHJ1bWVu",
+            "dF91aWQYCSABKAkiWgoFT3JkZXISPwoFcHJpY2UYASABKAsyMC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIQCghx",
+            "dWFudGl0eRgCIAEoAyL0AQoFVHJhZGUSDAoEZmlnaRgBIAEoCRJICglkaXJl",
+            "Y3Rpb24YAiABKA4yNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLlRyYWRlRGlyZWN0aW9uEj8KBXByaWNlGAMgASgLMjAudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5RdW90YXRpb24SEAoI",
+            "cXVhbnRpdHkYBCABKAMSKAoEdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASFgoOaW5zdHJ1bWVudF91aWQYBiABKAki/gEKDVRyYWRp",
+            "bmdTdGF0dXMSDAoEZmlnaRgBIAEoCRJUCg50cmFkaW5nX3N0YXR1cxgCIAEo",
+            "DjI8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuU2Vj",
+            "dXJpdHlUcmFkaW5nU3RhdHVzEigKBHRpbWUYAyABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEiIKGmxpbWl0X29yZGVyX2F2YWlsYWJsZV9mbGFn",
+            "GAQgASgIEiMKG21hcmtldF9vcmRlcl9hdmFpbGFibGVfZmxhZxgFIAEoCBIW",
+            "Cg5pbnN0cnVtZW50X3VpZBgGIAEoCSLTAQoRR2V0Q2FuZGxlc1JlcXVlc3QS",
+            "DAoEZmlnaRgBIAEoCRIoCgRmcm9tGAIgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBImCgJ0bxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASRwoIaW50ZXJ2YWwYBCABKA4yNS50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLkNhbmRsZUludGVydmFsEhUKDWluc3RydW1l",
+            "bnRfaWQYBSABKAkiXAoSR2V0Q2FuZGxlc1Jlc3BvbnNlEkYKB2NhbmRsZXMY",
+            "ASADKAsyNS50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYx",
+            "Lkhpc3RvcmljQ2FuZGxlIt8CCg5IaXN0b3JpY0NhbmRsZRI+CgRvcGVuGAEg",
+            "ASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5R",
+            "dW90YXRpb24SPgoEaGlnaBgCIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVz",
+            "dC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9uEj0KA2xvdxgDIAEoCzIwLnRp",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0aW9u",
+            "Ej8KBWNsb3NlGAQgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5j",
+            "b250cmFjdC52MS5RdW90YXRpb24SDgoGdm9sdW1lGAUgASgDEigKBHRpbWUY",
+            "BiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhMKC2lzX2NvbXBs",
+            "ZXRlGAcgASgIIjsKFEdldExhc3RQcmljZXNSZXF1ZXN0EgwKBGZpZ2kYASAD",
+            "KAkSFQoNaW5zdHJ1bWVudF9pZBgCIAMoCSJeChVHZXRMYXN0UHJpY2VzUmVz",
+            "cG9uc2USRQoLbGFzdF9wcmljZXMYASADKAsyMC50aW5rb2ZmLnB1YmxpYy5p",
+            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkxhc3RQcmljZSKcAQoJTGFzdFByaWNl",
+            "EgwKBGZpZ2kYASABKAkSPwoFcHJpY2UYAiABKAsyMC50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIoCgR0aW1lGAMg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIWCg5pbnN0cnVtZW50",
+            "X3VpZBgLIAEoCSJJChNHZXRPcmRlckJvb2tSZXF1ZXN0EgwKBGZpZ2kYASAB",
+            "KAkSDQoFZGVwdGgYAiABKAUSFQoNaW5zdHJ1bWVudF9pZBgDIAEoCSLzBAoU",
+            "R2V0T3JkZXJCb29rUmVzcG9uc2USDAoEZmlnaRgBIAEoCRINCgVkZXB0aBgC",
+            "IAEoBRI6CgRiaWRzGAMgAygLMiwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFw",
+            "aS5jb250cmFjdC52MS5PcmRlchI6CgRhc2tzGAQgAygLMiwudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5PcmRlchJECgpsYXN0X3By",
+            "aWNlGAUgASgLMjAudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5RdW90YXRpb24SRQoLY2xvc2VfcHJpY2UYBiABKAsyMC50aW5rb2Zm",
+            "LnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhJCCghs",
+            "aW1pdF91cBgHIAEoCzIwLnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuUXVvdGF0aW9uEkQKCmxpbWl0X2Rvd24YCCABKAsyMC50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3RhdGlvbhIx",
+            "Cg1sYXN0X3ByaWNlX3RzGBUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBIyCg5jbG9zZV9wcmljZV90cxgWIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASMAoMb3JkZXJib29rX3RzGBcgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBIWCg5pbnN0cnVtZW50X3VpZBgJIAEoCSI+ChdH",
+            "ZXRUcmFkaW5nU3RhdHVzUmVxdWVzdBIMCgRmaWdpGAEgASgJEhUKDWluc3Ry",
+            "dW1lbnRfaWQYAiABKAkigQIKGEdldFRyYWRpbmdTdGF0dXNSZXNwb25zZRIM",
+            "CgRmaWdpGAEgASgJElQKDnRyYWRpbmdfc3RhdHVzGAIgASgOMjwudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5TZWN1cml0eVRyYWRp",
+            "bmdTdGF0dXMSIgoabGltaXRfb3JkZXJfYXZhaWxhYmxlX2ZsYWcYAyABKAgS",
+            "IwobbWFya2V0X29yZGVyX2F2YWlsYWJsZV9mbGFnGAQgASgIEiAKGGFwaV90",
+            "cmFkZV9hdmFpbGFibGVfZmxhZxgFIAEoCBIWCg5pbnN0cnVtZW50X3VpZBgG",
+            "IAEoCSKNAQoUR2V0TGFzdFRyYWRlc1JlcXVlc3QSDAoEZmlnaRgBIAEoCRIo",
+            "CgRmcm9tGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBImCgJ0",
+            "bxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFQoNaW5zdHJ1",
+            "bWVudF9pZBgEIAEoCSJVChVHZXRMYXN0VHJhZGVzUmVzcG9uc2USPAoGdHJh",
+            "ZGVzGAEgAygLMiwudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5UcmFkZSIUChJHZXRNeVN1YnNjcmlwdGlvbnMicAoVR2V0Q2xvc2VQ",
+            "cmljZXNSZXF1ZXN0ElcKC2luc3RydW1lbnRzGAEgAygLMkIudGlua29mZi5w",
+            "dWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5JbnN0cnVtZW50Q2xvc2VQ",
+            "cmljZVJlcXVlc3QiNAobSW5zdHJ1bWVudENsb3NlUHJpY2VSZXF1ZXN0EhUK",
+            "DWluc3RydW1lbnRfaWQYASABKAkicwoWR2V0Q2xvc2VQcmljZXNSZXNwb25z",
+            "ZRJZCgxjbG9zZV9wcmljZXMYASADKAsyQy50aW5rb2ZmLnB1YmxpYy5pbnZl",
+            "c3QuYXBpLmNvbnRyYWN0LnYxLkluc3RydW1lbnRDbG9zZVByaWNlUmVzcG9u",
+            "c2UirwEKHEluc3RydW1lbnRDbG9zZVByaWNlUmVzcG9uc2USDAoEZmlnaRgB",
+            "IAEoCRIWCg5pbnN0cnVtZW50X3VpZBgCIAEoCRI/CgVwcmljZRgLIAEoCzIw",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuUXVvdGF0",
+            "aW9uEigKBHRpbWUYFSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "KoEBChJTdWJzY3JpcHRpb25BY3Rpb24SIwofU1VCU0NSSVBUSU9OX0FDVElP",
+            "Tl9VTlNQRUNJRklFRBAAEiEKHVNVQlNDUklQVElPTl9BQ1RJT05fU1VCU0NS",
+            "SUJFEAESIwofU1VCU0NSSVBUSU9OX0FDVElPTl9VTlNVQlNDUklCRRACKosB",
+            "ChRTdWJzY3JpcHRpb25JbnRlcnZhbBIlCiFTVUJTQ1JJUFRJT05fSU5URVJW",
+            "QUxfVU5TUEVDSUZJRUQQABIkCiBTVUJTQ1JJUFRJT05fSU5URVJWQUxfT05F",
+            "X01JTlVURRABEiYKIlNVQlNDUklQVElPTl9JTlRFUlZBTF9GSVZFX01JTlVU",
+            "RVMQAiqVAwoSU3Vic2NyaXB0aW9uU3RhdHVzEiMKH1NVQlNDUklQVElPTl9T",
+            "VEFUVVNfVU5TUEVDSUZJRUQQABIfChtTVUJTQ1JJUFRJT05fU1RBVFVTX1NV",
+            "Q0NFU1MQARIsCihTVUJTQ1JJUFRJT05fU1RBVFVTX0lOU1RSVU1FTlRfTk9U",
+            "X0ZPVU5EEAISNgoyU1VCU0NSSVBUSU9OX1NUQVRVU19TVUJTQ1JJUFRJT05f",
+            "QUNUSU9OX0lTX0lOVkFMSUQQAxIoCiRTVUJTQ1JJUFRJT05fU1RBVFVTX0RF",
+            "UFRIX0lTX0lOVkFMSUQQBBIrCidTVUJTQ1JJUFRJT05fU1RBVFVTX0lOVEVS",
+            "VkFMX0lTX0lOVkFMSUQQBRIpCiVTVUJTQ1JJUFRJT05fU1RBVFVTX0xJTUlU",
+            "X0lTX0VYQ0VFREVEEAYSJgoiU1VCU0NSSVBUSU9OX1NUQVRVU19JTlRFUk5B",
+            "TF9FUlJPUhAHEikKJVNVQlNDUklQVElPTl9TVEFUVVNfVE9PX01BTllfUkVR",
+            "VUVTVFMQCCpkCg5UcmFkZURpcmVjdGlvbhIfChtUUkFERV9ESVJFQ1RJT05f",
+            "VU5TUEVDSUZJRUQQABIXChNUUkFERV9ESVJFQ1RJT05fQlVZEAESGAoUVFJB",
+            "REVfRElSRUNUSU9OX1NFTEwQAiq2AQoOQ2FuZGxlSW50ZXJ2YWwSHwobQ0FO",
+            "RExFX0lOVEVSVkFMX1VOU1BFQ0lGSUVEEAASGQoVQ0FORExFX0lOVEVSVkFM",
+            "XzFfTUlOEAESGQoVQ0FORExFX0lOVEVSVkFMXzVfTUlOEAISGgoWQ0FORExF",
+            "X0lOVEVSVkFMXzE1X01JThADEhgKFENBTkRMRV9JTlRFUlZBTF9IT1VSEAQS",
+            "FwoTQ0FORExFX0lOVEVSVkFMX0RBWRAFMuEGChFNYXJrZXREYXRhU2Vydmlj",
+            "ZRKBAQoKR2V0Q2FuZGxlcxI4LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuR2V0Q2FuZGxlc1JlcXVlc3QaOS50aW5rb2ZmLnB1Ymxp",
+            "Yy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldENhbmRsZXNSZXNwb25zZRKK",
+            "AQoNR2V0TGFzdFByaWNlcxI7LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
+            "Y29udHJhY3QudjEuR2V0TGFzdFByaWNlc1JlcXVlc3QaPC50aW5rb2ZmLnB1",
+            "YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldExhc3RQcmljZXNSZXNw",
+            "b25zZRKHAQoMR2V0T3JkZXJCb29rEjoudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5HZXRPcmRlckJvb2tSZXF1ZXN0GjsudGlua29m",
+            "Zi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRPcmRlckJvb2tS",
+            "ZXNwb25zZRKTAQoQR2V0VHJhZGluZ1N0YXR1cxI+LnRpbmtvZmYucHVibGlj",
+            "LmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0VHJhZGluZ1N0YXR1c1JlcXVl",
+            "c3QaPy50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdl",
+            "dFRyYWRpbmdTdGF0dXNSZXNwb25zZRKKAQoNR2V0TGFzdFRyYWRlcxI7LnRp",
+            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0TGFzdFRy",
+            "YWRlc1JlcXVlc3QaPC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
+            "YWN0LnYxLkdldExhc3RUcmFkZXNSZXNwb25zZRKNAQoOR2V0Q2xvc2VQcmlj",
+            "ZXMSPC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdl",
+            "dENsb3NlUHJpY2VzUmVxdWVzdBo9LnRpbmtvZmYucHVibGljLmludmVzdC5h",
+            "cGkuY29udHJhY3QudjEuR2V0Q2xvc2VQcmljZXNSZXNwb25zZTLNAgoXTWFy",
+            "a2V0RGF0YVN0cmVhbVNlcnZpY2USiwEKEE1hcmtldERhdGFTdHJlYW0SOC50",
             "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLk1hcmtldERh",
-            "dGFSZXNwb25zZTABQmEKHHJ1LnRpbmtvZmYucGlhcGkuY29udHJhY3QudjFQ",
-            "AVoMLi87aW52ZXN0YXBpogIFVElBUEmqAhRUaW5rb2ZmLkludmVzdEFwaS5W",
-            "McoCEVRpbmtvZmZcSW52ZXN0XFYxYgZwcm90bzM="));
+            "dGFSZXF1ZXN0GjkudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
+            "dC52MS5NYXJrZXREYXRhUmVzcG9uc2UoATABEqMBChpNYXJrZXREYXRhU2Vy",
+            "dmVyU2lkZVN0cmVhbRJILnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuTWFya2V0RGF0YVNlcnZlclNpZGVTdHJlYW1SZXF1ZXN0Gjku",
+            "dGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5NYXJrZXRE",
+            "YXRhUmVzcG9uc2UwAUJhChxydS50aW5rb2ZmLnBpYXBpLmNvbnRyYWN0LnYx",
+            "UAFaDC4vO2ludmVzdGFwaaICBVRJQVBJqgIUVGlua29mZi5JbnZlc3RBcGku",
+            "VjHKAhFUaW5rb2ZmXEludmVzdFxWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Tinkoff.InvestApi.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.SubscriptionAction), typeof(global::Tinkoff.InvestApi.V1.SubscriptionInterval), typeof(global::Tinkoff.InvestApi.V1.SubscriptionStatus), typeof(global::Tinkoff.InvestApi.V1.TradeDirection), typeof(global::Tinkoff.InvestApi.V1.CandleInterval), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.MarketDataRequest), global::Tinkoff.InvestApi.V1.MarketDataRequest.Parser, new[]{ "SubscribeCandlesRequest", "SubscribeOrderBookRequest", "SubscribeTradesRequest", "SubscribeInfoRequest", "SubscribeLastPriceRequest" }, new[]{ "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.MarketDataRequest), global::Tinkoff.InvestApi.V1.MarketDataRequest.Parser, new[]{ "SubscribeCandlesRequest", "SubscribeOrderBookRequest", "SubscribeTradesRequest", "SubscribeInfoRequest", "SubscribeLastPriceRequest", "GetMySubscriptions" }, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.MarketDataServerSideStreamRequest), global::Tinkoff.InvestApi.V1.MarketDataServerSideStreamRequest.Parser, new[]{ "SubscribeCandlesRequest", "SubscribeOrderBookRequest", "SubscribeTradesRequest", "SubscribeInfoRequest", "SubscribeLastPriceRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.MarketDataResponse), global::Tinkoff.InvestApi.V1.MarketDataResponse.Parser, new[]{ "SubscribeCandlesResponse", "SubscribeOrderBookResponse", "SubscribeTradesResponse", "SubscribeInfoResponse", "Candle", "Trade", "Orderbook", "TradingStatus", "Ping", "SubscribeLastPriceResponse", "LastPrice" }, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeCandlesRequest), global::Tinkoff.InvestApi.V1.SubscribeCandlesRequest.Parser, new[]{ "SubscriptionAction", "Instruments", "WaitingClose" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CandleInstrument), global::Tinkoff.InvestApi.V1.CandleInstrument.Parser, new[]{ "Figi", "Interval" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CandleInstrument), global::Tinkoff.InvestApi.V1.CandleInstrument.Parser, new[]{ "Figi", "Interval", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeCandlesResponse), global::Tinkoff.InvestApi.V1.SubscribeCandlesResponse.Parser, new[]{ "TrackingId", "CandlesSubscriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CandleSubscription), global::Tinkoff.InvestApi.V1.CandleSubscription.Parser, new[]{ "Figi", "Interval", "SubscriptionStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.CandleSubscription), global::Tinkoff.InvestApi.V1.CandleSubscription.Parser, new[]{ "Figi", "Interval", "SubscriptionStatus", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeOrderBookRequest), global::Tinkoff.InvestApi.V1.SubscribeOrderBookRequest.Parser, new[]{ "SubscriptionAction", "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBookInstrument), global::Tinkoff.InvestApi.V1.OrderBookInstrument.Parser, new[]{ "Figi", "Depth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBookInstrument), global::Tinkoff.InvestApi.V1.OrderBookInstrument.Parser, new[]{ "Figi", "Depth", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeOrderBookResponse), global::Tinkoff.InvestApi.V1.SubscribeOrderBookResponse.Parser, new[]{ "TrackingId", "OrderBookSubscriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBookSubscription), global::Tinkoff.InvestApi.V1.OrderBookSubscription.Parser, new[]{ "Figi", "Depth", "SubscriptionStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBookSubscription), global::Tinkoff.InvestApi.V1.OrderBookSubscription.Parser, new[]{ "Figi", "Depth", "SubscriptionStatus", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeTradesRequest), global::Tinkoff.InvestApi.V1.SubscribeTradesRequest.Parser, new[]{ "SubscriptionAction", "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradeInstrument), global::Tinkoff.InvestApi.V1.TradeInstrument.Parser, new[]{ "Figi" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradeInstrument), global::Tinkoff.InvestApi.V1.TradeInstrument.Parser, new[]{ "Figi", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeTradesResponse), global::Tinkoff.InvestApi.V1.SubscribeTradesResponse.Parser, new[]{ "TrackingId", "TradeSubscriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradeSubscription), global::Tinkoff.InvestApi.V1.TradeSubscription.Parser, new[]{ "Figi", "SubscriptionStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradeSubscription), global::Tinkoff.InvestApi.V1.TradeSubscription.Parser, new[]{ "Figi", "SubscriptionStatus", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeInfoRequest), global::Tinkoff.InvestApi.V1.SubscribeInfoRequest.Parser, new[]{ "SubscriptionAction", "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InfoInstrument), global::Tinkoff.InvestApi.V1.InfoInstrument.Parser, new[]{ "Figi" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InfoInstrument), global::Tinkoff.InvestApi.V1.InfoInstrument.Parser, new[]{ "Figi", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeInfoResponse), global::Tinkoff.InvestApi.V1.SubscribeInfoResponse.Parser, new[]{ "TrackingId", "InfoSubscriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InfoSubscription), global::Tinkoff.InvestApi.V1.InfoSubscription.Parser, new[]{ "Figi", "SubscriptionStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InfoSubscription), global::Tinkoff.InvestApi.V1.InfoSubscription.Parser, new[]{ "Figi", "SubscriptionStatus", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeLastPriceRequest), global::Tinkoff.InvestApi.V1.SubscribeLastPriceRequest.Parser, new[]{ "SubscriptionAction", "Instruments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPriceInstrument), global::Tinkoff.InvestApi.V1.LastPriceInstrument.Parser, new[]{ "Figi" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPriceInstrument), global::Tinkoff.InvestApi.V1.LastPriceInstrument.Parser, new[]{ "Figi", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.SubscribeLastPriceResponse), global::Tinkoff.InvestApi.V1.SubscribeLastPriceResponse.Parser, new[]{ "TrackingId", "LastPriceSubscriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPriceSubscription), global::Tinkoff.InvestApi.V1.LastPriceSubscription.Parser, new[]{ "Figi", "SubscriptionStatus" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Candle), global::Tinkoff.InvestApi.V1.Candle.Parser, new[]{ "Figi", "Interval", "Open", "High", "Low", "Close", "Volume", "Time", "LastTradeTs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBook), global::Tinkoff.InvestApi.V1.OrderBook.Parser, new[]{ "Figi", "Depth", "IsConsistent", "Bids", "Asks", "Time", "LimitUp", "LimitDown" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPriceSubscription), global::Tinkoff.InvestApi.V1.LastPriceSubscription.Parser, new[]{ "Figi", "SubscriptionStatus", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Candle), global::Tinkoff.InvestApi.V1.Candle.Parser, new[]{ "Figi", "Interval", "Open", "High", "Low", "Close", "Volume", "Time", "LastTradeTs", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.OrderBook), global::Tinkoff.InvestApi.V1.OrderBook.Parser, new[]{ "Figi", "Depth", "IsConsistent", "Bids", "Asks", "Time", "LimitUp", "LimitDown", "InstrumentUid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Order), global::Tinkoff.InvestApi.V1.Order.Parser, new[]{ "Price", "Quantity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Trade), global::Tinkoff.InvestApi.V1.Trade.Parser, new[]{ "Figi", "Direction", "Price", "Quantity", "Time" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradingStatus), global::Tinkoff.InvestApi.V1.TradingStatus.Parser, new[]{ "Figi", "TradingStatus_", "Time", "LimitOrderAvailableFlag", "MarketOrderAvailableFlag" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetCandlesRequest), global::Tinkoff.InvestApi.V1.GetCandlesRequest.Parser, new[]{ "Figi", "From", "To", "Interval" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Trade), global::Tinkoff.InvestApi.V1.Trade.Parser, new[]{ "Figi", "Direction", "Price", "Quantity", "Time", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.TradingStatus), global::Tinkoff.InvestApi.V1.TradingStatus.Parser, new[]{ "Figi", "TradingStatus_", "Time", "LimitOrderAvailableFlag", "MarketOrderAvailableFlag", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetCandlesRequest), global::Tinkoff.InvestApi.V1.GetCandlesRequest.Parser, new[]{ "Figi", "From", "To", "Interval", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetCandlesResponse), global::Tinkoff.InvestApi.V1.GetCandlesResponse.Parser, new[]{ "Candles" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.HistoricCandle), global::Tinkoff.InvestApi.V1.HistoricCandle.Parser, new[]{ "Open", "High", "Low", "Close", "Volume", "Time", "IsComplete" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastPricesRequest), global::Tinkoff.InvestApi.V1.GetLastPricesRequest.Parser, new[]{ "Figi" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastPricesRequest), global::Tinkoff.InvestApi.V1.GetLastPricesRequest.Parser, new[]{ "Figi", "InstrumentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastPricesResponse), global::Tinkoff.InvestApi.V1.GetLastPricesResponse.Parser, new[]{ "LastPrices" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPrice), global::Tinkoff.InvestApi.V1.LastPrice.Parser, new[]{ "Figi", "Price", "Time" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrderBookRequest), global::Tinkoff.InvestApi.V1.GetOrderBookRequest.Parser, new[]{ "Figi", "Depth" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrderBookResponse), global::Tinkoff.InvestApi.V1.GetOrderBookResponse.Parser, new[]{ "Figi", "Depth", "Bids", "Asks", "LastPrice", "ClosePrice", "LimitUp", "LimitDown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetTradingStatusRequest), global::Tinkoff.InvestApi.V1.GetTradingStatusRequest.Parser, new[]{ "Figi" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetTradingStatusResponse), global::Tinkoff.InvestApi.V1.GetTradingStatusResponse.Parser, new[]{ "Figi", "TradingStatus", "LimitOrderAvailableFlag", "MarketOrderAvailableFlag", "ApiTradeAvailableFlag" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastTradesRequest), global::Tinkoff.InvestApi.V1.GetLastTradesRequest.Parser, new[]{ "Figi", "From", "To" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastTradesResponse), global::Tinkoff.InvestApi.V1.GetLastTradesResponse.Parser, new[]{ "Trades" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.LastPrice), global::Tinkoff.InvestApi.V1.LastPrice.Parser, new[]{ "Figi", "Price", "Time", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrderBookRequest), global::Tinkoff.InvestApi.V1.GetOrderBookRequest.Parser, new[]{ "Figi", "Depth", "InstrumentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetOrderBookResponse), global::Tinkoff.InvestApi.V1.GetOrderBookResponse.Parser, new[]{ "Figi", "Depth", "Bids", "Asks", "LastPrice", "ClosePrice", "LimitUp", "LimitDown", "LastPriceTs", "ClosePriceTs", "OrderbookTs", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetTradingStatusRequest), global::Tinkoff.InvestApi.V1.GetTradingStatusRequest.Parser, new[]{ "Figi", "InstrumentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetTradingStatusResponse), global::Tinkoff.InvestApi.V1.GetTradingStatusResponse.Parser, new[]{ "Figi", "TradingStatus", "LimitOrderAvailableFlag", "MarketOrderAvailableFlag", "ApiTradeAvailableFlag", "InstrumentUid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastTradesRequest), global::Tinkoff.InvestApi.V1.GetLastTradesRequest.Parser, new[]{ "Figi", "From", "To", "InstrumentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetLastTradesResponse), global::Tinkoff.InvestApi.V1.GetLastTradesResponse.Parser, new[]{ "Trades" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetMySubscriptions), global::Tinkoff.InvestApi.V1.GetMySubscriptions.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetClosePricesRequest), global::Tinkoff.InvestApi.V1.GetClosePricesRequest.Parser, new[]{ "Instruments" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest), global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest.Parser, new[]{ "InstrumentId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetClosePricesResponse), global::Tinkoff.InvestApi.V1.GetClosePricesResponse.Parser, new[]{ "ClosePrices" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse), global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse.Parser, new[]{ "Figi", "InstrumentUid", "Price", "Time" }, null, null, null, null)
           }));
     }
     #endregion
@@ -483,6 +519,9 @@ namespace Tinkoff.InvestApi.V1 {
         case PayloadOneofCase.SubscribeLastPriceRequest:
           SubscribeLastPriceRequest = other.SubscribeLastPriceRequest.Clone();
           break;
+        case PayloadOneofCase.GetMySubscriptions:
+          GetMySubscriptions = other.GetMySubscriptions.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -557,7 +596,7 @@ namespace Tinkoff.InvestApi.V1 {
     /// <summary>Field number for the "subscribe_last_price_request" field.</summary>
     public const int SubscribeLastPriceRequestFieldNumber = 5;
     /// <summary>
-    ///Запрос подписки на последние цены.
+    ///Запрос подписки на цены последних сделок.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -566,6 +605,21 @@ namespace Tinkoff.InvestApi.V1 {
       set {
         payload_ = value;
         payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.SubscribeLastPriceRequest;
+      }
+    }
+
+    /// <summary>Field number for the "get_my_subscriptions" field.</summary>
+    public const int GetMySubscriptionsFieldNumber = 6;
+    /// <summary>
+    ///Запрос своих подписок.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.GetMySubscriptions GetMySubscriptions {
+      get { return payloadCase_ == PayloadOneofCase.GetMySubscriptions ? (global::Tinkoff.InvestApi.V1.GetMySubscriptions) payload_ : null; }
+      set {
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GetMySubscriptions;
       }
     }
 
@@ -578,6 +632,7 @@ namespace Tinkoff.InvestApi.V1 {
       SubscribeTradesRequest = 3,
       SubscribeInfoRequest = 4,
       SubscribeLastPriceRequest = 5,
+      GetMySubscriptions = 6,
     }
     private PayloadOneofCase payloadCase_ = PayloadOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -613,6 +668,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(SubscribeTradesRequest, other.SubscribeTradesRequest)) return false;
       if (!object.Equals(SubscribeInfoRequest, other.SubscribeInfoRequest)) return false;
       if (!object.Equals(SubscribeLastPriceRequest, other.SubscribeLastPriceRequest)) return false;
+      if (!object.Equals(GetMySubscriptions, other.GetMySubscriptions)) return false;
       if (PayloadCase != other.PayloadCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -626,6 +682,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (payloadCase_ == PayloadOneofCase.SubscribeTradesRequest) hash ^= SubscribeTradesRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SubscribeInfoRequest) hash ^= SubscribeInfoRequest.GetHashCode();
       if (payloadCase_ == PayloadOneofCase.SubscribeLastPriceRequest) hash ^= SubscribeLastPriceRequest.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) hash ^= GetMySubscriptions.GetHashCode();
       hash ^= (int) payloadCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -665,6 +722,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(SubscribeLastPriceRequest);
       }
+      if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) {
+        output.WriteRawTag(50);
+        output.WriteMessage(GetMySubscriptions);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -695,6 +756,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(SubscribeLastPriceRequest);
       }
+      if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) {
+        output.WriteRawTag(50);
+        output.WriteMessage(GetMySubscriptions);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -719,6 +784,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (payloadCase_ == PayloadOneofCase.SubscribeLastPriceRequest) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SubscribeLastPriceRequest);
+      }
+      if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetMySubscriptions);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -762,6 +830,12 @@ namespace Tinkoff.InvestApi.V1 {
             SubscribeLastPriceRequest = new global::Tinkoff.InvestApi.V1.SubscribeLastPriceRequest();
           }
           SubscribeLastPriceRequest.MergeFrom(other.SubscribeLastPriceRequest);
+          break;
+        case PayloadOneofCase.GetMySubscriptions:
+          if (GetMySubscriptions == null) {
+            GetMySubscriptions = new global::Tinkoff.InvestApi.V1.GetMySubscriptions();
+          }
+          GetMySubscriptions.MergeFrom(other.GetMySubscriptions);
           break;
       }
 
@@ -825,6 +899,15 @@ namespace Tinkoff.InvestApi.V1 {
             SubscribeLastPriceRequest = subBuilder;
             break;
           }
+          case 50: {
+            global::Tinkoff.InvestApi.V1.GetMySubscriptions subBuilder = new global::Tinkoff.InvestApi.V1.GetMySubscriptions();
+            if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) {
+              subBuilder.MergeFrom(GetMySubscriptions);
+            }
+            input.ReadMessage(subBuilder);
+            GetMySubscriptions = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -883,6 +966,15 @@ namespace Tinkoff.InvestApi.V1 {
             }
             input.ReadMessage(subBuilder);
             SubscribeLastPriceRequest = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Tinkoff.InvestApi.V1.GetMySubscriptions subBuilder = new global::Tinkoff.InvestApi.V1.GetMySubscriptions();
+            if (payloadCase_ == PayloadOneofCase.GetMySubscriptions) {
+              subBuilder.MergeFrom(GetMySubscriptions);
+            }
+            input.ReadMessage(subBuilder);
+            GetMySubscriptions = subBuilder;
             break;
           }
         }
@@ -1004,7 +1096,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int SubscribeLastPriceRequestFieldNumber = 5;
     private global::Tinkoff.InvestApi.V1.SubscribeLastPriceRequest subscribeLastPriceRequest_;
     /// <summary>
-    ///Запрос подписки на последние цены.
+    ///Запрос подписки на цены последних сделок.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1509,7 +1601,7 @@ namespace Tinkoff.InvestApi.V1 {
     /// <summary>Field number for the "subscribe_last_price_response" field.</summary>
     public const int SubscribeLastPriceResponseFieldNumber = 10;
     /// <summary>
-    ///Результат подписки на последние цены инструментов.
+    ///Результат подписки на цены последние сделок по инструментам.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1524,7 +1616,7 @@ namespace Tinkoff.InvestApi.V1 {
     /// <summary>Field number for the "last_price" field.</summary>
     public const int LastPriceFieldNumber = 11;
     /// <summary>
-    ///Последняя цена.
+    ///Цена последней сделки.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2169,7 +2261,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int WaitingCloseFieldNumber = 3;
     private bool waitingClose_;
     /// <summary>
-    ///Флаг ожидания закрытия временного интервала для отправки свечи.
+    ///Флаг ожидания закрытия временного интервала для отправки свечи, применяется только для минутных свечей.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2390,6 +2482,7 @@ namespace Tinkoff.InvestApi.V1 {
     public CandleInstrument(CandleInstrument other) : this() {
       figi_ = other.figi_;
       interval_ = other.interval_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2429,6 +2522,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 3;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2446,6 +2554,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (Interval != other.Interval) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2455,6 +2564,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (Interval != global::Tinkoff.InvestApi.V1.SubscriptionInterval.Unspecified) hash ^= Interval.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2481,6 +2591,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Interval);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2499,6 +2613,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Interval);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2514,6 +2632,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Interval != global::Tinkoff.InvestApi.V1.SubscriptionInterval.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Interval);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2532,6 +2653,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Interval != global::Tinkoff.InvestApi.V1.SubscriptionInterval.Unspecified) {
         Interval = other.Interval;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2556,6 +2680,10 @@ namespace Tinkoff.InvestApi.V1 {
             Interval = (global::Tinkoff.InvestApi.V1.SubscriptionInterval) input.ReadEnum();
             break;
           }
+          case 26: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2577,6 +2705,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             Interval = (global::Tinkoff.InvestApi.V1.SubscriptionInterval) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -2850,6 +2982,7 @@ namespace Tinkoff.InvestApi.V1 {
       figi_ = other.figi_;
       interval_ = other.interval_;
       subscriptionStatus_ = other.subscriptionStatus_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2904,6 +3037,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 4;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2922,6 +3070,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi != other.Figi) return false;
       if (Interval != other.Interval) return false;
       if (SubscriptionStatus != other.SubscriptionStatus) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2932,6 +3081,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (Interval != global::Tinkoff.InvestApi.V1.SubscriptionInterval.Unspecified) hash ^= Interval.GetHashCode();
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) hash ^= SubscriptionStatus.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2962,6 +3112,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2984,6 +3138,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3002,6 +3160,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SubscriptionStatus);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3023,6 +3184,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         SubscriptionStatus = other.SubscriptionStatus;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3051,6 +3215,10 @@ namespace Tinkoff.InvestApi.V1 {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
             break;
           }
+          case 34: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -3076,6 +3244,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 24: {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -3348,6 +3520,7 @@ namespace Tinkoff.InvestApi.V1 {
     public OrderBookInstrument(OrderBookInstrument other) : this() {
       figi_ = other.figi_;
       depth_ = other.depth_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3387,6 +3560,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 3;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3404,6 +3592,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (Depth != other.Depth) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3413,6 +3602,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (Depth != 0) hash ^= Depth.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3439,6 +3629,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Depth);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3457,6 +3651,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Depth);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3472,6 +3670,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Depth != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Depth);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3490,6 +3691,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Depth != 0) {
         Depth = other.Depth;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3514,6 +3718,10 @@ namespace Tinkoff.InvestApi.V1 {
             Depth = input.ReadInt32();
             break;
           }
+          case 26: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -3535,6 +3743,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             Depth = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -3808,6 +4020,7 @@ namespace Tinkoff.InvestApi.V1 {
       figi_ = other.figi_;
       depth_ = other.depth_;
       subscriptionStatus_ = other.subscriptionStatus_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3862,6 +4075,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 4;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3880,6 +4108,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi != other.Figi) return false;
       if (Depth != other.Depth) return false;
       if (SubscriptionStatus != other.SubscriptionStatus) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3890,6 +4119,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (Depth != 0) hash ^= Depth.GetHashCode();
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) hash ^= SubscriptionStatus.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3920,6 +4150,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3942,6 +4176,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(24);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3960,6 +4198,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SubscriptionStatus);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3981,6 +4222,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         SubscriptionStatus = other.SubscriptionStatus;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4009,6 +4253,10 @@ namespace Tinkoff.InvestApi.V1 {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
             break;
           }
+          case 34: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -4034,6 +4282,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 24: {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -4305,6 +4557,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TradeInstrument(TradeInstrument other) : this() {
       figi_ = other.figi_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4329,6 +4582,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 2;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4345,6 +4613,7 @@ namespace Tinkoff.InvestApi.V1 {
         return true;
       }
       if (Figi != other.Figi) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4353,6 +4622,7 @@ namespace Tinkoff.InvestApi.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4375,6 +4645,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4389,6 +4663,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4401,6 +4679,9 @@ namespace Tinkoff.InvestApi.V1 {
       int size = 0;
       if (Figi.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Figi);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4416,6 +4697,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Figi.Length != 0) {
         Figi = other.Figi;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4436,6 +4720,10 @@ namespace Tinkoff.InvestApi.V1 {
             Figi = input.ReadString();
             break;
           }
+          case 18: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -4453,6 +4741,10 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -4725,6 +5017,7 @@ namespace Tinkoff.InvestApi.V1 {
     public TradeSubscription(TradeSubscription other) : this() {
       figi_ = other.figi_;
       subscriptionStatus_ = other.subscriptionStatus_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4764,6 +5057,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 3;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4781,6 +5089,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (SubscriptionStatus != other.SubscriptionStatus) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4790,6 +5099,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) hash ^= SubscriptionStatus.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4816,6 +5126,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4834,6 +5148,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4849,6 +5167,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SubscriptionStatus);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4867,6 +5188,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         SubscriptionStatus = other.SubscriptionStatus;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4891,6 +5215,10 @@ namespace Tinkoff.InvestApi.V1 {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
             break;
           }
+          case 26: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -4912,6 +5240,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -5183,6 +5515,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InfoInstrument(InfoInstrument other) : this() {
       figi_ = other.figi_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5207,6 +5540,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 2;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5223,6 +5571,7 @@ namespace Tinkoff.InvestApi.V1 {
         return true;
       }
       if (Figi != other.Figi) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5231,6 +5580,7 @@ namespace Tinkoff.InvestApi.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5253,6 +5603,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5267,6 +5621,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5279,6 +5637,9 @@ namespace Tinkoff.InvestApi.V1 {
       int size = 0;
       if (Figi.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Figi);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5294,6 +5655,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Figi.Length != 0) {
         Figi = other.Figi;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5314,6 +5678,10 @@ namespace Tinkoff.InvestApi.V1 {
             Figi = input.ReadString();
             break;
           }
+          case 18: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -5331,6 +5699,10 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -5603,6 +5975,7 @@ namespace Tinkoff.InvestApi.V1 {
     public InfoSubscription(InfoSubscription other) : this() {
       figi_ = other.figi_;
       subscriptionStatus_ = other.subscriptionStatus_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5642,6 +6015,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 3;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5659,6 +6047,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (SubscriptionStatus != other.SubscriptionStatus) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5668,6 +6057,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) hash ^= SubscriptionStatus.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5694,6 +6084,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5712,6 +6106,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5727,6 +6125,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SubscriptionStatus);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5745,6 +6146,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         SubscriptionStatus = other.SubscriptionStatus;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5767,6 +6171,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -5792,6 +6200,10 @@ namespace Tinkoff.InvestApi.V1 {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
             break;
           }
+          case 26: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -5800,7 +6212,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Изменение статуса подписки на последнюю цену инструмента.
+  ///Изменение статуса подписки на цену последней сделки по инструменту.
   /// </summary>
   public sealed partial class SubscribeLastPriceRequest : pb::IMessage<SubscribeLastPriceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5868,7 +6280,7 @@ namespace Tinkoff.InvestApi.V1 {
         = pb::FieldCodec.ForMessage(18, global::Tinkoff.InvestApi.V1.LastPriceInstrument.Parser);
     private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPriceInstrument> instruments_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPriceInstrument>();
     /// <summary>
-    ///Массив инструментов для подписки на последнюю цену.
+    ///Массив инструментов для подписки на цену последней сделки.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6061,6 +6473,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LastPriceInstrument(LastPriceInstrument other) : this() {
       figi_ = other.figi_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6085,6 +6498,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 2;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -6101,6 +6529,7 @@ namespace Tinkoff.InvestApi.V1 {
         return true;
       }
       if (Figi != other.Figi) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -6109,6 +6538,7 @@ namespace Tinkoff.InvestApi.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6131,6 +6561,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -6145,6 +6579,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -6157,6 +6595,9 @@ namespace Tinkoff.InvestApi.V1 {
       int size = 0;
       if (Figi.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Figi);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -6172,6 +6613,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Figi.Length != 0) {
         Figi = other.Figi;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -6190,6 +6634,10 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -6211,6 +6659,10 @@ namespace Tinkoff.InvestApi.V1 {
             Figi = input.ReadString();
             break;
           }
+          case 18: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -6219,7 +6671,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Результат изменения статуса подписки на последнюю цену.
+  ///Результат изменения статуса подписки на цену последней сделки.
   /// </summary>
   public sealed partial class SubscribeLastPriceResponse : pb::IMessage<SubscribeLastPriceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6287,7 +6739,7 @@ namespace Tinkoff.InvestApi.V1 {
         = pb::FieldCodec.ForMessage(18, global::Tinkoff.InvestApi.V1.LastPriceSubscription.Parser);
     private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPriceSubscription> lastPriceSubscriptions_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPriceSubscription>();
     /// <summary>
-    ///Массив статусов подписки на последнюю цену.
+    ///Массив статусов подписки на цену последней сделки.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6443,7 +6895,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Статус подписки на последнюю цену.
+  ///Статус подписки на цену последней сделки.
   /// </summary>
   public sealed partial class LastPriceSubscription : pb::IMessage<LastPriceSubscription>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6481,6 +6933,7 @@ namespace Tinkoff.InvestApi.V1 {
     public LastPriceSubscription(LastPriceSubscription other) : this() {
       figi_ = other.figi_;
       subscriptionStatus_ = other.subscriptionStatus_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6520,6 +6973,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 3;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -6537,6 +7005,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (SubscriptionStatus != other.SubscriptionStatus) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -6546,6 +7015,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) hash ^= SubscriptionStatus.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6572,6 +7042,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -6590,6 +7064,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) SubscriptionStatus);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -6605,6 +7083,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SubscriptionStatus);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -6623,6 +7104,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.SubscriptionStatus != global::Tinkoff.InvestApi.V1.SubscriptionStatus.Unspecified) {
         SubscriptionStatus = other.SubscriptionStatus;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -6647,6 +7131,10 @@ namespace Tinkoff.InvestApi.V1 {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
             break;
           }
+          case 26: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -6668,6 +7156,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             SubscriptionStatus = (global::Tinkoff.InvestApi.V1.SubscriptionStatus) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -6723,6 +7215,7 @@ namespace Tinkoff.InvestApi.V1 {
       volume_ = other.volume_;
       time_ = other.time_ != null ? other.time_.Clone() : null;
       lastTradeTs_ = other.lastTradeTs_ != null ? other.lastTradeTs_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6766,7 +7259,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int OpenFieldNumber = 3;
     private global::Tinkoff.InvestApi.V1.Quotation open_;
     /// <summary>
-    ///Цена открытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена открытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6781,7 +7274,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int HighFieldNumber = 4;
     private global::Tinkoff.InvestApi.V1.Quotation high_;
     /// <summary>
-    ///Максимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Максимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6796,7 +7289,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LowFieldNumber = 5;
     private global::Tinkoff.InvestApi.V1.Quotation low_;
     /// <summary>
-    ///Минимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Минимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6811,7 +7304,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int CloseFieldNumber = 6;
     private global::Tinkoff.InvestApi.V1.Quotation close_;
     /// <summary>
-    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6867,6 +7360,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 10;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -6891,6 +7399,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Volume != other.Volume) return false;
       if (!object.Equals(Time, other.Time)) return false;
       if (!object.Equals(LastTradeTs, other.LastTradeTs)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -6907,6 +7416,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Volume != 0L) hash ^= Volume.GetHashCode();
       if (time_ != null) hash ^= Time.GetHashCode();
       if (lastTradeTs_ != null) hash ^= LastTradeTs.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6961,6 +7471,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(74);
         output.WriteMessage(LastTradeTs);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -7007,6 +7521,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(74);
         output.WriteMessage(LastTradeTs);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -7043,6 +7561,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (lastTradeTs_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastTradeTs);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7101,6 +7622,9 @@ namespace Tinkoff.InvestApi.V1 {
         }
         LastTradeTs.MergeFrom(other.LastTradeTs);
       }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -7168,6 +7692,10 @@ namespace Tinkoff.InvestApi.V1 {
               LastTradeTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(LastTradeTs);
+            break;
+          }
+          case 82: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -7239,6 +7767,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(LastTradeTs);
             break;
           }
+          case 82: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -7291,6 +7823,7 @@ namespace Tinkoff.InvestApi.V1 {
       time_ = other.time_ != null ? other.time_.Clone() : null;
       limitUp_ = other.limitUp_ != null ? other.limitUp_.Clone() : null;
       limitDown_ = other.limitDown_ != null ? other.limitDown_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -7392,7 +7925,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LimitUpFieldNumber = 7;
     private global::Tinkoff.InvestApi.V1.Quotation limitUp_;
     /// <summary>
-    ///Верхний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Верхний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -7407,7 +7940,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LimitDownFieldNumber = 8;
     private global::Tinkoff.InvestApi.V1.Quotation limitDown_;
     /// <summary>
-    ///Нижний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Нижний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -7415,6 +7948,21 @@ namespace Tinkoff.InvestApi.V1 {
       get { return limitDown_; }
       set {
         limitDown_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 9;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -7441,6 +7989,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(Time, other.Time)) return false;
       if (!object.Equals(LimitUp, other.LimitUp)) return false;
       if (!object.Equals(LimitDown, other.LimitDown)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -7456,6 +8005,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (time_ != null) hash ^= Time.GetHashCode();
       if (limitUp_ != null) hash ^= LimitUp.GetHashCode();
       if (limitDown_ != null) hash ^= LimitDown.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7500,6 +8050,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(LimitDown);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -7536,6 +8090,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(LimitDown);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -7565,6 +8123,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (limitDown_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LimitDown);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7606,6 +8167,9 @@ namespace Tinkoff.InvestApi.V1 {
           LimitDown = new global::Tinkoff.InvestApi.V1.Quotation();
         }
         LimitDown.MergeFrom(other.LimitDown);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -7663,6 +8227,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(LimitDown);
             break;
           }
+          case 74: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -7717,6 +8285,10 @@ namespace Tinkoff.InvestApi.V1 {
               LimitDown = new global::Tinkoff.InvestApi.V1.Quotation();
             }
             input.ReadMessage(LimitDown);
+            break;
+          }
+          case 74: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -7778,7 +8350,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PriceFieldNumber = 1;
     private global::Tinkoff.InvestApi.V1.Quotation price_;
     /// <summary>
-    ///Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8012,6 +8584,7 @@ namespace Tinkoff.InvestApi.V1 {
       price_ = other.price_ != null ? other.price_.Clone() : null;
       quantity_ = other.quantity_;
       time_ = other.time_ != null ? other.time_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8055,7 +8628,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PriceFieldNumber = 3;
     private global::Tinkoff.InvestApi.V1.Quotation price_;
     /// <summary>
-    ///Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8096,6 +8669,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 6;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -8116,6 +8704,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(Price, other.Price)) return false;
       if (Quantity != other.Quantity) return false;
       if (!object.Equals(Time, other.Time)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8128,6 +8717,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (price_ != null) hash ^= Price.GetHashCode();
       if (Quantity != 0L) hash ^= Quantity.GetHashCode();
       if (time_ != null) hash ^= Time.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8166,6 +8756,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Time);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8196,6 +8790,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Time);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8220,6 +8818,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (time_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Time);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8253,6 +8854,9 @@ namespace Tinkoff.InvestApi.V1 {
           Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Time.MergeFrom(other.Time);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8295,6 +8899,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(Time);
             break;
           }
+          case 50: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -8334,6 +8942,10 @@ namespace Tinkoff.InvestApi.V1 {
               Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Time);
+            break;
+          }
+          case 50: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -8385,6 +8997,7 @@ namespace Tinkoff.InvestApi.V1 {
       time_ = other.time_ != null ? other.time_.Clone() : null;
       limitOrderAvailableFlag_ = other.limitOrderAvailableFlag_;
       marketOrderAvailableFlag_ = other.marketOrderAvailableFlag_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8469,6 +9082,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 6;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -8489,6 +9117,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(Time, other.Time)) return false;
       if (LimitOrderAvailableFlag != other.LimitOrderAvailableFlag) return false;
       if (MarketOrderAvailableFlag != other.MarketOrderAvailableFlag) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8501,6 +9130,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (time_ != null) hash ^= Time.GetHashCode();
       if (LimitOrderAvailableFlag != false) hash ^= LimitOrderAvailableFlag.GetHashCode();
       if (MarketOrderAvailableFlag != false) hash ^= MarketOrderAvailableFlag.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8539,6 +9169,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(40);
         output.WriteBool(MarketOrderAvailableFlag);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8569,6 +9203,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(40);
         output.WriteBool(MarketOrderAvailableFlag);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8593,6 +9231,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (MarketOrderAvailableFlag != false) {
         size += 1 + 1;
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8623,6 +9264,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.MarketOrderAvailableFlag != false) {
         MarketOrderAvailableFlag = other.MarketOrderAvailableFlag;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8662,6 +9306,10 @@ namespace Tinkoff.InvestApi.V1 {
             MarketOrderAvailableFlag = input.ReadBool();
             break;
           }
+          case 50: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -8698,6 +9346,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 40: {
             MarketOrderAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 50: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -8748,6 +9400,7 @@ namespace Tinkoff.InvestApi.V1 {
       from_ = other.from_ != null ? other.from_.Clone() : null;
       to_ = other.to_ != null ? other.to_.Clone() : null;
       interval_ = other.interval_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8817,6 +9470,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 5;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -8836,6 +9504,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(From, other.From)) return false;
       if (!object.Equals(To, other.To)) return false;
       if (Interval != other.Interval) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8847,6 +9516,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (from_ != null) hash ^= From.GetHashCode();
       if (to_ != null) hash ^= To.GetHashCode();
       if (Interval != global::Tinkoff.InvestApi.V1.CandleInterval.Unspecified) hash ^= Interval.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8881,6 +9551,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(32);
         output.WriteEnum((int) Interval);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8907,6 +9581,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(32);
         output.WriteEnum((int) Interval);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8928,6 +9606,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Interval != global::Tinkoff.InvestApi.V1.CandleInterval.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Interval);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8958,6 +9639,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Interval != global::Tinkoff.InvestApi.V1.CandleInterval.Unspecified) {
         Interval = other.Interval;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8996,6 +9680,10 @@ namespace Tinkoff.InvestApi.V1 {
             Interval = (global::Tinkoff.InvestApi.V1.CandleInterval) input.ReadEnum();
             break;
           }
+          case 42: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -9031,6 +9719,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 32: {
             Interval = (global::Tinkoff.InvestApi.V1.CandleInterval) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -9281,7 +9973,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int OpenFieldNumber = 1;
     private global::Tinkoff.InvestApi.V1.Quotation open_;
     /// <summary>
-    ///Цена открытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена открытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9296,7 +9988,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int HighFieldNumber = 2;
     private global::Tinkoff.InvestApi.V1.Quotation high_;
     /// <summary>
-    ///Максимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Максимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9311,7 +10003,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LowFieldNumber = 3;
     private global::Tinkoff.InvestApi.V1.Quotation low_;
     /// <summary>
-    ///Минимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Минимальная цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9326,7 +10018,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int CloseFieldNumber = 4;
     private global::Tinkoff.InvestApi.V1.Quotation close_;
     /// <summary>
-    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9705,7 +10397,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Запрос получения последних цен.
+  ///Запрос получения цен последних сделок.
   /// </summary>
   public sealed partial class GetLastPricesRequest : pb::IMessage<GetLastPricesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -9742,6 +10434,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetLastPricesRequest(GetLastPricesRequest other) : this() {
       figi_ = other.figi_.Clone();
+      instrumentId_ = other.instrumentId_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9765,6 +10458,20 @@ namespace Tinkoff.InvestApi.V1 {
       get { return figi_; }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_instrumentId_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> instrumentId_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    ///Массив идентификаторов инструмента, принимает значения figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> InstrumentId {
+      get { return instrumentId_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -9781,6 +10488,7 @@ namespace Tinkoff.InvestApi.V1 {
         return true;
       }
       if(!figi_.Equals(other.figi_)) return false;
+      if(!instrumentId_.Equals(other.instrumentId_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -9789,6 +10497,7 @@ namespace Tinkoff.InvestApi.V1 {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= figi_.GetHashCode();
+      hash ^= instrumentId_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9808,6 +10517,7 @@ namespace Tinkoff.InvestApi.V1 {
       output.WriteRawMessage(this);
     #else
       figi_.WriteTo(output, _repeated_figi_codec);
+      instrumentId_.WriteTo(output, _repeated_instrumentId_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -9819,6 +10529,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       figi_.WriteTo(ref output, _repeated_figi_codec);
+      instrumentId_.WriteTo(ref output, _repeated_instrumentId_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -9830,6 +10541,7 @@ namespace Tinkoff.InvestApi.V1 {
     public int CalculateSize() {
       int size = 0;
       size += figi_.CalculateSize(_repeated_figi_codec);
+      size += instrumentId_.CalculateSize(_repeated_instrumentId_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -9843,6 +10555,7 @@ namespace Tinkoff.InvestApi.V1 {
         return;
       }
       figi_.Add(other.figi_);
+      instrumentId_.Add(other.instrumentId_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -9860,6 +10573,10 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             figi_.AddEntriesFrom(input, _repeated_figi_codec);
+            break;
+          }
+          case 18: {
+            instrumentId_.AddEntriesFrom(input, _repeated_instrumentId_codec);
             break;
           }
         }
@@ -9881,6 +10598,10 @@ namespace Tinkoff.InvestApi.V1 {
             figi_.AddEntriesFrom(ref input, _repeated_figi_codec);
             break;
           }
+          case 18: {
+            instrumentId_.AddEntriesFrom(ref input, _repeated_instrumentId_codec);
+            break;
+          }
         }
       }
     }
@@ -9889,7 +10610,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Список последних цен.
+  ///Список цен последних сделок.
   /// </summary>
   public sealed partial class GetLastPricesResponse : pb::IMessage<GetLastPricesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -9941,7 +10662,7 @@ namespace Tinkoff.InvestApi.V1 {
         = pb::FieldCodec.ForMessage(10, global::Tinkoff.InvestApi.V1.LastPrice.Parser);
     private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPrice> lastPrices_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.LastPrice>();
     /// <summary>
-    ///Массив последних цен.
+    ///Массив цен последних сделок.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10073,7 +10794,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Информация о цене.
+  ///Информация о цене последней сделки.
   /// </summary>
   public sealed partial class LastPrice : pb::IMessage<LastPrice>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -10112,6 +10833,7 @@ namespace Tinkoff.InvestApi.V1 {
       figi_ = other.figi_;
       price_ = other.price_ != null ? other.price_.Clone() : null;
       time_ = other.time_ != null ? other.time_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10125,7 +10847,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int FigiFieldNumber = 1;
     private string figi_ = "";
     /// <summary>
-    ///Идентификатор инструмента.
+    ///Figi инструмента.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10140,7 +10862,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int PriceFieldNumber = 2;
     private global::Tinkoff.InvestApi.V1.Quotation price_;
     /// <summary>
-    ///Последняя цена за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена последней сделки за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10166,6 +10888,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 11;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -10184,6 +10921,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi != other.Figi) return false;
       if (!object.Equals(Price, other.Price)) return false;
       if (!object.Equals(Time, other.Time)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10194,6 +10932,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
       if (time_ != null) hash ^= Time.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10224,6 +10963,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Time);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -10246,6 +10989,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Time);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10264,6 +11011,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (time_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Time);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10291,6 +11041,9 @@ namespace Tinkoff.InvestApi.V1 {
           Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Time.MergeFrom(other.Time);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10325,6 +11078,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(Time);
             break;
           }
+          case 90: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -10356,6 +11113,10 @@ namespace Tinkoff.InvestApi.V1 {
               Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Time);
+            break;
+          }
+          case 90: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -10404,6 +11165,7 @@ namespace Tinkoff.InvestApi.V1 {
     public GetOrderBookRequest(GetOrderBookRequest other) : this() {
       figi_ = other.figi_;
       depth_ = other.depth_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10443,6 +11205,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 3;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -10460,6 +11237,7 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Figi != other.Figi) return false;
       if (Depth != other.Depth) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10469,6 +11247,7 @@ namespace Tinkoff.InvestApi.V1 {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (Depth != 0) hash ^= Depth.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10495,6 +11274,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Depth);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -10513,6 +11296,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Depth);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10528,6 +11315,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (Depth != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Depth);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10546,6 +11336,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Depth != 0) {
         Depth = other.Depth;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10570,6 +11363,10 @@ namespace Tinkoff.InvestApi.V1 {
             Depth = input.ReadInt32();
             break;
           }
+          case 26: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -10591,6 +11388,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 16: {
             Depth = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -10645,6 +11446,10 @@ namespace Tinkoff.InvestApi.V1 {
       closePrice_ = other.closePrice_ != null ? other.closePrice_.Clone() : null;
       limitUp_ = other.limitUp_ != null ? other.limitUp_.Clone() : null;
       limitDown_ = other.limitDown_ != null ? other.limitDown_.Clone() : null;
+      lastPriceTs_ = other.lastPriceTs_ != null ? other.lastPriceTs_.Clone() : null;
+      closePriceTs_ = other.closePriceTs_ != null ? other.closePriceTs_.Clone() : null;
+      orderbookTs_ = other.orderbookTs_ != null ? other.orderbookTs_.Clone() : null;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10716,7 +11521,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LastPriceFieldNumber = 5;
     private global::Tinkoff.InvestApi.V1.Quotation lastPrice_;
     /// <summary>
-    ///Цена последней сделки за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена последней сделки за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10731,7 +11536,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int ClosePriceFieldNumber = 6;
     private global::Tinkoff.InvestApi.V1.Quotation closePrice_;
     /// <summary>
-    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Цена закрытия за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10746,7 +11551,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LimitUpFieldNumber = 7;
     private global::Tinkoff.InvestApi.V1.Quotation limitUp_;
     /// <summary>
-    ///Верхний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Верхний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10761,7 +11566,7 @@ namespace Tinkoff.InvestApi.V1 {
     public const int LimitDownFieldNumber = 8;
     private global::Tinkoff.InvestApi.V1.Quotation limitDown_;
     /// <summary>
-    ///Нижний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента.
+    ///Нижний лимит цены за 1 инструмент. Для получения стоимости лота требуется умножить на лотность инструмента. Для перевод цен в валюту рекомендуем использовать [информацию со страницы](https://tinkoff.github.io/investAPI/faq_marketdata/)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -10769,6 +11574,66 @@ namespace Tinkoff.InvestApi.V1 {
       get { return limitDown_; }
       set {
         limitDown_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last_price_ts" field.</summary>
+    public const int LastPriceTsFieldNumber = 21;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp lastPriceTs_;
+    /// <summary>
+    ///Время получения цены последней сделки.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp LastPriceTs {
+      get { return lastPriceTs_; }
+      set {
+        lastPriceTs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "close_price_ts" field.</summary>
+    public const int ClosePriceTsFieldNumber = 22;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp closePriceTs_;
+    /// <summary>
+    ///Время получения цены закрытия.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ClosePriceTs {
+      get { return closePriceTs_; }
+      set {
+        closePriceTs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "orderbook_ts" field.</summary>
+    public const int OrderbookTsFieldNumber = 23;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp orderbookTs_;
+    /// <summary>
+    ///Время формирования стакана на бирже.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp OrderbookTs {
+      get { return orderbookTs_; }
+      set {
+        orderbookTs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 9;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -10795,6 +11660,10 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(ClosePrice, other.ClosePrice)) return false;
       if (!object.Equals(LimitUp, other.LimitUp)) return false;
       if (!object.Equals(LimitDown, other.LimitDown)) return false;
+      if (!object.Equals(LastPriceTs, other.LastPriceTs)) return false;
+      if (!object.Equals(ClosePriceTs, other.ClosePriceTs)) return false;
+      if (!object.Equals(OrderbookTs, other.OrderbookTs)) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10810,6 +11679,10 @@ namespace Tinkoff.InvestApi.V1 {
       if (closePrice_ != null) hash ^= ClosePrice.GetHashCode();
       if (limitUp_ != null) hash ^= LimitUp.GetHashCode();
       if (limitDown_ != null) hash ^= LimitDown.GetHashCode();
+      if (lastPriceTs_ != null) hash ^= LastPriceTs.GetHashCode();
+      if (closePriceTs_ != null) hash ^= ClosePriceTs.GetHashCode();
+      if (orderbookTs_ != null) hash ^= OrderbookTs.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10854,6 +11727,22 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(LimitDown);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(InstrumentUid);
+      }
+      if (lastPriceTs_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(LastPriceTs);
+      }
+      if (closePriceTs_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(ClosePriceTs);
+      }
+      if (orderbookTs_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(OrderbookTs);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -10890,6 +11779,22 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(LimitDown);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(InstrumentUid);
+      }
+      if (lastPriceTs_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(LastPriceTs);
+      }
+      if (closePriceTs_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(ClosePriceTs);
+      }
+      if (orderbookTs_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(OrderbookTs);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10919,6 +11824,18 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (limitDown_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LimitDown);
+      }
+      if (lastPriceTs_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LastPriceTs);
+      }
+      if (closePriceTs_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ClosePriceTs);
+      }
+      if (orderbookTs_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(OrderbookTs);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10963,6 +11880,27 @@ namespace Tinkoff.InvestApi.V1 {
           LimitDown = new global::Tinkoff.InvestApi.V1.Quotation();
         }
         LimitDown.MergeFrom(other.LimitDown);
+      }
+      if (other.lastPriceTs_ != null) {
+        if (lastPriceTs_ == null) {
+          LastPriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        LastPriceTs.MergeFrom(other.LastPriceTs);
+      }
+      if (other.closePriceTs_ != null) {
+        if (closePriceTs_ == null) {
+          ClosePriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ClosePriceTs.MergeFrom(other.ClosePriceTs);
+      }
+      if (other.orderbookTs_ != null) {
+        if (orderbookTs_ == null) {
+          OrderbookTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        OrderbookTs.MergeFrom(other.OrderbookTs);
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11021,6 +11959,31 @@ namespace Tinkoff.InvestApi.V1 {
               LimitDown = new global::Tinkoff.InvestApi.V1.Quotation();
             }
             input.ReadMessage(LimitDown);
+            break;
+          }
+          case 74: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
+          case 170: {
+            if (lastPriceTs_ == null) {
+              LastPriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastPriceTs);
+            break;
+          }
+          case 178: {
+            if (closePriceTs_ == null) {
+              ClosePriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ClosePriceTs);
+            break;
+          }
+          case 186: {
+            if (orderbookTs_ == null) {
+              OrderbookTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(OrderbookTs);
             break;
           }
         }
@@ -11082,6 +12045,31 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(LimitDown);
             break;
           }
+          case 74: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
+          case 170: {
+            if (lastPriceTs_ == null) {
+              LastPriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastPriceTs);
+            break;
+          }
+          case 178: {
+            if (closePriceTs_ == null) {
+              ClosePriceTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ClosePriceTs);
+            break;
+          }
+          case 186: {
+            if (orderbookTs_ == null) {
+              OrderbookTs = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(OrderbookTs);
+            break;
+          }
         }
       }
     }
@@ -11127,6 +12115,7 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTradingStatusRequest(GetTradingStatusRequest other) : this() {
       figi_ = other.figi_;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -11151,6 +12140,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 2;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -11167,6 +12171,7 @@ namespace Tinkoff.InvestApi.V1 {
         return true;
       }
       if (Figi != other.Figi) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -11175,6 +12180,7 @@ namespace Tinkoff.InvestApi.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11197,6 +12203,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -11211,6 +12221,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(10);
         output.WriteString(Figi);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -11223,6 +12237,9 @@ namespace Tinkoff.InvestApi.V1 {
       int size = 0;
       if (Figi.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Figi);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11238,6 +12255,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.Figi.Length != 0) {
         Figi = other.Figi;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11258,6 +12278,10 @@ namespace Tinkoff.InvestApi.V1 {
             Figi = input.ReadString();
             break;
           }
+          case 18: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -11275,6 +12299,10 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -11326,6 +12354,7 @@ namespace Tinkoff.InvestApi.V1 {
       limitOrderAvailableFlag_ = other.limitOrderAvailableFlag_;
       marketOrderAvailableFlag_ = other.marketOrderAvailableFlag_;
       apiTradeAvailableFlag_ = other.apiTradeAvailableFlag_;
+      instrumentUid_ = other.instrumentUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -11410,6 +12439,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 6;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -11430,6 +12474,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (LimitOrderAvailableFlag != other.LimitOrderAvailableFlag) return false;
       if (MarketOrderAvailableFlag != other.MarketOrderAvailableFlag) return false;
       if (ApiTradeAvailableFlag != other.ApiTradeAvailableFlag) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -11442,6 +12487,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (LimitOrderAvailableFlag != false) hash ^= LimitOrderAvailableFlag.GetHashCode();
       if (MarketOrderAvailableFlag != false) hash ^= MarketOrderAvailableFlag.GetHashCode();
       if (ApiTradeAvailableFlag != false) hash ^= ApiTradeAvailableFlag.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11480,6 +12526,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(40);
         output.WriteBool(ApiTradeAvailableFlag);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -11510,6 +12560,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(40);
         output.WriteBool(ApiTradeAvailableFlag);
       }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(InstrumentUid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -11534,6 +12588,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (ApiTradeAvailableFlag != false) {
         size += 1 + 1;
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11561,6 +12618,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (other.ApiTradeAvailableFlag != false) {
         ApiTradeAvailableFlag = other.ApiTradeAvailableFlag;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11595,6 +12655,10 @@ namespace Tinkoff.InvestApi.V1 {
           }
           case 40: {
             ApiTradeAvailableFlag = input.ReadBool();
+            break;
+          }
+          case 50: {
+            InstrumentUid = input.ReadString();
             break;
           }
         }
@@ -11632,6 +12696,10 @@ namespace Tinkoff.InvestApi.V1 {
             ApiTradeAvailableFlag = input.ReadBool();
             break;
           }
+          case 50: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -11640,7 +12708,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Запрос последних обезличенных сделок по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+  ///Запрос обезличенных сделок за последний час.
   /// </summary>
   public sealed partial class GetLastTradesRequest : pb::IMessage<GetLastTradesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -11679,6 +12747,7 @@ namespace Tinkoff.InvestApi.V1 {
       figi_ = other.figi_;
       from_ = other.from_ != null ? other.from_.Clone() : null;
       to_ = other.to_ != null ? other.to_.Clone() : null;
+      instrumentId_ = other.instrumentId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -11733,6 +12802,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 4;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -11751,6 +12835,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi != other.Figi) return false;
       if (!object.Equals(From, other.From)) return false;
       if (!object.Equals(To, other.To)) return false;
+      if (InstrumentId != other.InstrumentId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -11761,6 +12846,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (Figi.Length != 0) hash ^= Figi.GetHashCode();
       if (from_ != null) hash ^= From.GetHashCode();
       if (to_ != null) hash ^= To.GetHashCode();
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11791,6 +12877,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(To);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -11813,6 +12903,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(To);
       }
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstrumentId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -11831,6 +12925,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (to_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(To);
+      }
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11858,6 +12955,9 @@ namespace Tinkoff.InvestApi.V1 {
           To = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         To.MergeFrom(other.To);
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11890,6 +12990,10 @@ namespace Tinkoff.InvestApi.V1 {
               To = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(To);
+            break;
+          }
+          case 34: {
+            InstrumentId = input.ReadString();
             break;
           }
         }
@@ -11925,6 +13029,10 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(To);
             break;
           }
+          case 34: {
+            InstrumentId = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -11933,7 +13041,7 @@ namespace Tinkoff.InvestApi.V1 {
   }
 
   /// <summary>
-  ///Последние обезличенные сделки по инструменту на текущий торговый день с максимальным интервалом в 1 час.
+  ///Обезличенных сделок за последний час.
   /// </summary>
   public sealed partial class GetLastTradesResponse : pb::IMessage<GetLastTradesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -12107,6 +13215,1057 @@ namespace Tinkoff.InvestApi.V1 {
             break;
           case 10: {
             trades_.AddEntriesFrom(ref input, _repeated_trades_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Запрос активных подписок.
+  /// </summary>
+  public sealed partial class GetMySubscriptions : pb::IMessage<GetMySubscriptions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMySubscriptions> _parser = new pb::MessageParser<GetMySubscriptions>(() => new GetMySubscriptions());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMySubscriptions> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.MarketdataReflection.Descriptor.MessageTypes[40]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMySubscriptions() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMySubscriptions(GetMySubscriptions other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMySubscriptions Clone() {
+      return new GetMySubscriptions(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMySubscriptions);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMySubscriptions other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMySubscriptions other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Запрос цен закрытия торговой сессии по инструментам.
+  /// </summary>
+  public sealed partial class GetClosePricesRequest : pb::IMessage<GetClosePricesRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetClosePricesRequest> _parser = new pb::MessageParser<GetClosePricesRequest>(() => new GetClosePricesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetClosePricesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.MarketdataReflection.Descriptor.MessageTypes[41]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesRequest(GetClosePricesRequest other) : this() {
+      instruments_ = other.instruments_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesRequest Clone() {
+      return new GetClosePricesRequest(this);
+    }
+
+    /// <summary>Field number for the "instruments" field.</summary>
+    public const int InstrumentsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest> _repeated_instruments_codec
+        = pb::FieldCodec.ForMessage(10, global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest.Parser);
+    private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest> instruments_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest>();
+    /// <summary>
+    ///Массив по инструментам.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceRequest> Instruments {
+      get { return instruments_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetClosePricesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetClosePricesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!instruments_.Equals(other.instruments_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= instruments_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      instruments_.WriteTo(output, _repeated_instruments_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      instruments_.WriteTo(ref output, _repeated_instruments_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += instruments_.CalculateSize(_repeated_instruments_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetClosePricesRequest other) {
+      if (other == null) {
+        return;
+      }
+      instruments_.Add(other.instruments_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            instruments_.AddEntriesFrom(input, _repeated_instruments_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            instruments_.AddEntriesFrom(ref input, _repeated_instruments_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Запрос цен закрытия торговой сессии по инструменту.
+  /// </summary>
+  public sealed partial class InstrumentClosePriceRequest : pb::IMessage<InstrumentClosePriceRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<InstrumentClosePriceRequest> _parser = new pb::MessageParser<InstrumentClosePriceRequest>(() => new InstrumentClosePriceRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<InstrumentClosePriceRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.MarketdataReflection.Descriptor.MessageTypes[42]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceRequest(InstrumentClosePriceRequest other) : this() {
+      instrumentId_ = other.instrumentId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceRequest Clone() {
+      return new InstrumentClosePriceRequest(this);
+    }
+
+    /// <summary>Field number for the "instrument_id" field.</summary>
+    public const int InstrumentIdFieldNumber = 1;
+    private string instrumentId_ = "";
+    /// <summary>
+    ///Идентификатор инструмента, принимает значение figi или instrument_uid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentId {
+      get { return instrumentId_; }
+      set {
+        instrumentId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as InstrumentClosePriceRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(InstrumentClosePriceRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (InstrumentId != other.InstrumentId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (InstrumentId.Length != 0) hash ^= InstrumentId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(InstrumentId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (InstrumentId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(InstrumentId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (InstrumentId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(InstrumentClosePriceRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.InstrumentId.Length != 0) {
+        InstrumentId = other.InstrumentId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            InstrumentId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            InstrumentId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Цены закрытия торговой сессии по инструментам.
+  /// </summary>
+  public sealed partial class GetClosePricesResponse : pb::IMessage<GetClosePricesResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetClosePricesResponse> _parser = new pb::MessageParser<GetClosePricesResponse>(() => new GetClosePricesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetClosePricesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.MarketdataReflection.Descriptor.MessageTypes[43]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesResponse(GetClosePricesResponse other) : this() {
+      closePrices_ = other.closePrices_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetClosePricesResponse Clone() {
+      return new GetClosePricesResponse(this);
+    }
+
+    /// <summary>Field number for the "close_prices" field.</summary>
+    public const int ClosePricesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse> _repeated_closePrices_codec
+        = pb::FieldCodec.ForMessage(10, global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse.Parser);
+    private readonly pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse> closePrices_ = new pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse>();
+    /// <summary>
+    ///Массив по инструментам.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Tinkoff.InvestApi.V1.InstrumentClosePriceResponse> ClosePrices {
+      get { return closePrices_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetClosePricesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetClosePricesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!closePrices_.Equals(other.closePrices_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= closePrices_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      closePrices_.WriteTo(output, _repeated_closePrices_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      closePrices_.WriteTo(ref output, _repeated_closePrices_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += closePrices_.CalculateSize(_repeated_closePrices_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetClosePricesResponse other) {
+      if (other == null) {
+        return;
+      }
+      closePrices_.Add(other.closePrices_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            closePrices_.AddEntriesFrom(input, _repeated_closePrices_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            closePrices_.AddEntriesFrom(ref input, _repeated_closePrices_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Цена закрытия торговой сессии по инструменту.
+  /// </summary>
+  public sealed partial class InstrumentClosePriceResponse : pb::IMessage<InstrumentClosePriceResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<InstrumentClosePriceResponse> _parser = new pb::MessageParser<InstrumentClosePriceResponse>(() => new InstrumentClosePriceResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<InstrumentClosePriceResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tinkoff.InvestApi.V1.MarketdataReflection.Descriptor.MessageTypes[44]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceResponse(InstrumentClosePriceResponse other) : this() {
+      figi_ = other.figi_;
+      instrumentUid_ = other.instrumentUid_;
+      price_ = other.price_ != null ? other.price_.Clone() : null;
+      time_ = other.time_ != null ? other.time_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InstrumentClosePriceResponse Clone() {
+      return new InstrumentClosePriceResponse(this);
+    }
+
+    /// <summary>Field number for the "figi" field.</summary>
+    public const int FigiFieldNumber = 1;
+    private string figi_ = "";
+    /// <summary>
+    ///Figi инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Figi {
+      get { return figi_; }
+      set {
+        figi_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "instrument_uid" field.</summary>
+    public const int InstrumentUidFieldNumber = 2;
+    private string instrumentUid_ = "";
+    /// <summary>
+    ///Uid инструмента.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstrumentUid {
+      get { return instrumentUid_; }
+      set {
+        instrumentUid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 11;
+    private global::Tinkoff.InvestApi.V1.Quotation price_;
+    /// <summary>
+    ///Цена закрытия торговой сессии.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.Quotation Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 21;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp time_;
+    /// <summary>
+    ///Дата совершения торгов.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as InstrumentClosePriceResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(InstrumentClosePriceResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Figi != other.Figi) return false;
+      if (InstrumentUid != other.InstrumentUid) return false;
+      if (!object.Equals(Price, other.Price)) return false;
+      if (!object.Equals(Time, other.Time)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Figi.Length != 0) hash ^= Figi.GetHashCode();
+      if (InstrumentUid.Length != 0) hash ^= InstrumentUid.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      if (time_ != null) hash ^= Time.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Figi.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Figi);
+      }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentUid);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Price);
+      }
+      if (time_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Figi.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Figi);
+      }
+      if (InstrumentUid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InstrumentUid);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Price);
+      }
+      if (time_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Figi.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Figi);
+      }
+      if (InstrumentUid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentUid);
+      }
+      if (price_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
+      }
+      if (time_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Time);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(InstrumentClosePriceResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Figi.Length != 0) {
+        Figi = other.Figi;
+      }
+      if (other.InstrumentUid.Length != 0) {
+        InstrumentUid = other.InstrumentUid;
+      }
+      if (other.price_ != null) {
+        if (price_ == null) {
+          Price = new global::Tinkoff.InvestApi.V1.Quotation();
+        }
+        Price.MergeFrom(other.Price);
+      }
+      if (other.time_ != null) {
+        if (time_ == null) {
+          Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Time.MergeFrom(other.Time);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (price_ == null) {
+              Price = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 170: {
+            if (time_ == null) {
+              Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Time);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Figi = input.ReadString();
+            break;
+          }
+          case 18: {
+            InstrumentUid = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (price_ == null) {
+              Price = new global::Tinkoff.InvestApi.V1.Quotation();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 170: {
+            if (time_ == null) {
+              Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Time);
             break;
           }
         }

@@ -65,6 +65,8 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PostOrderResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_PostOrderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PostOrderResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.ReplaceOrderRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOrdersRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOrdersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOrdersResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOrdersResponse.Parser));
@@ -85,6 +87,10 @@ namespace Tinkoff.InvestApi.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.OperationsResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_OperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.OperationsResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PortfolioRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PortfolioRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.PortfolioResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_PortfolioResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.PortfolioResponse.Parser));
@@ -92,6 +98,10 @@ namespace Tinkoff.InvestApi.V1 {
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.SandboxPayInRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_SandboxPayInRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.SandboxPayInRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.SandboxPayInResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_SandboxPayInResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.SandboxPayInResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.OpenSandboxAccountRequest, global::Tinkoff.InvestApi.V1.OpenSandboxAccountResponse> __Method_OpenSandboxAccount = new grpc::Method<global::Tinkoff.InvestApi.V1.OpenSandboxAccountRequest, global::Tinkoff.InvestApi.V1.OpenSandboxAccountResponse>(
@@ -123,6 +133,14 @@ namespace Tinkoff.InvestApi.V1 {
         __ServiceName,
         "PostSandboxOrder",
         __Marshaller_tinkoff_public_invest_api_contract_v1_PostOrderRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PostOrderResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse> __Method_ReplaceSandboxOrder = new grpc::Method<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReplaceSandboxOrder",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_PostOrderResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -166,6 +184,14 @@ namespace Tinkoff.InvestApi.V1 {
         __Marshaller_tinkoff_public_invest_api_contract_v1_OperationsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> __Method_GetSandboxOperationsByCursor = new grpc::Method<global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest, global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetSandboxOperationsByCursor",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.PortfolioRequest, global::Tinkoff.InvestApi.V1.PortfolioResponse> __Method_GetSandboxPortfolio = new grpc::Method<global::Tinkoff.InvestApi.V1.PortfolioRequest, global::Tinkoff.InvestApi.V1.PortfolioResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -180,6 +206,14 @@ namespace Tinkoff.InvestApi.V1 {
         "SandboxPayIn",
         __Marshaller_tinkoff_public_invest_api_contract_v1_SandboxPayInRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_SandboxPayInResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest, global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse> __Method_GetSandboxWithdrawLimits = new grpc::Method<global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest, global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetSandboxWithdrawLimits",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -405,6 +439,54 @@ namespace Tinkoff.InvestApi.V1 {
       public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.PostOrderResponse> PostSandboxOrderAsync(global::Tinkoff.InvestApi.V1.PostOrderRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostSandboxOrder, null, options, request);
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.PostOrderResponse ReplaceSandboxOrder(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReplaceSandboxOrder(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.PostOrderResponse ReplaceSandboxOrder(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReplaceSandboxOrder, null, options, request);
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.PostOrderResponse> ReplaceSandboxOrderAsync(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReplaceSandboxOrderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.PostOrderResponse> ReplaceSandboxOrderAsync(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReplaceSandboxOrder, null, options, request);
       }
       /// <summary>
       ///Метод получения списка активных заявок по счёту в песочнице.
@@ -647,6 +729,54 @@ namespace Tinkoff.InvestApi.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetSandboxOperations, null, options, request);
       }
       /// <summary>
+      ///Метод получения операций в песочнице по номеру счета с пагинацией.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse GetSandboxOperationsByCursor(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSandboxOperationsByCursor(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения операций в песочнице по номеру счета с пагинацией.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse GetSandboxOperationsByCursor(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetSandboxOperationsByCursor, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения операций в песочнице по номеру счета с пагинацией.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> GetSandboxOperationsByCursorAsync(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSandboxOperationsByCursorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения операций в песочнице по номеру счета с пагинацией.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetOperationsByCursorResponse> GetSandboxOperationsByCursorAsync(global::Tinkoff.InvestApi.V1.GetOperationsByCursorRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetSandboxOperationsByCursor, null, options, request);
+      }
+      /// <summary>
       ///Метод получения портфолио в песочнице.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -741,6 +871,54 @@ namespace Tinkoff.InvestApi.V1 {
       public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.SandboxPayInResponse> SandboxPayInAsync(global::Tinkoff.InvestApi.V1.SandboxPayInRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SandboxPayIn, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения доступного остатка для вывода средств в песочнице.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse GetSandboxWithdrawLimits(global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSandboxWithdrawLimits(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения доступного остатка для вывода средств в песочнице.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse GetSandboxWithdrawLimits(global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetSandboxWithdrawLimits, null, options, request);
+      }
+      /// <summary>
+      ///Метод получения доступного остатка для вывода средств в песочнице.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse> GetSandboxWithdrawLimitsAsync(global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSandboxWithdrawLimitsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод получения доступного остатка для вывода средств в песочнице.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.WithdrawLimitsResponse> GetSandboxWithdrawLimitsAsync(global::Tinkoff.InvestApi.V1.WithdrawLimitsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetSandboxWithdrawLimits, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

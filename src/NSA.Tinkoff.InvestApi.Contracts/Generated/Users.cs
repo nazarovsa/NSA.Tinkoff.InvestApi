@@ -37,7 +37,7 @@ namespace Tinkoff.InvestApi.V1 {
             "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASSAoMYWNjZXNzX2xl",
             "dmVsGAcgASgOMjIudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
             "dC52MS5BY2Nlc3NMZXZlbCIwChpHZXRNYXJnaW5BdHRyaWJ1dGVzUmVxdWVz",
-            "dBISCgphY2NvdW50X2lkGAEgASgJIqgDChtHZXRNYXJnaW5BdHRyaWJ1dGVz",
+            "dBISCgphY2NvdW50X2lkGAEgASgJIvUDChtHZXRNYXJnaW5BdHRyaWJ1dGVz",
             "UmVzcG9uc2USSwoQbGlxdWlkX3BvcnRmb2xpbxgBIAEoCzIxLnRpbmtvZmYu",
             "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJKCg9z",
             "dGFydGluZ19tYXJnaW4YAiABKAsyMS50aW5rb2ZmLnB1YmxpYy5pbnZlc3Qu",
@@ -46,41 +46,43 @@ namespace Tinkoff.InvestApi.V1 {
             "Lk1vbmV5VmFsdWUSUQoXZnVuZHNfc3VmZmljaWVuY3lfbGV2ZWwYBCABKAsy",
             "MC50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlF1b3Rh",
             "dGlvbhJSChdhbW91bnRfb2ZfbWlzc2luZ19mdW5kcxgFIAEoCzIxLnRpbmtv",
-            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZSIW",
-            "ChRHZXRVc2VyVGFyaWZmUmVxdWVzdCKrAQoVR2V0VXNlclRhcmlmZlJlc3Bv",
-            "bnNlEkcKDHVuYXJ5X2xpbWl0cxgBIAMoCzIxLnRpbmtvZmYucHVibGljLmlu",
-            "dmVzdC5hcGkuY29udHJhY3QudjEuVW5hcnlMaW1pdBJJCg1zdHJlYW1fbGlt",
-            "aXRzGAIgAygLMjIudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFj",
-            "dC52MS5TdHJlYW1MaW1pdCI3CgpVbmFyeUxpbWl0EhgKEGxpbWl0X3Blcl9t",
-            "aW51dGUYASABKAUSDwoHbWV0aG9kcxgCIAMoCSItCgtTdHJlYW1MaW1pdBIN",
-            "CgVsaW1pdBgBIAEoBRIPCgdzdHJlYW1zGAIgAygJIhAKDkdldEluZm9SZXF1",
-            "ZXN0ImwKD0dldEluZm9SZXNwb25zZRITCgtwcmVtX3N0YXR1cxgBIAEoCBIT",
-            "CgtxdWFsX3N0YXR1cxgCIAEoCBIfChdxdWFsaWZpZWRfZm9yX3dvcmtfd2l0",
-            "aBgDIAMoCRIOCgZ0YXJpZmYYBCABKAkqgAEKC0FjY291bnRUeXBlEhwKGEFD",
-            "Q09VTlRfVFlQRV9VTlNQRUNJRklFRBAAEhgKFEFDQ09VTlRfVFlQRV9USU5L",
-            "T0ZGEAESHAoYQUNDT1VOVF9UWVBFX1RJTktPRkZfSUlTEAISGwoXQUNDT1VO",
-            "VF9UWVBFX0lOVkVTVF9CT1gQAyp7Cg1BY2NvdW50U3RhdHVzEh4KGkFDQ09V",
-            "TlRfU1RBVFVTX1VOU1BFQ0lGSUVEEAASFgoSQUNDT1VOVF9TVEFUVVNfTkVX",
-            "EAESFwoTQUNDT1VOVF9TVEFUVVNfT1BFThACEhkKFUFDQ09VTlRfU1RBVFVT",
-            "X0NMT1NFRBADKqEBCgtBY2Nlc3NMZXZlbBIkCiBBQ0NPVU5UX0FDQ0VTU19M",
-            "RVZFTF9VTlNQRUNJRklFRBAAEiQKIEFDQ09VTlRfQUNDRVNTX0xFVkVMX0ZV",
-            "TExfQUNDRVNTEAESIgoeQUNDT1VOVF9BQ0NFU1NfTEVWRUxfUkVBRF9PTkxZ",
-            "EAISIgoeQUNDT1VOVF9BQ0NFU1NfTEVWRUxfTk9fQUNDRVNTEAMyuwQKDFVz",
-            "ZXJzU2VydmljZRKEAQoLR2V0QWNjb3VudHMSOS50aW5rb2ZmLnB1YmxpYy5p",
-            "bnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldEFjY291bnRzUmVxdWVzdBo6LnRp",
-            "bmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0QWNjb3Vu",
-            "dHNSZXNwb25zZRKcAQoTR2V0TWFyZ2luQXR0cmlidXRlcxJBLnRpbmtvZmYu",
-            "cHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0TWFyZ2luQXR0cmli",
-            "dXRlc1JlcXVlc3QaQi50aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRy",
-            "YWN0LnYxLkdldE1hcmdpbkF0dHJpYnV0ZXNSZXNwb25zZRKKAQoNR2V0VXNl",
-            "clRhcmlmZhI7LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3Qu",
-            "djEuR2V0VXNlclRhcmlmZlJlcXVlc3QaPC50aW5rb2ZmLnB1YmxpYy5pbnZl",
-            "c3QuYXBpLmNvbnRyYWN0LnYxLkdldFVzZXJUYXJpZmZSZXNwb25zZRJ4CgdH",
-            "ZXRJbmZvEjUudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52",
-            "MS5HZXRJbmZvUmVxdWVzdBo2LnRpbmtvZmYucHVibGljLmludmVzdC5hcGku",
-            "Y29udHJhY3QudjEuR2V0SW5mb1Jlc3BvbnNlQmEKHHJ1LnRpbmtvZmYucGlh",
-            "cGkuY29udHJhY3QudjFQAVoMLi87aW52ZXN0YXBpogIFVElBUEmqAhRUaW5r",
-            "b2ZmLkludmVzdEFwaS5WMcoCEVRpbmtvZmZcSW52ZXN0XFYxYgZwcm90bzM="));
+            "ZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuTW9uZXlWYWx1ZRJL",
+            "ChBjb3JyZWN0ZWRfbWFyZ2luGAYgASgLMjEudGlua29mZi5wdWJsaWMuaW52",
+            "ZXN0LmFwaS5jb250cmFjdC52MS5Nb25leVZhbHVlIhYKFEdldFVzZXJUYXJp",
+            "ZmZSZXF1ZXN0IqsBChVHZXRVc2VyVGFyaWZmUmVzcG9uc2USRwoMdW5hcnlf",
+            "bGltaXRzGAEgAygLMjEudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250",
+            "cmFjdC52MS5VbmFyeUxpbWl0EkkKDXN0cmVhbV9saW1pdHMYAiADKAsyMi50",
+            "aW5rb2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLlN0cmVhbUxp",
+            "bWl0IjcKClVuYXJ5TGltaXQSGAoQbGltaXRfcGVyX21pbnV0ZRgBIAEoBRIP",
+            "CgdtZXRob2RzGAIgAygJIi0KC1N0cmVhbUxpbWl0Eg0KBWxpbWl0GAEgASgF",
+            "Eg8KB3N0cmVhbXMYAiADKAkiEAoOR2V0SW5mb1JlcXVlc3QibAoPR2V0SW5m",
+            "b1Jlc3BvbnNlEhMKC3ByZW1fc3RhdHVzGAEgASgIEhMKC3F1YWxfc3RhdHVz",
+            "GAIgASgIEh8KF3F1YWxpZmllZF9mb3Jfd29ya193aXRoGAMgAygJEg4KBnRh",
+            "cmlmZhgEIAEoCSqAAQoLQWNjb3VudFR5cGUSHAoYQUNDT1VOVF9UWVBFX1VO",
+            "U1BFQ0lGSUVEEAASGAoUQUNDT1VOVF9UWVBFX1RJTktPRkYQARIcChhBQ0NP",
+            "VU5UX1RZUEVfVElOS09GRl9JSVMQAhIbChdBQ0NPVU5UX1RZUEVfSU5WRVNU",
+            "X0JPWBADKnsKDUFjY291bnRTdGF0dXMSHgoaQUNDT1VOVF9TVEFUVVNfVU5T",
+            "UEVDSUZJRUQQABIWChJBQ0NPVU5UX1NUQVRVU19ORVcQARIXChNBQ0NPVU5U",
+            "X1NUQVRVU19PUEVOEAISGQoVQUNDT1VOVF9TVEFUVVNfQ0xPU0VEEAMqoQEK",
+            "C0FjY2Vzc0xldmVsEiQKIEFDQ09VTlRfQUNDRVNTX0xFVkVMX1VOU1BFQ0lG",
+            "SUVEEAASJAogQUNDT1VOVF9BQ0NFU1NfTEVWRUxfRlVMTF9BQ0NFU1MQARIi",
+            "Ch5BQ0NPVU5UX0FDQ0VTU19MRVZFTF9SRUFEX09OTFkQAhIiCh5BQ0NPVU5U",
+            "X0FDQ0VTU19MRVZFTF9OT19BQ0NFU1MQAzK7BAoMVXNlcnNTZXJ2aWNlEoQB",
+            "CgtHZXRBY2NvdW50cxI5LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29u",
+            "dHJhY3QudjEuR2V0QWNjb3VudHNSZXF1ZXN0GjoudGlua29mZi5wdWJsaWMu",
+            "aW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRBY2NvdW50c1Jlc3BvbnNlEpwB",
+            "ChNHZXRNYXJnaW5BdHRyaWJ1dGVzEkEudGlua29mZi5wdWJsaWMuaW52ZXN0",
+            "LmFwaS5jb250cmFjdC52MS5HZXRNYXJnaW5BdHRyaWJ1dGVzUmVxdWVzdBpC",
+            "LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJhY3QudjEuR2V0TWFy",
+            "Z2luQXR0cmlidXRlc1Jlc3BvbnNlEooBCg1HZXRVc2VyVGFyaWZmEjsudGlu",
+            "a29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5HZXRVc2VyVGFy",
+            "aWZmUmVxdWVzdBo8LnRpbmtvZmYucHVibGljLmludmVzdC5hcGkuY29udHJh",
+            "Y3QudjEuR2V0VXNlclRhcmlmZlJlc3BvbnNlEngKB0dldEluZm8SNS50aW5r",
+            "b2ZmLnB1YmxpYy5pbnZlc3QuYXBpLmNvbnRyYWN0LnYxLkdldEluZm9SZXF1",
+            "ZXN0GjYudGlua29mZi5wdWJsaWMuaW52ZXN0LmFwaS5jb250cmFjdC52MS5H",
+            "ZXRJbmZvUmVzcG9uc2VCYQoccnUudGlua29mZi5waWFwaS5jb250cmFjdC52",
+            "MVABWgwuLztpbnZlc3RhcGmiAgVUSUFQSaoCFFRpbmtvZmYuSW52ZXN0QXBp",
+            "LlYxygIRVGlua29mZlxJbnZlc3RcVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Tinkoff.InvestApi.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tinkoff.InvestApi.V1.AccountType), typeof(global::Tinkoff.InvestApi.V1.AccountStatus), typeof(global::Tinkoff.InvestApi.V1.AccessLevel), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -88,7 +90,7 @@ namespace Tinkoff.InvestApi.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetAccountsResponse), global::Tinkoff.InvestApi.V1.GetAccountsResponse.Parser, new[]{ "Accounts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.Account), global::Tinkoff.InvestApi.V1.Account.Parser, new[]{ "Id", "Type", "Name", "Status", "OpenedDate", "ClosedDate", "AccessLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetMarginAttributesRequest), global::Tinkoff.InvestApi.V1.GetMarginAttributesRequest.Parser, new[]{ "AccountId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetMarginAttributesResponse), global::Tinkoff.InvestApi.V1.GetMarginAttributesResponse.Parser, new[]{ "LiquidPortfolio", "StartingMargin", "MinimalMargin", "FundsSufficiencyLevel", "AmountOfMissingFunds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetMarginAttributesResponse), global::Tinkoff.InvestApi.V1.GetMarginAttributesResponse.Parser, new[]{ "LiquidPortfolio", "StartingMargin", "MinimalMargin", "FundsSufficiencyLevel", "AmountOfMissingFunds", "CorrectedMargin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetUserTariffRequest), global::Tinkoff.InvestApi.V1.GetUserTariffRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.GetUserTariffResponse), global::Tinkoff.InvestApi.V1.GetUserTariffResponse.Parser, new[]{ "UnaryLimits", "StreamLimits" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tinkoff.InvestApi.V1.UnaryLimit), global::Tinkoff.InvestApi.V1.UnaryLimit.Parser, new[]{ "LimitPerMinute", "Methods" }, null, null, null, null),
@@ -1199,6 +1201,7 @@ namespace Tinkoff.InvestApi.V1 {
       minimalMargin_ = other.minimalMargin_ != null ? other.minimalMargin_.Clone() : null;
       fundsSufficiencyLevel_ = other.fundsSufficiencyLevel_ != null ? other.fundsSufficiencyLevel_.Clone() : null;
       amountOfMissingFunds_ = other.amountOfMissingFunds_ != null ? other.amountOfMissingFunds_.Clone() : null;
+      correctedMargin_ = other.correctedMargin_ != null ? other.correctedMargin_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1283,6 +1286,21 @@ namespace Tinkoff.InvestApi.V1 {
       }
     }
 
+    /// <summary>Field number for the "corrected_margin" field.</summary>
+    public const int CorrectedMarginFieldNumber = 6;
+    private global::Tinkoff.InvestApi.V1.MoneyValue correctedMargin_;
+    /// <summary>
+    /// Скорректированная маржа.Начальная маржа, в которой плановые позиции рассчитываются с учётом активных заявок на покупку позиций лонг или продажу позиций шорт.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tinkoff.InvestApi.V1.MoneyValue CorrectedMargin {
+      get { return correctedMargin_; }
+      set {
+        correctedMargin_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1303,6 +1321,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (!object.Equals(MinimalMargin, other.MinimalMargin)) return false;
       if (!object.Equals(FundsSufficiencyLevel, other.FundsSufficiencyLevel)) return false;
       if (!object.Equals(AmountOfMissingFunds, other.AmountOfMissingFunds)) return false;
+      if (!object.Equals(CorrectedMargin, other.CorrectedMargin)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1315,6 +1334,7 @@ namespace Tinkoff.InvestApi.V1 {
       if (minimalMargin_ != null) hash ^= MinimalMargin.GetHashCode();
       if (fundsSufficiencyLevel_ != null) hash ^= FundsSufficiencyLevel.GetHashCode();
       if (amountOfMissingFunds_ != null) hash ^= AmountOfMissingFunds.GetHashCode();
+      if (correctedMargin_ != null) hash ^= CorrectedMargin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1353,6 +1373,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(AmountOfMissingFunds);
       }
+      if (correctedMargin_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CorrectedMargin);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1383,6 +1407,10 @@ namespace Tinkoff.InvestApi.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(AmountOfMissingFunds);
       }
+      if (correctedMargin_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CorrectedMargin);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1407,6 +1435,9 @@ namespace Tinkoff.InvestApi.V1 {
       }
       if (amountOfMissingFunds_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmountOfMissingFunds);
+      }
+      if (correctedMargin_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CorrectedMargin);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1449,6 +1480,12 @@ namespace Tinkoff.InvestApi.V1 {
           AmountOfMissingFunds = new global::Tinkoff.InvestApi.V1.MoneyValue();
         }
         AmountOfMissingFunds.MergeFrom(other.AmountOfMissingFunds);
+      }
+      if (other.correctedMargin_ != null) {
+        if (correctedMargin_ == null) {
+          CorrectedMargin = new global::Tinkoff.InvestApi.V1.MoneyValue();
+        }
+        CorrectedMargin.MergeFrom(other.CorrectedMargin);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1500,6 +1537,13 @@ namespace Tinkoff.InvestApi.V1 {
             input.ReadMessage(AmountOfMissingFunds);
             break;
           }
+          case 50: {
+            if (correctedMargin_ == null) {
+              CorrectedMargin = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(CorrectedMargin);
+            break;
+          }
         }
       }
     #endif
@@ -1548,6 +1592,13 @@ namespace Tinkoff.InvestApi.V1 {
               AmountOfMissingFunds = new global::Tinkoff.InvestApi.V1.MoneyValue();
             }
             input.ReadMessage(AmountOfMissingFunds);
+            break;
+          }
+          case 50: {
+            if (correctedMargin_ == null) {
+              CorrectedMargin = new global::Tinkoff.InvestApi.V1.MoneyValue();
+            }
+            input.ReadMessage(CorrectedMargin);
             break;
           }
         }

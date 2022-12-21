@@ -1,5 +1,4 @@
 using Grpc.Core;
-using Grpc.Core.Utils;
 using NSA.Tinkoff.InvestApi.Contracts;
 using Tinkoff.InvestApi.V1;
 
@@ -7,7 +6,7 @@ namespace NSA.Tinkoff.InvestApi.Services;
 
 public sealed class MarketDataStreamService : IMarketDataStreamService, IDisposable
 {
-    private readonly AsyncDuplexStreamingCall<MarketDataRequest, MarketDataResponse> _stream;
+    public readonly AsyncDuplexStreamingCall<MarketDataRequest, MarketDataResponse> _stream;
     
     public MarketDataStreamService(IInvestApiClient client)
     {
@@ -21,17 +20,7 @@ public sealed class MarketDataStreamService : IMarketDataStreamService, IDisposa
             throw new ArgumentNullException(nameof(request));
         }
 
-        return SendAsync(new[] { request }, cancellationToken);
-    }
-
-    public Task SendAsync(MarketDataRequest[] requests, CancellationToken cancellationToken = default)
-    {
-        if (requests == null)
-        {
-            throw new ArgumentNullException(nameof(requests));
-        }
-
-        return _stream.RequestStream.WriteAllAsync(requests);
+        return _stream.RequestStream.WriteAsync(request, cancellationToken);
     }
 
     public async Task<MarketDataResponse?> ReadAsync(CancellationToken cancellationToken = default)
@@ -42,6 +31,11 @@ public sealed class MarketDataStreamService : IMarketDataStreamService, IDisposa
         }
 
         return null;
+    }
+
+    public IAsyncEnumerable<MarketDataResponse> ReadAllAsync(CancellationToken cancellationToken = default)
+    {
+        return _stream.ResponseStream.ReadAllAsync(cancellationToken);
     }
 
     public void Dispose()

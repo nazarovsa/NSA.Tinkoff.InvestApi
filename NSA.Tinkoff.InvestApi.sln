@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9AD5F0EA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSA.Tinkoff.InvestApi.Testing", "tests\NSA.Tinkoff.InvestApi.Testing\NSA.Tinkoff.InvestApi.Testing.csproj", "{1C46A8A2-8904-488E-BAD1-DD27185838D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSA.Tinkoff.InvestApi.Samples.MarketDataStream", "samples\NSA.Tinkoff.InvestApi.Samples.MarketDataStream\NSA.Tinkoff.InvestApi.Samples.MarketDataStream.csproj", "{C2242E6E-A12A-400C-93EF-234CD336A498}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FED1F94B-B556-4FB7-99BA-0432D23F4351}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,9 +52,14 @@ Global
 		{1C46A8A2-8904-488E-BAD1-DD27185838D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C46A8A2-8904-488E-BAD1-DD27185838D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C46A8A2-8904-488E-BAD1-DD27185838D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2242E6E-A12A-400C-93EF-234CD336A498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2242E6E-A12A-400C-93EF-234CD336A498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2242E6E-A12A-400C-93EF-234CD336A498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2242E6E-A12A-400C-93EF-234CD336A498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DAB8BD64-E355-4A1D-A4FA-6D295DD51C06} = {9AD5F0EA-C33E-45CC-A2B1-73CE025C7697}
 		{1C46A8A2-8904-488E-BAD1-DD27185838D0} = {9AD5F0EA-C33E-45CC-A2B1-73CE025C7697}
+		{C2242E6E-A12A-400C-93EF-234CD336A498} = {FED1F94B-B556-4FB7-99BA-0432D23F4351}
 	EndGlobalSection
 EndGlobal

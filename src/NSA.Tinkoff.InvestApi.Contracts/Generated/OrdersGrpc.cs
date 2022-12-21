@@ -182,6 +182,8 @@ namespace Tinkoff.InvestApi.V1 {
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOrdersRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOrdersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.GetOrdersResponse> __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.GetOrdersResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest> __Marshaller_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tinkoff.InvestApi.V1.ReplaceOrderRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tinkoff.InvestApi.V1.PostOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse> __Method_PostOrder = new grpc::Method<global::Tinkoff.InvestApi.V1.PostOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse>(
@@ -214,6 +216,14 @@ namespace Tinkoff.InvestApi.V1 {
         "GetOrders",
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersRequest,
         __Marshaller_tinkoff_public_invest_api_contract_v1_GetOrdersResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse> __Method_ReplaceOrder = new grpc::Method<global::Tinkoff.InvestApi.V1.ReplaceOrderRequest, global::Tinkoff.InvestApi.V1.PostOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReplaceOrder",
+        __Marshaller_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest,
+        __Marshaller_tinkoff_public_invest_api_contract_v1_PostOrderResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -439,6 +449,54 @@ namespace Tinkoff.InvestApi.V1 {
       public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.GetOrdersResponse> GetOrdersAsync(global::Tinkoff.InvestApi.V1.GetOrdersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOrders, null, options, request);
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.PostOrderResponse ReplaceOrder(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReplaceOrder(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tinkoff.InvestApi.V1.PostOrderResponse ReplaceOrder(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReplaceOrder, null, options, request);
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.PostOrderResponse> ReplaceOrderAsync(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReplaceOrderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Метод изменения выставленной заявки.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tinkoff.InvestApi.V1.PostOrderResponse> ReplaceOrderAsync(global::Tinkoff.InvestApi.V1.ReplaceOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReplaceOrder, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

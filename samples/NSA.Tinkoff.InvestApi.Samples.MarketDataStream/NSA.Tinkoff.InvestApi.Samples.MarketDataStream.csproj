@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\NSA.Tinkoff.InvestApi\NSA.Tinkoff.InvestApi.csproj" />
+      <ProjectReference Include="..\..\tests\NSA.Tinkoff.InvestApi.Testing\NSA.Tinkoff.InvestApi.Testing.csproj" />
+    </ItemGroup>
+
+</Project>
