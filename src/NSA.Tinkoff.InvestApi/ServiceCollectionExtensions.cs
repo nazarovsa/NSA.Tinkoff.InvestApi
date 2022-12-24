@@ -57,7 +57,7 @@ public static class ServiceCollectionExtensions
                 grpcChannelConfigurator?.Invoke(options);
             });
 
-        services.AddScoped<IInvestApiClient, InvestApiClient>(ctx => ctx.GetRequiredService<InvestApiClient>());
+        services.AddSingleton<IInvestApiClient, InvestApiClient>(ctx => ctx.GetRequiredService<InvestApiClient>());
 
         return services;
     }
