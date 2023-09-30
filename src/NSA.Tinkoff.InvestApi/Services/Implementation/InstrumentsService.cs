@@ -54,7 +54,8 @@ public sealed class InstrumentsService : IInstrumentsService
         }
     }
 
-    public async Task<IReadOnlyCollection<Bond>> GetBondsAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<Bond>> GetBondsAsync(InstrumentStatus instrumentStatus,
+        CancellationToken cancellationToken = default)
     {
         try
         {
@@ -78,19 +79,21 @@ public sealed class InstrumentsService : IInstrumentsService
         }
     }
 
-    public async Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset?  from= null, DateTime?  to = null, CancellationToken cancellationToken = default)
-    { try
+    public async Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset from, DateTimeOffset to,
+        CancellationToken cancellationToken = default)
+    {
+        try
         {
             if (string.IsNullOrWhiteSpace(figi))
             {
                 throw new ArgumentNullException(nameof(figi));
             }
-            
+
             var request = new GetBondCouponsRequest()
             {
                 Figi = figi,
-                From = from?.ToTimestamp(),
-                To = to?.ToTimestamp(),
+                From = Timestamp.FromDateTimeOffset(from),
+                To = Timestamp.FromDateTimeOffset(to),
             };
 
             var result = _client.InstrumentsServiceClient.GetBondCouponsAsync(request, null, null, cancellationToken);
@@ -108,7 +111,8 @@ public sealed class InstrumentsService : IInstrumentsService
         }
     }
 
-    public async Task<IReadOnlyCollection<Etf>> GetEtfsAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<Etf>> GetEtfsAsync(InstrumentStatus instrumentStatus,
+        CancellationToken cancellationToken = default)
     {
         try
         {
@@ -132,7 +136,8 @@ public sealed class InstrumentsService : IInstrumentsService
         }
     }
 
-    public async Task<IReadOnlyCollection<Share>> GetSharesAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<Share>> GetSharesAsync(InstrumentStatus instrumentStatus,
+        CancellationToken cancellationToken = default)
     {
         try
         {
@@ -156,7 +161,8 @@ public sealed class InstrumentsService : IInstrumentsService
         }
     }
 
-    public async Task<IReadOnlyCollection<Currency>> GetCurrenciesAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<Currency>> GetCurrenciesAsync(InstrumentStatus instrumentStatus,
+        CancellationToken cancellationToken = default)
     {
         try
         {

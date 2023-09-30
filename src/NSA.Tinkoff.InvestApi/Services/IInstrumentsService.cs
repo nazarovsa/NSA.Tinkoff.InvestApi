@@ -30,8 +30,8 @@ public interface IInstrumentsService
     /// <param name="figi">Figi of a bond.</param>
     /// <param name="from">From date.</param>
     /// <param name="to">To date.</param>
-    public Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset? from = null,
-        DateTime? to = null, CancellationToken cancellationToken = default);
+    public Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset from,
+        DateTimeOffset to, CancellationToken cancellationToken = default);
 
     /// <summary>
     /// Get list of currencies.
