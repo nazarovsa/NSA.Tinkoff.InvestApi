@@ -24,6 +24,16 @@ public interface IInstrumentsService
     Task<IReadOnlyCollection<Bond>> GetBondsAsync(InstrumentStatus instrumentStatus, CancellationToken cancellationToken = default);
 
     /// <summary>
+    /// Get list of coupons of specified bond.
+    /// </summary>
+    /// <param name="cancellationToken"><see cref="CancellationToken"/>.</param>
+    /// <param name="figi">Figi of a bond.</param>
+    /// <param name="from">From date.</param>
+    /// <param name="to">To date.</param>
+    public Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset? from = null,
+        DateTime? to = null, CancellationToken cancellationToken = default);
+
+    /// <summary>
     /// Get list of currencies.
     /// </summary>
     /// <param name="instrumentStatus">Status of instrument. <see cref="InstrumentStatus"/>.</param>

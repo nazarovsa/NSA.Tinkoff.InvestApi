@@ -1,3 +1,4 @@
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using NSA.Tinkoff.InvestApi.Contracts;
 using NSA.Tinkoff.InvestApi.Exceptions;
@@ -69,6 +70,36 @@ public sealed class InstrumentsService : IInstrumentsService
             var response = await result.ResponseAsync;
             return response
                 .Instruments
+                .ToArray();
+        }
+        catch (RpcException ex)
+        {
+            throw new ApiException(ex);
+        }
+    }
+
+    public async Task<IReadOnlyCollection<Coupon>> GetBondCouponsAsync(string figi, DateTimeOffset?  from= null, DateTime?  to = null, CancellationToken cancellationToken = default)
+    { try
+        {
+            if (string.IsNullOrWhiteSpace(figi))
+            {
+                throw new ArgumentNullException(nameof(figi));
+            }
+            
+            var request = new GetBondCouponsRequest()
+            {
+                Figi = figi,
+                From = from?.ToTimestamp(),
+                To = to?.ToTimestamp(),
+            };
+
+            var result = _client.InstrumentsServiceClient.GetBondCouponsAsync(request, null, null, cancellationToken);
+            if (result == null)
+                throw new InvalidOperationException("Response is null.");
+
+            var response = await result.ResponseAsync;
+            return response
+                .Events
                 .ToArray();
         }
         catch (RpcException ex)
